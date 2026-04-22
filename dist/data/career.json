@@ -1,0 +1,1051 @@
+{
+  "slug": "career",
+  "title": "Career Progression",
+  "subtitle": "A timeline of jobs, academics, certifications, and notes",
+  "accent": "#f59a9a",
+  "sheetId": "1A7YBi4n9mkw0dHiCNv-hoidxRvU-rT94B1Ja5JHCmFQ",
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1A7YBi4n9mkw0dHiCNv-hoidxRvU-rT94B1Ja5JHCmFQ/edit?usp=sharing",
+  "tabs": {
+    "Career Progression": {
+      "columns": [
+        {
+          "id": "A",
+          "label": "Year",
+          "type": "number"
+        },
+        {
+          "id": "B",
+          "label": "Job Title(s)",
+          "type": "string"
+        },
+        {
+          "id": "C",
+          "label": "Length",
+          "type": "string"
+        },
+        {
+          "id": "D",
+          "label": "Time",
+          "type": "string"
+        },
+        {
+          "id": "E",
+          "label": "Pay Details",
+          "type": "string"
+        },
+        {
+          "id": "F",
+          "label": "Gross Divided",
+          "type": "string"
+        },
+        {
+          "id": "G",
+          "label": "Gross Total Pay",
+          "type": "number"
+        },
+        {
+          "id": "H",
+          "label": "Net Divided",
+          "type": "string"
+        },
+        {
+          "id": "I",
+          "label": "Net Total Pay",
+          "type": "number"
+        },
+        {
+          "id": "J",
+          "label": "Notes",
+          "type": "string"
+        },
+        {
+          "id": "K",
+          "label": "K",
+          "type": "string"
+        },
+        {
+          "id": "L",
+          "label": "L",
+          "type": "string"
+        },
+        {
+          "id": "M",
+          "label": "M",
+          "type": "string"
+        },
+        {
+          "id": "N",
+          "label": "N",
+          "type": "string"
+        },
+        {
+          "id": "O",
+          "label": "O",
+          "type": "string"
+        },
+        {
+          "id": "P",
+          "label": "P",
+          "type": "string"
+        },
+        {
+          "id": "Q",
+          "label": "Q",
+          "type": "string"
+        },
+        {
+          "id": "R",
+          "label": "R",
+          "type": "string"
+        },
+        {
+          "id": "S",
+          "label": "S",
+          "type": "string"
+        },
+        {
+          "id": "T",
+          "label": "T",
+          "type": "string"
+        },
+        {
+          "id": "U",
+          "label": "U",
+          "type": "string"
+        },
+        {
+          "id": "V",
+          "label": "V",
+          "type": "string"
+        },
+        {
+          "id": "W",
+          "label": "W",
+          "type": "string"
+        },
+        {
+          "id": "X",
+          "label": "X",
+          "type": "string"
+        },
+        {
+          "id": "Y",
+          "label": "Y",
+          "type": "string"
+        },
+        {
+          "id": "Z",
+          "label": "Z",
+          "type": "string"
+        },
+        {
+          "id": "AA",
+          "label": "AA",
+          "type": "string"
+        },
+        {
+          "id": "AB",
+          "label": "AB",
+          "type": "string"
+        },
+        {
+          "id": "AC",
+          "label": "AC",
+          "type": "string"
+        },
+        {
+          "id": "AD",
+          "label": "AD",
+          "type": "string"
+        },
+        {
+          "id": "AE",
+          "label": "AE",
+          "type": "string"
+        },
+        {
+          "id": "AF",
+          "label": "AF",
+          "type": "string"
+        }
+      ],
+      "rows": [
+        {
+          "Year": {
+            "raw": 2022,
+            "formatted": "2022",
+            "type": "number"
+          },
+          "Job Title(s)": {
+            "raw": "1: Bellman (Lyle DC)",
+            "formatted": "1: Bellman (Lyle DC)",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 6/6/2022 - 12/29/2022",
+            "formatted": "1: 6/6/2022 - 12/29/2022",
+            "type": "string"
+          },
+          "Time": {
+            "raw": "1: ~36 hrs/week",
+            "formatted": "1: ~36 hrs/week",
+            "type": "string"
+          },
+          "Pay Details": {
+            "raw": "1: $15/hr+tips (w-2)",
+            "formatted": "1: $15/hr+tips (w-2)",
+            "type": "string"
+          },
+          "Gross Divided": {
+            "raw": "1: 15,097.39",
+            "formatted": "1: 15,097.39",
+            "type": "string"
+          },
+          "Gross Total Pay": {
+            "raw": 15097.39,
+            "formatted": " $ 15,097.39 ",
+            "type": "number"
+          },
+          "Net Divided": {
+            "raw": "1: $12,374.88",
+            "formatted": "1: $12,374.88",
+            "type": "string"
+          },
+          "Net Total Pay": {
+            "raw": 12374.88,
+            "formatted": " $ 12,374.88 ",
+            "type": "number"
+          },
+          "Notes": {
+            "raw": "First real job making a lot of money, worked it throughout the summer and then kept working during the school year. I made a lot of money in tips as well but those aren't noted here since I did not record them at the time. I picked up a lot of shifts as well and worked into school working 7am-11pm Sat-Sun and sometimes picking up the 3pm-11pm on Friday's as well. If you include the tips I made, I think it was quite good money for a college student (College Freshman Year (Fall+), 1st-2nd Year) Freshman in terms of degree progress but I'm a year behind. Note that in the following notes. The year's correlate correctly, and have two for the spring->fall. Started college in 2021",
+            "formatted": "First real job making a lot of money, worked it throughout the summer and then kept working during the school year. I made a lot of money in tips as well but those aren't noted here since I did not record them at the time. I picked up a lot of shifts as well and worked into school working 7am-11pm Sat-Sun and sometimes picking up the 3pm-11pm on Friday's as well. If you include the tips I made, I think it was quite good money for a college student (College Freshman Year (Fall+), 1st-2nd Year) Freshman in terms of degree progress but I'm a year behind. Note that in the following notes. The year's correlate correctly, and have two for the spring->fall. Started college in 2021",
+            "type": "string"
+          },
+          "K": null,
+          "L": null,
+          "M": null,
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": null,
+          "AA": null,
+          "AB": null,
+          "AC": null,
+          "AD": null,
+          "AE": null,
+          "AF": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2023,
+            "formatted": "2023",
+            "type": "number"
+          },
+          "Job Title(s)": {
+            "raw": "1: Business Development Intern (Paragon One)\n2: RE Intern (CIVITAS)\n3: SYEP Employee",
+            "formatted": "1: Business Development Intern (Paragon One)\n2: RE Intern (CIVITAS)\n3: SYEP Employee",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 2/1/2023 - 4/1/2023\n2: 5/22/2023 - 7/2/2023\n3: 6/25/2023 - 7/15/2023",
+            "formatted": "1: 2/1/2023 - 4/1/2023\n2: 5/22/2023 - 7/2/2023\n3: 6/25/2023 - 7/15/2023",
+            "type": "string"
+          },
+          "Time": {
+            "raw": "1: ~3hrs/week\n2: 40 hrs/week\n3: 0 hrs/week",
+            "formatted": "1: ~3hrs/week\n2: 40 hrs/week\n3: 0 hrs/week",
+            "type": "string"
+          },
+          "Pay Details": {
+            "raw": "1: $750 stipend\n2: $20/hr (1099)\n3: $9/hr (w-2)",
+            "formatted": "1: $750 stipend\n2: $20/hr (1099)\n3: $9/hr (w-2)",
+            "type": "string"
+          },
+          "Gross Divided": {
+            "raw": "1: $750\n2: $4,640\n3: $630",
+            "formatted": "1: $750\n2: $4,640\n3: $630",
+            "type": "string"
+          },
+          "Gross Total Pay": {
+            "raw": 6020,
+            "formatted": " $ 6,020.00 ",
+            "type": "number"
+          },
+          "Net Divided": {
+            "raw": "1: $750\n2: $4,640\n3: $581.81",
+            "formatted": "1: $750\n2: $4,640\n3: $581.81",
+            "type": "string"
+          },
+          "Net Total Pay": {
+            "raw": 5971.8099999999995,
+            "formatted": " $ 5,971.81 ",
+            "type": "number"
+          },
+          "Notes": {
+            "raw": "I was focused on getting an internship in a RE or engineering field and did that. I also did not actually work as an SYEP employee this year, but got paid regardless. (College Sophmore Year (Fall+), 2nd-3rd Year)",
+            "formatted": "I was focused on getting an internship in a RE or engineering field and did that. I also did not actually work as an SYEP employee this year, but got paid regardless. (College Sophmore Year (Fall+), 2nd-3rd Year)",
+            "type": "string"
+          },
+          "K": null,
+          "L": null,
+          "M": null,
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": null,
+          "AA": null,
+          "AB": null,
+          "AC": null,
+          "AD": null,
+          "AE": null,
+          "AF": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2024,
+            "formatted": "2024",
+            "type": "number"
+          },
+          "Job Title(s)": {
+            "raw": "1: RE Intern (CIVITAS)\n2: Project Management Intern (Consigli)\n3: RE Intern (CIVITAS)\n4: Salesperson (BarBak Hospitality)\n5: Barista (Tiger Sugar)",
+            "formatted": "1: RE Intern (CIVITAS)\n2: Project Management Intern (Consigli)\n3: RE Intern (CIVITAS)\n4: Salesperson (BarBak Hospitality)\n5: Barista (Tiger Sugar)",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 1/11/2024 - 5/17/2024\n2: 6/2/2024 - 8/4/2024\n3: 9/10/2024 - 12/18/2024\n4: 9/16/2024 - 10/12/2024\n5: 9/13/2024 - 12/31/2024",
+            "formatted": "1: 1/11/2024 - 5/17/2024\n2: 6/2/2024 - 8/4/2024\n3: 9/10/2024 - 12/18/2024\n4: 9/16/2024 - 10/12/2024\n5: 9/13/2024 - 12/31/2024",
+            "type": "string"
+          },
+          "Time": {
+            "raw": "1: 6 hrs/week\n2: 40 hrs/week\n3: 4 hrs/week\n4: 15-20 hrs/week\n5: 15-20 hrs/week",
+            "formatted": "1: 6 hrs/week\n2: 40 hrs/week\n3: 4 hrs/week\n4: 15-20 hrs/week\n5: 15-20 hrs/week",
+            "type": "string"
+          },
+          "Pay Details": {
+            "raw": "1: $20/hr (1099)\n2: $26/hr (w-2)\n3: $20/hr (1099)\n4: $20/hr+com (1099)\n5: $14/hr+tips (w-2)",
+            "formatted": "1: $20/hr (1099)\n2: $26/hr (w-2)\n3: $20/hr (1099)\n4: $20/hr+com (1099)\n5: $14/hr+tips (w-2)",
+            "type": "string"
+          },
+          "Gross Divided": {
+            "raw": "1: $1,992\n2: $9,152\n3: $1,200\n4: $1,226.80\n5: $3,792.80",
+            "formatted": "1: $1,992\n2: $9,152\n3: $1,200\n4: $1,226.80\n5: $3,792.80",
+            "type": "string"
+          },
+          "Gross Total Pay": {
+            "raw": 17363.6,
+            "formatted": " $ 17,363.60 ",
+            "type": "number"
+          },
+          "Net Divided": {
+            "raw": "1: $1,992\n2: $7,215.72\n3: $1,200\n4: $1,226.80\n5: $3,314.41",
+            "formatted": "1: $1,992\n2: $7,215.72\n3: $1,200\n4: $1,226.80\n5: $3,314.41",
+            "type": "string"
+          },
+          "Net Total Pay": {
+            "raw": 14947.93,
+            "formatted": " $ 14,947.93 ",
+            "type": "number"
+          },
+          "Notes": {
+            "raw": "Continued working for CIVITAS into the spring semester to try to make some money, but it wasn't much honestly. I got a much higher paying job at Consigli, where I worked for the summer, but no overtime could be made. Working again for CIVITAS in the fall semester but only 4hr/week so nothing substantial. For BarBak I get $100 for new accounts that I sign on that do at least $1000 in sales and 3% for any orders they make. BarBak canelled hourly and gave me the option to leave or do commission only; it wasn't worth it so I just left. (College Junior Year, 3rd-4th Year)",
+            "formatted": "Continued working for CIVITAS into the spring semester to try to make some money, but it wasn't much honestly. I got a much higher paying job at Consigli, where I worked for the summer, but no overtime could be made. Working again for CIVITAS in the fall semester but only 4hr/week so nothing substantial. For BarBak I get $100 for new accounts that I sign on that do at least $1000 in sales and 3% for any orders they make. BarBak canelled hourly and gave me the option to leave or do commission only; it wasn't worth it so I just left. (College Junior Year, 3rd-4th Year)",
+            "type": "string"
+          },
+          "K": null,
+          "L": null,
+          "M": null,
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": null,
+          "AA": null,
+          "AB": null,
+          "AC": null,
+          "AD": null,
+          "AE": null,
+          "AF": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2025,
+            "formatted": "2025",
+            "type": "number"
+          },
+          "Job Title(s)": {
+            "raw": "1: RE Intern (CIVITAS)\n2: Barista (Tiger Sugar)\n3: HU I-LEAD (Howard University)\n4: CEO (Fiscelle Services LLC)\n5: RE Property Tax Intern (Ryan LLC)\n6: SYEP Employee\n7: Research Assistant (Howard University)\n8: RE Intern (CIVITAS)",
+            "formatted": "1: RE Intern (CIVITAS)\n2: Barista (Tiger Sugar)\n3: HU I-LEAD (Howard University)\n4: CEO (Fiscelle Services LLC)\n5: RE Property Tax Intern (Ryan LLC)\n6: SYEP Employee\n7: Research Assistant (Howard University)\n8: RE Intern (CIVITAS)",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 1/7/2025 - 5/8/2025\n2: 1/1/2025 - 5/11/2025\n3: 1/15/2025 - 5/9/2025\n4: 3/24/2025-12/31/2025\n5: 5/27/2025 - 8/8/2025\n6: 6/22/2025 - 6/28/2025\n7: 6/22/2025 - 12/17/2025\n8: 9/22/2025-12/31/2025",
+            "formatted": "1: 1/7/2025 - 5/8/2025\n2: 1/1/2025 - 5/11/2025\n3: 1/15/2025 - 5/9/2025\n4: 3/24/2025-12/31/2025\n5: 5/27/2025 - 8/8/2025\n6: 6/22/2025 - 6/28/2025\n7: 6/22/2025 - 12/17/2025\n8: 9/22/2025-12/31/2025",
+            "type": "string"
+          },
+          "Time": {
+            "raw": "1: 4 hrs/week\n2: 15-20 hrs/week\n3: ~5 hrs/week\n4: ? hrs/week\n5: 40 hrs/week\n6: 0 hrs/week\n7: <5 hrs/week\n8: 12 hrs/week",
+            "formatted": "1: 4 hrs/week\n2: 15-20 hrs/week\n3: ~5 hrs/week\n4: ? hrs/week\n5: 40 hrs/week\n6: 0 hrs/week\n7: <5 hrs/week\n8: 12 hrs/week",
+            "type": "string"
+          },
+          "Pay Details": {
+            "raw": "1: $20/hr (1099)\n2: $14/hr (w-2)\n3: $3900 stipend\n4: Self-Employed\n5: $25.90/hr (w-2)\n6: $9/hr (w-2)\n7: $3,000 stipend\n8: $20/hr (1099)",
+            "formatted": "1: $20/hr (1099)\n2: $14/hr (w-2)\n3: $3900 stipend\n4: Self-Employed\n5: $25.90/hr (w-2)\n6: $9/hr (w-2)\n7: $3,000 stipend\n8: $20/hr (1099)",
+            "type": "string"
+          },
+          "Gross Divided": {
+            "raw": "1: $1,940\n2: $4,279.09\n3: $3,900\n4: $0\n5: $ (est)\n6: $225\n7: $3,000\n8: $11,940",
+            "formatted": "1: $1,940\n2: $4,279.09\n3: $3,900\n4: $0\n5: $ (est)\n6: $225\n7: $3,000\n8: $11,940",
+            "type": "string"
+          },
+          "Gross Total Pay": {
+            "raw": 20844.09,
+            "formatted": " $ 20,844.09 ",
+            "type": "number"
+          },
+          "Net Divided": {
+            "raw": "1: $1,940\n2: $3,763.21\n3: $3,900\n4: $0\n5: $7,770 (est)\n6: $198.79\n7: $3,000\n8: $11,940",
+            "formatted": "1: $1,940\n2: $3,763.21\n3: $3,900\n4: $0\n5: $7,770 (est)\n6: $198.79\n7: $3,000\n8: $11,940",
+            "type": "string"
+          },
+          "Net Total Pay": {
+            "raw": 24742,
+            "formatted": " $ 24,742.00 ",
+            "type": "number"
+          },
+          "Notes": {
+            "raw": "Continued working for CIVITAS into the fall semester to make a little bit of money. Also worked weekends (sat-sun) at Tiger Sguar and then I did HU-ILEAD for the spring semester. Secured a summer internship at Ryan late last year. CIVITAS gave me a $500 bonus listed on my last paycheck too which was nice. Quit the boba job when summer started and took about a week off from Ryan to hike with friends. Also had one of my paychecks at tiger sugar sent over through zelle. Also for some reason my last paycheck at tiger sugar was $17.50/hr instead of $14. Randomly got the first week of SYEP pay, so made $200 while doing nothing. Working at Ryan is terrible and I definitely can see myself at CIVITAS; there's just so much time I'm spend doing nothing and I don't really fit in here.I ended up choosing CIVITAS for the full time offer.",
+            "formatted": "Continued working for CIVITAS into the fall semester to make a little bit of money. Also worked weekends (sat-sun) at Tiger Sguar and then I did HU-ILEAD for the spring semester. Secured a summer internship at Ryan late last year. CIVITAS gave me a $500 bonus listed on my last paycheck too which was nice. Quit the boba job when summer started and took about a week off from Ryan to hike with friends. Also had one of my paychecks at tiger sugar sent over through zelle. Also for some reason my last paycheck at tiger sugar was $17.50/hr instead of $14. Randomly got the first week of SYEP pay, so made $200 while doing nothing. Working at Ryan is terrible and I definitely can see myself at CIVITAS; there's just so much time I'm spend doing nothing and I don't really fit in here.I ended up choosing CIVITAS for the full time offer.",
+            "type": "string"
+          },
+          "K": null,
+          "L": null,
+          "M": null,
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": null,
+          "AA": null,
+          "AB": null,
+          "AC": null,
+          "AD": null,
+          "AE": null,
+          "AF": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2026,
+            "formatted": "2026",
+            "type": "number"
+          },
+          "Job Title(s)": {
+            "raw": "1: RE Intern (CIVITAS)\n2: RE Analyst (CIVITAS)\n3: CEO (Fiscelle Services LLC)",
+            "formatted": "1: RE Intern (CIVITAS)\n2: RE Analyst (CIVITAS)\n3: CEO (Fiscelle Services LLC)",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 1/1/2026 - 5/11/2026\n2: 5/11/2026 - 12/31/2026\n3: 1/1/2026 - 12/31/2026",
+            "formatted": "1: 1/1/2026 - 5/11/2026\n2: 5/11/2026 - 12/31/2026\n3: 1/1/2026 - 12/31/2026",
+            "type": "string"
+          },
+          "Time": {
+            "raw": "1: 24 hrs/week\n2: 40 hrs/week\n3: ? hrs/week",
+            "formatted": "1: 24 hrs/week\n2: 40 hrs/week\n3: ? hrs/week",
+            "type": "string"
+          },
+          "Pay Details": {
+            "raw": "1: $20/hr (1099)\n2: $75,000/yr (1099)\n3: Self-Employed",
+            "formatted": "1: $20/hr (1099)\n2: $75,000/yr (1099)\n3: Self-Employed",
+            "type": "string"
+          },
+          "Gross Divided": null,
+          "Gross Total Pay": null,
+          "Net Divided": null,
+          "Net Total Pay": null,
+          "Notes": null,
+          "K": null,
+          "L": null,
+          "M": null,
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": null,
+          "AA": null,
+          "AB": null,
+          "AC": null,
+          "AD": null,
+          "AE": null,
+          "AF": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        }
+      ]
+    },
+    "Academic Progression": {
+      "columns": [
+        {
+          "id": "A",
+          "label": "Year",
+          "type": "number"
+        },
+        {
+          "id": "B",
+          "label": "Academic Title(s)",
+          "type": "string"
+        },
+        {
+          "id": "C",
+          "label": "Length",
+          "type": "string"
+        },
+        {
+          "id": "D",
+          "label": "Time / Credits",
+          "type": "string"
+        },
+        {
+          "id": "E",
+          "label": "Category",
+          "type": "string"
+        }
+      ],
+      "rows": [
+        {
+          "Year": {
+            "raw": 2021,
+            "formatted": "2021",
+            "type": "number"
+          },
+          "Academic Title(s)": {
+            "raw": "1: Freshman Biology Major (Howard University)",
+            "formatted": "1: Freshman Biology Major (Howard University)",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 8/23/2021-12/14/2021",
+            "formatted": "1: 8/23/2021-12/14/2021",
+            "type": "string"
+          },
+          "Time / Credits": {
+            "raw": "1: 15 Credits (4.00 GPA)",
+            "formatted": "1: 15 Credits (4.00 GPA)",
+            "type": "string"
+          },
+          "Category": {
+            "raw": "1: Academics",
+            "formatted": "1: Academics",
+            "type": "string"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2022,
+            "formatted": "2022",
+            "type": "number"
+          },
+          "Academic Title(s)": {
+            "raw": "1: Freshman Biology Major (Howard University)\n2: Sophomore Civil Major (Howard University)",
+            "formatted": "1: Freshman Biology Major (Howard University)\n2: Sophomore Civil Major (Howard University)",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 1/18/2022-5/4/2022\n2: 8/22/2022-12/13/2022",
+            "formatted": "1: 1/18/2022-5/4/2022\n2: 8/22/2022-12/13/2022",
+            "type": "string"
+          },
+          "Time / Credits": {
+            "raw": "1: 17 Credits (4.00 GPA)\n2: 17 Credits (3.82 GPA)",
+            "formatted": "1: 17 Credits (4.00 GPA)\n2: 17 Credits (3.82 GPA)",
+            "type": "string"
+          },
+          "Category": {
+            "raw": "1: Academics\n2: Academics",
+            "formatted": "1: Academics\n2: Academics",
+            "type": "string"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2023,
+            "formatted": "2023",
+            "type": "number"
+          },
+          "Academic Title(s)": {
+            "raw": "1: Sophomore Civil Major (Howard University)\n2: Junior Civil Major (Howard University)\n3: OSHA 30-Hour Construction\n4: DC RE Salesperson License",
+            "formatted": "1: Sophomore Civil Major (Howard University)\n2: Junior Civil Major (Howard University)\n3: OSHA 30-Hour Construction\n4: DC RE Salesperson License",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 1/9/2023-5/10/2023\n2: 8/21/2023-12/16/2023\n3: 5/26/2023\n4: 8/11/2023",
+            "formatted": "1: 1/9/2023-5/10/2023\n2: 8/21/2023-12/16/2023\n3: 5/26/2023\n4: 8/11/2023",
+            "type": "string"
+          },
+          "Time / Credits": {
+            "raw": "1: 17 Credits (4.00 GPA)\n2: 16 Credits (4.00 GPA)\n3: Granted (86/100)\n4: Granted",
+            "formatted": "1: 17 Credits (4.00 GPA)\n2: 16 Credits (4.00 GPA)\n3: Granted (86/100)\n4: Granted",
+            "type": "string"
+          },
+          "Category": {
+            "raw": "1: Academics\n2: Academics\n3: Certifications / Tests\n4: Certifications / Tests",
+            "formatted": "1: Academics\n2: Academics\n3: Certifications / Tests\n4: Certifications / Tests",
+            "type": "string"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2024,
+            "formatted": "2024",
+            "type": "number"
+          },
+          "Academic Title(s)": {
+            "raw": "1: Junior Civil Major (Howard University)\n2: Senior Civil Major (Howard University)",
+            "formatted": "1: Junior Civil Major (Howard University)\n2: Senior Civil Major (Howard University)",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 1/8/2024-5/8/2024\n2: 8/19/2024-12/14/2024",
+            "formatted": "1: 1/8/2024-5/8/2024\n2: 8/19/2024-12/14/2024",
+            "type": "string"
+          },
+          "Time / Credits": {
+            "raw": "1: 15 Credits (3.80 GPA)\n2: 17 Credits (4.00 GPA)",
+            "formatted": "1: 15 Credits (3.80 GPA)\n2: 17 Credits (4.00 GPA)",
+            "type": "string"
+          },
+          "Category": {
+            "raw": "1: Academics\n2: Academics",
+            "formatted": "1: Academics\n2: Academics",
+            "type": "string"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2025,
+            "formatted": "2025",
+            "type": "number"
+          },
+          "Academic Title(s)": {
+            "raw": "1: Senior Civil Major (Howard University)\n2: Super Senior Civil Major (Howard University)\n3: SEE Part 2 Exam\n4: SEE Part 1 Exam\n5: SEE Part 3 Exam\n6: FE Civil Exam\n7: GA RE Salesperson License",
+            "formatted": "1: Senior Civil Major (Howard University)\n2: Super Senior Civil Major (Howard University)\n3: SEE Part 2 Exam\n4: SEE Part 1 Exam\n5: SEE Part 3 Exam\n6: FE Civil Exam\n7: GA RE Salesperson License",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 1/13/2025-5/7/2025\n2: 8/18/2025-12/16/2025\n3: 12/22/2025\n4: 6/14/2025\n5: 10/18/2025\n6: 12/16/2025\n7: 3/24/2025",
+            "formatted": "1: 1/13/2025-5/7/2025\n2: 8/18/2025-12/16/2025\n3: 12/22/2025\n4: 6/14/2025\n5: 10/18/2025\n6: 12/16/2025\n7: 3/24/2025",
+            "type": "string"
+          },
+          "Time / Credits": {
+            "raw": "1: 16 Credits (4.00 GPA)\n2: 17 Credits (4.00 GPA)\n3: Pass\n4: Pass\n5: Pass\n6: Fail\n7: Granted",
+            "formatted": "1: 16 Credits (4.00 GPA)\n2: 17 Credits (4.00 GPA)\n3: Pass\n4: Pass\n5: Pass\n6: Fail\n7: Granted",
+            "type": "string"
+          },
+          "Category": {
+            "raw": "1: Academics\n2: Academics\n3: Certifications / Tests\n4: Certifications / Tests\n5: Certifications / Tests\n6: Certifications / Tests\n7: Certifications / Tests",
+            "formatted": "1: Academics\n2: Academics\n3: Certifications / Tests\n4: Certifications / Tests\n5: Certifications / Tests\n6: Certifications / Tests\n7: Certifications / Tests",
+            "type": "string"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2026,
+            "formatted": "2026",
+            "type": "number"
+          },
+          "Academic Title(s)": {
+            "raw": "1: Super Senior Civil Major (Howard University)\n2: Enrolled Agent License\n3: GA RE Salesperson License\n4: BSCE Degree (Howard University)",
+            "formatted": "1: Super Senior Civil Major (Howard University)\n2: Enrolled Agent License\n3: GA RE Salesperson License\n4: BSCE Degree (Howard University)",
+            "type": "string"
+          },
+          "Length": {
+            "raw": "1: 1/12/2026-4/24/2026\n2: 1/20/2026\n3: 3/24/2026\n4: 5/9/2026",
+            "formatted": "1: 1/12/2026-4/24/2026\n2: 1/20/2026\n3: 3/24/2026\n4: 5/9/2026",
+            "type": "string"
+          },
+          "Time / Credits": {
+            "raw": "1: 6 Credits (4.00 GPA)\n2: Granted\n3: Expired\n4: Conferred",
+            "formatted": "1: 6 Credits (4.00 GPA)\n2: Granted\n3: Expired\n4: Conferred",
+            "type": "string"
+          },
+          "Category": {
+            "raw": "1: Academics\n2: Certifications / Tests\n3: Certifications / Tests\n4: Academics",
+            "formatted": "1: Academics\n2: Certifications / Tests\n3: Certifications / Tests\n4: Academics",
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "Career / Academic Notes": {
+      "columns": [
+        {
+          "id": "A",
+          "label": "Year",
+          "type": "number"
+        },
+        {
+          "id": "B",
+          "label": "Notes",
+          "type": "string"
+        },
+        {
+          "id": "C",
+          "label": "C",
+          "type": "string"
+        },
+        {
+          "id": "D",
+          "label": "D",
+          "type": "string"
+        },
+        {
+          "id": "E",
+          "label": "E",
+          "type": "string"
+        },
+        {
+          "id": "F",
+          "label": "F",
+          "type": "string"
+        },
+        {
+          "id": "G",
+          "label": "G",
+          "type": "string"
+        },
+        {
+          "id": "H",
+          "label": "H",
+          "type": "string"
+        },
+        {
+          "id": "I",
+          "label": "I",
+          "type": "string"
+        },
+        {
+          "id": "J",
+          "label": "J",
+          "type": "string"
+        },
+        {
+          "id": "K",
+          "label": "K",
+          "type": "string"
+        },
+        {
+          "id": "L",
+          "label": "L",
+          "type": "string"
+        },
+        {
+          "id": "M",
+          "label": "M",
+          "type": "string"
+        },
+        {
+          "id": "N",
+          "label": "N",
+          "type": "string"
+        },
+        {
+          "id": "O",
+          "label": "O",
+          "type": "string"
+        },
+        {
+          "id": "P",
+          "label": "P",
+          "type": "string"
+        },
+        {
+          "id": "Q",
+          "label": "Q",
+          "type": "string"
+        },
+        {
+          "id": "R",
+          "label": "R",
+          "type": "string"
+        },
+        {
+          "id": "S",
+          "label": "S",
+          "type": "string"
+        },
+        {
+          "id": "T",
+          "label": "T",
+          "type": "string"
+        },
+        {
+          "id": "U",
+          "label": "U",
+          "type": "string"
+        },
+        {
+          "id": "V",
+          "label": "V",
+          "type": "string"
+        },
+        {
+          "id": "W",
+          "label": "W",
+          "type": "string"
+        },
+        {
+          "id": "X",
+          "label": "X",
+          "type": "string"
+        }
+      ],
+      "rows": [
+        {
+          "Year": {
+            "raw": 2022,
+            "formatted": "2022",
+            "type": "number"
+          },
+          "Notes": {
+            "raw": "First real job making a lot of money, worked it throughout the summer and then kept working during the school year. I made a lot of money in tips as well but those aren't noted here since I did not record them at the time. I picked up a lot of shifts as well and worked into school working 7am-11pm Sat-Sun and sometimes picking up the 3pm-11pm on Friday's as well. If you include the tips I made, I think it was quite good money for a college student (College Freshman Year (Fall+), 1st-2nd Year) Freshman in terms of degree progress but I'm a year behind. Note that in the following notes. The year's correlate correctly, and have two for the spring->fall. Started college in 2021",
+            "formatted": "First real job making a lot of money, worked it throughout the summer and then kept working during the school year. I made a lot of money in tips as well but those aren't noted here since I did not record them at the time. I picked up a lot of shifts as well and worked into school working 7am-11pm Sat-Sun and sometimes picking up the 3pm-11pm on Friday's as well. If you include the tips I made, I think it was quite good money for a college student (College Freshman Year (Fall+), 1st-2nd Year) Freshman in terms of degree progress but I'm a year behind. Note that in the following notes. The year's correlate correctly, and have two for the spring->fall. Started college in 2021",
+            "type": "string"
+          },
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null,
+          "J": null,
+          "K": null,
+          "L": null,
+          "M": null,
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2023,
+            "formatted": "2023",
+            "type": "number"
+          },
+          "Notes": {
+            "raw": "I was focused on getting an internship in a RE or engineering field and did that. I also did not actually work as an SYEP employee this year, but got paid regardless. (College Sophmore Year (Fall+), 2nd-3rd Year)",
+            "formatted": "I was focused on getting an internship in a RE or engineering field and did that. I also did not actually work as an SYEP employee this year, but got paid regardless. (College Sophmore Year (Fall+), 2nd-3rd Year)",
+            "type": "string"
+          },
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null,
+          "J": null,
+          "K": null,
+          "L": null,
+          "M": null,
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2024,
+            "formatted": "2024",
+            "type": "number"
+          },
+          "Notes": {
+            "raw": "Continued working for CIVITAS into the spring semester to try to make some money, but it wasn't much honestly. I got a much higher paying job at Consigli, where I worked for the summer, but no overtime could be made. Working again for CIVITAS in the fall semester but only 4hr/week so nothing substantial. For BarBak I get $100 for new accounts that I sign on that do at least $1000 in sales and 3% for any orders they make. BarBak canelled hourly and gave me the option to leave or do commission only; it wasn't worth it so I just left. (College Junior Year, 3rd-4th Year)",
+            "formatted": "Continued working for CIVITAS into the spring semester to try to make some money, but it wasn't much honestly. I got a much higher paying job at Consigli, where I worked for the summer, but no overtime could be made. Working again for CIVITAS in the fall semester but only 4hr/week so nothing substantial. For BarBak I get $100 for new accounts that I sign on that do at least $1000 in sales and 3% for any orders they make. BarBak canelled hourly and gave me the option to leave or do commission only; it wasn't worth it so I just left. (College Junior Year, 3rd-4th Year)",
+            "type": "string"
+          },
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null,
+          "J": null,
+          "K": null,
+          "L": null,
+          "M": null,
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2025,
+            "formatted": "2025",
+            "type": "number"
+          },
+          "Notes": {
+            "raw": "Continued working for CIVITAS into the fall semester to make a little bit of money. Also worked weekends (sat-sun) at Tiger Sguar and then I did HU-ILEAD for the spring semester. Secured a summer internship at Ryan late last year. CIVITAS gave me a $500 bonus listed on my last paycheck too which was nice. Quit the boba job when summer started and took about a week off from Ryan to hike with friends. Also had one of my paychecks at tiger sugar sent over through zelle. Also for some reason my last paycheck at tiger sugar was $17.50/hr instead of $14. Randomly got the first week of SYEP pay, so made $200 while doing nothing. Working at Ryan is terrible and I definitely can see myself at CIVITAS; there's just so much time I'm doing nothing here and I don't really fit in here.",
+            "formatted": "Continued working for CIVITAS into the fall semester to make a little bit of money. Also worked weekends (sat-sun) at Tiger Sguar and then I did HU-ILEAD for the spring semester. Secured a summer internship at Ryan late last year. CIVITAS gave me a $500 bonus listed on my last paycheck too which was nice. Quit the boba job when summer started and took about a week off from Ryan to hike with friends. Also had one of my paychecks at tiger sugar sent over through zelle. Also for some reason my last paycheck at tiger sugar was $17.50/hr instead of $14. Randomly got the first week of SYEP pay, so made $200 while doing nothing. Working at Ryan is terrible and I definitely can see myself at CIVITAS; there's just so much time I'm doing nothing here and I don't really fit in here.",
+            "type": "string"
+          },
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null,
+          "J": null,
+          "K": null,
+          "L": null,
+          "M": null,
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Year": {
+            "raw": 2026,
+            "formatted": "2026",
+            "type": "number"
+          },
+          "Notes": null,
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null,
+          "J": null,
+          "K": null,
+          "L": null,
+          "M": null,
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        }
+      ]
+    }
+  }
+}

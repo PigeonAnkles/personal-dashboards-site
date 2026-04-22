@@ -1,0 +1,664 @@
+{
+  "slug": "bowling",
+  "title": "Bowling",
+  "subtitle": "Head-to-head results, scores, and bragging rights",
+  "accent": "#77c7ff",
+  "sheetId": "1cbtOKJ_XFV8ejqM6FhZfP2GutnyapPZJkZKkuIKVEBw",
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1cbtOKJ_XFV8ejqM6FhZfP2GutnyapPZJkZKkuIKVEBw/edit?usp=sharing",
+  "tabs": {
+    "Visualized": {
+      "columns": [
+        {
+          "id": "A",
+          "label": "A",
+          "type": "string"
+        },
+        {
+          "id": "B",
+          "label": "B",
+          "type": "string"
+        },
+        {
+          "id": "C",
+          "label": "C",
+          "type": "string"
+        },
+        {
+          "id": "D",
+          "label": "D",
+          "type": "string"
+        },
+        {
+          "id": "E",
+          "label": "E",
+          "type": "string"
+        },
+        {
+          "id": "F",
+          "label": "F",
+          "type": "string"
+        },
+        {
+          "id": "G",
+          "label": "G",
+          "type": "string"
+        },
+        {
+          "id": "H",
+          "label": "H",
+          "type": "string"
+        },
+        {
+          "id": "I",
+          "label": "I",
+          "type": "string"
+        },
+        {
+          "id": "J",
+          "label": "J",
+          "type": "string"
+        },
+        {
+          "id": "K",
+          "label": "Score Kamyia",
+          "type": "number"
+        },
+        {
+          "id": "L",
+          "label": "Abdul",
+          "type": "number"
+        },
+        {
+          "id": "M",
+          "label": "Tied",
+          "type": "number"
+        }
+      ],
+      "rows": [
+        {
+          "A": null,
+          "B": null,
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null,
+          "J": null,
+          "Score Kamyia": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "Abdul": {
+            "raw": 24,
+            "formatted": "24",
+            "type": "number"
+          },
+          "Tied": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          }
+        }
+      ]
+    },
+    "Processed Data": {
+      "columns": [
+        {
+          "id": "A",
+          "label": "Date",
+          "type": "date"
+        },
+        {
+          "id": "B",
+          "label": "Kamyia Wins",
+          "type": "number"
+        },
+        {
+          "id": "C",
+          "label": "Abdul Wins",
+          "type": "number"
+        },
+        {
+          "id": "D",
+          "label": "Kamyia Total Points",
+          "type": "number"
+        },
+        {
+          "id": "E",
+          "label": "Abdul Total Points",
+          "type": "number"
+        },
+        {
+          "id": "F",
+          "label": "Kamyia Avg Points",
+          "type": "number"
+        },
+        {
+          "id": "G",
+          "label": "Abdul Avg Points",
+          "type": "number"
+        },
+        {
+          "id": "H",
+          "label": "Daily Winner",
+          "type": "string"
+        },
+        {
+          "id": "I",
+          "label": "Highest Score",
+          "type": "number"
+        },
+        {
+          "id": "J",
+          "label": "Highest Score Holder",
+          "type": "string"
+        },
+        {
+          "id": "K",
+          "label": "Best Kamyia Game",
+          "type": "number"
+        },
+        {
+          "id": "L",
+          "label": "Best Abdul Game",
+          "type": "number"
+        },
+        {
+          "id": "M",
+          "label": "Total Games",
+          "type": "number"
+        },
+        {
+          "id": "N",
+          "label": "N",
+          "type": "string"
+        },
+        {
+          "id": "O",
+          "label": "O",
+          "type": "string"
+        },
+        {
+          "id": "P",
+          "label": "P",
+          "type": "string"
+        },
+        {
+          "id": "Q",
+          "label": "Q",
+          "type": "string"
+        },
+        {
+          "id": "R",
+          "label": "R",
+          "type": "string"
+        },
+        {
+          "id": "S",
+          "label": "S",
+          "type": "string"
+        },
+        {
+          "id": "T",
+          "label": "T",
+          "type": "string"
+        },
+        {
+          "id": "U",
+          "label": "U",
+          "type": "string"
+        },
+        {
+          "id": "V",
+          "label": "V",
+          "type": "string"
+        },
+        {
+          "id": "W",
+          "label": "W",
+          "type": "string"
+        },
+        {
+          "id": "X",
+          "label": "X",
+          "type": "string"
+        },
+        {
+          "id": "Y",
+          "label": "Y",
+          "type": "string"
+        },
+        {
+          "id": "Z",
+          "label": "Z",
+          "type": "string"
+        }
+      ],
+      "rows": [
+        {
+          "Date": {
+            "raw": "2025-11-01T00:00:00.000Z",
+            "formatted": "11/1/2025",
+            "type": "date"
+          },
+          "Kamyia Wins": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Abdul Wins": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "Kamyia Total Points": {
+            "raw": 420,
+            "formatted": "420",
+            "type": "number"
+          },
+          "Abdul Total Points": {
+            "raw": 431,
+            "formatted": "431",
+            "type": "number"
+          },
+          "Kamyia Avg Points": {
+            "raw": 84,
+            "formatted": "84",
+            "type": "number"
+          },
+          "Abdul Avg Points": {
+            "raw": 86.2,
+            "formatted": "86",
+            "type": "number"
+          },
+          "Daily Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Highest Score": {
+            "raw": 129,
+            "formatted": "129",
+            "type": "number"
+          },
+          "Highest Score Holder": {
+            "raw": "Kamyia",
+            "formatted": "Kamyia",
+            "type": "string"
+          },
+          "Best Kamyia Game": {
+            "raw": 129,
+            "formatted": "129",
+            "type": "number"
+          },
+          "Best Abdul Game": {
+            "raw": 100,
+            "formatted": "100",
+            "type": "number"
+          },
+          "Total Games": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2025-12-24T00:00:00.000Z",
+            "formatted": "12/24/2025",
+            "type": "date"
+          },
+          "Kamyia Wins": {
+            "raw": 2,
+            "formatted": "2",
+            "type": "number"
+          },
+          "Abdul Wins": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
+          "Kamyia Total Points": {
+            "raw": 398,
+            "formatted": "398",
+            "type": "number"
+          },
+          "Abdul Total Points": {
+            "raw": 558,
+            "formatted": "558",
+            "type": "number"
+          },
+          "Kamyia Avg Points": {
+            "raw": 66.33333333333333,
+            "formatted": "66",
+            "type": "number"
+          },
+          "Abdul Avg Points": {
+            "raw": 93,
+            "formatted": "93",
+            "type": "number"
+          },
+          "Daily Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Highest Score": {
+            "raw": 122,
+            "formatted": "122",
+            "type": "number"
+          },
+          "Highest Score Holder": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Best Kamyia Game": {
+            "raw": 88,
+            "formatted": "88",
+            "type": "number"
+          },
+          "Best Abdul Game": {
+            "raw": 122,
+            "formatted": "122",
+            "type": "number"
+          },
+          "Total Games": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-02-07T00:00:00.000Z",
+            "formatted": "2/7/2026",
+            "type": "date"
+          },
+          "Kamyia Wins": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
+          "Abdul Wins": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "Kamyia Total Points": {
+            "raw": 282,
+            "formatted": "282",
+            "type": "number"
+          },
+          "Abdul Total Points": {
+            "raw": 522,
+            "formatted": "522",
+            "type": "number"
+          },
+          "Kamyia Avg Points": {
+            "raw": 47,
+            "formatted": "47",
+            "type": "number"
+          },
+          "Abdul Avg Points": {
+            "raw": 87,
+            "formatted": "87",
+            "type": "number"
+          },
+          "Daily Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Highest Score": {
+            "raw": 130,
+            "formatted": "130",
+            "type": "number"
+          },
+          "Highest Score Holder": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Best Kamyia Game": {
+            "raw": 77,
+            "formatted": "77",
+            "type": "number"
+          },
+          "Best Abdul Game": {
+            "raw": 130,
+            "formatted": "130",
+            "type": "number"
+          },
+          "Total Games": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-03-08T00:00:00.000Z",
+            "formatted": "3/8/2026",
+            "type": "date"
+          },
+          "Kamyia Wins": {
+            "raw": 2,
+            "formatted": "2",
+            "type": "number"
+          },
+          "Abdul Wins": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "Kamyia Total Points": {
+            "raw": 667,
+            "formatted": "667",
+            "type": "number"
+          },
+          "Abdul Total Points": {
+            "raw": 754,
+            "formatted": "754",
+            "type": "number"
+          },
+          "Kamyia Avg Points": {
+            "raw": 83.375,
+            "formatted": "83",
+            "type": "number"
+          },
+          "Abdul Avg Points": {
+            "raw": 94.25,
+            "formatted": "94",
+            "type": "number"
+          },
+          "Daily Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Highest Score": {
+            "raw": 119,
+            "formatted": "119",
+            "type": "number"
+          },
+          "Highest Score Holder": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Best Kamyia Game": {
+            "raw": 101,
+            "formatted": "101",
+            "type": "number"
+          },
+          "Best Abdul Game": {
+            "raw": 119,
+            "formatted": "119",
+            "type": "number"
+          },
+          "Total Games": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-04-21T00:00:00.000Z",
+            "formatted": "4/21/2026",
+            "type": "date"
+          },
+          "Kamyia Wins": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
+          "Abdul Wins": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "Kamyia Total Points": {
+            "raw": 246,
+            "formatted": "246",
+            "type": "number"
+          },
+          "Abdul Total Points": {
+            "raw": 455,
+            "formatted": "455",
+            "type": "number"
+          },
+          "Kamyia Avg Points": {
+            "raw": 49.2,
+            "formatted": "49",
+            "type": "number"
+          },
+          "Abdul Avg Points": {
+            "raw": 91,
+            "formatted": "91",
+            "type": "number"
+          },
+          "Daily Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Highest Score": {
+            "raw": 117,
+            "formatted": "117",
+            "type": "number"
+          },
+          "Highest Score Holder": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Best Kamyia Game": {
+            "raw": 67,
+            "formatted": "67",
+            "type": "number"
+          },
+          "Best Abdul Game": {
+            "raw": 117,
+            "formatted": "117",
+            "type": "number"
+          },
+          "Total Games": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        }
+      ]
+    }
+  }
+}

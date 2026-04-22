@@ -1,0 +1,12 @@
+{
+  "name": "personal-dashboards-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-data": "node scripts/fetch-sheets.mjs",
+    "build": "node scripts/build-site.mjs",
+    "refresh": "npm run sync-data && npm run build",
+    "start": "node scripts/serve.mjs"
+  }
+}

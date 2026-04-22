@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Take a quick love language quiz and see your five love languages ranked in order.">
+  <title>Love Language Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-glow page-glow-left" aria-hidden="true"></div>
+  <div class="page-glow page-glow-right" aria-hidden="true"></div>
+
+  <main class="app-shell">
+    <header class="site-header">
+      <p class="brand-subtitle">Love Language Quiz</p>
+    </header>
+
+    <section id="intro-screen" class="screen active" aria-labelledby="intro-title">
+      <div class="hero-card">
+        <p class="eyebrow">Relationship Insight Quiz</p>
+        <h1 id="intro-title">Discover how you feel most loved.</h1>
+        <p class="hero-copy">
+          Answer 35 quick either-or questions and see your five love languages ranked from strongest to least strong.
+        </p>
+
+        <div class="pill-row" aria-label="Love language categories">
+          <span class="pill pill-affirmation">Words of Affirmation</span>
+          <span class="pill pill-time">Quality Time</span>
+          <span class="pill pill-gifts">Receiving Gifts</span>
+          <span class="pill pill-service">Acts of Service</span>
+          <span class="pill pill-touch">Physical Touch</span>
+        </div>
+
+        <div class="hero-panel">
+          <p>Choose the option that feels more true for you. There are no right or wrong answers.</p>
+          <p>Take it honestly, compare results, and see which expressions of love stand out most for each of you.</p>
+        </div>
+
+        <button id="start-btn" class="primary-button" type="button">Start the quiz</button>
+      </div>
+    </section>
+
+    <section id="quiz-screen" class="screen" aria-labelledby="question-text">
+      <div class="quiz-header">
+        <button id="back-btn" class="icon-button" type="button" aria-label="Go back to the previous question">
+          <span aria-hidden="true">&#8592;</span>
+        </button>
+        <div class="quiz-status" aria-live="polite">
+          <p class="question-count">Question <span id="question-number">1</span> of <span id="question-total">25</span></p>
+          <p class="question-helper">Choose the statement that fits you best.</p>
+        </div>
+      </div>
+
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+
+      <div class="question-card">
+        <p class="question-label">What feels most meaningful?</p>
+        <h2 id="question-text" class="question-text"></h2>
+        <div id="options-container" class="option-grid"></div>
+      </div>
+    </section>
+
+    <section id="results-screen" class="screen" aria-labelledby="results-title">
+      <div class="results-card">
+        <p class="eyebrow">Your Results</p>
+        <h2 id="results-title">Your love language order</h2>
+        <p id="results-summary" class="results-summary"></p>
+
+        <div class="results-visual">
+          <div id="results-ring" class="results-ring">
+            <div class="results-center">
+              <svg class="profile-icon" viewBox="0 0 120 120" aria-hidden="true">
+                <circle cx="60" cy="36" r="17"></circle>
+                <path d="M33 89c0-15 12-27 27-27s27 12 27 27"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div id="ranking-list" class="ranking-list"></div>
+
+        <div class="insight-block">
+          <h3 class="insight-title">What each score suggests</h3>
+          <div id="explanations" class="explanations"></div>
+        </div>
+
+        <div class="insight-block">
+          <h3 class="insight-title">How to read your top result</h3>
+          <div id="top-language-detail" class="top-language-detail"></div>
+        </div>
+
+        <div class="results-actions">
+          <button id="export-btn" class="secondary-button" type="button">Download results as PNG</button>
+          <button id="restart-btn" class="primary-button" type="button">Retake quiz</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

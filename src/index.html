@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Dashboards</title>
+    <meta
+      name="description"
+      content="A personal dashboard site for health, rankings, bowling, and finance data synced from Google Sheets."
+    />
+    <link rel="icon" type="image/webp" href="./favicon.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body data-page="home">
+    <div class="page-shell">
+      <header class="hero hero-home">
+        <nav class="topbar">
+          <span class="brand">Personal Dashboards</span>
+          <div class="nav-links" id="nav-links"></div>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>Personal Dashboards</h1>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="panel-label">Latest Sync</p>
+            <p class="panel-big" id="generated-at">Loading...</p>
+            <p class="panel-small" id="workbook-count"></p>
+          </aside>
+        </div>
+      </header>
+
+      <main id="dashboard-root"></main>
+    </div>
+  </body>
+</html>
