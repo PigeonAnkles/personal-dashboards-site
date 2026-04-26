@@ -2099,9 +2099,9 @@ function renderGolf(sectionGrid) {
         { label: "Average handicap", value: averageHandicap },
         { label: "Rounds played", value: dashboardMap.get("Rounds Played") || "0" },
         { label: "Total holes played", value: dashboardMap.get("Total Holes Played") || "0" },
-      { label: "Shots taken", value: Number(shotsTaken || 0).toLocaleString() },
-        { label: "Average gross score", value: dashboardMap.get("Average Gross Score") || "-" },
-      { label: "Best round", value: bestRoundScore !== null ? Number(bestRoundScore).toLocaleString() : "-" }
+        { label: "Shots taken", value: Number(shotsTaken || 0).toLocaleString() },
+        { label: "Pars or better", value: Number((parseHealthNumber(dashboardMap.get("Pars")) ?? 0) + (parseHealthNumber(dashboardMap.get("Birdies")) ?? 0) + (parseHealthNumber(dashboardMap.get("Eagles or Better")) ?? 0)).toLocaleString() },
+        { label: "Best handicap", value: dashboardMap.get("Lowest Differential") || "-" }
       ], "glance-half")
     );
 
