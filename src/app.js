@@ -2130,20 +2130,21 @@ function renderGolf(sectionGrid) {
       value: Number(runningCost.toFixed(2))
     };
   });
-  const timelineLabels = [...new Set(
-    [...cumulativeCostSeries.map((item) => item.label), ...roundHandicapSeries.map((item) => item.label)]
-  )];
-  const costByLabel = new Map(cumulativeCostSeries.map((item) => [item.label, item.value]));
-  const handicapByLabel = new Map(roundHandicapSeries.map((item) => [item.label, item.value]));
+  const timelineKeys = [...new Set(
+    [...cumulativeCostSeries.map((item) => item.date.getTime()), ...roundHandicapSeries.map((item) => item.date.getTime())]
+  )].sort((left, right) => left - right);
+  const timelineLabels = timelineKeys.map((key) => formatDateValue(new Date(key)));
+  const costByKey = new Map(cumulativeCostSeries.map((item) => [item.date.getTime(), item.value]));
+  const handicapByKey = new Map(roundHandicapSeries.map((item) => [item.date.getTime(), item.value]));
   let latestCostValue = null;
-  const costTimelineValues = timelineLabels.map((label) => {
-    if (costByLabel.has(label)) {
-      latestCostValue = costByLabel.get(label);
+  const costTimelineValues = timelineKeys.map((key) => {
+    if (costByKey.has(key)) {
+      latestCostValue = costByKey.get(key);
     }
     return latestCostValue;
   });
-  const handicapTimelineValues = timelineLabels.map((label) => (
-    handicapByLabel.has(label) ? handicapByLabel.get(label) : null
+  const handicapTimelineValues = timelineKeys.map((key) => (
+    handicapByKey.has(key) ? handicapByKey.get(key) : null
   ));
   const frontBackValues = [
       parseHealthNumber(dashboardMap.get("Avg Front 9 +/-")) ?? 0,
