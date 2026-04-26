@@ -1117,6 +1117,25 @@ function createRankingScoreOptions(label, displayLegend = false) {
   };
 }
 
+function createHorizontalLabelCountOptions(label, values, displayLegend = false) {
+  const options = createRankingCountOptions(label, values, displayLegend);
+
+  return {
+    ...options,
+    scales: {
+      ...options.scales,
+      x: {
+        ...options.scales.x,
+        ticks: {
+          ...options.scales.x.ticks,
+          maxRotation: 0,
+          minRotation: 0
+        }
+      }
+    }
+  };
+}
+
 function buildNavLinks(activeSlug) {
   return navItems
     .map((item) => {
@@ -2041,6 +2060,10 @@ function renderGolf(sectionGrid) {
     label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
     value: parseHealthNumber(getRaw(row, "Gross") ?? getCell(row, "Gross")) ?? 0
   }));
+  const parSeries = rounds.map((row) => ({
+    label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
+    value: parseHealthNumber(getRaw(row, "Par") ?? getCell(row, "Par")) ?? 0
+  }));
   const differentialSeries = rounds.map((row) => ({
     label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
     value: parseHealthNumber(getRaw(row, "Differential") ?? getCell(row, "Differential")) ?? 0
@@ -2079,22 +2102,34 @@ function renderGolf(sectionGrid) {
   );
 
   sectionGrid.appendChild(
-    createChartCard("Gross score over time", "Round-by-round total score.", {
+    createChartCard("Overall round par vs score over time (+/-)", "Round-by-round score compared with par.", {
       type: "line",
       data: {
         labels: grossSeries.map((item) => item.label),
         datasets: [
           {
-            label: "Gross",
+            label: "Score",
             data: grossSeries.map((item) => item.value),
             borderColor: "#8fd08b",
             backgroundColor: "rgba(143, 208, 139, 0.14)",
             fill: false,
             tension: 0.3
+          },
+          {
+            label: "Par",
+            data: parSeries.map((item) => item.value),
+            borderColor: "#facc15",
+            backgroundColor: "rgba(250, 204, 21, 0.14)",
+            fill: false,
+            tension: 0.3
           }
         ]
       },
-      options: createRankingCountOptions("Gross", grossSeries.map((item) => item.value), false)
+      options: createRankingCountOptions(
+        "Score",
+        [...grossSeries.map((item) => item.value), ...parSeries.map((item) => item.value)],
+        false
+      )
     }, "chart-half")
   );
 
@@ -2148,7 +2183,7 @@ function renderGolf(sectionGrid) {
           }
         ]
       },
-      options: createRankingCountOptions("Avg +/-", holeAverageData.map((item) => item.value), false)
+      options: createHorizontalLabelCountOptions("Avg +/-", holeAverageData.map((item) => item.value), false)
     }, "chart-half")
   );
 
