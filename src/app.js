@@ -2035,7 +2035,7 @@ function renderGolf(sectionGrid) {
     return leftDate - rightDate || leftSeq - rightSeq;
   });
   const latestRound = rounds.at(-1);
-  const latestRounds = rounds.slice(-2).reverse();
+  const latestRounds = rounds.slice(-3).reverse();
   const dashboardMap = buildGolfDashboardMap(dashboardRows);
   const averageHandicap =
     getCell(dashboardRows[5], "C") ||
@@ -2105,12 +2105,12 @@ function renderGolf(sectionGrid) {
       ], "glance-half")
     );
 
-  sectionGrid.appendChild(
-    createTableCard(
-      "Latest rounds",
-      latestRounds.length ? "Two most recently logged rounds." : "No rounds logged yet.",
-      ["Date", "Course", "Gross", "+/-", "Holes", "Differential"],
-      latestRounds.map((round) => [
+    sectionGrid.appendChild(
+      createTableCard(
+        "Latest rounds",
+        latestRounds.length ? "Three most recently logged rounds." : "No rounds logged yet.",
+        ["Date", "Course", "Gross", "+/-", "Holes", "Differential"],
+        latestRounds.map((round) => [
         formatDateValue(getRaw(round, "Date")) || getCell(round, "Date") || "-",
         getCell(round, "Course") || "-",
         getCell(round, "Gross") || "-",
@@ -2154,29 +2154,9 @@ function renderGolf(sectionGrid) {
     }, "chart-half")
   );
 
-  sectionGrid.appendChild(
-    createChartCard("Differential over time", "Scoring differential by round.", {
-      type: "line",
-      data: {
-        labels: differentialSeries.map((item) => item.label),
-        datasets: [
-          {
-            label: "Differential",
-            data: differentialSeries.map((item) => item.value),
-            borderColor: "#6ea8ff",
-            backgroundColor: "rgba(110, 168, 255, 0.14)",
-            fill: false,
-            tension: 0.3
-          }
-        ]
-      },
-      options: createRankingCountOptions("Differential", differentialSeries.map((item) => item.value), false)
-    }, "chart-half")
-  );
-
-  sectionGrid.appendChild(
-    createChartCard("Scoring distribution", "How your holes have broken down so far.", {
-      type: "bar",
+    sectionGrid.appendChild(
+      createChartCard("Scoring distribution", "How your holes have broken down so far.", {
+        type: "bar",
       data: {
         labels: scoringDistribution.map((item) => item.label),
         datasets: [
@@ -2191,9 +2171,9 @@ function renderGolf(sectionGrid) {
     }, "chart-half")
   );
 
-  sectionGrid.appendChild(
-    createChartCard("Hole average vs par", "Average performance against par by hole.", {
-      type: "bar",
+    sectionGrid.appendChild(
+      createChartCard("Hole average vs par", "Average performance against par by hole.", {
+        type: "bar",
       data: {
         labels: holeAverageData.map((item) => item.label),
         datasets: [
@@ -2208,10 +2188,50 @@ function renderGolf(sectionGrid) {
     }, "chart-half")
   );
 
-  sectionGrid.appendChild(
-    createChartCard("Front 9 vs back 9", "Average and best splits against par.", {
-      type: "bar",
-      data: {
+    sectionGrid.appendChild(
+      createChartCard("Plus/minus per round", "Round-by-round score relative to par.", {
+        type: "line",
+        data: {
+          labels: plusMinusSeries.map((item) => item.label),
+          datasets: [
+            {
+              label: "+/-",
+              data: plusMinusSeries.map((item) => item.value),
+              borderColor: "#f59a9a",
+              backgroundColor: "rgba(245, 154, 154, 0.14)",
+              fill: false,
+              tension: 0.3
+            }
+          ]
+        },
+        options: createRankingCountOptions("+/-", plusMinusSeries.map((item) => item.value), false)
+      }, "chart-half")
+    );
+
+    sectionGrid.appendChild(
+      createChartCard("Differential over time", "Scoring differential by round.", {
+        type: "line",
+        data: {
+          labels: differentialSeries.map((item) => item.label),
+          datasets: [
+            {
+              label: "Differential",
+              data: differentialSeries.map((item) => item.value),
+              borderColor: "#6ea8ff",
+              backgroundColor: "rgba(110, 168, 255, 0.14)",
+              fill: false,
+              tension: 0.3
+            }
+          ]
+        },
+        options: createRankingCountOptions("Differential", differentialSeries.map((item) => item.value), false)
+      }, "chart-half")
+    );
+
+    sectionGrid.appendChild(
+      createChartCard("Front 9 vs back 9", "Average and best splits against par.", {
+        type: "bar",
+        data: {
         labels: ["Avg Front 9", "Avg Back 9", "Best Front 9", "Best Back 9"],
         datasets: [
           {
@@ -2222,26 +2242,6 @@ function renderGolf(sectionGrid) {
         ]
       },
       options: createRankingCountOptions("+/-", frontBackValues, false)
-    }, "chart-half")
-  );
-
-  sectionGrid.appendChild(
-    createChartCard("Plus/minus per round", "Round-by-round score relative to par.", {
-      type: "line",
-      data: {
-        labels: plusMinusSeries.map((item) => item.label),
-        datasets: [
-          {
-            label: "+/-",
-            data: plusMinusSeries.map((item) => item.value),
-            borderColor: "#f59a9a",
-            backgroundColor: "rgba(245, 154, 154, 0.14)",
-            fill: false,
-            tension: 0.3
-          }
-        ]
-      },
-      options: createRankingCountOptions("+/-", plusMinusSeries.map((item) => item.value), false)
     }, "chart-half")
   );
 
