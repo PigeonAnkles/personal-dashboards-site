@@ -367,6 +367,10 @@ main {
   grid-column: span 8;
 }
 
+.glance-card.glance-half {
+  grid-column: span 6;
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
@@ -410,6 +414,10 @@ main {
   padding: 16px;
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+.table-card.table-half {
+  grid-column: span 6;
 }
 
 .career-timeline {
@@ -651,6 +659,8 @@ tbody tr:hover {
 
   .glance-card,
   .glance-card.glance-wide,
+  .glance-card.glance-half,
+  .table-card.table-half,
   .chart-card {
     grid-column: 1 / -1;
   }

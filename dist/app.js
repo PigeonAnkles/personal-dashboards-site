@@ -298,9 +298,9 @@ function createStatsGrid(items) {
   return wrapper;
 }
 
-function createGlanceCard(title, subtitle, stats) {
+function createGlanceCard(title, subtitle, stats, className = "") {
   const card = document.createElement("article");
-  card.className = "glance-card";
+  card.className = `glance-card ${className}`.trim();
   card.innerHTML = `
     <div class="card-head">
       <div>
@@ -339,9 +339,9 @@ function createChartCard(title, subtitle, chartConfig, className = "") {
   return card;
 }
 
-function createTableCard(title, subtitle, columns, rows) {
+function createTableCard(title, subtitle, columns, rows, className = "") {
   const card = document.createElement("article");
-  card.className = "table-card";
+  card.className = `table-card ${className}`.trim();
   const table = document.createElement("table");
   const headRow = document.createElement("tr");
   columns.forEach((column) => {
@@ -2035,9 +2035,24 @@ function renderGolf(sectionGrid) {
     return leftDate - rightDate || leftSeq - rightSeq;
   });
   const latestRound = rounds.at(-1);
+  const latestRounds = rounds.slice(-2).reverse();
   const dashboardMap = buildGolfDashboardMap(dashboardRows);
-  const handicapIndex = getCell(dashboardRows[0], "L") || dashboardMap.get("Handicap Index") || "-";
-  const roundsUsed = getCell(dashboardRows[0], "M") || "-";
+  const averageHandicap =
+    getCell(dashboardRows[5], "C") ||
+    getCell(dashboardRows[0], "L") ||
+    dashboardMap.get("Average Handicap") ||
+    dashboardMap.get("Handicap Index") ||
+    "-";
+  const shotsTaken = rounds.reduce((sum, row) => {
+    return sum + (parseHealthNumber(getRaw(row, "Gross") ?? getCell(row, "Gross")) ?? 0);
+  }, 0);
+  const bestRoundScore = rounds.reduce((best, row) => {
+    const gross = parseHealthNumber(getRaw(row, "Gross") ?? getCell(row, "Gross"));
+    if (gross === null) {
+      return best;
+    }
+    return best === null ? gross : Math.min(best, gross);
+  }, null);
   const holeAverageData = Array.from({ length: 18 }, (_, index) => {
     const label = `Hole ${index + 1} Avg +/-`;
     return {
@@ -2081,24 +2096,30 @@ function renderGolf(sectionGrid) {
 
   sectionGrid.appendChild(
     createGlanceCard("Golf snapshot", "Your latest golf numbers from the workbook.", [
-      { label: "Handicap index", value: handicapIndex },
-      { label: "Rounds used", value: roundsUsed },
+      { label: "Average handicap", value: averageHandicap },
       { label: "Rounds played", value: dashboardMap.get("Rounds Played") || "0" },
       { label: "Total holes played", value: dashboardMap.get("Total Holes Played") || "0" },
-      { label: "Average differential", value: dashboardMap.get("Average Differential") || "-" },
-      { label: "Average gross score", value: dashboardMap.get("Average Gross Score") || "-" }
-    ])
+      { label: "Shots taken", value: shotsTaken ? formatInteger(shotsTaken) : "0" },
+      { label: "Average gross score", value: dashboardMap.get("Average Gross Score") || "-" },
+      { label: "Best round", value: bestRoundScore !== null ? formatInteger(bestRoundScore) : "-" }
+    ], "glance-half")
   );
 
   sectionGrid.appendChild(
-    createGlanceCard("Latest round", latestRound ? "Most recently logged round." : "No rounds logged yet.", [
-      { label: "Course", value: latestRound ? (getCell(latestRound, "Course") || "-") : "-" },
-      { label: "Date", value: latestRound ? (formatDateValue(getRaw(latestRound, "Date")) || getCell(latestRound, "Date") || "-") : "-" },
-      { label: "Gross", value: latestRound ? (getCell(latestRound, "Gross") || "-") : "-" },
-      { label: "+/-", value: latestRound ? (getCell(latestRound, "PlusMinus") || "-") : "-" },
-      { label: "Holes", value: latestRound ? (getCell(latestRound, "Holes") || "-") : "-" },
-      { label: "Differential", value: latestRound ? (getCell(latestRound, "Differential") || "-") : "-" }
-    ])
+    createTableCard(
+      "Latest rounds",
+      latestRounds.length ? "Two most recently logged rounds." : "No rounds logged yet.",
+      ["Date", "Course", "Gross", "+/-", "Holes", "Differential"],
+      latestRounds.map((round) => [
+        formatDateValue(getRaw(round, "Date")) || getCell(round, "Date") || "-",
+        getCell(round, "Course") || "-",
+        getCell(round, "Gross") || "-",
+        getCell(round, "PlusMinus") || "-",
+        getCell(round, "Holes") || "-",
+        getCell(round, "Differential") || "-"
+      ]),
+      "table-half"
+    )
   );
 
   sectionGrid.appendChild(
