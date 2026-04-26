@@ -93,8 +93,8 @@
             "type": "number"
           },
           "M": {
-            "raw": 10,
-            "formatted": "10",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           }
         },
@@ -122,14 +122,10 @@
           "I": null,
           "J": null,
           "K": null,
-          "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "L": null,
           "M": {
-            "raw": 3,
-            "formatted": "3",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           }
         },
@@ -140,11 +136,7 @@
             "formatted": "Handicap Index",
             "type": "string"
           },
-          "C": {
-            "raw": 4.7,
-            "formatted": "4.7",
-            "type": "number"
-          },
+          "C": null,
           "D": null,
           "E": {
             "raw": "Avg Front 9 +/-",
@@ -169,11 +161,7 @@
           },
           "J": null,
           "K": null,
-          "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "L": null,
           "M": {
             "raw": null,
             "formatted": null,
@@ -212,11 +200,7 @@
           },
           "J": null,
           "K": null,
-          "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "L": null,
           "M": {
             "raw": null,
             "formatted": null,
@@ -231,7 +215,7 @@
             "type": "string"
           },
           "C": {
-            "raw": 4.8999999999999995,
+            "raw": 4.9,
             "formatted": "4.9",
             "type": "number"
           },
@@ -259,11 +243,7 @@
           },
           "J": null,
           "K": null,
-          "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "L": null,
           "M": {
             "raw": null,
             "formatted": null,
@@ -272,8 +252,16 @@
         },
         {
           "A": null,
-          "B": null,
-          "C": null,
+          "B": {
+            "raw": "Average Handicap",
+            "formatted": "Average Handicap",
+            "type": "string"
+          },
+          "C": {
+            "raw": 62,
+            "formatted": "+62.0",
+            "type": "number"
+          },
           "D": null,
           "E": {
             "raw": "Best Back 9 +/-",
@@ -292,17 +280,13 @@
             "type": "string"
           },
           "I": {
-            "raw": 20,
-            "formatted": "20",
+            "raw": 2,
+            "formatted": "2",
             "type": "number"
           },
           "J": null,
           "K": null,
-          "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "L": null,
           "M": {
             "raw": null,
             "formatted": null,
@@ -329,11 +313,7 @@
           },
           "J": null,
           "K": null,
-          "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "L": null,
           "M": {
             "raw": null,
             "formatted": null,
@@ -362,17 +342,13 @@
             "type": "string"
           },
           "I": {
-            "raw": 120,
-            "formatted": "120",
+            "raw": 12,
+            "formatted": "12",
             "type": "number"
           },
           "J": null,
           "K": null,
-          "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "L": null,
           "M": {
             "raw": null,
             "formatted": null,
@@ -387,8 +363,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 10,
-            "formatted": "10",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "D": null,
@@ -407,11 +383,7 @@
           "I": null,
           "J": null,
           "K": null,
-          "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "L": null,
           "M": {
             "raw": null,
             "formatted": null,
@@ -426,8 +398,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 140,
-            "formatted": "140",
+            "raw": 14,
+            "formatted": "14",
             "type": "number"
           },
           "D": null,
@@ -450,11 +422,7 @@
           "I": null,
           "J": null,
           "K": null,
-          "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "L": null,
           "M": {
             "raw": null,
             "formatted": null,
@@ -491,7 +459,7 @@
             "type": "string"
           },
           "I": {
-            "raw": 4.42857142857143,
+            "raw": 4.428571428571429,
             "formatted": "+4.43",
             "type": "number"
           },
@@ -685,8 +653,8 @@
           },
           "G": null,
           "H": {
-            "raw": "Langston Golf Course (5/2/26)",
-            "formatted": "Langston Golf Course (5/2/26)",
+            "raw": "Langston Golf Course (4/23/26)",
+            "formatted": "Langston Golf Course (4/23/26)",
             "type": "string"
           },
           "I": {
@@ -727,16 +695,8 @@
             "type": "number"
           },
           "G": null,
-          "H": {
-            "raw": "Langston Golf Course (5/1/26)",
-            "formatted": "Langston Golf Course (5/1/26)",
-            "type": "string"
-          },
-          "I": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
+          "H": null,
+          "I": null,
           "J": null,
           "K": null,
           "L": null,
@@ -762,16 +722,8 @@
             "type": "number"
           },
           "G": null,
-          "H": {
-            "raw": "Langston Golf Course (4/30/26)",
-            "formatted": "Langston Golf Course (4/30/26)",
-            "type": "string"
-          },
-          "I": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
+          "H": null,
+          "I": null,
           "J": null,
           "K": null,
           "L": null,
@@ -797,16 +749,8 @@
             "type": "number"
           },
           "G": null,
-          "H": {
-            "raw": "Langston Golf Course (4/29/26)",
-            "formatted": "Langston Golf Course (4/29/26)",
-            "type": "string"
-          },
-          "I": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
+          "H": null,
+          "I": null,
           "J": null,
           "K": null,
           "L": null,
@@ -832,16 +776,8 @@
             "type": "number"
           },
           "G": null,
-          "H": {
-            "raw": "Langston Golf Course (4/28/26)",
-            "formatted": "Langston Golf Course (4/28/26)",
-            "type": "string"
-          },
-          "I": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
+          "H": null,
+          "I": null,
           "J": null,
           "K": null,
           "L": null,
@@ -926,11 +862,7 @@
             "formatted": "Enter Course Slope:",
             "type": "string"
           },
-          "I": {
-            "raw": 121,
-            "formatted": "121",
-            "type": "number"
-          },
+          "I": null,
           "J": null,
           "K": null,
           "L": null,
@@ -957,11 +889,7 @@
             "formatted": "Your Course Handicap:",
             "type": "string"
           },
-          "I": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
+          "I": null,
           "J": null,
           "K": null,
           "L": null,
@@ -1778,142 +1706,42 @@
           }
         },
         {
-          "1": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "2": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "3": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "4": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "5": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "9": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "12": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "15": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "16": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "17": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "18": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
           "Rnd": {
             "raw": 2,
             "formatted": "2",
             "type": "number"
           },
-          "Date": {
-            "raw": "2026-04-24T00:00:00.000Z",
-            "formatted": "04/24/26",
-            "type": "date"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Slope": {
-            "raw": 68.6,
-            "formatted": "68.6",
-            "type": "number"
-          },
-          "Rating": {
-            "raw": 115,
-            "formatted": "115",
-            "type": "number"
-          },
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
           "Gross": {
             "raw": "Par",
             "formatted": "Par",
             "type": "string"
           },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
+          "Par": null,
           "+/-": null,
-          "Front 9": {
-            "raw": 36,
-            "formatted": "36",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 20,
-            "formatted": "20",
-            "type": "number"
-          },
+          "Front 9": null,
+          "Back 9": null,
           "Holes": null,
           "Avg/Hole": null,
           "Differential": null,
@@ -1944,76 +1772,20 @@
           }
         },
         {
-          "1": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "2": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "3": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "4": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "5": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "6": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "7": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "8": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "9": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "10": {
-            "raw": 10,
-            "formatted": "10",
-            "type": "number"
-          },
-          "11": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "12": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "13": {
-            "raw": 6,
-            "formatted": "6",
-            "type": "number"
-          },
-          "14": {
-            "raw": 14,
-            "formatted": "14",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -2023,127 +1795,35 @@
           "Course": null,
           "Slope": null,
           "Rating": null,
-          "Gross": {
-            "raw": "118",
-            "formatted": "118",
-            "type": "string"
-          },
+          "Gross": null,
           "Par": null,
-          "+/-": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front 9": {
-            "raw": 74,
-            "formatted": "74",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 44,
-            "formatted": "44",
-            "type": "number"
-          },
+          "+/-": null,
+          "Front 9": null,
+          "Back 9": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Avg/Hole": {
-            "raw": 8.43,
-            "formatted": "8.43",
-            "type": "number"
-          },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "F9+/-": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "B9+/-": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "+/-/Hole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
-          "H1+/-": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5+/-": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14+/-": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
           "H15+/-": null,
           "H16+/-": null,
           "H17+/-": null,
@@ -2154,76 +1834,20 @@
           }
         },
         {
-          "1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -2272,142 +1896,42 @@
           }
         },
         {
-          "1": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "2": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "3": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "4": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "5": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "9": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "12": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "15": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "16": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "17": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "18": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
           "Rnd": {
             "raw": 3,
             "formatted": "3",
             "type": "number"
           },
-          "Date": {
-            "raw": "2026-04-25T00:00:00.000Z",
-            "formatted": "04/25/26",
-            "type": "date"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Slope": {
-            "raw": 68.6,
-            "formatted": "68.6",
-            "type": "number"
-          },
-          "Rating": {
-            "raw": 115,
-            "formatted": "115",
-            "type": "number"
-          },
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
           "Gross": {
             "raw": "Par",
             "formatted": "Par",
             "type": "string"
           },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
+          "Par": null,
           "+/-": null,
-          "Front 9": {
-            "raw": 36,
-            "formatted": "36",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 20,
-            "formatted": "20",
-            "type": "number"
-          },
+          "Front 9": null,
+          "Back 9": null,
           "Holes": null,
           "Avg/Hole": null,
           "Differential": null,
@@ -2438,76 +1962,20 @@
           }
         },
         {
-          "1": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "2": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "3": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "4": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "5": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "6": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "7": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "8": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "9": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "10": {
-            "raw": 10,
-            "formatted": "10",
-            "type": "number"
-          },
-          "11": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "12": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "13": {
-            "raw": 6,
-            "formatted": "6",
-            "type": "number"
-          },
-          "14": {
-            "raw": 14,
-            "formatted": "14",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -2517,127 +1985,35 @@
           "Course": null,
           "Slope": null,
           "Rating": null,
-          "Gross": {
-            "raw": "118",
-            "formatted": "118",
-            "type": "string"
-          },
+          "Gross": null,
           "Par": null,
-          "+/-": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front 9": {
-            "raw": 74,
-            "formatted": "74",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 44,
-            "formatted": "44",
-            "type": "number"
-          },
+          "+/-": null,
+          "Front 9": null,
+          "Back 9": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Avg/Hole": {
-            "raw": 8.43,
-            "formatted": "8.43",
-            "type": "number"
-          },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "F9+/-": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "B9+/-": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "+/-/Hole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
-          "H1+/-": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5+/-": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14+/-": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
           "H15+/-": null,
           "H16+/-": null,
           "H17+/-": null,
@@ -2648,76 +2024,20 @@
           }
         },
         {
-          "1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -2766,142 +2086,42 @@
           }
         },
         {
-          "1": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "2": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "3": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "4": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "5": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "9": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "12": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "15": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "16": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "17": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "18": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
           "Rnd": {
             "raw": 4,
             "formatted": "4",
             "type": "number"
           },
-          "Date": {
-            "raw": "2026-04-26T00:00:00.000Z",
-            "formatted": "04/26/26",
-            "type": "date"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Slope": {
-            "raw": 68.6,
-            "formatted": "68.6",
-            "type": "number"
-          },
-          "Rating": {
-            "raw": 115,
-            "formatted": "115",
-            "type": "number"
-          },
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
           "Gross": {
             "raw": "Par",
             "formatted": "Par",
             "type": "string"
           },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
+          "Par": null,
           "+/-": null,
-          "Front 9": {
-            "raw": 36,
-            "formatted": "36",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 20,
-            "formatted": "20",
-            "type": "number"
-          },
+          "Front 9": null,
+          "Back 9": null,
           "Holes": null,
           "Avg/Hole": null,
           "Differential": null,
@@ -2932,76 +2152,20 @@
           }
         },
         {
-          "1": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "2": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "3": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "4": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "5": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "6": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "7": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "8": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "9": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "10": {
-            "raw": 10,
-            "formatted": "10",
-            "type": "number"
-          },
-          "11": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "12": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "13": {
-            "raw": 6,
-            "formatted": "6",
-            "type": "number"
-          },
-          "14": {
-            "raw": 14,
-            "formatted": "14",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -3011,127 +2175,35 @@
           "Course": null,
           "Slope": null,
           "Rating": null,
-          "Gross": {
-            "raw": "118",
-            "formatted": "118",
-            "type": "string"
-          },
+          "Gross": null,
           "Par": null,
-          "+/-": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front 9": {
-            "raw": 74,
-            "formatted": "74",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 44,
-            "formatted": "44",
-            "type": "number"
-          },
+          "+/-": null,
+          "Front 9": null,
+          "Back 9": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Avg/Hole": {
-            "raw": 8.43,
-            "formatted": "8.43",
-            "type": "number"
-          },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "F9+/-": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "B9+/-": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "+/-/Hole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
-          "H1+/-": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5+/-": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14+/-": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
           "H15+/-": null,
           "H16+/-": null,
           "H17+/-": null,
@@ -3142,76 +2214,20 @@
           }
         },
         {
-          "1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -3260,142 +2276,42 @@
           }
         },
         {
-          "1": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "2": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "3": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "4": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "5": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "9": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "12": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "15": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "16": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "17": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "18": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
           "Rnd": {
             "raw": 5,
             "formatted": "5",
             "type": "number"
           },
-          "Date": {
-            "raw": "2026-04-27T00:00:00.000Z",
-            "formatted": "04/27/26",
-            "type": "date"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Slope": {
-            "raw": 68.6,
-            "formatted": "68.6",
-            "type": "number"
-          },
-          "Rating": {
-            "raw": 115,
-            "formatted": "115",
-            "type": "number"
-          },
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
           "Gross": {
             "raw": "Par",
             "formatted": "Par",
             "type": "string"
           },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
+          "Par": null,
           "+/-": null,
-          "Front 9": {
-            "raw": 36,
-            "formatted": "36",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 20,
-            "formatted": "20",
-            "type": "number"
-          },
+          "Front 9": null,
+          "Back 9": null,
           "Holes": null,
           "Avg/Hole": null,
           "Differential": null,
@@ -3426,76 +2342,20 @@
           }
         },
         {
-          "1": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "2": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "3": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "4": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "5": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "6": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "7": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "8": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "9": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "10": {
-            "raw": 10,
-            "formatted": "10",
-            "type": "number"
-          },
-          "11": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "12": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "13": {
-            "raw": 6,
-            "formatted": "6",
-            "type": "number"
-          },
-          "14": {
-            "raw": 14,
-            "formatted": "14",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -3505,127 +2365,35 @@
           "Course": null,
           "Slope": null,
           "Rating": null,
-          "Gross": {
-            "raw": "118",
-            "formatted": "118",
-            "type": "string"
-          },
+          "Gross": null,
           "Par": null,
-          "+/-": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front 9": {
-            "raw": 74,
-            "formatted": "74",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 44,
-            "formatted": "44",
-            "type": "number"
-          },
+          "+/-": null,
+          "Front 9": null,
+          "Back 9": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Avg/Hole": {
-            "raw": 8.43,
-            "formatted": "8.43",
-            "type": "number"
-          },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "F9+/-": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "B9+/-": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "+/-/Hole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
-          "H1+/-": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5+/-": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14+/-": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
           "H15+/-": null,
           "H16+/-": null,
           "H17+/-": null,
@@ -3636,76 +2404,20 @@
           }
         },
         {
-          "1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -3754,142 +2466,42 @@
           }
         },
         {
-          "1": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "2": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "3": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "4": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "5": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "9": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "12": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "15": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "16": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "17": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "18": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
           "Rnd": {
             "raw": 6,
             "formatted": "6",
             "type": "number"
           },
-          "Date": {
-            "raw": "2026-04-28T00:00:00.000Z",
-            "formatted": "04/28/26",
-            "type": "date"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Slope": {
-            "raw": 68.6,
-            "formatted": "68.6",
-            "type": "number"
-          },
-          "Rating": {
-            "raw": 115,
-            "formatted": "115",
-            "type": "number"
-          },
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
           "Gross": {
             "raw": "Par",
             "formatted": "Par",
             "type": "string"
           },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
+          "Par": null,
           "+/-": null,
-          "Front 9": {
-            "raw": 36,
-            "formatted": "36",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 20,
-            "formatted": "20",
-            "type": "number"
-          },
+          "Front 9": null,
+          "Back 9": null,
           "Holes": null,
           "Avg/Hole": null,
           "Differential": null,
@@ -3920,76 +2532,20 @@
           }
         },
         {
-          "1": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "2": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "3": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "4": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "5": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "6": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "7": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "8": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "9": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "10": {
-            "raw": 10,
-            "formatted": "10",
-            "type": "number"
-          },
-          "11": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "12": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "13": {
-            "raw": 6,
-            "formatted": "6",
-            "type": "number"
-          },
-          "14": {
-            "raw": 14,
-            "formatted": "14",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -3999,127 +2555,35 @@
           "Course": null,
           "Slope": null,
           "Rating": null,
-          "Gross": {
-            "raw": "118",
-            "formatted": "118",
-            "type": "string"
-          },
+          "Gross": null,
           "Par": null,
-          "+/-": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front 9": {
-            "raw": 74,
-            "formatted": "74",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 44,
-            "formatted": "44",
-            "type": "number"
-          },
+          "+/-": null,
+          "Front 9": null,
+          "Back 9": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Avg/Hole": {
-            "raw": 8.43,
-            "formatted": "8.43",
-            "type": "number"
-          },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "F9+/-": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "B9+/-": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "+/-/Hole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
-          "H1+/-": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5+/-": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14+/-": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
           "H15+/-": null,
           "H16+/-": null,
           "H17+/-": null,
@@ -4130,76 +2594,20 @@
           }
         },
         {
-          "1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -4248,142 +2656,42 @@
           }
         },
         {
-          "1": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "2": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "3": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "4": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "5": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "9": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "12": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "15": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "16": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "17": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "18": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
           "Rnd": {
             "raw": 7,
             "formatted": "7",
             "type": "number"
           },
-          "Date": {
-            "raw": "2026-04-29T00:00:00.000Z",
-            "formatted": "04/29/26",
-            "type": "date"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Slope": {
-            "raw": 68.6,
-            "formatted": "68.6",
-            "type": "number"
-          },
-          "Rating": {
-            "raw": 115,
-            "formatted": "115",
-            "type": "number"
-          },
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
           "Gross": {
             "raw": "Par",
             "formatted": "Par",
             "type": "string"
           },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
+          "Par": null,
           "+/-": null,
-          "Front 9": {
-            "raw": 36,
-            "formatted": "36",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 20,
-            "formatted": "20",
-            "type": "number"
-          },
+          "Front 9": null,
+          "Back 9": null,
           "Holes": null,
           "Avg/Hole": null,
           "Differential": null,
@@ -4414,76 +2722,20 @@
           }
         },
         {
-          "1": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "2": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "3": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "4": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "5": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "6": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "7": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "8": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "9": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "10": {
-            "raw": 10,
-            "formatted": "10",
-            "type": "number"
-          },
-          "11": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "12": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "13": {
-            "raw": 6,
-            "formatted": "6",
-            "type": "number"
-          },
-          "14": {
-            "raw": 14,
-            "formatted": "14",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -4493,127 +2745,35 @@
           "Course": null,
           "Slope": null,
           "Rating": null,
-          "Gross": {
-            "raw": "118",
-            "formatted": "118",
-            "type": "string"
-          },
+          "Gross": null,
           "Par": null,
-          "+/-": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front 9": {
-            "raw": 74,
-            "formatted": "74",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 44,
-            "formatted": "44",
-            "type": "number"
-          },
+          "+/-": null,
+          "Front 9": null,
+          "Back 9": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Avg/Hole": {
-            "raw": 8.43,
-            "formatted": "8.43",
-            "type": "number"
-          },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "F9+/-": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "B9+/-": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "+/-/Hole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
-          "H1+/-": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5+/-": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14+/-": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
           "H15+/-": null,
           "H16+/-": null,
           "H17+/-": null,
@@ -4624,76 +2784,20 @@
           }
         },
         {
-          "1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -4742,142 +2846,42 @@
           }
         },
         {
-          "1": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "2": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "3": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "4": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "5": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "9": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "12": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "15": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "16": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "17": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "18": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
           "Rnd": {
             "raw": 8,
             "formatted": "8",
             "type": "number"
           },
-          "Date": {
-            "raw": "2026-04-30T00:00:00.000Z",
-            "formatted": "04/30/26",
-            "type": "date"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Slope": {
-            "raw": 68.6,
-            "formatted": "68.6",
-            "type": "number"
-          },
-          "Rating": {
-            "raw": 115,
-            "formatted": "115",
-            "type": "number"
-          },
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
           "Gross": {
             "raw": "Par",
             "formatted": "Par",
             "type": "string"
           },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
+          "Par": null,
           "+/-": null,
-          "Front 9": {
-            "raw": 36,
-            "formatted": "36",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 20,
-            "formatted": "20",
-            "type": "number"
-          },
+          "Front 9": null,
+          "Back 9": null,
           "Holes": null,
           "Avg/Hole": null,
           "Differential": null,
@@ -4908,76 +2912,20 @@
           }
         },
         {
-          "1": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "2": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "3": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "4": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "5": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "6": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "7": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "8": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "9": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "10": {
-            "raw": 10,
-            "formatted": "10",
-            "type": "number"
-          },
-          "11": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "12": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "13": {
-            "raw": 6,
-            "formatted": "6",
-            "type": "number"
-          },
-          "14": {
-            "raw": 14,
-            "formatted": "14",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -4987,127 +2935,35 @@
           "Course": null,
           "Slope": null,
           "Rating": null,
-          "Gross": {
-            "raw": "118",
-            "formatted": "118",
-            "type": "string"
-          },
+          "Gross": null,
           "Par": null,
-          "+/-": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front 9": {
-            "raw": 74,
-            "formatted": "74",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 44,
-            "formatted": "44",
-            "type": "number"
-          },
+          "+/-": null,
+          "Front 9": null,
+          "Back 9": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Avg/Hole": {
-            "raw": 8.43,
-            "formatted": "8.43",
-            "type": "number"
-          },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "F9+/-": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "B9+/-": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "+/-/Hole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
-          "H1+/-": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5+/-": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14+/-": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
           "H15+/-": null,
           "H16+/-": null,
           "H17+/-": null,
@@ -5118,76 +2974,20 @@
           }
         },
         {
-          "1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -5236,142 +3036,42 @@
           }
         },
         {
-          "1": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "2": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "3": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "4": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "5": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "9": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "12": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "15": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "16": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "17": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "18": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
           "Rnd": {
             "raw": 9,
             "formatted": "9",
             "type": "number"
           },
-          "Date": {
-            "raw": "2026-05-01T00:00:00.000Z",
-            "formatted": "05/01/26",
-            "type": "date"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Slope": {
-            "raw": 68.6,
-            "formatted": "68.6",
-            "type": "number"
-          },
-          "Rating": {
-            "raw": 115,
-            "formatted": "115",
-            "type": "number"
-          },
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
           "Gross": {
             "raw": "Par",
             "formatted": "Par",
             "type": "string"
           },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
+          "Par": null,
           "+/-": null,
-          "Front 9": {
-            "raw": 36,
-            "formatted": "36",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 20,
-            "formatted": "20",
-            "type": "number"
-          },
+          "Front 9": null,
+          "Back 9": null,
           "Holes": null,
           "Avg/Hole": null,
           "Differential": null,
@@ -5402,76 +3102,20 @@
           }
         },
         {
-          "1": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "2": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "3": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "4": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "5": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "6": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "7": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "8": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "9": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "10": {
-            "raw": 10,
-            "formatted": "10",
-            "type": "number"
-          },
-          "11": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "12": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "13": {
-            "raw": 6,
-            "formatted": "6",
-            "type": "number"
-          },
-          "14": {
-            "raw": 14,
-            "formatted": "14",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -5481,127 +3125,35 @@
           "Course": null,
           "Slope": null,
           "Rating": null,
-          "Gross": {
-            "raw": "118",
-            "formatted": "118",
-            "type": "string"
-          },
+          "Gross": null,
           "Par": null,
-          "+/-": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front 9": {
-            "raw": 74,
-            "formatted": "74",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 44,
-            "formatted": "44",
-            "type": "number"
-          },
+          "+/-": null,
+          "Front 9": null,
+          "Back 9": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Avg/Hole": {
-            "raw": 8.43,
-            "formatted": "8.43",
-            "type": "number"
-          },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "F9+/-": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "B9+/-": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "+/-/Hole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
-          "H1+/-": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5+/-": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14+/-": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
           "H15+/-": null,
           "H16+/-": null,
           "H17+/-": null,
@@ -5612,76 +3164,20 @@
           }
         },
         {
-          "1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -5730,142 +3226,42 @@
           }
         },
         {
-          "1": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "2": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "3": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "4": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "5": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "9": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "12": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "15": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
-          },
-          "16": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "17": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
-          "18": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
           "Rnd": {
             "raw": 10,
             "formatted": "10",
             "type": "number"
           },
-          "Date": {
-            "raw": "2026-05-02T00:00:00.000Z",
-            "formatted": "05/02/26",
-            "type": "date"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Slope": {
-            "raw": 68.6,
-            "formatted": "68.6",
-            "type": "number"
-          },
-          "Rating": {
-            "raw": 115,
-            "formatted": "115",
-            "type": "number"
-          },
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
           "Gross": {
             "raw": "Par",
             "formatted": "Par",
             "type": "string"
           },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
+          "Par": null,
           "+/-": null,
-          "Front 9": {
-            "raw": 36,
-            "formatted": "36",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 20,
-            "formatted": "20",
-            "type": "number"
-          },
+          "Front 9": null,
+          "Back 9": null,
           "Holes": null,
           "Avg/Hole": null,
           "Differential": null,
@@ -5896,76 +3292,20 @@
           }
         },
         {
-          "1": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "2": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "3": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "4": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "5": {
-            "raw": 11,
-            "formatted": "11",
-            "type": "number"
-          },
-          "6": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "7": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
-          },
-          "8": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
-          },
-          "9": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "10": {
-            "raw": 10,
-            "formatted": "10",
-            "type": "number"
-          },
-          "11": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
-          },
-          "12": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
-          },
-          "13": {
-            "raw": 6,
-            "formatted": "6",
-            "type": "number"
-          },
-          "14": {
-            "raw": 14,
-            "formatted": "14",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -5975,127 +3315,35 @@
           "Course": null,
           "Slope": null,
           "Rating": null,
-          "Gross": {
-            "raw": "118",
-            "formatted": "118",
-            "type": "string"
-          },
+          "Gross": null,
           "Par": null,
-          "+/-": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front 9": {
-            "raw": 74,
-            "formatted": "74",
-            "type": "number"
-          },
-          "Back 9": {
-            "raw": 44,
-            "formatted": "44",
-            "type": "number"
-          },
+          "+/-": null,
+          "Front 9": null,
+          "Back 9": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Avg/Hole": {
-            "raw": 8.43,
-            "formatted": "8.43",
-            "type": "number"
-          },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "F9+/-": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "B9+/-": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "+/-/Hole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
-          "H1+/-": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5+/-": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8+/-": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11+/-": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12+/-": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13+/-": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14+/-": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
           "H15+/-": null,
           "H16+/-": null,
           "H17+/-": null,
@@ -6106,76 +3354,20 @@
           }
         },
         {
-          "1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -64592,115 +61784,35 @@
             "type": "number"
           },
           "HasData": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Gross": {
-            "raw": 118,
-            "formatted": "118",
-            "type": "number"
-          },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
-          "PlusMinus": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front9PM": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "Back9PM": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "PMperHole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
+          "Gross": null,
+          "Par": null,
+          "PlusMinus": null,
+          "Front9PM": null,
+          "Back9PM": null,
+          "PMperHole": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "H1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "H1": null,
+          "H2": null,
+          "H3": null,
+          "H4": null,
+          "H5": null,
+          "H6": null,
+          "H7": null,
+          "H8": null,
+          "H9": null,
+          "H10": null,
+          "H11": null,
+          "H12": null,
+          "H13": null,
+          "H14": null,
           "H15": null,
           "H16": null,
           "H17": null,
@@ -64721,8 +61833,8 @@
             "type": "number"
           },
           "Bogeys": {
-            "raw": 2,
-            "formatted": "2",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "Doubles": {
@@ -64731,29 +61843,17 @@
             "type": "number"
           },
           "TriplePlus": {
-            "raw": 12,
-            "formatted": "12",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Date": {
-            "raw": "2026-04-24T00:00:00.000Z",
-            "formatted": "04/24/26",
-            "type": "date"
-          },
+          "Differential": null,
+          "Course": null,
+          "Date": null,
           "SeqNum": {
-            "raw": 2,
-            "formatted": "2",
-            "type": "number"
+            "raw": null,
+            "formatted": null,
+            "type": "null"
           }
         },
         {
@@ -64763,115 +61863,35 @@
             "type": "number"
           },
           "HasData": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Gross": {
-            "raw": 118,
-            "formatted": "118",
-            "type": "number"
-          },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
-          "PlusMinus": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front9PM": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "Back9PM": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "PMperHole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
+          "Gross": null,
+          "Par": null,
+          "PlusMinus": null,
+          "Front9PM": null,
+          "Back9PM": null,
+          "PMperHole": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "H1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "H1": null,
+          "H2": null,
+          "H3": null,
+          "H4": null,
+          "H5": null,
+          "H6": null,
+          "H7": null,
+          "H8": null,
+          "H9": null,
+          "H10": null,
+          "H11": null,
+          "H12": null,
+          "H13": null,
+          "H14": null,
           "H15": null,
           "H16": null,
           "H17": null,
@@ -64892,8 +61912,8 @@
             "type": "number"
           },
           "Bogeys": {
-            "raw": 2,
-            "formatted": "2",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "Doubles": {
@@ -64902,29 +61922,17 @@
             "type": "number"
           },
           "TriplePlus": {
-            "raw": 12,
-            "formatted": "12",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Date": {
-            "raw": "2026-04-25T00:00:00.000Z",
-            "formatted": "04/25/26",
-            "type": "date"
-          },
+          "Differential": null,
+          "Course": null,
+          "Date": null,
           "SeqNum": {
-            "raw": 3,
-            "formatted": "3",
-            "type": "number"
+            "raw": null,
+            "formatted": null,
+            "type": "null"
           }
         },
         {
@@ -64934,115 +61942,35 @@
             "type": "number"
           },
           "HasData": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Gross": {
-            "raw": 118,
-            "formatted": "118",
-            "type": "number"
-          },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
-          "PlusMinus": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front9PM": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "Back9PM": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "PMperHole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
+          "Gross": null,
+          "Par": null,
+          "PlusMinus": null,
+          "Front9PM": null,
+          "Back9PM": null,
+          "PMperHole": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "H1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "H1": null,
+          "H2": null,
+          "H3": null,
+          "H4": null,
+          "H5": null,
+          "H6": null,
+          "H7": null,
+          "H8": null,
+          "H9": null,
+          "H10": null,
+          "H11": null,
+          "H12": null,
+          "H13": null,
+          "H14": null,
           "H15": null,
           "H16": null,
           "H17": null,
@@ -65063,8 +61991,8 @@
             "type": "number"
           },
           "Bogeys": {
-            "raw": 2,
-            "formatted": "2",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "Doubles": {
@@ -65073,29 +62001,17 @@
             "type": "number"
           },
           "TriplePlus": {
-            "raw": 12,
-            "formatted": "12",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Date": {
-            "raw": "2026-04-26T00:00:00.000Z",
-            "formatted": "04/26/26",
-            "type": "date"
-          },
+          "Differential": null,
+          "Course": null,
+          "Date": null,
           "SeqNum": {
-            "raw": 4,
-            "formatted": "4",
-            "type": "number"
+            "raw": null,
+            "formatted": null,
+            "type": "null"
           }
         },
         {
@@ -65105,115 +62021,35 @@
             "type": "number"
           },
           "HasData": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Gross": {
-            "raw": 118,
-            "formatted": "118",
-            "type": "number"
-          },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
-          "PlusMinus": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front9PM": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "Back9PM": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "PMperHole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
+          "Gross": null,
+          "Par": null,
+          "PlusMinus": null,
+          "Front9PM": null,
+          "Back9PM": null,
+          "PMperHole": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "H1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "H1": null,
+          "H2": null,
+          "H3": null,
+          "H4": null,
+          "H5": null,
+          "H6": null,
+          "H7": null,
+          "H8": null,
+          "H9": null,
+          "H10": null,
+          "H11": null,
+          "H12": null,
+          "H13": null,
+          "H14": null,
           "H15": null,
           "H16": null,
           "H17": null,
@@ -65234,8 +62070,8 @@
             "type": "number"
           },
           "Bogeys": {
-            "raw": 2,
-            "formatted": "2",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "Doubles": {
@@ -65244,29 +62080,17 @@
             "type": "number"
           },
           "TriplePlus": {
-            "raw": 12,
-            "formatted": "12",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Date": {
-            "raw": "2026-04-27T00:00:00.000Z",
-            "formatted": "04/27/26",
-            "type": "date"
-          },
+          "Differential": null,
+          "Course": null,
+          "Date": null,
           "SeqNum": {
-            "raw": 5,
-            "formatted": "5",
-            "type": "number"
+            "raw": null,
+            "formatted": null,
+            "type": "null"
           }
         },
         {
@@ -65276,115 +62100,35 @@
             "type": "number"
           },
           "HasData": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Gross": {
-            "raw": 118,
-            "formatted": "118",
-            "type": "number"
-          },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
-          "PlusMinus": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front9PM": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "Back9PM": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "PMperHole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
+          "Gross": null,
+          "Par": null,
+          "PlusMinus": null,
+          "Front9PM": null,
+          "Back9PM": null,
+          "PMperHole": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "H1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "H1": null,
+          "H2": null,
+          "H3": null,
+          "H4": null,
+          "H5": null,
+          "H6": null,
+          "H7": null,
+          "H8": null,
+          "H9": null,
+          "H10": null,
+          "H11": null,
+          "H12": null,
+          "H13": null,
+          "H14": null,
           "H15": null,
           "H16": null,
           "H17": null,
@@ -65405,8 +62149,8 @@
             "type": "number"
           },
           "Bogeys": {
-            "raw": 2,
-            "formatted": "2",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "Doubles": {
@@ -65415,29 +62159,17 @@
             "type": "number"
           },
           "TriplePlus": {
-            "raw": 12,
-            "formatted": "12",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Date": {
-            "raw": "2026-04-28T00:00:00.000Z",
-            "formatted": "04/28/26",
-            "type": "date"
-          },
+          "Differential": null,
+          "Course": null,
+          "Date": null,
           "SeqNum": {
-            "raw": 6,
-            "formatted": "6",
-            "type": "number"
+            "raw": null,
+            "formatted": null,
+            "type": "null"
           }
         },
         {
@@ -65447,115 +62179,35 @@
             "type": "number"
           },
           "HasData": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Gross": {
-            "raw": 118,
-            "formatted": "118",
-            "type": "number"
-          },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
-          "PlusMinus": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front9PM": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "Back9PM": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "PMperHole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
+          "Gross": null,
+          "Par": null,
+          "PlusMinus": null,
+          "Front9PM": null,
+          "Back9PM": null,
+          "PMperHole": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "H1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "H1": null,
+          "H2": null,
+          "H3": null,
+          "H4": null,
+          "H5": null,
+          "H6": null,
+          "H7": null,
+          "H8": null,
+          "H9": null,
+          "H10": null,
+          "H11": null,
+          "H12": null,
+          "H13": null,
+          "H14": null,
           "H15": null,
           "H16": null,
           "H17": null,
@@ -65576,8 +62228,8 @@
             "type": "number"
           },
           "Bogeys": {
-            "raw": 2,
-            "formatted": "2",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "Doubles": {
@@ -65586,29 +62238,17 @@
             "type": "number"
           },
           "TriplePlus": {
-            "raw": 12,
-            "formatted": "12",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Date": {
-            "raw": "2026-04-29T00:00:00.000Z",
-            "formatted": "04/29/26",
-            "type": "date"
-          },
+          "Differential": null,
+          "Course": null,
+          "Date": null,
           "SeqNum": {
-            "raw": 7,
-            "formatted": "7",
-            "type": "number"
+            "raw": null,
+            "formatted": null,
+            "type": "null"
           }
         },
         {
@@ -65618,115 +62258,35 @@
             "type": "number"
           },
           "HasData": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Gross": {
-            "raw": 118,
-            "formatted": "118",
-            "type": "number"
-          },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
-          "PlusMinus": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front9PM": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "Back9PM": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "PMperHole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
+          "Gross": null,
+          "Par": null,
+          "PlusMinus": null,
+          "Front9PM": null,
+          "Back9PM": null,
+          "PMperHole": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "H1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "H1": null,
+          "H2": null,
+          "H3": null,
+          "H4": null,
+          "H5": null,
+          "H6": null,
+          "H7": null,
+          "H8": null,
+          "H9": null,
+          "H10": null,
+          "H11": null,
+          "H12": null,
+          "H13": null,
+          "H14": null,
           "H15": null,
           "H16": null,
           "H17": null,
@@ -65747,8 +62307,8 @@
             "type": "number"
           },
           "Bogeys": {
-            "raw": 2,
-            "formatted": "2",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "Doubles": {
@@ -65757,29 +62317,17 @@
             "type": "number"
           },
           "TriplePlus": {
-            "raw": 12,
-            "formatted": "12",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Date": {
-            "raw": "2026-04-30T00:00:00.000Z",
-            "formatted": "04/30/26",
-            "type": "date"
-          },
+          "Differential": null,
+          "Course": null,
+          "Date": null,
           "SeqNum": {
-            "raw": 8,
-            "formatted": "8",
-            "type": "number"
+            "raw": null,
+            "formatted": null,
+            "type": "null"
           }
         },
         {
@@ -65789,115 +62337,35 @@
             "type": "number"
           },
           "HasData": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Gross": {
-            "raw": 118,
-            "formatted": "118",
-            "type": "number"
-          },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
-          "PlusMinus": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front9PM": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "Back9PM": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "PMperHole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
+          "Gross": null,
+          "Par": null,
+          "PlusMinus": null,
+          "Front9PM": null,
+          "Back9PM": null,
+          "PMperHole": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "H1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "H1": null,
+          "H2": null,
+          "H3": null,
+          "H4": null,
+          "H5": null,
+          "H6": null,
+          "H7": null,
+          "H8": null,
+          "H9": null,
+          "H10": null,
+          "H11": null,
+          "H12": null,
+          "H13": null,
+          "H14": null,
           "H15": null,
           "H16": null,
           "H17": null,
@@ -65918,8 +62386,8 @@
             "type": "number"
           },
           "Bogeys": {
-            "raw": 2,
-            "formatted": "2",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "Doubles": {
@@ -65928,29 +62396,17 @@
             "type": "number"
           },
           "TriplePlus": {
-            "raw": 12,
-            "formatted": "12",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Date": {
-            "raw": "2026-05-01T00:00:00.000Z",
-            "formatted": "05/01/26",
-            "type": "date"
-          },
+          "Differential": null,
+          "Course": null,
+          "Date": null,
           "SeqNum": {
-            "raw": 9,
-            "formatted": "9",
-            "type": "number"
+            "raw": null,
+            "formatted": null,
+            "type": "null"
           }
         },
         {
@@ -65960,115 +62416,35 @@
             "type": "number"
           },
           "HasData": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Gross": {
-            "raw": 118,
-            "formatted": "118",
-            "type": "number"
-          },
-          "Par": {
-            "raw": 56,
-            "formatted": "56",
-            "type": "number"
-          },
-          "PlusMinus": {
-            "raw": 62,
-            "formatted": "+62",
-            "type": "number"
-          },
-          "Front9PM": {
-            "raw": 38,
-            "formatted": "+38",
-            "type": "number"
-          },
-          "Back9PM": {
-            "raw": 24,
-            "formatted": "+24",
-            "type": "number"
-          },
-          "PMperHole": {
-            "raw": 4.428571428571429,
-            "formatted": "4.428571429",
-            "type": "number"
-          },
+          "Gross": null,
+          "Par": null,
+          "PlusMinus": null,
+          "Front9PM": null,
+          "Back9PM": null,
+          "PMperHole": null,
           "Holes": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "H1": {
-            "raw": 6,
-            "formatted": "+6",
-            "type": "number"
-          },
-          "H2": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H3": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H4": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H5": {
-            "raw": 7,
-            "formatted": "+7",
-            "type": "number"
-          },
-          "H6": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H7": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H8": {
-            "raw": 4,
-            "formatted": "+4",
-            "type": "number"
-          },
-          "H9": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H10": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H11": {
-            "raw": 1,
-            "formatted": "+1",
-            "type": "number"
-          },
-          "H12": {
-            "raw": 5,
-            "formatted": "+5",
-            "type": "number"
-          },
-          "H13": {
-            "raw": 3,
-            "formatted": "+3",
-            "type": "number"
-          },
-          "H14": {
-            "raw": 10,
-            "formatted": "+10",
-            "type": "number"
-          },
+          "H1": null,
+          "H2": null,
+          "H3": null,
+          "H4": null,
+          "H5": null,
+          "H6": null,
+          "H7": null,
+          "H8": null,
+          "H9": null,
+          "H10": null,
+          "H11": null,
+          "H12": null,
+          "H13": null,
+          "H14": null,
           "H15": null,
           "H16": null,
           "H17": null,
@@ -66089,8 +62465,8 @@
             "type": "number"
           },
           "Bogeys": {
-            "raw": 2,
-            "formatted": "2",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "Doubles": {
@@ -66099,29 +62475,17 @@
             "type": "number"
           },
           "TriplePlus": {
-            "raw": 12,
-            "formatted": "12",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
-          "Course": {
-            "raw": "Langston Golf Course",
-            "formatted": "Langston Golf Course",
-            "type": "string"
-          },
-          "Date": {
-            "raw": "2026-05-02T00:00:00.000Z",
-            "formatted": "05/02/26",
-            "type": "date"
-          },
+          "Differential": null,
+          "Course": null,
+          "Date": null,
           "SeqNum": {
-            "raw": 10,
-            "formatted": "10",
-            "type": "number"
+            "raw": null,
+            "formatted": null,
+            "type": "null"
           }
         },
         {
@@ -85082,6 +81446,282 @@
             "raw": null,
             "formatted": null,
             "type": "null"
+          }
+        }
+      ]
+    },
+    "Costs": {
+      "columns": [
+        {
+          "id": "A",
+          "label": "Date",
+          "type": "date"
+        },
+        {
+          "id": "B",
+          "label": "Item",
+          "type": "string"
+        },
+        {
+          "id": "C",
+          "label": "Price",
+          "type": "number"
+        }
+      ],
+      "rows": [
+        {
+          "Date": {
+            "raw": "2024-07-20T00:00:00.000Z",
+            "formatted": "07/20/24",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Costco Golf Clubs",
+            "formatted": "Costco Golf Clubs",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 715.12,
+            "formatted": "$715.12",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2024-07-16T00:00:00.000Z",
+            "formatted": "07/16/24",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Driving Range (East Potomac)",
+            "formatted": "Driving Range (East Potomac)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 8,
+            "formatted": "$8.00",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2024-07-16T00:00:00.000Z",
+            "formatted": "07/16/24",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Driving Range (East Potomac)",
+            "formatted": "Driving Range (East Potomac)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 20,
+            "formatted": "$20.00",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2024-08-05T00:00:00.000Z",
+            "formatted": "08/05/24",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Driving Range (East Potomac)",
+            "formatted": "Driving Range (East Potomac)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 20,
+            "formatted": "$20.00",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2025-04-17T00:00:00.000Z",
+            "formatted": "04/17/25",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Driving Range (East Potomac)",
+            "formatted": "Driving Range (East Potomac)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 20,
+            "formatted": "$20.00",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2025-06-02T00:00:00.000Z",
+            "formatted": "06/02/25",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Driving Range (East Potomac)",
+            "formatted": "Driving Range (East Potomac)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 12,
+            "formatted": "$12.00",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2025-06-11T00:00:00.000Z",
+            "formatted": "06/11/25",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Driving Range (East Potomac)",
+            "formatted": "Driving Range (East Potomac)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 9.63,
+            "formatted": "$9.63",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2025-08-08T00:00:00.000Z",
+            "formatted": "08/08/25",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Driving Range (East Potomac)",
+            "formatted": "Driving Range (East Potomac)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 12,
+            "formatted": "$12.00",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2025-10-10T00:00:00.000Z",
+            "formatted": "10/10/25",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Driving Range (East Potomac)",
+            "formatted": "Driving Range (East Potomac)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 12,
+            "formatted": "$12.00",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2025-10-15T00:00:00.000Z",
+            "formatted": "10/15/25",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Swing Away! Golf Training Tool ",
+            "formatted": "Swing Away! Golf Training Tool ",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 47.69,
+            "formatted": "$47.69",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-03-18T00:00:00.000Z",
+            "formatted": "03/18/26",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Driving Range (East Potomac)",
+            "formatted": "Driving Range (East Potomac)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 20,
+            "formatted": "$20.00",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-03-26T00:00:00.000Z",
+            "formatted": "03/26/26",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Golf Hitting Mat and Foam Balls",
+            "formatted": "Golf Hitting Mat and Foam Balls",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 18.25,
+            "formatted": "$18.25",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-04-06T00:00:00.000Z",
+            "formatted": "04/06/26",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Golf Tees",
+            "formatted": "Golf Tees",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 10.59,
+            "formatted": "$10.59",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-04-06T00:00:00.000Z",
+            "formatted": "04/06/26",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Golf Balls",
+            "formatted": "Golf Balls",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 26.68,
+            "formatted": "$26.68",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-04-24T00:00:00.000Z",
+            "formatted": "04/24/26",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Green Fees (Langston)",
+            "formatted": "Green Fees (Langston)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 53.85,
+            "formatted": "$53.85",
+            "type": "number"
           }
         }
       ]

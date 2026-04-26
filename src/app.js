@@ -2027,6 +2027,7 @@ function renderGolf(sectionGrid) {
   const workbook = getWorkbook("golf");
   const dashboardRows = workbook.tabs["Dashboard"]?.rows || [];
   const calcRows = (workbook.tabs["Calc"]?.rows || []).filter((row) => getCell(row, "HasData") === "1" || getRaw(row, "HasData") === 1);
+  const costRows = workbook.tabs["Costs"]?.rows || [];
   const rounds = [...calcRows].sort((left, right) => {
     const leftDate = parseSheetDate(getRaw(left, "Date") ?? getCell(left, "Date"))?.getTime() ?? 0;
     const rightDate = parseSheetDate(getRaw(right, "Date") ?? getCell(right, "Date"))?.getTime() ?? 0;
@@ -2045,6 +2046,9 @@ function renderGolf(sectionGrid) {
     "-";
   const shotsTaken = rounds.reduce((sum, row) => {
     return sum + (parseHealthNumber(getRaw(row, "Gross") ?? getCell(row, "Gross")) ?? 0);
+  }, 0);
+  const totalCost = costRows.reduce((sum, row) => {
+    return sum + (parseHealthNumber(getRaw(row, "Price") ?? getCell(row, "Price")) ?? 0);
   }, 0);
   const bestRoundHandicap = rounds.reduce((best, row) => {
     const rawDisplay =
@@ -2102,26 +2106,62 @@ function renderGolf(sectionGrid) {
     value: parseHealthNumber(getRaw(row, "Differential") ?? getCell(row, "Differential")) ?? 0
   }));
   const plusMinusSeries = rounds.map((row) => ({
-    label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
-    value: parseHealthNumber(getRaw(row, "PlusMinus") ?? getCell(row, "PlusMinus")) ?? 0
-  }));
+      label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
+      value: parseHealthNumber(getRaw(row, "PlusMinus") ?? getCell(row, "PlusMinus")) ?? 0
+    }));
+  const roundHandicapSeries = rounds.map((row) => ({
+      date: parseSheetDate(getRaw(row, "Date") ?? getCell(row, "Date")),
+      label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
+      value: parseHealthNumber(getRaw(row, "PlusMinus") ?? getCell(row, "PlusMinus")) ?? 0
+    })).filter((item) => item.date && item.value !== null);
+  const sortedCostEntries = [...costRows]
+    .map((row) => ({
+      date: parseSheetDate(getRaw(row, "Date") ?? getCell(row, "Date")),
+      value: parseHealthNumber(getRaw(row, "Price") ?? getCell(row, "Price")) ?? 0
+    }))
+    .filter((item) => item.date && item.value !== null)
+    .sort((left, right) => left.date - right.date);
+  let runningCost = 0;
+  const cumulativeCostSeries = sortedCostEntries.map((entry) => {
+    runningCost += entry.value;
+    return {
+      date: entry.date,
+      label: formatDateValue(entry.date),
+      value: Number(runningCost.toFixed(2))
+    };
+  });
+  const timelineLabels = [...new Set(
+    [...cumulativeCostSeries.map((item) => item.label), ...roundHandicapSeries.map((item) => item.label)]
+  )];
+  const costByLabel = new Map(cumulativeCostSeries.map((item) => [item.label, item.value]));
+  const handicapByLabel = new Map(roundHandicapSeries.map((item) => [item.label, item.value]));
+  let latestCostValue = null;
+  const costTimelineValues = timelineLabels.map((label) => {
+    if (costByLabel.has(label)) {
+      latestCostValue = costByLabel.get(label);
+    }
+    return latestCostValue;
+  });
+  const handicapTimelineValues = timelineLabels.map((label) => (
+    handicapByLabel.has(label) ? handicapByLabel.get(label) : null
+  ));
   const frontBackValues = [
-    parseHealthNumber(dashboardMap.get("Avg Front 9 +/-")) ?? 0,
-    parseHealthNumber(dashboardMap.get("Avg Back 9 +/-")) ?? 0,
+      parseHealthNumber(dashboardMap.get("Avg Front 9 +/-")) ?? 0,
+      parseHealthNumber(dashboardMap.get("Avg Back 9 +/-")) ?? 0,
     parseHealthNumber(dashboardMap.get("Best Front 9 +/-")) ?? 0,
     parseHealthNumber(dashboardMap.get("Best Back 9 +/-")) ?? 0
   ];
 
-  sectionGrid.appendChild(
-      createGlanceCard("Golf snapshot", "Your latest golf numbers from the workbook.", [
-        { label: "Average handicap", value: averageHandicap },
-        { label: "Rounds played", value: dashboardMap.get("Rounds Played") || "0" },
-        { label: "Total holes played", value: dashboardMap.get("Total Holes Played") || "0" },
-        { label: "Shots taken", value: Number(shotsTaken || 0).toLocaleString() },
-        { label: "Pars or better", value: Number((parseHealthNumber(dashboardMap.get("Pars")) ?? 0) + (parseHealthNumber(dashboardMap.get("Birdies")) ?? 0) + (parseHealthNumber(dashboardMap.get("Eagles or Better")) ?? 0)).toLocaleString() },
-        { label: "Best round handicap", value: bestRoundHandicap ? bestRoundHandicap.display : "-" }
-      ], "glance-half")
-    );
+    sectionGrid.appendChild(
+        createGlanceCard("Golf snapshot", "Your latest golf numbers from the workbook.", [
+          { label: "Average handicap", value: averageHandicap },
+          { label: "Best round handicap", value: bestRoundHandicap ? bestRoundHandicap.display : "-" },
+          { label: "Total cost", value: totalCost.toLocaleString(undefined, { style: "currency", currency: "USD" }) },
+          { label: "Rounds played", value: dashboardMap.get("Rounds Played") || "0" },
+          { label: "Total holes played", value: dashboardMap.get("Total Holes Played") || "0" },
+          { label: "Shots taken", value: Number(shotsTaken || 0).toLocaleString() }
+        ], "glance-half")
+      );
 
     sectionGrid.appendChild(
       createTableCard(
@@ -2244,22 +2284,83 @@ function renderGolf(sectionGrid) {
     );
 
     sectionGrid.appendChild(
-      createChartCard("Differential over time", "Scoring differential by round.", {
+      createChartCard("Cost over time vs round handicaps", "Cumulative golf cost alongside round handicap values.", {
         type: "line",
         data: {
-          labels: differentialSeries.map((item) => item.label),
+          labels: timelineLabels,
           datasets: [
             {
-              label: "Differential",
-              data: differentialSeries.map((item) => item.value),
+              label: "Cumulative cost",
+              data: costTimelineValues,
+              borderColor: "#f2a65a",
+              backgroundColor: "rgba(242, 166, 90, 0.14)",
+              yAxisID: "yCost",
+              fill: false,
+              tension: 0.3
+            },
+            {
+              label: "Round handicap",
+              data: handicapTimelineValues,
               borderColor: "#6ea8ff",
               backgroundColor: "rgba(110, 168, 255, 0.14)",
+              yAxisID: "yHandicap",
               fill: false,
               tension: 0.3
             }
           ]
         },
-        options: createRankingCountOptions("Differential", differentialSeries.map((item) => item.value), false)
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              ticks: {
+                color: "rgba(226, 232, 240, 0.82)",
+                maxRotation: 45,
+                minRotation: 45
+              },
+              grid: {
+                color: "rgba(255,255,255,0.08)"
+              }
+            },
+            yCost: {
+              position: "left",
+              ticks: {
+                color: "rgba(226, 232, 240, 0.82)",
+                callback: (value) => `$${Number(value).toLocaleString()}`
+              },
+              title: {
+                display: true,
+                text: "Cost",
+                color: "rgba(226, 232, 240, 0.82)"
+              },
+              grid: {
+                color: "rgba(255,255,255,0.08)"
+              }
+            },
+            yHandicap: {
+              position: "right",
+              ticks: {
+                color: "rgba(226, 232, 240, 0.82)"
+              },
+              title: {
+                display: true,
+                text: "Handicap",
+                color: "rgba(226, 232, 240, 0.82)"
+              },
+              grid: {
+                drawOnChartArea: false
+              }
+            }
+          },
+          plugins: {
+            legend: {
+              labels: {
+                color: "rgba(226, 232, 240, 0.82)"
+              }
+            }
+          }
+        }
       }, "chart-half")
     );
 

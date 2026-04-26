@@ -49,6 +49,6 @@ export const workbooks = [
     subtitle: "Rounds, scores, and golf notes",
     accent: "#8fd08b",
     sheetId: "13A0LivUGk8NDYRONbr7TqZwtWgrwGHAo",
-    tabs: ["Dashboard", "Round History", "Calc"]
+    tabs: ["Dashboard", "Round History", "Calc", "Costs"]
   }
 ];

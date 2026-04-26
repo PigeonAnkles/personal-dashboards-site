@@ -72,8 +72,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 3,
-            "formatted": "3",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "C": null,
@@ -112,7 +112,11 @@
             "formatted": "Days Since Step Goal",
             "type": "string"
           },
-          "B": null,
+          "B": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
           "C": null,
           "D": null,
           "E": null,
@@ -146,8 +150,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 9616.285714285714,
-            "formatted": "9,616",
+            "raw": 9498.142857142857,
+            "formatted": "9,498",
             "type": "number"
           },
           "C": null,
@@ -187,8 +191,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 6750.633333333333,
-            "formatted": "6,751",
+            "raw": 6549.666666666667,
+            "formatted": "6,550",
             "type": "number"
           },
           "C": null,
@@ -228,8 +232,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 67314,
-            "formatted": "67,314",
+            "raw": 66487,
+            "formatted": "66,487",
             "type": "number"
           },
           "C": null,
@@ -253,8 +257,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 202519,
-            "formatted": "202,519",
+            "raw": 196490,
+            "formatted": "196,490",
             "type": "number"
           },
           "C": null,
@@ -319,8 +323,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 23,
-            "formatted": "23",
+            "raw": 24,
+            "formatted": "24",
             "type": "number"
           },
           "C": null,
@@ -32981,7 +32985,11 @@
             "formatted": "173.8",
             "type": "number"
           },
-          "Steps": null,
+          "Steps": {
+            "raw": 1726,
+            "formatted": "1,726",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -33025,7 +33033,11 @@
             "formatted": "4/26/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
+          "Weight (lbs)": {
+            "raw": 175.3,
+            "formatted": "175.3",
+            "type": "number"
+          },
           "Steps": null,
           "Steps (2)": {
             "raw": false,
