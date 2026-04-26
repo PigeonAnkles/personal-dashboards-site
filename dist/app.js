@@ -10,6 +10,7 @@ const navItems = [
   { slug: "health", label: "Health", href: "./health.html" },
   { slug: "career", label: "Career", href: "./career.html" },
   { slug: "rankings", label: "Rankings", href: "./rankings.html" },
+  { slug: "golf", label: "Golf", href: "./golf.html" },
   { slug: "me-and-her", label: "Me and Her", href: "./me-and-her.html" }
 ];
 
@@ -514,6 +515,26 @@ function createMeAndHerFrame() {
       </div>
       <h1>Me and Her</h1>
       <p>Shared games, quizzes, and little dashboards for the two of you.</p>
+    </header>
+  `;
+  return wrapper;
+}
+
+function createGolfFrame() {
+  const wrapper = document.createElement("section");
+  wrapper.className = "workbook-shell";
+  wrapper.innerHTML = `
+    <div class="page-topbar">
+      <span class="brand">Personal Dashboards</span>
+      <div class="nav-links">${buildNavLinks("golf")}</div>
+    </div>
+    <header class="page-hero">
+      <div class="page-hero-head">
+        <span class="section-kicker">Workbook</span>
+        <a class="sheet-link" href="https://docs.google.com/spreadsheets/d/13A0LivUGk8NDYRONbr7TqZwtWgrwGHAo/edit?usp=sharing" target="_blank" rel="noreferrer">Open golf sheet</a>
+      </div>
+      <h1>Golf</h1>
+      <p>Rounds, scores, and golf notes live in the linked spreadsheet.</p>
     </header>
   `;
   return wrapper;
@@ -1147,6 +1168,20 @@ function renderMeAndHerPage() {
     </a>
     <a class="misc-link" href="./love-language-quiz/index.html">
       <strong>Love Language Quiz</strong>
+    </a>
+  `;
+  shell.appendChild(list);
+  dashboardRoot.appendChild(shell);
+}
+
+function renderGolfPage() {
+  const shell = createGolfFrame();
+  const list = document.createElement("section");
+  list.className = "misc-list";
+  list.innerHTML = `
+    <a class="misc-link" href="https://docs.google.com/spreadsheets/d/13A0LivUGk8NDYRONbr7TqZwtWgrwGHAo/edit?usp=sharing" target="_blank" rel="noreferrer">
+      <strong>Golf Spreadsheet</strong>
+      <p>Open the live golf workbook in Google Sheets.</p>
     </a>
   `;
   shell.appendChild(list);
@@ -2286,6 +2321,11 @@ async function init() {
 
   if (pageType === "me-and-her" || pageType === "misc") {
     renderMeAndHerPage();
+    return;
+  }
+
+  if (pageType === "golf") {
+    renderGolfPage();
     return;
   }
 
