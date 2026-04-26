@@ -2146,12 +2146,21 @@ function renderGolf(sectionGrid) {
   const handicapTimelineValues = timelineKeys.map((key) => (
     handicapByKey.has(key) ? handicapByKey.get(key) : null
   ));
-  const frontBackValues = [
-      parseHealthNumber(dashboardMap.get("Avg Front 9 +/-")) ?? 0,
-      parseHealthNumber(dashboardMap.get("Avg Back 9 +/-")) ?? 0,
-    parseHealthNumber(dashboardMap.get("Best Front 9 +/-")) ?? 0,
-    parseHealthNumber(dashboardMap.get("Best Back 9 +/-")) ?? 0
-  ];
+  const front9Values = rounds
+    .map((row) => parseHealthNumber(getRaw(row, "Front9PM") ?? getCell(row, "Front9PM")))
+    .filter((value) => value !== null && value !== 0);
+  const back9Values = rounds
+    .map((row) => parseHealthNumber(getRaw(row, "Back9PM") ?? getCell(row, "Back9PM")))
+    .filter((value) => value !== null && value !== 0);
+  const averageFront9 = front9Values.length
+    ? Number((front9Values.reduce((sum, value) => sum + value, 0) / front9Values.length).toFixed(2))
+    : 0;
+  const averageBack9 = back9Values.length
+    ? Number((back9Values.reduce((sum, value) => sum + value, 0) / back9Values.length).toFixed(2))
+    : 0;
+  const bestFront9 = front9Values.length ? Math.min(...front9Values) : 0;
+  const bestBack9 = back9Values.length ? Math.min(...back9Values) : 0;
+  const frontBackValues = [averageFront9, averageBack9, bestFront9, bestBack9];
 
     sectionGrid.appendChild(
         createGlanceCard("Golf snapshot", "Your latest golf numbers from the workbook.", [
