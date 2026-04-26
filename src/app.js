@@ -1134,7 +1134,7 @@ function renderHome() {
   navLinks.innerHTML = buildNavLinks("home");
 
   generatedAt.textContent = new Date(state.siteData.generatedAt).toLocaleString();
-  workbookCount.textContent = `${state.siteData.workbooks.length} workbook pages synced automatically`;
+  workbookCount.textContent = "Workbook pages synced automatically";
 }
 
 function renderMeAndHerPage() {
