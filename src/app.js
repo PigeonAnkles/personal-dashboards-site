@@ -2047,7 +2047,15 @@ function renderGolf(sectionGrid) {
     return sum + (parseHealthNumber(getRaw(row, "Gross") ?? getCell(row, "Gross")) ?? 0);
   }, 0);
   const bestRoundHandicap = rounds.reduce((best, row) => {
+    const rawDisplay =
+      getCell(row, "PlusMinus") ||
+      getCell(row, "E") ||
+      getCell(row, "Rating") ||
+      getCell(row, "Differential") ||
+      "";
     const handicap = parseHealthNumber(
+      getRaw(row, "PlusMinus") ??
+      getCell(row, "PlusMinus") ??
       getRaw(row, "E") ??
       getCell(row, "E") ??
       getRaw(row, "Rating") ??
@@ -2055,10 +2063,13 @@ function renderGolf(sectionGrid) {
       getRaw(row, "Differential") ??
       getCell(row, "Differential")
     );
-    if (handicap === null) {
+    if (handicap === null || !rawDisplay) {
       return best;
     }
-    return best === null ? handicap : Math.min(best, handicap);
+    if (!best || handicap < best.value) {
+      return { value: handicap, display: rawDisplay };
+    }
+    return best;
   }, null);
   const holeAverageData = Array.from({ length: 18 }, (_, index) => {
     const label = `Hole ${index + 1} Avg +/-`;
@@ -2108,7 +2119,7 @@ function renderGolf(sectionGrid) {
         { label: "Total holes played", value: dashboardMap.get("Total Holes Played") || "0" },
         { label: "Shots taken", value: Number(shotsTaken || 0).toLocaleString() },
         { label: "Pars or better", value: Number((parseHealthNumber(dashboardMap.get("Pars")) ?? 0) + (parseHealthNumber(dashboardMap.get("Birdies")) ?? 0) + (parseHealthNumber(dashboardMap.get("Eagles or Better")) ?? 0)).toLocaleString() },
-        { label: "Best round handicap", value: bestRoundHandicap !== null ? String(bestRoundHandicap) : "-" }
+        { label: "Best round handicap", value: bestRoundHandicap ? bestRoundHandicap.display : "-" }
       ], "glance-half")
     );
 
