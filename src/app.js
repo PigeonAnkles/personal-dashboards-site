@@ -2122,72 +2122,6 @@ function renderGolf(sectionGrid) {
     )
   );
 
-  sectionGrid.appendChild(
-    createChartCard("Overall round par vs score over time (+/-)", "Round-by-round score compared with par.", {
-      type: "line",
-      data: {
-        labels: grossSeries.map((item) => item.label),
-        datasets: [
-          {
-            label: "Score",
-            data: grossSeries.map((item) => item.value),
-            borderColor: "#8fd08b",
-            backgroundColor: "rgba(143, 208, 139, 0.14)",
-            fill: false,
-            tension: 0.3
-          },
-          {
-            label: "Par",
-            data: parSeries.map((item) => item.value),
-            borderColor: "#facc15",
-            backgroundColor: "rgba(250, 204, 21, 0.14)",
-            fill: false,
-            tension: 0.3
-          }
-        ]
-      },
-      options: createRankingCountOptions(
-        "Score",
-        [...grossSeries.map((item) => item.value), ...parSeries.map((item) => item.value)],
-        false
-      )
-    }, "chart-half")
-  );
-
-    sectionGrid.appendChild(
-      createChartCard("Scoring distribution", "How your holes have broken down so far.", {
-        type: "bar",
-      data: {
-        labels: scoringDistribution.map((item) => item.label),
-        datasets: [
-          {
-            label: "Count",
-            data: scoringDistribution.map((item) => item.value),
-            backgroundColor: ["#22c55e", "#60a5fa", "#86efac", "#facc15", "#fb923c", "#ef4444"]
-          }
-        ]
-      },
-      options: createRankingCountOptions("Holes", scoringDistribution.map((item) => item.value), false)
-    }, "chart-half")
-  );
-
-    sectionGrid.appendChild(
-      createChartCard("Hole average vs par", "Average performance against par by hole.", {
-        type: "bar",
-      data: {
-        labels: holeAverageData.map((item) => item.label),
-        datasets: [
-          {
-            label: "Avg +/-",
-            data: holeAverageData.map((item) => item.value),
-            backgroundColor: "#77c7ff"
-          }
-        ]
-      },
-      options: createHorizontalLabelCountOptions("Avg +/-", holeAverageData.map((item) => item.value), false)
-    }, "chart-half")
-  );
-
     sectionGrid.appendChild(
       createChartCard("Plus/minus per round", "Round-by-round score relative to par.", {
         type: "line",
@@ -2205,6 +2139,89 @@ function renderGolf(sectionGrid) {
           ]
         },
         options: createRankingCountOptions("+/-", plusMinusSeries.map((item) => item.value), false)
+      }, "chart-half")
+    );
+
+    sectionGrid.appendChild(
+      createChartCard("Scoring distribution", "How your holes have broken down so far.", {
+        type: "bar",
+        data: {
+          labels: scoringDistribution.map((item) => item.label),
+          datasets: [
+            {
+              label: "Count",
+              data: scoringDistribution.map((item) => item.value),
+              backgroundColor: ["#22c55e", "#60a5fa", "#86efac", "#facc15", "#fb923c", "#ef4444"]
+            }
+          ]
+        },
+        options: createRankingCountOptions("Holes", scoringDistribution.map((item) => item.value), false)
+      }, "chart-half")
+    );
+
+    sectionGrid.appendChild(
+      createChartCard("Overall round par vs score over time (+/-)", "Round-by-round score compared with par.", {
+        type: "line",
+        data: {
+          labels: grossSeries.map((item) => item.label),
+          datasets: [
+            {
+              label: "Score",
+              data: grossSeries.map((item) => item.value),
+              borderColor: "#8fd08b",
+              backgroundColor: "rgba(143, 208, 139, 0.14)",
+              fill: false,
+              tension: 0.3
+            },
+            {
+              label: "Par",
+              data: parSeries.map((item) => item.value),
+              borderColor: "#facc15",
+              backgroundColor: "rgba(250, 204, 21, 0.14)",
+              fill: false,
+              tension: 0.3
+            }
+          ]
+        },
+        options: createRankingCountOptions(
+          "Score",
+          [...grossSeries.map((item) => item.value), ...parSeries.map((item) => item.value)],
+          false
+        )
+      }, "chart-half")
+    );
+
+    sectionGrid.appendChild(
+      createChartCard("Hole average vs par", "Average performance against par by hole.", {
+        type: "bar",
+        data: {
+          labels: holeAverageData.map((item) => item.label),
+          datasets: [
+            {
+              label: "Avg +/-",
+              data: holeAverageData.map((item) => item.value),
+              backgroundColor: "#77c7ff"
+            }
+          ]
+        },
+        options: createHorizontalLabelCountOptions("Avg +/-", holeAverageData.map((item) => item.value), false)
+      }, "chart-half")
+    );
+
+    sectionGrid.appendChild(
+      createChartCard("Front 9 vs back 9", "Average and best splits against par.", {
+        type: "bar",
+        data: {
+          labels: ["Avg Front 9", "Avg Back 9", "Best Front 9", "Best Back 9"],
+          datasets: [
+            {
+              label: "+/-",
+              data: frontBackValues,
+              backgroundColor: "#8fd08b"
+            }
+          ]
+        },
+        options: createRankingCountOptions("+/-", frontBackValues, false)
       }, "chart-half")
     );
 
@@ -2227,23 +2244,6 @@ function renderGolf(sectionGrid) {
         options: createRankingCountOptions("Differential", differentialSeries.map((item) => item.value), false)
       }, "chart-half")
     );
-
-    sectionGrid.appendChild(
-      createChartCard("Front 9 vs back 9", "Average and best splits against par.", {
-        type: "bar",
-        data: {
-        labels: ["Avg Front 9", "Avg Back 9", "Best Front 9", "Best Back 9"],
-        datasets: [
-          {
-            label: "+/-",
-            data: frontBackValues,
-            backgroundColor: "#8fd08b"
-          }
-        ]
-      },
-      options: createRankingCountOptions("+/-", frontBackValues, false)
-    }, "chart-half")
-  );
 
   sectionGrid.appendChild(
     createTableCard(
