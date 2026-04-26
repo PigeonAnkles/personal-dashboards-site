@@ -2095,15 +2095,15 @@ function renderGolf(sectionGrid) {
   ];
 
   sectionGrid.appendChild(
-    createGlanceCard("Golf snapshot", "Your latest golf numbers from the workbook.", [
-      { label: "Average handicap", value: averageHandicap },
-      { label: "Rounds played", value: dashboardMap.get("Rounds Played") || "0" },
-      { label: "Total holes played", value: dashboardMap.get("Total Holes Played") || "0" },
-      { label: "Shots taken", value: shotsTaken ? formatInteger(shotsTaken) : "0" },
-      { label: "Average gross score", value: dashboardMap.get("Average Gross Score") || "-" },
-      { label: "Best round", value: bestRoundScore !== null ? formatInteger(bestRoundScore) : "-" }
-    ], "glance-half")
-  );
+      createGlanceCard("Golf snapshot", "Your latest golf numbers from the workbook.", [
+        { label: "Average handicap", value: averageHandicap },
+        { label: "Rounds played", value: dashboardMap.get("Rounds Played") || "0" },
+        { label: "Total holes played", value: dashboardMap.get("Total Holes Played") || "0" },
+      { label: "Shots taken", value: Number(shotsTaken || 0).toLocaleString() },
+        { label: "Average gross score", value: dashboardMap.get("Average Gross Score") || "-" },
+      { label: "Best round", value: bestRoundScore !== null ? Number(bestRoundScore).toLocaleString() : "-" }
+      ], "glance-half")
+    );
 
   sectionGrid.appendChild(
     createTableCard(
