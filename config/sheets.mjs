@@ -42,5 +42,13 @@ export const workbooks = [
     accent: "#f59a9a",
     sheetId: "1A7YBi4n9mkw0dHiCNv-hoidxRvU-rT94B1Ja5JHCmFQ",
     tabs: ["Career Progression", "Academic Progression", "Career / Academic Notes"]
+  },
+  {
+    slug: "golf",
+    title: "Golf",
+    subtitle: "Rounds, scores, and golf notes",
+    accent: "#8fd08b",
+    sheetId: "13A0LivUGk8NDYRONbr7TqZwtWgrwGHAo",
+    tabs: ["Dashboard", "Round History", "Calc"]
   }
 ];

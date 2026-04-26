@@ -520,26 +520,6 @@ function createMeAndHerFrame() {
   return wrapper;
 }
 
-function createGolfFrame() {
-  const wrapper = document.createElement("section");
-  wrapper.className = "workbook-shell";
-  wrapper.innerHTML = `
-    <div class="page-topbar">
-      <span class="brand">Personal Dashboards</span>
-      <div class="nav-links">${buildNavLinks("golf")}</div>
-    </div>
-    <header class="page-hero">
-      <div class="page-hero-head">
-        <span class="section-kicker">Workbook</span>
-        <a class="sheet-link" href="https://docs.google.com/spreadsheets/d/13A0LivUGk8NDYRONbr7TqZwtWgrwGHAo/edit?usp=sharing" target="_blank" rel="noreferrer">Open golf sheet</a>
-      </div>
-      <h1>Golf</h1>
-      <p>Rounds, scores, and golf notes live in the linked spreadsheet.</p>
-    </header>
-  `;
-  return wrapper;
-}
-
 function splitNumberedText(value) {
   const text = String(value || "").trim();
   if (!text) {
@@ -1168,20 +1148,6 @@ function renderMeAndHerPage() {
     </a>
     <a class="misc-link" href="./love-language-quiz/index.html">
       <strong>Love Language Quiz</strong>
-    </a>
-  `;
-  shell.appendChild(list);
-  dashboardRoot.appendChild(shell);
-}
-
-function renderGolfPage() {
-  const shell = createGolfFrame();
-  const list = document.createElement("section");
-  list.className = "misc-list";
-  list.innerHTML = `
-    <a class="misc-link" href="https://docs.google.com/spreadsheets/d/13A0LivUGk8NDYRONbr7TqZwtWgrwGHAo/edit?usp=sharing" target="_blank" rel="noreferrer">
-      <strong>Golf Spreadsheet</strong>
-      <p>Open the live golf workbook in Google Sheets.</p>
     </a>
   `;
   shell.appendChild(list);
@@ -2024,6 +1990,227 @@ function renderBowling(sectionGrid) {
   );
 }
 
+function buildGolfDashboardMap(rows) {
+  const map = new Map();
+  rows.forEach((row) => {
+    [["B", "C"], ["E", "F"], ["H", "I"]].forEach(([labelKey, valueKey]) => {
+      const label = String(getCell(row, labelKey) || "").trim();
+      const value = getCell(row, valueKey);
+      if (label && value !== "" && value !== null) {
+        map.set(label, value);
+      }
+    });
+  });
+  return map;
+}
+
+function renderGolf(sectionGrid) {
+  const workbook = getWorkbook("golf");
+  const dashboardRows = workbook.tabs["Dashboard"]?.rows || [];
+  const calcRows = (workbook.tabs["Calc"]?.rows || []).filter((row) => getCell(row, "HasData") === "1" || getRaw(row, "HasData") === 1);
+  const rounds = [...calcRows].sort((left, right) => {
+    const leftDate = parseSheetDate(getRaw(left, "Date") ?? getCell(left, "Date"))?.getTime() ?? 0;
+    const rightDate = parseSheetDate(getRaw(right, "Date") ?? getCell(right, "Date"))?.getTime() ?? 0;
+    const leftSeq = Number(getRaw(left, "SeqNum") ?? getCell(left, "SeqNum") ?? 0);
+    const rightSeq = Number(getRaw(right, "SeqNum") ?? getCell(right, "SeqNum") ?? 0);
+    return leftDate - rightDate || leftSeq - rightSeq;
+  });
+  const latestRound = rounds.at(-1);
+  const dashboardMap = buildGolfDashboardMap(dashboardRows);
+  const handicapIndex = getCell(dashboardRows[0], "L") || dashboardMap.get("Handicap Index") || "-";
+  const roundsUsed = getCell(dashboardRows[0], "M") || "-";
+  const holeAverageData = Array.from({ length: 18 }, (_, index) => {
+    const label = `Hole ${index + 1} Avg +/-`;
+    return {
+      label: String(index + 1),
+      value: parseHealthNumber(dashboardMap.get(label)) ?? 0
+    };
+  }).filter((item) => item.value !== 0);
+  const scoringDistribution = [
+    "Eagles or Better",
+    "Birdies",
+    "Pars",
+    "Bogeys",
+    "Double Bogeys",
+    "Triple Bogey+"
+  ].map((label) => ({
+    label,
+    value: parseHealthNumber(dashboardMap.get(label)) ?? 0
+  }));
+  const grossSeries = rounds.map((row) => ({
+    label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
+    value: parseHealthNumber(getRaw(row, "Gross") ?? getCell(row, "Gross")) ?? 0
+  }));
+  const differentialSeries = rounds.map((row) => ({
+    label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
+    value: parseHealthNumber(getRaw(row, "Differential") ?? getCell(row, "Differential")) ?? 0
+  }));
+  const plusMinusSeries = rounds.map((row) => ({
+    label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
+    value: parseHealthNumber(getRaw(row, "PlusMinus") ?? getCell(row, "PlusMinus")) ?? 0
+  }));
+  const frontBackValues = [
+    parseHealthNumber(dashboardMap.get("Avg Front 9 +/-")) ?? 0,
+    parseHealthNumber(dashboardMap.get("Avg Back 9 +/-")) ?? 0,
+    parseHealthNumber(dashboardMap.get("Best Front 9 +/-")) ?? 0,
+    parseHealthNumber(dashboardMap.get("Best Back 9 +/-")) ?? 0
+  ];
+
+  sectionGrid.appendChild(
+    createGlanceCard("Golf snapshot", "Your latest golf numbers from the workbook.", [
+      { label: "Handicap index", value: handicapIndex },
+      { label: "Rounds used", value: roundsUsed },
+      { label: "Rounds played", value: dashboardMap.get("Rounds Played") || "0" },
+      { label: "Total holes played", value: dashboardMap.get("Total Holes Played") || "0" },
+      { label: "Average differential", value: dashboardMap.get("Average Differential") || "-" },
+      { label: "Average gross score", value: dashboardMap.get("Average Gross Score") || "-" }
+    ])
+  );
+
+  sectionGrid.appendChild(
+    createGlanceCard("Latest round", latestRound ? "Most recently logged round." : "No rounds logged yet.", [
+      { label: "Course", value: latestRound ? (getCell(latestRound, "Course") || "-") : "-" },
+      { label: "Date", value: latestRound ? (formatDateValue(getRaw(latestRound, "Date")) || getCell(latestRound, "Date") || "-") : "-" },
+      { label: "Gross", value: latestRound ? (getCell(latestRound, "Gross") || "-") : "-" },
+      { label: "+/-", value: latestRound ? (getCell(latestRound, "PlusMinus") || "-") : "-" },
+      { label: "Holes", value: latestRound ? (getCell(latestRound, "Holes") || "-") : "-" },
+      { label: "Differential", value: latestRound ? (getCell(latestRound, "Differential") || "-") : "-" }
+    ])
+  );
+
+  sectionGrid.appendChild(
+    createChartCard("Gross score over time", "Round-by-round total score.", {
+      type: "line",
+      data: {
+        labels: grossSeries.map((item) => item.label),
+        datasets: [
+          {
+            label: "Gross",
+            data: grossSeries.map((item) => item.value),
+            borderColor: "#8fd08b",
+            backgroundColor: "rgba(143, 208, 139, 0.14)",
+            fill: false,
+            tension: 0.3
+          }
+        ]
+      },
+      options: createRankingCountOptions("Gross", grossSeries.map((item) => item.value), false)
+    }, "chart-half")
+  );
+
+  sectionGrid.appendChild(
+    createChartCard("Differential over time", "Scoring differential by round.", {
+      type: "line",
+      data: {
+        labels: differentialSeries.map((item) => item.label),
+        datasets: [
+          {
+            label: "Differential",
+            data: differentialSeries.map((item) => item.value),
+            borderColor: "#6ea8ff",
+            backgroundColor: "rgba(110, 168, 255, 0.14)",
+            fill: false,
+            tension: 0.3
+          }
+        ]
+      },
+      options: createRankingCountOptions("Differential", differentialSeries.map((item) => item.value), false)
+    }, "chart-half")
+  );
+
+  sectionGrid.appendChild(
+    createChartCard("Scoring distribution", "How your holes have broken down so far.", {
+      type: "bar",
+      data: {
+        labels: scoringDistribution.map((item) => item.label),
+        datasets: [
+          {
+            label: "Count",
+            data: scoringDistribution.map((item) => item.value),
+            backgroundColor: ["#22c55e", "#60a5fa", "#86efac", "#facc15", "#fb923c", "#ef4444"]
+          }
+        ]
+      },
+      options: createRankingCountOptions("Holes", scoringDistribution.map((item) => item.value), false)
+    }, "chart-half")
+  );
+
+  sectionGrid.appendChild(
+    createChartCard("Hole average vs par", "Average performance against par by hole.", {
+      type: "bar",
+      data: {
+        labels: holeAverageData.map((item) => item.label),
+        datasets: [
+          {
+            label: "Avg +/-",
+            data: holeAverageData.map((item) => item.value),
+            backgroundColor: "#77c7ff"
+          }
+        ]
+      },
+      options: createRankingCountOptions("Avg +/-", holeAverageData.map((item) => item.value), false)
+    }, "chart-half")
+  );
+
+  sectionGrid.appendChild(
+    createChartCard("Front 9 vs back 9", "Average and best splits against par.", {
+      type: "bar",
+      data: {
+        labels: ["Avg Front 9", "Avg Back 9", "Best Front 9", "Best Back 9"],
+        datasets: [
+          {
+            label: "+/-",
+            data: frontBackValues,
+            backgroundColor: "#8fd08b"
+          }
+        ]
+      },
+      options: createRankingCountOptions("+/-", frontBackValues, false)
+    }, "chart-half")
+  );
+
+  sectionGrid.appendChild(
+    createChartCard("Plus/minus per round", "Round-by-round score relative to par.", {
+      type: "line",
+      data: {
+        labels: plusMinusSeries.map((item) => item.label),
+        datasets: [
+          {
+            label: "+/-",
+            data: plusMinusSeries.map((item) => item.value),
+            borderColor: "#f59a9a",
+            backgroundColor: "rgba(245, 154, 154, 0.14)",
+            fill: false,
+            tension: 0.3
+          }
+        ]
+      },
+      options: createRankingCountOptions("+/-", plusMinusSeries.map((item) => item.value), false)
+    }, "chart-half")
+  );
+
+  sectionGrid.appendChild(
+    createTableCard(
+      "Recent rounds",
+      "Round history pulled from the golf calc sheet.",
+      ["Date", "Course", "Gross", "+/-", "Holes", "Differential", "Front 9", "Back 9"],
+      rounds
+        .slice(-8)
+        .reverse()
+        .map((row) => [
+          formatDateValue(getRaw(row, "Date")) || getCell(row, "Date"),
+          getCell(row, "Course"),
+          getCell(row, "Gross"),
+          getCell(row, "PlusMinus"),
+          getCell(row, "Holes"),
+          getCell(row, "Differential"),
+          getCell(row, "Front9PM"),
+          getCell(row, "Back9PM")
+        ])
+    )
+  );
+}
+
 function renderCareer(sectionGrid) {
   const workbook = getWorkbook("career");
   const rows = workbook.tabs["Career Progression"].rows.filter((row) => getCell(row, "Year"));
@@ -2296,6 +2483,7 @@ const renderers = {
   health: renderHealth,
   career: renderCareer,
   rankings: renderRankings,
+  golf: renderGolf,
   bowling: renderBowling,
 };
 
@@ -2321,11 +2509,6 @@ async function init() {
 
   if (pageType === "me-and-her" || pageType === "misc") {
     renderMeAndHerPage();
-    return;
-  }
-
-  if (pageType === "golf") {
-    renderGolfPage();
     return;
   }
 
