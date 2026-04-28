@@ -655,6 +655,71 @@ tbody tr:hover {
   padding: 18px 6px 4px;
 }
 
+.weeks-section {
+  border-radius: 30px;
+  overflow: clip;
+}
+
+.weeks-grid-shell {
+  align-items: start;
+}
+
+.weeks-summary {
+  align-self: stretch;
+}
+
+.weeks-poster-card {
+  align-self: stretch;
+}
+
+.weeks-poster {
+  display: grid;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.weeks-row {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.weeks-year-label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-align: right;
+}
+
+.weeks-strip {
+  display: grid;
+  grid-template-columns: repeat(52, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.week-dot {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background:
+    linear-gradient(
+      to top,
+      rgba(143, 208, 139, 0.95) 0,
+      rgba(143, 208, 139, 0.95) calc(var(--fill, 0) * 100%),
+      transparent calc(var(--fill, 0) * 100%),
+      transparent 100%
+    );
+}
+
+.week-dot-complete {
+  border-color: rgba(143, 208, 139, 0.95);
+}
+
+.week-dot-current {
+  border-color: rgba(143, 208, 139, 0.7);
+}
+
 @media (max-width: 1000px) {
   .hero-grid,
   .section-header {
@@ -689,6 +754,14 @@ tbody tr:hover {
 
   .chart-card.chart-wide {
     grid-column: 1 / -1;
+  }
+
+  .weeks-poster-card {
+    overflow-x: auto;
+  }
+
+  .weeks-poster {
+    min-width: 720px;
   }
 }
 
@@ -761,6 +834,15 @@ tbody tr:hover {
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .weeks-row {
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .weeks-strip {
+    gap: 3px;
   }
 
   .stat-card {

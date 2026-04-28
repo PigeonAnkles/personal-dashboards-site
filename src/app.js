@@ -1142,18 +1142,123 @@ function buildNavLinks(activeSlug) {
       const activeClass = item.slug === activeSlug ? "active" : "";
       return `<a class="${activeClass}" href="${item.href}">${item.label}</a>`;
     })
-    .join("");
+      .join("");
+}
+
+function createWeeksSection(birthDateString, totalYears = 90) {
+  const birthDate = new Date(`${birthDateString}T00:00:00`);
+  const today = new Date();
+  const weekMs = 1000 * 60 * 60 * 24 * 7;
+  const livedMs = Math.max(today - birthDate, 0);
+  const livedWeeksExact = livedMs / weekMs;
+  const completedWeeks = Math.floor(livedWeeksExact);
+  const currentWeekFill = Math.max(0, Math.min(1, livedWeeksExact - completedWeeks));
+  const totalWeeks = totalYears * 52;
+  const remainingWeeks = Math.max(totalWeeks - Math.ceil(livedWeeksExact), 0);
+
+  const section = document.createElement("section");
+  section.className = "section-card weeks-section";
+  section.innerHTML = `
+    <div class="section-header">
+      <div class="section-title-wrap">
+        <span class="section-kicker">Life</span>
+        <h2>Weeks</h2>
+        <p>Your life in weeks, updating automatically as each week moves forward.</p>
+      </div>
+      <span class="pill">Live</span>
+    </div>
+    <div class="section-grid weeks-grid-shell">
+      <div class="glance-card glance-half weeks-summary">
+        <div class="card-head">
+          <div>
+            <h3>At a glance</h3>
+            <p>Born ${birthDate.toLocaleDateString()}</p>
+          </div>
+          <span class="pill">Weeks</span>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">Weeks lived</div>
+            <div class="stat-value">${completedWeeks.toLocaleString()}</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Current week</div>
+            <div class="stat-value">${Math.round(currentWeekFill * 100)}%</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Weeks remaining</div>
+            <div class="stat-value">${remainingWeeks.toLocaleString()}</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Grid span</div>
+            <div class="stat-value">${totalYears} years</div>
+          </div>
+        </div>
+      </div>
+      <div class="table-card table-half weeks-poster-card">
+        <div class="card-head">
+          <div>
+            <h3>Poster</h3>
+            <p>Each circle is one week.</p>
+          </div>
+          <span class="pill">Auto</span>
+        </div>
+        <div class="weeks-poster" aria-label="Life in weeks poster"></div>
+      </div>
+    </div>
+  `;
+
+  const poster = section.querySelector(".weeks-poster");
+  for (let year = 0; year < totalYears; year += 1) {
+    const row = document.createElement("div");
+    row.className = "weeks-row";
+
+    const yearLabel = document.createElement("span");
+    yearLabel.className = "weeks-year-label";
+    yearLabel.textContent = year % 5 === 0 ? String(year) : "";
+    row.appendChild(yearLabel);
+
+    const weekStrip = document.createElement("div");
+    weekStrip.className = "weeks-strip";
+
+    for (let week = 0; week < 52; week += 1) {
+      const weekIndex = year * 52 + week;
+      const dot = document.createElement("span");
+      dot.className = "week-dot";
+
+      if (weekIndex < completedWeeks) {
+        dot.style.setProperty("--fill", "1");
+        dot.classList.add("week-dot-complete");
+      } else if (weekIndex === completedWeeks) {
+        dot.style.setProperty("--fill", String(currentWeekFill));
+        dot.classList.add("week-dot-current");
+      } else {
+        dot.style.setProperty("--fill", "0");
+      }
+
+      weekStrip.appendChild(dot);
+    }
+
+    row.appendChild(weekStrip);
+    poster.appendChild(row);
+  }
+
+  return section;
 }
 
 function renderHome() {
   const navLinks = document.querySelector("#nav-links");
   const generatedAt = document.querySelector("#generated-at");
   const workbookCount = document.querySelector("#workbook-count");
+  const main = document.querySelector("#dashboard-root");
 
   navLinks.innerHTML = buildNavLinks("home");
 
   generatedAt.textContent = new Date(state.siteData.generatedAt).toLocaleString();
   workbookCount.textContent = "Workbook pages synced automatically";
+
+  main.innerHTML = "";
+  main.appendChild(createWeeksSection("2004-04-04"));
 }
 
 function renderMeAndHerPage() {
