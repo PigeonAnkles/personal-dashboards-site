@@ -690,9 +690,26 @@ tbody tr:hover {
 }
 
 .weeks-poster-wrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: 32px auto;
   justify-content: center;
+  align-items: start;
+  gap: 10px;
   overflow-x: auto;
+}
+
+.weeks-axis {
+  display: grid;
+  grid-template-rows: repeat(75, 8px);
+  gap: 4px;
+  width: 32px;
+}
+
+.weeks-axis-cell {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 8px;
+  text-align: right;
 }
 
 .weeks-poster {
@@ -702,16 +719,8 @@ tbody tr:hover {
 }
 
 .weeks-row {
-  display: grid;
-  grid-template-columns: 28px minmax(0, 1fr);
-  gap: 10px;
-  align-items: center;
-}
-
-.weeks-year-label {
-  color: var(--muted);
-  font-size: 0.72rem;
-  text-align: right;
+  display: block;
+  height: 8px;
 }
 
 .weeks-strip {
@@ -742,6 +751,20 @@ tbody tr:hover {
 
 .week-dot-current {
   border-color: rgba(143, 208, 139, 0.7);
+}
+
+.weeks-footer {
+  display: grid;
+  grid-template-columns: 32px auto;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.weeks-footer-label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-align: right;
 }
 
 @media (max-width: 1000px) {
@@ -860,14 +883,24 @@ tbody tr:hover {
     gap: 10px;
   }
 
-  .weeks-row {
-    grid-template-columns: 24px minmax(0, 1fr);
-    gap: 8px;
-  }
-
   .weeks-bar {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
+  }
+
+  .weeks-poster-wrap {
+    grid-template-columns: 28px auto;
+    gap: 8px;
+  }
+
+  .weeks-axis {
+    grid-template-rows: repeat(75, 7px);
+    gap: 3px;
+    width: 28px;
+  }
+
+  .weeks-axis-cell {
+    line-height: 7px;
   }
 
   .weeks-strip {
@@ -875,9 +908,18 @@ tbody tr:hover {
     grid-template-columns: repeat(52, 7px);
   }
 
+  .weeks-row {
+    height: 7px;
+  }
+
   .week-dot {
     width: 7px;
     height: 7px;
+  }
+
+  .weeks-footer {
+    grid-template-columns: 28px auto;
+    gap: 8px;
   }
 
   .stat-card {

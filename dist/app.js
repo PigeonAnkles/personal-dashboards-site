@@ -1155,6 +1155,7 @@ function createWeeksSection(birthDateString, totalYears = 75) {
   const currentWeekFill = Math.max(0, Math.min(1, livedWeeksExact - completedWeeks));
   const totalWeeks = totalYears * 52;
   const remainingWeeks = Math.max(totalWeeks - Math.ceil(livedWeeksExact), 0);
+  const lifeProgress = Math.max(0, Math.min(100, (livedWeeksExact / totalWeeks) * 100));
 
   const section = document.createElement("section");
   section.className = "section-card weeks-section";
@@ -1179,7 +1180,7 @@ function createWeeksSection(birthDateString, totalYears = 75) {
           </div>
           <div class="weeks-bar-item">
             <span class="stat-label">Current week</span>
-            <strong class="weeks-bar-value">${Math.round(currentWeekFill * 100)}%</strong>
+            <strong class="weeks-bar-value">${lifeProgress.toFixed(1)}%</strong>
           </div>
           <div class="weeks-bar-item">
             <span class="stat-label">Weeks remaining</span>
@@ -1191,21 +1192,26 @@ function createWeeksSection(birthDateString, totalYears = 75) {
           </div>
         </div>
         <div class="weeks-poster-wrap">
+          <div class="weeks-axis" aria-hidden="true"></div>
           <div class="weeks-poster" aria-label="Life in weeks poster"></div>
+        </div>
+        <div class="weeks-footer">
+          <span class="weeks-footer-label">${totalYears}</span>
         </div>
       </div>
     </div>
   `;
 
   const poster = section.querySelector(".weeks-poster");
+  const axis = section.querySelector(".weeks-axis");
   for (let year = 0; year < totalYears; year += 1) {
+    const axisCell = document.createElement("span");
+    axisCell.className = "weeks-axis-cell";
+    axisCell.textContent = year % 5 === 0 ? String(year) : "";
+    axis.appendChild(axisCell);
+
     const row = document.createElement("div");
     row.className = "weeks-row";
-
-    const yearLabel = document.createElement("span");
-    yearLabel.className = "weeks-year-label";
-    yearLabel.textContent = year % 5 === 0 ? String(year) : "";
-    row.appendChild(yearLabel);
 
     const weekStrip = document.createElement("div");
     weekStrip.className = "weeks-strip";
