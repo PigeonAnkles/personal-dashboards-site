@@ -313,6 +313,100 @@ main {
   color: var(--muted);
 }
 
+.food-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.food-group-card,
+.food-recipe-card {
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--panel-strong);
+  box-shadow: var(--shadow);
+}
+
+.food-group-card {
+  display: grid;
+  gap: 16px;
+}
+
+.food-links {
+  display: grid;
+  gap: 12px;
+}
+
+.food-link,
+.food-back {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.food-link {
+  display: grid;
+  gap: 6px;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.food-link p,
+.food-recipe-summary {
+  margin: 0;
+  color: var(--muted);
+}
+
+.food-meta,
+.food-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.food-detail {
+  display: grid;
+  gap: 16px;
+}
+
+.food-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.food-recipe-card {
+  display: grid;
+  gap: 18px;
+}
+
+.food-recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.food-recipe-block {
+  display: grid;
+  gap: 12px;
+}
+
+.food-list {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 10px;
+}
+
 .section-card {
   border-radius: 30px;
   overflow: clip;
@@ -805,6 +899,10 @@ tbody tr:hover {
 
   .weeks-bar {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .food-recipe-grid {
+    grid-template-columns: 1fr;
   }
 
   .weeks-poster {

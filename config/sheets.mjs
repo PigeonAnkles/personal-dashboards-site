@@ -44,6 +44,14 @@ export const workbooks = [
     tabs: ["Career Progression", "Academic Progression", "Career / Academic Notes"]
   },
   {
+    slug: "food",
+    title: "Food",
+    subtitle: "Recipes grouped by category",
+    accent: "#f2a65a",
+    sheetId: "1EgZuBHS1AibKU0sZtgAs9C6RGXHH7A4g-4CJZVk8r70",
+    tabs: [{ name: "Recipes", csvGid: "0" }]
+  },
+  {
     slug: "golf",
     title: "Golf",
     subtitle: "Rounds, scores, and golf notes",

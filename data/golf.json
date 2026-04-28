@@ -88,13 +88,13 @@
           "J": null,
           "K": null,
           "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
+            "raw": 26.7,
+            "formatted": "26.7",
             "type": "number"
           },
           "M": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 2,
+            "formatted": "2",
             "type": "number"
           }
         },
@@ -122,7 +122,11 @@
           "I": null,
           "J": null,
           "K": null,
-          "L": null,
+          "L": {
+            "raw": 4.9,
+            "formatted": "4.9",
+            "type": "number"
+          },
           "M": {
             "raw": 0,
             "formatted": "0",
@@ -144,8 +148,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 38,
-            "formatted": "+38.0",
+            "raw": 33.5,
+            "formatted": "+33.5",
             "type": "number"
           },
           "G": null,
@@ -183,8 +187,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 24,
-            "formatted": "+24.0",
+            "raw": 12,
+            "formatted": "+12.0",
             "type": "number"
           },
           "G": null,
@@ -215,8 +219,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 4.9,
-            "formatted": "4.9",
+            "raw": 15.8,
+            "formatted": "15.8",
             "type": "number"
           },
           "D": null,
@@ -226,8 +230,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 38,
-            "formatted": "+38",
+            "raw": 29,
+            "formatted": "+29",
             "type": "number"
           },
           "G": null,
@@ -258,8 +262,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 62,
-            "formatted": "+62.0",
+            "raw": 45.5,
+            "formatted": "+45.5",
             "type": "number"
           },
           "D": null,
@@ -269,8 +273,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 24,
-            "formatted": "+24",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "G": null,
@@ -307,8 +311,8 @@
             "type": "string"
           },
           "I": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 5,
+            "formatted": "5",
             "type": "number"
           },
           "J": null,
@@ -342,8 +346,8 @@
             "type": "string"
           },
           "I": {
-            "raw": 12,
-            "formatted": "12",
+            "raw": 16,
+            "formatted": "16",
             "type": "number"
           },
           "J": null,
@@ -363,8 +367,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 2,
+            "formatted": "2",
             "type": "number"
           },
           "D": null,
@@ -374,8 +378,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 6,
-            "formatted": "+6.00",
+            "raw": 6.5,
+            "formatted": "+6.50",
             "type": "number"
           },
           "G": null,
@@ -398,8 +402,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 14,
-            "formatted": "14",
+            "raw": 23,
+            "formatted": "23",
             "type": "number"
           },
           "D": null,
@@ -409,8 +413,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 5,
-            "formatted": "+5.00",
+            "raw": 4,
+            "formatted": "+4.00",
             "type": "number"
           },
           "G": null,
@@ -437,8 +441,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 62,
-            "formatted": "+62.0",
+            "raw": 45.5,
+            "formatted": "+45.5",
             "type": "number"
           },
           "D": null,
@@ -448,8 +452,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 3,
-            "formatted": "+3.00",
+            "raw": 2.5,
+            "formatted": "+2.50",
             "type": "number"
           },
           "G": null,
@@ -459,8 +463,8 @@
             "type": "string"
           },
           "I": {
-            "raw": 4.428571428571429,
-            "formatted": "+4.43",
+            "raw": 3.8253968253968256,
+            "formatted": "+3.83",
             "type": "number"
           },
           "J": null,
@@ -480,8 +484,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 118,
-            "formatted": "118.0",
+            "raw": 87,
+            "formatted": "87.0",
             "type": "number"
           },
           "D": null,
@@ -491,8 +495,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 4,
-            "formatted": "+4.00",
+            "raw": 3,
+            "formatted": "+3.00",
             "type": "number"
           },
           "G": null,
@@ -502,8 +506,8 @@
             "type": "string"
           },
           "I": {
-            "raw": 4.428571428571429,
-            "formatted": "+4.43",
+            "raw": 3.2222222222222223,
+            "formatted": "+3.22",
             "type": "number"
           },
           "J": null,
@@ -523,8 +527,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 62,
-            "formatted": "+62",
+            "raw": 29,
+            "formatted": "+29",
             "type": "number"
           },
           "D": null,
@@ -534,8 +538,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 7,
-            "formatted": "+7.00",
+            "raw": 4.5,
+            "formatted": "+4.50",
             "type": "number"
           },
           "G": null,
@@ -569,8 +573,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 4,
-            "formatted": "+4.00",
+            "raw": 3,
+            "formatted": "+3.00",
             "type": "number"
           },
           "G": null,
@@ -597,8 +601,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 118,
-            "formatted": "118",
+            "raw": 56,
+            "formatted": "56",
             "type": "number"
           },
           "D": null,
@@ -608,8 +612,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 4,
-            "formatted": "+4.00",
+            "raw": 3.5,
+            "formatted": "+3.50",
             "type": "number"
           },
           "G": null,
@@ -647,8 +651,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 4,
-            "formatted": "+4.00",
+            "raw": 3,
+            "formatted": "+3.00",
             "type": "number"
           },
           "G": null,
@@ -690,13 +694,21 @@
             "type": "string"
           },
           "F": {
-            "raw": 1,
-            "formatted": "+1.00",
+            "raw": 3.5,
+            "formatted": "+3.50",
             "type": "number"
           },
           "G": null,
-          "H": null,
-          "I": null,
+          "H": {
+            "raw": "East Potomac Golf Course (8/27/24)",
+            "formatted": "East Potomac Golf Course (8/27/24)",
+            "type": "string"
+          },
+          "I": {
+            "raw": 29,
+            "formatted": "+29",
+            "type": "number"
+          },
           "J": null,
           "K": null,
           "L": null,
@@ -1213,6 +1225,396 @@
       "rows": [
         {
           "1": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "2": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "3": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "4": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "5": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "6": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "7": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "8": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "9": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
+          "Rnd": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Date": {
+            "raw": "2024-08-27T00:00:00.000Z",
+            "formatted": "08/27/24",
+            "type": "date"
+          },
+          "Course": {
+            "raw": "East Potomac Golf Course",
+            "formatted": "East Potomac Golf Course",
+            "type": "string"
+          },
+          "Slope": {
+            "raw": 110,
+            "formatted": "110",
+            "type": "number"
+          },
+          "Rating": {
+            "raw": 30,
+            "formatted": "30",
+            "type": "number"
+          },
+          "Gross": {
+            "raw": "Par",
+            "formatted": "Par",
+            "type": "string"
+          },
+          "Par": {
+            "raw": 27,
+            "formatted": "27",
+            "type": "number"
+          },
+          "+/-": null,
+          "Front 9": {
+            "raw": 27,
+            "formatted": "27",
+            "type": "number"
+          },
+          "Back 9": null,
+          "Holes": null,
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
+          "H15+/-": null,
+          "H16+/-": null,
+          "H17+/-": null,
+          "H18+/-": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "1": {
+            "raw": 10,
+            "formatted": "10",
+            "type": "number"
+          },
+          "2": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "3": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "4": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "5": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "6": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "7": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "8": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "9": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
+          "Rnd": null,
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
+          "Gross": {
+            "raw": "56",
+            "formatted": "56",
+            "type": "string"
+          },
+          "Par": null,
+          "+/-": {
+            "raw": 29,
+            "formatted": "+29",
+            "type": "number"
+          },
+          "Front 9": {
+            "raw": 56,
+            "formatted": "56",
+            "type": "number"
+          },
+          "Back 9": null,
+          "Holes": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "Avg/Hole": {
+            "raw": 6.22,
+            "formatted": "6.22",
+            "type": "number"
+          },
+          "Differential": {
+            "raw": 26.7,
+            "formatted": "26.7",
+            "type": "number"
+          },
+          "F9+/-": {
+            "raw": 29,
+            "formatted": "+29",
+            "type": "number"
+          },
+          "B9+/-": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
+          "+/-/Hole": {
+            "raw": 3.2222222222222223,
+            "formatted": "3.222222222",
+            "type": "number"
+          },
+          "H1+/-": {
+            "raw": 7,
+            "formatted": "+7",
+            "type": "number"
+          },
+          "H2+/-": {
+            "raw": 3,
+            "formatted": "+3",
+            "type": "number"
+          },
+          "H3+/-": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H4+/-": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H5+/-": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H6+/-": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H7+/-": {
+            "raw": 3,
+            "formatted": "+3",
+            "type": "number"
+          },
+          "H8+/-": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H9+/-": {
+            "raw": 6,
+            "formatted": "+6",
+            "type": "number"
+          },
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
+          "H15+/-": null,
+          "H16+/-": null,
+          "H17+/-": null,
+          "H18+/-": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "1": {
+            "raw": 7,
+            "formatted": "+7",
+            "type": "number"
+          },
+          "2": {
+            "raw": 3,
+            "formatted": "+3",
+            "type": "number"
+          },
+          "3": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "4": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "5": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "6": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "7": {
+            "raw": 3,
+            "formatted": "+3",
+            "type": "number"
+          },
+          "8": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "9": {
+            "raw": 6,
+            "formatted": "+6",
+            "type": "number"
+          },
+          "10": null,
+          "11": null,
+          "12": null,
+          "13": null,
+          "14": null,
+          "15": null,
+          "16": null,
+          "17": null,
+          "18": null,
+          "Rnd": null,
+          "Date": null,
+          "Course": null,
+          "Slope": null,
+          "Rating": null,
+          "Gross": {
+            "raw": "+/-",
+            "formatted": "+/-",
+            "type": "string"
+          },
+          "Par": null,
+          "+/-": null,
+          "Front 9": null,
+          "Back 9": null,
+          "Holes": null,
+          "Avg/Hole": null,
+          "Differential": null,
+          "F9+/-": null,
+          "B9+/-": null,
+          "+/-/Hole": null,
+          "H1+/-": null,
+          "H2+/-": null,
+          "H3+/-": null,
+          "H4+/-": null,
+          "H5+/-": null,
+          "H6+/-": null,
+          "H7+/-": null,
+          "H8+/-": null,
+          "H9+/-": null,
+          "H10+/-": null,
+          "H11+/-": null,
+          "H12+/-": null,
+          "H13+/-": null,
+          "H14+/-": null,
+          "H15+/-": null,
+          "H16+/-": null,
+          "H17+/-": null,
+          "H18+/-": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "1": {
             "raw": 5,
             "formatted": "5",
             "type": "number"
@@ -1303,8 +1705,8 @@
             "type": "number"
           },
           "Rnd": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 2,
+            "formatted": "2",
             "type": "number"
           },
           "Date": {
@@ -1658,196 +2060,6 @@
             "formatted": "+10",
             "type": "number"
           },
-          "15": null,
-          "16": null,
-          "17": null,
-          "18": null,
-          "Rnd": null,
-          "Date": null,
-          "Course": null,
-          "Slope": null,
-          "Rating": null,
-          "Gross": {
-            "raw": "+/-",
-            "formatted": "+/-",
-            "type": "string"
-          },
-          "Par": null,
-          "+/-": null,
-          "Front 9": null,
-          "Back 9": null,
-          "Holes": null,
-          "Avg/Hole": null,
-          "Differential": null,
-          "F9+/-": null,
-          "B9+/-": null,
-          "+/-/Hole": null,
-          "H1+/-": null,
-          "H2+/-": null,
-          "H3+/-": null,
-          "H4+/-": null,
-          "H5+/-": null,
-          "H6+/-": null,
-          "H7+/-": null,
-          "H8+/-": null,
-          "H9+/-": null,
-          "H10+/-": null,
-          "H11+/-": null,
-          "H12+/-": null,
-          "H13+/-": null,
-          "H14+/-": null,
-          "H15+/-": null,
-          "H16+/-": null,
-          "H17+/-": null,
-          "H18+/-": {
-            "raw": null,
-            "formatted": null,
-            "type": "null"
-          }
-        },
-        {
-          "1": null,
-          "2": null,
-          "3": null,
-          "4": null,
-          "5": null,
-          "6": null,
-          "7": null,
-          "8": null,
-          "9": null,
-          "10": null,
-          "11": null,
-          "12": null,
-          "13": null,
-          "14": null,
-          "15": null,
-          "16": null,
-          "17": null,
-          "18": null,
-          "Rnd": {
-            "raw": 2,
-            "formatted": "2",
-            "type": "number"
-          },
-          "Date": null,
-          "Course": null,
-          "Slope": null,
-          "Rating": null,
-          "Gross": {
-            "raw": "Par",
-            "formatted": "Par",
-            "type": "string"
-          },
-          "Par": null,
-          "+/-": null,
-          "Front 9": null,
-          "Back 9": null,
-          "Holes": null,
-          "Avg/Hole": null,
-          "Differential": null,
-          "F9+/-": null,
-          "B9+/-": null,
-          "+/-/Hole": null,
-          "H1+/-": null,
-          "H2+/-": null,
-          "H3+/-": null,
-          "H4+/-": null,
-          "H5+/-": null,
-          "H6+/-": null,
-          "H7+/-": null,
-          "H8+/-": null,
-          "H9+/-": null,
-          "H10+/-": null,
-          "H11+/-": null,
-          "H12+/-": null,
-          "H13+/-": null,
-          "H14+/-": null,
-          "H15+/-": null,
-          "H16+/-": null,
-          "H17+/-": null,
-          "H18+/-": {
-            "raw": null,
-            "formatted": null,
-            "type": "null"
-          }
-        },
-        {
-          "1": null,
-          "2": null,
-          "3": null,
-          "4": null,
-          "5": null,
-          "6": null,
-          "7": null,
-          "8": null,
-          "9": null,
-          "10": null,
-          "11": null,
-          "12": null,
-          "13": null,
-          "14": null,
-          "15": null,
-          "16": null,
-          "17": null,
-          "18": null,
-          "Rnd": null,
-          "Date": null,
-          "Course": null,
-          "Slope": null,
-          "Rating": null,
-          "Gross": null,
-          "Par": null,
-          "+/-": null,
-          "Front 9": null,
-          "Back 9": null,
-          "Holes": {
-            "raw": 0,
-            "formatted": "0",
-            "type": "number"
-          },
-          "Avg/Hole": null,
-          "Differential": null,
-          "F9+/-": null,
-          "B9+/-": null,
-          "+/-/Hole": null,
-          "H1+/-": null,
-          "H2+/-": null,
-          "H3+/-": null,
-          "H4+/-": null,
-          "H5+/-": null,
-          "H6+/-": null,
-          "H7+/-": null,
-          "H8+/-": null,
-          "H9+/-": null,
-          "H10+/-": null,
-          "H11+/-": null,
-          "H12+/-": null,
-          "H13+/-": null,
-          "H14+/-": null,
-          "H15+/-": null,
-          "H16+/-": null,
-          "H17+/-": null,
-          "H18+/-": {
-            "raw": null,
-            "formatted": null,
-            "type": "null"
-          }
-        },
-        {
-          "1": null,
-          "2": null,
-          "3": null,
-          "4": null,
-          "5": null,
-          "6": null,
-          "7": null,
-          "8": null,
-          "9": null,
-          "10": null,
-          "11": null,
-          "12": null,
-          "13": null,
-          "14": null,
           "15": null,
           "16": null,
           "17": null,
@@ -61618,6 +61830,157 @@
             "type": "number"
           },
           "Gross": {
+            "raw": 56,
+            "formatted": "56",
+            "type": "number"
+          },
+          "Par": {
+            "raw": 27,
+            "formatted": "27",
+            "type": "number"
+          },
+          "PlusMinus": {
+            "raw": 29,
+            "formatted": "+29",
+            "type": "number"
+          },
+          "Front9PM": {
+            "raw": 29,
+            "formatted": "+29",
+            "type": "number"
+          },
+          "Back9PM": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
+          "PMperHole": {
+            "raw": 3.2222222222222223,
+            "formatted": "3.222222222",
+            "type": "number"
+          },
+          "Holes": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "H1": {
+            "raw": 7,
+            "formatted": "+7",
+            "type": "number"
+          },
+          "H2": {
+            "raw": 3,
+            "formatted": "+3",
+            "type": "number"
+          },
+          "H3": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H4": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H5": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H6": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H7": {
+            "raw": 3,
+            "formatted": "+3",
+            "type": "number"
+          },
+          "H8": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H9": {
+            "raw": 6,
+            "formatted": "+6",
+            "type": "number"
+          },
+          "H10": null,
+          "H11": null,
+          "H12": null,
+          "H13": null,
+          "H14": null,
+          "H15": null,
+          "H16": null,
+          "H17": null,
+          "H18": null,
+          "Eagles": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
+          "Birdies": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
+          "Pars": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
+          "Bogeys": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
+          "Doubles": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "TriplePlus": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
+          "Differential": {
+            "raw": 26.7,
+            "formatted": "26.7",
+            "type": "number"
+          },
+          "Course": {
+            "raw": "East Potomac Golf Course",
+            "formatted": "East Potomac Golf Course",
+            "type": "string"
+          },
+          "Date": {
+            "raw": "2024-08-27T00:00:00.000Z",
+            "formatted": "08/27/24",
+            "type": "date"
+          },
+          "SeqNum": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          }
+        },
+        {
+          "Rnd": {
+            "raw": 2,
+            "formatted": "2",
+            "type": "number"
+          },
+          "HasData": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Gross": {
             "raw": 118,
             "formatted": "118",
             "type": "number"
@@ -61772,88 +62135,9 @@
             "type": "date"
           },
           "SeqNum": {
-            "raw": 1,
-            "formatted": "1",
-            "type": "number"
-          }
-        },
-        {
-          "Rnd": {
             "raw": 2,
             "formatted": "2",
             "type": "number"
-          },
-          "HasData": {
-            "raw": 0,
-            "formatted": "0",
-            "type": "number"
-          },
-          "Gross": null,
-          "Par": null,
-          "PlusMinus": null,
-          "Front9PM": null,
-          "Back9PM": null,
-          "PMperHole": null,
-          "Holes": {
-            "raw": 0,
-            "formatted": "0",
-            "type": "number"
-          },
-          "H1": null,
-          "H2": null,
-          "H3": null,
-          "H4": null,
-          "H5": null,
-          "H6": null,
-          "H7": null,
-          "H8": null,
-          "H9": null,
-          "H10": null,
-          "H11": null,
-          "H12": null,
-          "H13": null,
-          "H14": null,
-          "H15": null,
-          "H16": null,
-          "H17": null,
-          "H18": null,
-          "Eagles": {
-            "raw": 0,
-            "formatted": "0",
-            "type": "number"
-          },
-          "Birdies": {
-            "raw": 0,
-            "formatted": "0",
-            "type": "number"
-          },
-          "Pars": {
-            "raw": 0,
-            "formatted": "0",
-            "type": "number"
-          },
-          "Bogeys": {
-            "raw": 0,
-            "formatted": "0",
-            "type": "number"
-          },
-          "Doubles": {
-            "raw": 0,
-            "formatted": "0",
-            "type": "number"
-          },
-          "TriplePlus": {
-            "raw": 0,
-            "formatted": "0",
-            "type": "number"
-          },
-          "Differential": null,
-          "Course": null,
-          "Date": null,
-          "SeqNum": {
-            "raw": null,
-            "formatted": null,
-            "type": "null"
           }
         },
         {
@@ -81471,8 +81755,8 @@
       "rows": [
         {
           "Date": {
-            "raw": "2024-07-20T00:00:00.000Z",
-            "formatted": "07/20/24",
+            "raw": "2024-07-10T00:00:00.000Z",
+            "formatted": "07/10/24",
             "type": "date"
           },
           "Item": {

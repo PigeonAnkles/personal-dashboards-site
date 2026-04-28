@@ -1,0 +1,124 @@
+{
+  "slug": "food",
+  "title": "Food",
+  "subtitle": "Recipes grouped by category",
+  "accent": "#f2a65a",
+  "sheetId": "1EgZuBHS1AibKU0sZtgAs9C6RGXHH7A4g-4CJZVk8r70",
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1EgZuBHS1AibKU0sZtgAs9C6RGXHH7A4g-4CJZVk8r70/edit?usp=sharing",
+  "tabs": {
+    "Recipes": {
+      "columns": [
+        {
+          "id": "Category",
+          "label": "Category",
+          "type": "string"
+        },
+        {
+          "id": "Recipe Name",
+          "label": "Recipe Name",
+          "type": "string"
+        },
+        {
+          "id": "Summary",
+          "label": "Summary",
+          "type": "string"
+        },
+        {
+          "id": "Ingredients",
+          "label": "Ingredients",
+          "type": "string"
+        },
+        {
+          "id": "Directions",
+          "label": "Directions",
+          "type": "string"
+        },
+        {
+          "id": "Prep Time",
+          "label": "Prep Time",
+          "type": "string"
+        },
+        {
+          "id": "Cook Time",
+          "label": "Cook Time",
+          "type": "string"
+        },
+        {
+          "id": "Servings",
+          "label": "Servings",
+          "type": "string"
+        },
+        {
+          "id": "Number of Dishes",
+          "label": "Number of Dishes",
+          "type": "string"
+        },
+        {
+          "id": "Difficulty",
+          "label": "Difficulty",
+          "type": "string"
+        },
+        {
+          "id": "Notes",
+          "label": "Notes",
+          "type": "string"
+        }
+      ],
+      "rows": [
+        {
+          "Category": {
+            "raw": "Beef",
+            "formatted": "Beef",
+            "type": "string"
+          },
+          "Recipe Name": {
+            "raw": "Test",
+            "formatted": "Test",
+            "type": "string"
+          },
+          "Summary": {
+            "raw": "Test",
+            "formatted": "Test",
+            "type": "string"
+          },
+          "Ingredients": {
+            "raw": "Test\nTest",
+            "formatted": "Test\nTest",
+            "type": "string"
+          },
+          "Directions": {
+            "raw": "Test\nTest",
+            "formatted": "Test\nTest",
+            "type": "string"
+          },
+          "Prep Time": {
+            "raw": "5-20",
+            "formatted": "5-20",
+            "type": "string"
+          },
+          "Cook Time": {
+            "raw": "30-40",
+            "formatted": "30-40",
+            "type": "string"
+          },
+          "Servings": {
+            "raw": 10,
+            "formatted": "10",
+            "type": "number"
+          },
+          "Number of Dishes": {
+            "raw": 2,
+            "formatted": "2",
+            "type": "number"
+          },
+          "Difficulty": {
+            "raw": "Medium",
+            "formatted": "Medium",
+            "type": "string"
+          },
+          "Notes": null
+        }
+      ]
+    }
+  }
+}

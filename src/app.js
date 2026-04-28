@@ -9,6 +9,7 @@ const navItems = [
   { slug: "home", label: "Home", href: "./index.html" },
   { slug: "health", label: "Health", href: "./health.html" },
   { slug: "career", label: "Career", href: "./career.html" },
+  { slug: "food", label: "Food", href: "./food.html" },
   { slug: "rankings", label: "Rankings", href: "./rankings.html" },
   { slug: "golf", label: "Golf", href: "./golf.html" },
   { slug: "me-and-her", label: "Me and Her", href: "./me-and-her.html" }
@@ -518,6 +519,192 @@ function createMeAndHerFrame() {
     </header>
   `;
   return wrapper;
+}
+
+function createFoodFrame() {
+  const workbook = getWorkbook("food");
+  const wrapper = document.createElement("section");
+  wrapper.className = "workbook-shell";
+  wrapper.innerHTML = `
+      <div class="page-topbar">
+        <span class="brand">Personal Dashboards</span>
+        <div class="nav-links">${buildNavLinks("food")}</div>
+      </div>
+      <header class="page-hero">
+        <div class="page-hero-head">
+          <span class="section-kicker">Recipes</span>
+          <a class="sheet-link" href="${workbook?.sourceUrl || "#"}" target="_blank" rel="noreferrer">Open source sheet</a>
+        </div>
+        <h1>Food</h1>
+        <p>Recipes grouped by category with quick detail views.</p>
+      </header>
+    `;
+  return wrapper;
+}
+
+function slugifyRecipeName(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function parseFoodList(value) {
+  return String(value || "")
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+}
+
+function parseFoodTimeRange(value) {
+  const text = String(value || "").trim();
+  if (!text) {
+    return null;
+  }
+
+  const parts = text.match(/\d+/g)?.map(Number) || [];
+  if (!parts.length) {
+    return { label: text, min: null, max: null };
+  }
+
+  if (parts.length === 1) {
+    return { label: `${parts[0]} min`, min: parts[0], max: parts[0] };
+  }
+
+  return { label: `${parts[0]}-${parts[1]} min`, min: parts[0], max: parts[1] };
+}
+
+function formatFoodTotalTime(prepTime, cookTime) {
+  const prep = parseFoodTimeRange(prepTime);
+  const cook = parseFoodTimeRange(cookTime);
+
+  if (!prep && !cook) {
+    return "-";
+  }
+
+  if (prep?.min === null || cook?.min === null) {
+    return [prep?.label, cook?.label].filter(Boolean).join(" + ");
+  }
+
+  const min = prep.min + cook.min;
+  const max = prep.max + cook.max;
+  return min === max ? `${min} min` : `${min}-${max} min`;
+}
+
+function getFoodRecipes() {
+  const workbook = getWorkbook("food");
+  const rows = workbook?.tabs?.Recipes?.rows || [];
+
+  return rows
+    .filter((row) => getCell(row, "Category") && getCell(row, "Recipe Name"))
+    .map((row) => ({
+      slug: slugifyRecipeName(getCell(row, "Recipe Name")),
+      category: getCell(row, "Category"),
+      title: getCell(row, "Recipe Name"),
+      summary: getCell(row, "Summary"),
+      ingredients: parseFoodList(getCell(row, "Ingredients")),
+      steps: parseFoodList(getCell(row, "Directions")),
+      prepTime: getCell(row, "Prep Time"),
+      cookTime: getCell(row, "Cook Time"),
+      totalTime: formatFoodTotalTime(getCell(row, "Prep Time"), getCell(row, "Cook Time")),
+      servings: getCell(row, "Servings"),
+      dishes: getCell(row, "Number of Dishes"),
+      difficulty: getCell(row, "Difficulty") || "-",
+      notes: getCell(row, "Notes")
+    }));
+}
+
+function getFoodRecipe(slug) {
+  return getFoodRecipes().find((recipe) => recipe.slug === slug);
+}
+
+function renderFoodIndex(shell) {
+  const list = document.createElement("section");
+  list.className = "food-groups";
+  const recipes = getFoodRecipes();
+  const groupedRecipes = recipes.reduce((accumulator, recipe) => {
+    if (!accumulator[recipe.category]) {
+      accumulator[recipe.category] = [];
+    }
+    accumulator[recipe.category].push(recipe);
+    return accumulator;
+  }, {});
+
+  Object.entries(groupedRecipes).forEach(([category, categoryRecipes]) => {
+    const card = document.createElement("article");
+    card.className = "food-group-card";
+    card.innerHTML = `
+        <div class="card-head">
+          <div>
+            <h3>${category}</h3>
+          </div>
+          <span class="pill">${categoryRecipes.length}</span>
+        </div>
+      `;
+
+    const links = document.createElement("div");
+    links.className = "food-links";
+
+    categoryRecipes.forEach((recipe) => {
+      const link = document.createElement("a");
+      link.className = "food-link";
+      link.href = `#${recipe.slug}`;
+      link.innerHTML = `
+          <strong>${recipe.title}</strong>
+          <div class="food-meta">
+            <span>${recipe.totalTime}</span>
+            <span>${recipe.difficulty}</span>
+          </div>
+          <p>${recipe.summary}</p>
+        `;
+      links.appendChild(link);
+    });
+
+    card.appendChild(links);
+    list.appendChild(card);
+  });
+
+  shell.appendChild(list);
+}
+
+function renderFoodRecipeDetail(shell, recipe) {
+  const detail = document.createElement("section");
+  detail.className = "food-detail";
+  detail.innerHTML = `
+    <a class="food-back" href="./food.html">Back</a>
+    <article class="food-recipe-card">
+        <div class="card-head">
+          <div>
+            <h2>${recipe.title}</h2>
+            <p>${recipe.category}</p>
+          </div>
+          <span class="pill">Recipe</span>
+        </div>
+        <p class="food-recipe-summary">${recipe.summary}</p>
+        <div class="food-detail-meta">
+          <span class="pill">Total ${recipe.totalTime}</span>
+          <span class="pill">${recipe.difficulty}</span>
+          ${recipe.servings ? `<span class="pill">${recipe.servings} servings</span>` : ""}
+          ${recipe.dishes ? `<span class="pill">${recipe.dishes} dish${String(recipe.dishes) === "1" ? "" : "es"}</span>` : ""}
+        </div>
+        <div class="food-recipe-grid">
+          <section class="food-recipe-block">
+            <h3>Ingredients</h3>
+            <ul class="food-list">
+              ${recipe.ingredients.map((item) => `<li>${item}</li>`).join("")}
+          </ul>
+        </section>
+        <section class="food-recipe-block">
+          <h3>Method</h3>
+            <ol class="food-list food-steps">
+              ${recipe.steps.map((item) => `<li>${item}</li>`).join("")}
+            </ol>
+          </section>
+        </div>
+        ${recipe.notes ? `<section class="food-recipe-block"><h3>Notes</h3><p class="food-recipe-summary">${recipe.notes}</p></section>` : ""}
+      </article>
+    `;
+  shell.appendChild(detail);
 }
 
 function splitNumberedText(value) {
@@ -1254,7 +1441,7 @@ function renderHome() {
   workbookCount.textContent = "Workbook pages synced automatically";
 
   main.innerHTML = "";
-  main.appendChild(createWeeksSection("2004-04-04"));
+  main.appendChild(createWeeksSection("2004-04-20"));
 }
 
 function renderMeAndHerPage() {
@@ -1271,6 +1458,21 @@ function renderMeAndHerPage() {
     </a>
   `;
   shell.appendChild(list);
+  dashboardRoot.appendChild(shell);
+}
+
+function renderFoodPage() {
+  const shell = createFoodFrame();
+  const recipeSlug = window.location.hash.replace(/^#/, "").trim();
+  const recipe = recipeSlug ? getFoodRecipe(recipeSlug) : null;
+
+  if (recipe) {
+    renderFoodRecipeDetail(shell, recipe);
+  } else {
+    renderFoodIndex(shell);
+  }
+
+  dashboardRoot.innerHTML = "";
   dashboardRoot.appendChild(shell);
 }
 
@@ -2795,6 +2997,12 @@ async function init() {
 
   if (pageType === "me-and-her" || pageType === "misc") {
     renderMeAndHerPage();
+    return;
+  }
+
+  if (pageType === "food") {
+    renderFoodPage();
+    window.addEventListener("hashchange", renderFoodPage);
     return;
   }
 
