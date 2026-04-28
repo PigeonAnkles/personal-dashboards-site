@@ -1145,7 +1145,7 @@ function buildNavLinks(activeSlug) {
       .join("");
 }
 
-function createWeeksSection(birthDateString, totalYears = 90) {
+function createWeeksSection(birthDateString, totalYears = 75) {
   const birthDate = new Date(`${birthDateString}T00:00:00`);
   const today = new Date();
   const weekMs = 1000 * 60 * 60 * 24 * 7;
@@ -1163,47 +1163,36 @@ function createWeeksSection(birthDateString, totalYears = 90) {
       <div class="section-title-wrap">
         <span class="section-kicker">Life</span>
         <h2>Weeks</h2>
-        <p>Your life in weeks, updating automatically as each week moves forward.</p>
       </div>
       <span class="pill">Live</span>
     </div>
     <div class="section-grid weeks-grid-shell">
-      <div class="glance-card glance-half weeks-summary">
-        <div class="card-head">
-          <div>
-            <h3>At a glance</h3>
-            <p>Born ${birthDate.toLocaleDateString()}</p>
+      <div class="table-card weeks-board">
+        <div class="weeks-bar">
+          <div class="weeks-bar-item">
+            <span class="stat-label">Born</span>
+            <strong class="weeks-bar-value">${birthDate.toLocaleDateString()}</strong>
           </div>
-          <span class="pill">Weeks</span>
-        </div>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-label">Weeks lived</div>
-            <div class="stat-value">${completedWeeks.toLocaleString()}</div>
+          <div class="weeks-bar-item">
+            <span class="stat-label">Weeks lived</span>
+            <strong class="weeks-bar-value">${completedWeeks.toLocaleString()}</strong>
           </div>
-          <div class="stat-card">
-            <div class="stat-label">Current week</div>
-            <div class="stat-value">${Math.round(currentWeekFill * 100)}%</div>
+          <div class="weeks-bar-item">
+            <span class="stat-label">Current week</span>
+            <strong class="weeks-bar-value">${Math.round(currentWeekFill * 100)}%</strong>
           </div>
-          <div class="stat-card">
-            <div class="stat-label">Weeks remaining</div>
-            <div class="stat-value">${remainingWeeks.toLocaleString()}</div>
+          <div class="weeks-bar-item">
+            <span class="stat-label">Weeks remaining</span>
+            <strong class="weeks-bar-value">${remainingWeeks.toLocaleString()}</strong>
           </div>
-          <div class="stat-card">
-            <div class="stat-label">Grid span</div>
-            <div class="stat-value">${totalYears} years</div>
+          <div class="weeks-bar-item">
+            <span class="stat-label">Span</span>
+            <strong class="weeks-bar-value">${totalYears} years</strong>
           </div>
         </div>
-      </div>
-      <div class="table-card table-half weeks-poster-card">
-        <div class="card-head">
-          <div>
-            <h3>Poster</h3>
-            <p>Each circle is one week.</p>
-          </div>
-          <span class="pill">Auto</span>
+        <div class="weeks-poster-wrap">
+          <div class="weeks-poster" aria-label="Life in weeks poster"></div>
         </div>
-        <div class="weeks-poster" aria-label="Life in weeks poster"></div>
       </div>
     </div>
   `;

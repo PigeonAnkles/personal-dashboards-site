@@ -664,18 +664,41 @@ tbody tr:hover {
   align-items: start;
 }
 
-.weeks-summary {
-  align-self: stretch;
+.weeks-board {
+  grid-column: 1 / -1;
+  padding: 20px;
 }
 
-.weeks-poster-card {
-  align-self: stretch;
+.weeks-bar {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.weeks-bar-item {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.weeks-bar-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.weeks-poster-wrap {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
 }
 
 .weeks-poster {
   display: grid;
   gap: 4px;
-  margin-top: 10px;
+  width: max-content;
 }
 
 .weeks-row {
@@ -693,14 +716,15 @@ tbody tr:hover {
 
 .weeks-strip {
   display: grid;
-  grid-template-columns: repeat(52, minmax(0, 1fr));
+  grid-template-columns: repeat(52, 8px);
   gap: 4px;
+  justify-content: start;
 }
 
 .week-dot {
-  width: 100%;
-  aspect-ratio: 1;
-  border-radius: 999px;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background:
     linear-gradient(
@@ -756,12 +780,12 @@ tbody tr:hover {
     grid-column: 1 / -1;
   }
 
-  .weeks-poster-card {
-    overflow-x: auto;
+  .weeks-bar {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .weeks-poster {
-    min-width: 720px;
+    min-width: max-content;
   }
 }
 
@@ -841,8 +865,19 @@ tbody tr:hover {
     gap: 8px;
   }
 
+  .weeks-bar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
   .weeks-strip {
     gap: 3px;
+    grid-template-columns: repeat(52, 7px);
+  }
+
+  .week-dot {
+    width: 7px;
+    height: 7px;
   }
 
   .stat-card {
