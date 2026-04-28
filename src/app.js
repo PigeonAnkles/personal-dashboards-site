@@ -591,18 +591,38 @@ function formatFoodTotalTime(prepTime, cookTime) {
   return min === max ? `${min} min` : `${min}-${max} min`;
 }
 
+function normalizeFoodImageUrl(value) {
+  const url = String(value || "").trim();
+  if (!url) {
+    return "";
+  }
+
+  const fileMatch = url.match(/\/file\/d\/([^/]+)/i);
+  if (fileMatch) {
+    return `https://drive.google.com/uc?export=view&id=${fileMatch[1]}`;
+  }
+
+  const openMatch = url.match(/[?&]id=([^&]+)/i);
+  if (openMatch && /drive\.google\.com/i.test(url)) {
+    return `https://drive.google.com/uc?export=view&id=${openMatch[1]}`;
+  }
+
+  return url;
+}
+
 function getFoodRecipes() {
   const workbook = getWorkbook("food");
   const rows = workbook?.tabs?.Recipes?.rows || [];
 
   return rows
     .filter((row) => getCell(row, "Category") && getCell(row, "Recipe Name"))
-    .map((row) => ({
-      slug: slugifyRecipeName(getCell(row, "Recipe Name")),
-      category: getCell(row, "Category"),
-      title: getCell(row, "Recipe Name"),
-      summary: getCell(row, "Summary"),
-      ingredients: parseFoodList(getCell(row, "Ingredients")),
+      .map((row) => ({
+        slug: slugifyRecipeName(getCell(row, "Recipe Name")),
+        category: getCell(row, "Category"),
+        imageUrl: normalizeFoodImageUrl(getCell(row, "Picture Link")),
+        title: getCell(row, "Recipe Name"),
+        summary: getCell(row, "Summary"),
+        ingredients: parseFoodList(getCell(row, "Ingredients")),
       steps: parseFoodList(getCell(row, "Directions")),
       prepTime: getCell(row, "Prep Time"),
       cookTime: getCell(row, "Cook Time"),
@@ -672,7 +692,8 @@ function renderFoodRecipeDetail(shell, recipe) {
   detail.className = "food-detail";
   detail.innerHTML = `
     <a class="food-back" href="./food.html">Back</a>
-    <article class="food-recipe-card">
+      <article class="food-recipe-card">
+        ${recipe.imageUrl ? `<img class="food-recipe-image" src="${recipe.imageUrl}" alt="${recipe.title}" />` : ""}
         <div class="card-head">
           <div>
             <h2>${recipe.title}</h2>
@@ -682,7 +703,9 @@ function renderFoodRecipeDetail(shell, recipe) {
         </div>
         <p class="food-recipe-summary">${recipe.summary}</p>
         <div class="food-detail-meta">
-          <span class="pill">Total ${recipe.totalTime}</span>
+          <span class="pill">Total time ${recipe.totalTime}</span>
+          ${recipe.prepTime ? `<span class="pill">Prep ${recipe.prepTime}</span>` : ""}
+          ${recipe.cookTime ? `<span class="pill">Cook ${recipe.cookTime}</span>` : ""}
           <span class="pill">${recipe.difficulty}</span>
           ${recipe.servings ? `<span class="pill">${recipe.servings} servings</span>` : ""}
           ${recipe.dishes ? `<span class="pill">${recipe.dishes} dish${String(recipe.dishes) === "1" ? "" : "es"}</span>` : ""}
