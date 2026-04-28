@@ -1154,8 +1154,8 @@ function createWeeksSection(birthDateString, totalYears = 75) {
   const completedWeeks = Math.floor(livedWeeksExact);
   const currentWeekFill = Math.max(0, Math.min(1, livedWeeksExact - completedWeeks));
   const totalWeeks = totalYears * 52;
-  const remainingWeeks = Math.max(totalWeeks - Math.ceil(livedWeeksExact), 0);
-  const lifeProgress = Math.max(0, Math.min(100, (livedWeeksExact / totalWeeks) * 100));
+  const remainingWeeks = Math.max(totalWeeks - completedWeeks, 0);
+  const lifeProgress = Math.max(0, Math.min(100, (completedWeeks / totalWeeks) * 100));
 
   const section = document.createElement("section");
   section.className = "section-card weeks-section";
@@ -1197,6 +1197,7 @@ function createWeeksSection(birthDateString, totalYears = 75) {
         </div>
         <div class="weeks-footer">
           <span class="weeks-footer-label">${totalYears}</span>
+          <span></span>
         </div>
       </div>
     </div>
