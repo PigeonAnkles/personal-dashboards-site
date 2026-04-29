@@ -2617,7 +2617,8 @@ function renderGolf(sectionGrid) {
               backgroundColor: "rgba(110, 168, 255, 0.14)",
               yAxisID: "yHandicap",
               fill: false,
-              tension: 0.3
+              tension: 0.3,
+              spanGaps: true
             }
           ]
         },
