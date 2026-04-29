@@ -536,7 +536,6 @@ function createFoodFrame() {
           <a class="sheet-link" href="${workbook?.sourceUrl || "#"}" target="_blank" rel="noreferrer">Open source sheet</a>
         </div>
         <h1>Food</h1>
-        <p>Recipes grouped by category with quick detail views.</p>
       </header>
     `;
   return wrapper;
@@ -591,25 +590,6 @@ function formatFoodTotalTime(prepTime, cookTime) {
   return min === max ? `${min} min` : `${min}-${max} min`;
 }
 
-function normalizeFoodImageUrl(value) {
-  const url = String(value || "").trim();
-  if (!url) {
-    return "";
-  }
-
-  const fileMatch = url.match(/\/file\/d\/([^/]+)/i);
-  if (fileMatch) {
-    return `https://drive.google.com/uc?export=view&id=${fileMatch[1]}`;
-  }
-
-  const openMatch = url.match(/[?&]id=([^&]+)/i);
-  if (openMatch && /drive\.google\.com/i.test(url)) {
-    return `https://drive.google.com/uc?export=view&id=${openMatch[1]}`;
-  }
-
-  return url;
-}
-
 function getFoodRecipes() {
   const workbook = getWorkbook("food");
   const rows = workbook?.tabs?.Recipes?.rows || [];
@@ -619,7 +599,6 @@ function getFoodRecipes() {
       .map((row) => ({
         slug: slugifyRecipeName(getCell(row, "Recipe Name")),
         category: getCell(row, "Category"),
-        imageUrl: normalizeFoodImageUrl(getCell(row, "Picture Link")),
         title: getCell(row, "Recipe Name"),
         summary: getCell(row, "Summary"),
         ingredients: parseFoodList(getCell(row, "Ingredients")),
@@ -689,11 +668,10 @@ function renderFoodIndex(shell) {
 
 function renderFoodRecipeDetail(shell, recipe) {
   const detail = document.createElement("section");
-  detail.className = "food-detail";
-  detail.innerHTML = `
-    <a class="food-back" href="./food.html">Back</a>
+    detail.className = "food-detail";
+    detail.innerHTML = `
+      <a class="food-back" href="./food.html">Back</a>
       <article class="food-recipe-card">
-        ${recipe.imageUrl ? `<img class="food-recipe-image" src="${recipe.imageUrl}" alt="${recipe.title}" />` : ""}
         <div class="card-head">
           <div>
             <h2>${recipe.title}</h2>
@@ -704,8 +682,8 @@ function renderFoodRecipeDetail(shell, recipe) {
         <p class="food-recipe-summary">${recipe.summary}</p>
         <div class="food-detail-meta">
           <span class="pill">Total time ${recipe.totalTime}</span>
-          ${recipe.prepTime ? `<span class="pill">Prep ${recipe.prepTime}</span>` : ""}
-          ${recipe.cookTime ? `<span class="pill">Cook ${recipe.cookTime}</span>` : ""}
+          ${recipe.prepTime ? `<span class="pill">Prep time ${recipe.prepTime}</span>` : ""}
+          ${recipe.cookTime ? `<span class="pill">Cook time ${recipe.cookTime}</span>` : ""}
           <span class="pill">${recipe.difficulty}</span>
           ${recipe.servings ? `<span class="pill">${recipe.servings} servings</span>` : ""}
           ${recipe.dishes ? `<span class="pill">${recipe.dishes} dish${String(recipe.dishes) === "1" ? "" : "es"}</span>` : ""}
@@ -725,8 +703,8 @@ function renderFoodRecipeDetail(shell, recipe) {
           </section>
         </div>
         ${recipe.notes ? `<section class="food-recipe-block"><h3>Notes</h3><p class="food-recipe-summary">${recipe.notes}</p></section>` : ""}
-      </article>
-    `;
+        </article>
+      `;
   shell.appendChild(detail);
 }
 
@@ -1363,7 +1341,8 @@ function createWeeksSection(birthDateString, totalYears = 75) {
   const livedWeeksExact = livedMs / weekMs;
   const completedWeeks = Math.floor(livedWeeksExact);
   const currentWeekFill = Math.max(0, Math.min(1, livedWeeksExact - completedWeeks));
-  const totalWeeks = totalYears * 52;
+  const rowCount = totalYears + 1;
+  const totalWeeks = rowCount * 52;
   const remainingWeeks = Math.max(totalWeeks - completedWeeks, 0);
   const lifeProgress = Math.max(0, Math.min(100, (completedWeeks / totalWeeks) * 100));
 
@@ -1377,7 +1356,7 @@ function createWeeksSection(birthDateString, totalYears = 75) {
       </div>
       <span class="pill">Live</span>
     </div>
-    <div class="section-grid weeks-grid-shell">
+      <div class="section-grid weeks-grid-shell">
       <div class="table-card weeks-board">
         <div class="weeks-bar">
           <div class="weeks-bar-item">
@@ -1389,7 +1368,7 @@ function createWeeksSection(birthDateString, totalYears = 75) {
             <strong class="weeks-bar-value">${completedWeeks.toLocaleString()}</strong>
           </div>
           <div class="weeks-bar-item">
-            <span class="stat-label">Current week</span>
+            <span class="stat-label">Life Lived</span>
             <strong class="weeks-bar-value">${lifeProgress.toFixed(1)}%</strong>
           </div>
           <div class="weeks-bar-item">
@@ -1405,17 +1384,14 @@ function createWeeksSection(birthDateString, totalYears = 75) {
           <div class="weeks-axis" aria-hidden="true"></div>
           <div class="weeks-poster" aria-label="Life in weeks poster"></div>
         </div>
-        <div class="weeks-footer">
-          <span class="weeks-footer-label">${totalYears}</span>
-          <span></span>
-        </div>
       </div>
     </div>
   `;
+  section.style.setProperty("--weeks-rows", String(rowCount));
 
   const poster = section.querySelector(".weeks-poster");
   const axis = section.querySelector(".weeks-axis");
-  for (let year = 0; year < totalYears; year += 1) {
+  for (let year = 0; year <= totalYears; year += 1) {
     const axisCell = document.createElement("span");
     axisCell.className = "weeks-axis-cell";
     axisCell.textContent = year % 5 === 0 ? String(year) : "";

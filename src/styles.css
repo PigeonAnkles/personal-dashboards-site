@@ -389,14 +389,6 @@ main {
   gap: 18px;
 }
 
-.food-recipe-image {
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
 .food-recipe-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -802,7 +794,7 @@ tbody tr:hover {
 
 .weeks-axis {
   display: grid;
-  grid-template-rows: repeat(75, 8px);
+  grid-template-rows: repeat(var(--weeks-rows, 76), 8px);
   gap: 4px;
   width: 32px;
 }
@@ -853,20 +845,6 @@ tbody tr:hover {
 
 .week-dot-current {
   border-color: rgba(143, 208, 139, 0.7);
-}
-
-.weeks-footer {
-  display: grid;
-  grid-template-columns: 32px auto;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 6px;
-}
-
-.weeks-footer-label {
-  color: var(--muted);
-  font-size: 0.72rem;
-  text-align: right;
 }
 
 @media (max-width: 1000px) {
@@ -1000,7 +978,7 @@ tbody tr:hover {
   }
 
   .weeks-axis {
-    grid-template-rows: repeat(75, 7px);
+    grid-template-rows: repeat(var(--weeks-rows, 76), 7px);
     gap: 3px;
     width: 28px;
   }
@@ -1021,11 +999,6 @@ tbody tr:hover {
   .week-dot {
     width: 7px;
     height: 7px;
-  }
-
-  .weeks-footer {
-    grid-template-columns: 28px auto;
-    gap: 8px;
   }
 
   .stat-card {

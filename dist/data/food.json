@@ -14,6 +14,11 @@
           "type": "string"
         },
         {
+          "id": "Picture Link",
+          "label": "Picture Link",
+          "type": "string"
+        },
+        {
           "id": "Recipe Name",
           "label": "Recipe Name",
           "type": "string"
@@ -71,24 +76,29 @@
             "formatted": "Beef",
             "type": "string"
           },
+          "Picture Link": {
+            "raw": "https://drive.google.com/file/d/1ExproFVPsAxq_aFwCF4hGNaTnKLkfLth/view?usp=sharing",
+            "formatted": "https://drive.google.com/file/d/1ExproFVPsAxq_aFwCF4hGNaTnKLkfLth/view?usp=sharing",
+            "type": "string"
+          },
           "Recipe Name": {
-            "raw": "Test",
-            "formatted": "Test",
+            "raw": "Beef Burrito",
+            "formatted": "Beef Burrito",
             "type": "string"
           },
           "Summary": {
-            "raw": "Test",
-            "formatted": "Test",
+            "raw": "Summary text",
+            "formatted": "Summary text",
             "type": "string"
           },
           "Ingredients": {
-            "raw": "Test\nTest",
-            "formatted": "Test\nTest",
+            "raw": "Test food 1\nTest food 2",
+            "formatted": "Test food 1\nTest food 2",
             "type": "string"
           },
           "Directions": {
-            "raw": "Test\nTest",
-            "formatted": "Test\nTest",
+            "raw": "Open Bun\nEat burrito",
+            "formatted": "Open Bun\nEat burrito",
             "type": "string"
           },
           "Prep Time": {
