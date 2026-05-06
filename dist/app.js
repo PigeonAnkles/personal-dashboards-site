@@ -1225,7 +1225,7 @@ function parseSheetDate(value) {
 function getRankingMediaDate(row, tabName) {
   const dateKeysByTab = {
     Movies: ["First Date Watched"],
-    Books: ["Day Finished", "Day Started"],
+    Books: ["Day Finished"],
     "TV Shows": ["Date Started"],
     Animes: ["Date Started"],
     Cartoons: ["Date Started"],
