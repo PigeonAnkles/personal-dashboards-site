@@ -2325,9 +2325,43 @@ function buildGolfDashboardMap(rows) {
   return map;
 }
 
+function isEighteenHoleRound(row) {
+  return (parseHealthNumber(getRaw(row, "Holes") ?? getCell(row, "Holes")) ?? 0) === 18;
+}
+
+function getGolfDifferentialDisplay(row) {
+  if (!isEighteenHoleRound(row)) {
+    return "-";
+  }
+
+  const formatted = getCell(row, "Differential");
+  if (formatted) {
+    return formatted;
+  }
+
+  const numeric = parseHealthNumber(getRaw(row, "Differential") ?? getCell(row, "Differential"));
+  return numeric === null ? "-" : Number(numeric).toFixed(1);
+}
+
+function getGolfSplitDisplay(row, key) {
+  const formatted = getCell(row, key);
+  const numeric = parseHealthNumber(getRaw(row, key) ?? formatted);
+
+  if (numeric === null || numeric === 0) {
+    return "-";
+  }
+
+  return formatted || String(numeric);
+}
+
 function renderGolf(sectionGrid) {
   const workbook = getWorkbook("golf");
   const dashboardRows = workbook.tabs["Dashboard"]?.rows || [];
+  const roundHistoryRows = (workbook.tabs["Round History"]?.rows || []).filter((row) => {
+    const roundNumber = parseHealthNumber(getRaw(row, "Rnd") ?? getCell(row, "Rnd"));
+    const course = getCell(row, "Course");
+    return roundNumber !== null && course;
+  });
   const calcRows = (workbook.tabs["Calc"]?.rows || []).filter((row) => getCell(row, "HasData") === "1" || getRaw(row, "HasData") === 1);
   const costRows = workbook.tabs["Costs"]?.rows || [];
   const rounds = [...calcRows].sort((left, right) => {
@@ -2349,8 +2383,8 @@ function renderGolf(sectionGrid) {
   const shotsTaken = rounds.reduce((sum, row) => {
     return sum + (parseHealthNumber(getRaw(row, "Gross") ?? getCell(row, "Gross")) ?? 0);
   }, 0);
-  const totalCost = costRows.reduce((sum, row) => {
-    return sum + (parseHealthNumber(getRaw(row, "Price") ?? getCell(row, "Price")) ?? 0);
+  const ballsLost = roundHistoryRows.reduce((sum, row) => {
+    return sum + (parseHealthNumber(getRaw(row, "Balls Lost") ?? getCell(row, "Balls Lost")) ?? 0);
   }, 0);
   const bestRoundHandicap = rounds.reduce((best, row) => {
     const rawDisplay =
@@ -2467,11 +2501,11 @@ function renderGolf(sectionGrid) {
     sectionGrid.appendChild(
         createGlanceCard("Golf snapshot", "Your latest golf numbers from the workbook.", [
           { label: "Average handicap", value: averageHandicap },
-          { label: "Best round handicap", value: bestRoundHandicap ? bestRoundHandicap.display : "-" },
-          { label: "Total cost", value: totalCost.toLocaleString(undefined, { style: "currency", currency: "USD" }) },
           { label: "Rounds played", value: dashboardMap.get("Rounds Played") || "0" },
+          { label: "Shots taken", value: Number(shotsTaken || 0).toLocaleString() },
+          { label: "Best round handicap", value: bestRoundHandicap ? bestRoundHandicap.display : "-" },
           { label: "Total holes played", value: dashboardMap.get("Total Holes Played") || "0" },
-          { label: "Shots taken", value: Number(shotsTaken || 0).toLocaleString() }
+          { label: "Balls lost", value: Number(ballsLost || 0).toLocaleString() }
         ], "glance-half")
       );
 
@@ -2486,7 +2520,7 @@ function renderGolf(sectionGrid) {
         getCell(round, "Gross") || "-",
         getCell(round, "PlusMinus") || "-",
         getCell(round, "Holes") || "-",
-        getCell(round, "Differential") || "-"
+        getGolfDifferentialDisplay(round)
       ]),
       "table-half"
     )
@@ -2691,9 +2725,9 @@ function renderGolf(sectionGrid) {
           getCell(row, "Gross"),
           getCell(row, "PlusMinus"),
           getCell(row, "Holes"),
-          getCell(row, "Differential"),
-          getCell(row, "Front9PM"),
-          getCell(row, "Back9PM")
+          getGolfDifferentialDisplay(row),
+          getGolfSplitDisplay(row, "Front9PM"),
+          getGolfSplitDisplay(row, "Back9PM")
         ])
     )
   );

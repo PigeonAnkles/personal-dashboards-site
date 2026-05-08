@@ -14,11 +14,6 @@
           "type": "string"
         },
         {
-          "id": "Picture Link",
-          "label": "Picture Link",
-          "type": "string"
-        },
-        {
           "id": "Recipe Name",
           "label": "Recipe Name",
           "type": "string"
@@ -74,11 +69,6 @@
           "Category": {
             "raw": "Beef",
             "formatted": "Beef",
-            "type": "string"
-          },
-          "Picture Link": {
-            "raw": "https://drive.google.com/file/d/1ExproFVPsAxq_aFwCF4hGNaTnKLkfLth/view?usp=sharing",
-            "formatted": "https://drive.google.com/file/d/1ExproFVPsAxq_aFwCF4hGNaTnKLkfLth/view?usp=sharing",
             "type": "string"
           },
           "Recipe Name": {
