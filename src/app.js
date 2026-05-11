@@ -2346,8 +2346,14 @@ function getGolfDifferentialDisplay(row) {
 function getGolfSplitDisplay(row, key) {
   const formatted = getCell(row, key);
   const numeric = parseHealthNumber(getRaw(row, key) ?? formatted);
+  const rawValue = getRaw(row, key);
 
-  if (numeric === null || numeric === 0) {
+  if (
+    rawValue === null ||
+    rawValue === undefined ||
+    formatted === "" ||
+    (numeric === null && !formatted)
+  ) {
     return "-";
   }
 
