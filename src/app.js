@@ -1333,9 +1333,9 @@ function buildNavLinks(activeSlug) {
       .join("");
 }
 
-function createWeeksSection(birthDateString, totalYears = 75) {
+function createWeeksSection(birthDateString, totalYears = 75, referenceDateValue = null) {
   const birthDate = new Date(`${birthDateString}T00:00:00`);
-  const today = new Date();
+  const today = referenceDateValue ? new Date(referenceDateValue) : new Date();
   const weekMs = 1000 * 60 * 60 * 24 * 7;
   const livedMs = Math.max(today - birthDate, 0);
   const livedWeeksExact = livedMs / weekMs;
@@ -1440,7 +1440,7 @@ function renderHome() {
   workbookCount.textContent = "Workbook pages synced automatically";
 
   main.innerHTML = "";
-  main.appendChild(createWeeksSection("2004-04-20"));
+  main.appendChild(createWeeksSection("2004-04-20", 75, state.siteData.generatedAt));
 }
 
 function renderMeAndHerPage() {
@@ -2382,7 +2382,6 @@ function formatSignedValue(value, digits = 0) {
 
 function renderGolf(sectionGrid) {
   const workbook = getWorkbook("golf");
-  const dashboardRows = workbook.tabs["Dashboard"]?.rows || [];
   const roundHistoryRows = (workbook.tabs["Round History"]?.rows || []).filter((row) => {
     const roundNumber = parseHealthNumber(getRaw(row, "Rnd") ?? getCell(row, "Rnd"));
     const course = getCell(row, "Course");
@@ -2397,9 +2396,7 @@ function renderGolf(sectionGrid) {
     const rightSeq = Number(getRaw(right, "SeqNum") ?? getCell(right, "SeqNum") ?? 0);
     return leftDate - rightDate || leftSeq - rightSeq;
   });
-  const latestRound = rounds.at(-1);
   const latestRounds = rounds.slice(-3).reverse();
-  const dashboardMap = buildGolfDashboardMap(dashboardRows);
   const normalizedRoundHandicaps = rounds
     .map((row) => ({
       row,
@@ -2415,6 +2412,10 @@ function renderGolf(sectionGrid) {
   const shotsTaken = rounds.reduce((sum, row) => {
     return sum + (parseHealthNumber(getRaw(row, "Gross") ?? getCell(row, "Gross")) ?? 0);
   }, 0);
+  const roundsPlayed = rounds.length;
+  const totalHolesPlayed = rounds.reduce((sum, row) => {
+    return sum + (parseHealthNumber(getRaw(row, "Holes") ?? getCell(row, "Holes")) ?? 0);
+  }, 0);
   const ballsLost = roundHistoryRows.reduce((sum, row) => {
     return sum + (parseHealthNumber(getRaw(row, "Balls Lost") ?? getCell(row, "Balls Lost")) ?? 0);
   }, 0);
@@ -2425,22 +2426,27 @@ function renderGolf(sectionGrid) {
     return best;
   }, null);
   const holeAverageData = Array.from({ length: 18 }, (_, index) => {
-    const label = `Hole ${index + 1} Avg +/-`;
+    const values = rounds
+      .map((row) => parseHealthNumber(getRaw(row, `H${index + 1}`) ?? getCell(row, `H${index + 1}`)))
+      .filter((value) => value !== null);
+
     return {
       label: String(index + 1),
-      value: parseHealthNumber(dashboardMap.get(label)) ?? 0
+      value: values.length
+        ? Number((values.reduce((sum, value) => sum + value, 0) / values.length).toFixed(2))
+        : null
     };
-  }).filter((item) => item.value !== 0);
+  }).filter((item) => item.value !== null);
   const scoringDistribution = [
-    "Eagles or Better",
-    "Birdies",
-    "Pars",
-    "Bogeys",
-    "Double Bogeys",
-    "Triple Bogey+"
-  ].map((label) => ({
+    { label: "Eagles or Better", key: "Eagles" },
+    { label: "Birdies", key: "Birdies" },
+    { label: "Pars", key: "Pars" },
+    { label: "Bogeys", key: "Bogeys" },
+    { label: "Double Bogeys", key: "Doubles" },
+    { label: "Triple Bogey+", key: "TriplePlus" }
+  ].map(({ label, key }) => ({
     label,
-    value: parseHealthNumber(dashboardMap.get(label)) ?? 0
+    value: rounds.reduce((sum, row) => sum + (parseHealthNumber(getRaw(row, key) ?? getCell(row, key)) ?? 0), 0)
   }));
   const grossSeries = rounds.map((row) => ({
     label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
@@ -2450,10 +2456,6 @@ function renderGolf(sectionGrid) {
     label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
     value: parseHealthNumber(getRaw(row, "Par") ?? getCell(row, "Par")) ?? 0
   }));
-  const differentialSeries = rounds.map((row) => ({
-    label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
-    value: parseHealthNumber(getRaw(row, "Differential") ?? getCell(row, "Differential")) ?? 0
-  }));
   const plusMinusSeries = rounds.map((row) => ({
       label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
       value: parseHealthNumber(getRaw(row, "PlusMinus") ?? getCell(row, "PlusMinus")) ?? 0
@@ -2461,6 +2463,7 @@ function renderGolf(sectionGrid) {
   const roundHandicapSeries = rounds.map((row) => ({
       date: parseSheetDate(getRaw(row, "Date") ?? getCell(row, "Date")),
       label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
+      seq: Number(getRaw(row, "SeqNum") ?? getCell(row, "SeqNum") ?? 0),
       value: getNormalizedGolfHandicap(row)
     })).filter((item) => item.date && item.value !== null);
   const sortedCostEntries = [...costRows]
@@ -2479,22 +2482,42 @@ function renderGolf(sectionGrid) {
       value: Number(runningCost.toFixed(2))
     };
   });
-  const timelineKeys = [...new Set(
-    [...cumulativeCostSeries.map((item) => item.date.getTime()), ...roundHandicapSeries.map((item) => item.date.getTime())]
-  )].sort((left, right) => left - right);
-  const timelineLabels = timelineKeys.map((key) => formatDateValue(new Date(key)));
-  const costByKey = new Map(cumulativeCostSeries.map((item) => [item.date.getTime(), item.value]));
-  const handicapByKey = new Map(roundHandicapSeries.map((item) => [item.date.getTime(), item.value]));
+  const timelineEntries = [
+    ...cumulativeCostSeries.map((item) => ({
+      type: "cost",
+      date: item.date,
+      label: item.label,
+      seq: 0,
+      cost: item.value,
+      handicap: null
+    })),
+    ...roundHandicapSeries.map((item) => ({
+      type: "round",
+      date: item.date,
+      label: item.label,
+      seq: item.seq,
+      cost: null,
+      handicap: item.value
+    }))
+  ].sort((left, right) => {
+    const dateDiff = left.date - right.date;
+    if (dateDiff !== 0) {
+      return dateDiff;
+    }
+    if (left.type !== right.type) {
+      return left.type === "cost" ? -1 : 1;
+    }
+    return (left.seq ?? 0) - (right.seq ?? 0);
+  });
   let latestCostValue = null;
-  const costTimelineValues = timelineKeys.map((key) => {
-    if (costByKey.has(key)) {
-      latestCostValue = costByKey.get(key);
+  const timelineLabels = timelineEntries.map((entry) => entry.label);
+  const costTimelineValues = timelineEntries.map((entry) => {
+    if (entry.cost !== null) {
+      latestCostValue = entry.cost;
     }
     return latestCostValue;
   });
-  const handicapTimelineValues = timelineKeys.map((key) => (
-    handicapByKey.has(key) ? handicapByKey.get(key) : null
-  ));
+  const handicapTimelineValues = timelineEntries.map((entry) => entry.handicap);
   const front9Values = rounds
     .map((row) => parseHealthNumber(getRaw(row, "Front9PM") ?? getCell(row, "Front9PM")))
     .filter((value) => value !== null && value !== 0);
@@ -2514,10 +2537,10 @@ function renderGolf(sectionGrid) {
     sectionGrid.appendChild(
         createGlanceCard("Golf snapshot", "Your latest golf numbers from the workbook.", [
           { label: "Average handicap", value: averageHandicap },
-          { label: "Rounds played", value: dashboardMap.get("Rounds Played") || "0" },
+          { label: "Rounds played", value: Number(roundsPlayed || 0).toLocaleString() },
           { label: "Shots taken", value: Number(shotsTaken || 0).toLocaleString() },
           { label: "Best round handicap", value: bestRoundHandicap ? bestRoundHandicap.display : "-" },
-          { label: "Total holes played", value: dashboardMap.get("Total Holes Played") || "0" },
+          { label: "Total holes played", value: Number(totalHolesPlayed || 0).toLocaleString() },
           { label: "Balls lost", value: Number(ballsLost || 0).toLocaleString() }
         ], "glance-half")
       );
