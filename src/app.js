@@ -2360,6 +2360,26 @@ function getGolfSplitDisplay(row, key) {
   return formatted || String(numeric);
 }
 
+function getNormalizedGolfHandicap(row) {
+  const plusMinus = parseHealthNumber(getRaw(row, "PlusMinus") ?? getCell(row, "PlusMinus"));
+  const holes = parseHealthNumber(getRaw(row, "Holes") ?? getCell(row, "Holes"));
+
+  if (plusMinus === null || holes === null || holes <= 0) {
+    return null;
+  }
+
+  return Math.round((plusMinus / holes) * 18);
+}
+
+function formatSignedValue(value, digits = 0) {
+  if (value === null || value === undefined || !Number.isFinite(value)) {
+    return "-";
+  }
+
+  const formatted = digits > 0 ? Number(value).toFixed(digits) : String(Math.round(value));
+  return value > 0 ? `+${formatted}` : formatted;
+}
+
 function renderGolf(sectionGrid) {
   const workbook = getWorkbook("golf");
   const dashboardRows = workbook.tabs["Dashboard"]?.rows || [];
@@ -2380,40 +2400,27 @@ function renderGolf(sectionGrid) {
   const latestRound = rounds.at(-1);
   const latestRounds = rounds.slice(-3).reverse();
   const dashboardMap = buildGolfDashboardMap(dashboardRows);
-  const averageHandicap =
-    getCell(dashboardRows[5], "C") ||
-    getCell(dashboardRows[0], "L") ||
-    dashboardMap.get("Average Handicap") ||
-    dashboardMap.get("Handicap Index") ||
-    "-";
+  const normalizedRoundHandicaps = rounds
+    .map((row) => ({
+      row,
+      value: getNormalizedGolfHandicap(row)
+    }))
+    .filter((item) => item.value !== null);
+  const averageHandicap = normalizedRoundHandicaps.length
+    ? formatSignedValue(
+      normalizedRoundHandicaps.reduce((sum, item) => sum + item.value, 0) / normalizedRoundHandicaps.length,
+      1
+    )
+    : "-";
   const shotsTaken = rounds.reduce((sum, row) => {
     return sum + (parseHealthNumber(getRaw(row, "Gross") ?? getCell(row, "Gross")) ?? 0);
   }, 0);
   const ballsLost = roundHistoryRows.reduce((sum, row) => {
     return sum + (parseHealthNumber(getRaw(row, "Balls Lost") ?? getCell(row, "Balls Lost")) ?? 0);
   }, 0);
-  const bestRoundHandicap = rounds.reduce((best, row) => {
-    const rawDisplay =
-      getCell(row, "PlusMinus") ||
-      getCell(row, "E") ||
-      getCell(row, "Rating") ||
-      getCell(row, "Differential") ||
-      "";
-    const handicap = parseHealthNumber(
-      getRaw(row, "PlusMinus") ??
-      getCell(row, "PlusMinus") ??
-      getRaw(row, "E") ??
-      getCell(row, "E") ??
-      getRaw(row, "Rating") ??
-      getCell(row, "Rating") ??
-      getRaw(row, "Differential") ??
-      getCell(row, "Differential")
-    );
-    if (handicap === null || !rawDisplay) {
-      return best;
-    }
-    if (!best || handicap < best.value) {
-      return { value: handicap, display: rawDisplay };
+  const bestRoundHandicap = normalizedRoundHandicaps.reduce((best, item) => {
+    if (!best || item.value < best.value) {
+      return { value: item.value, display: formatSignedValue(item.value) };
     }
     return best;
   }, null);
@@ -2454,7 +2461,7 @@ function renderGolf(sectionGrid) {
   const roundHandicapSeries = rounds.map((row) => ({
       date: parseSheetDate(getRaw(row, "Date") ?? getCell(row, "Date")),
       label: formatDateValue(getRaw(row, "Date")) || getCell(row, "Date") || `Round ${getCell(row, "Rnd")}`,
-      value: parseHealthNumber(getRaw(row, "PlusMinus") ?? getCell(row, "PlusMinus")) ?? 0
+      value: getNormalizedGolfHandicap(row)
     })).filter((item) => item.date && item.value !== null);
   const sortedCostEntries = [...costRows]
     .map((row) => ({
