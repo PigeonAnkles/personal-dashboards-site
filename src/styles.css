@@ -681,7 +681,8 @@ main {
 
 .career-plan-list {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 0;
+  list-style: none;
   color: var(--muted);
   font-size: 0.92rem;
   line-height: 1.6;
@@ -689,6 +690,65 @@ main {
 
 .career-plan-list li + li {
   margin-top: 8px;
+}
+
+.career-plan-grid-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 12px;
+}
+
+.career-plan-goal {
+  min-width: 0;
+}
+
+.career-plan-status {
+  justify-self: end;
+}
+
+.goal-status {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.goal-status-completed {
+  color: #9ef0b1;
+  background: rgba(66, 176, 97, 0.22);
+  border-color: rgba(90, 201, 122, 0.45);
+}
+
+.goal-status-partial {
+  color: #f3d688;
+  background: rgba(192, 145, 36, 0.18);
+  border-color: rgba(214, 173, 73, 0.35);
+}
+
+.goal-status-progress {
+  color: #9ed1ff;
+  background: rgba(49, 113, 191, 0.18);
+  border-color: rgba(86, 149, 226, 0.35);
+}
+
+.goal-status-planned,
+.goal-status-not-started {
+  color: #d2d8e6;
+  background: rgba(116, 131, 161, 0.16);
+  border-color: rgba(157, 171, 198, 0.28);
+}
+
+.goal-status-dropped {
+  color: #ef9fa3;
+  background: rgba(173, 64, 77, 0.18);
+  border-color: rgba(208, 88, 103, 0.35);
 }
 
 .card-head {

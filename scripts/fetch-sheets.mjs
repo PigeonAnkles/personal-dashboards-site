@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { workbooks } from "../config/sheets.mjs";
@@ -212,6 +212,16 @@ async function fetchTab(workbook, tab) {
 
 async function main() {
   await mkdir(dataDir, { recursive: true });
+  const generatedJsonFiles = new Set(["site-data.json", ...workbooks.map((workbook) => `${workbook.slug}.json`)]);
+  const existingDataFiles = await readdir(dataDir, { withFileTypes: true });
+  for (const entry of existingDataFiles) {
+    if (!entry.isFile() || path.extname(entry.name) !== ".json") {
+      continue;
+    }
+    if (!generatedJsonFiles.has(entry.name)) {
+      await rm(path.join(dataDir, entry.name), { force: true });
+    }
+  }
 
   const siteData = {
     generatedAt: new Date().toISOString(),

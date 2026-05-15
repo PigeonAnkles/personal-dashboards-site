@@ -1179,7 +1179,7 @@ function buildCareerNotes(rows, fallbackYears = []) {
   if (structuredNotes.length) {
     return structuredNotes.map((entry, index) => ({
       year: entry.year || fallbackYears[index] || `Note ${index + 1}`,
-      note: entry.note || "-"
+      note: entry.note || ""
     }));
   }
 
@@ -1199,45 +1199,87 @@ function parseCareerFuturePlanItems(value) {
     return [];
   }
 
-  return text
-    .split(/\s+(?=-)|\n+/)
+  const normalized = text.replace(/\r/g, "").trim();
+  const bulletMatches = [];
+  const bulletRegex = /(?:^|\s)-\s*([\s\S]*?)(?=(?:\s+-\s*|\n+|$))/g;
+  let match;
+
+  while ((match = bulletRegex.exec(normalized)) !== null) {
+    const item = String(match[1] || "").trim();
+    if (item) {
+      bulletMatches.push(item);
+    }
+  }
+
+  if (bulletMatches.length) {
+    return bulletMatches;
+  }
+
+  return normalized
+    .split(/\n+/)
     .map((item) => item.trim())
-    .map((item) => item.replace(/^-+\s*/, "").trim())
     .filter(Boolean);
+}
+
+function normalizeGoalStatus(value) {
+  const text = String(value || "").trim();
+  if (!text) {
+    return "";
+  }
+
+  const normalized = text.toLowerCase();
+  if (normalized.startsWith("completed")) {
+    return "Completed";
+  }
+  if (normalized.startsWith("partially completed")) {
+    return text;
+  }
+  if (normalized.startsWith("in progress")) {
+    return "In Progress";
+  }
+  if (normalized.startsWith("planned")) {
+    return "Planned";
+  }
+  if (normalized.startsWith("dropped")) {
+    return "Dropped";
+  }
+  if (normalized.startsWith("not started")) {
+    return "Not Started";
+  }
+  return text;
+}
+
+function statusClassName(value) {
+  const normalized = String(value || "").toLowerCase();
+  if (normalized.startsWith("completed")) {
+    return "goal-status-completed";
+  }
+  if (normalized.startsWith("partially completed")) {
+    return "goal-status-partial";
+  }
+  if (normalized.startsWith("in progress")) {
+    return "goal-status-progress";
+  }
+  if (normalized.startsWith("planned")) {
+    return "goal-status-planned";
+  }
+  if (normalized.startsWith("dropped")) {
+    return "goal-status-dropped";
+  }
+  if (normalized.startsWith("not started")) {
+    return "goal-status-not-started";
+  }
+  return "goal-status-planned";
 }
 
 function buildCareerFuturePlans(rows) {
   return rows
     .map((row) => ({
       year: String(getCell(row, "Year") || "").trim(),
-      plans: parseCareerFuturePlanItems(getCell(row, "Future Plans") || getCell(row, "K"))
+      plans: parseCareerFuturePlanItems(getCell(row, "Future Plans") || getCell(row, "C")),
+      statuses: parseCareerFuturePlanItems(getCell(row, "Goal Status") || getCell(row, "D")).map(normalizeGoalStatus)
     }))
     .filter((entry) => entry.year && entry.plans.length);
-}
-
-function mergeCareerNotes(noteEntries, progressionRows) {
-  const progressionNotesByYear = new Map(
-    progressionRows
-      .map((row) => ({
-        year: String(getCell(row, "Year") || "").trim(),
-        note: String(getCell(row, "Notes") || "").trim()
-      }))
-      .filter((entry) => entry.year && entry.note)
-      .map((entry) => [entry.year, entry.note])
-  );
-
-  const merged = noteEntries.map((entry) => ({
-    year: entry.year,
-    note: String(entry.note || "").trim() || progressionNotesByYear.get(entry.year) || "-"
-  }));
-
-  progressionNotesByYear.forEach((note, year) => {
-    if (!merged.some((entry) => entry.year === year)) {
-      merged.push({ year, note });
-    }
-  });
-
-  return merged.sort((left, right) => Number(left.year) - Number(right.year));
 }
 
 function getNumberCell(row, key) {
@@ -2823,10 +2865,13 @@ function renderCareer(sectionGrid) {
   const academicRows = workbook.tabs["Academic Progression"]?.rows?.filter((row) => getCell(row, "Year")) || [];
   const academicItems = buildAcademicItems(academicRows);
   const noteRows = workbook.tabs["Career / Academic Notes"]?.rows || [];
-  const noteYears = [...new Set(rows.map((row) => String(getCell(row, "Year")).trim()).filter(Boolean))]
+  const noteYears = [...new Set(noteRows.map((row) => String(getCell(row, "Year")).trim()).filter(Boolean))]
     .sort((left, right) => Number(left) - Number(right));
-  const careerNotes = mergeCareerNotes(buildCareerNotes(noteRows, noteYears), rows);
-  const futurePlans = buildCareerFuturePlans(rows);
+  const careerNotes = buildCareerNotes(noteRows, noteYears)
+    .filter((entry) => entry.year)
+    .sort((left, right) => Number(left.year) - Number(right.year));
+  const futurePlans = buildCareerFuturePlans(noteRows)
+    .sort((left, right) => Number(left.year) - Number(right.year));
   const allTimelineItems = [...academicItems, ...timelineItems];
 
       const timelineCard = document.createElement("article");
@@ -3156,14 +3201,25 @@ function renderCareer(sectionGrid) {
       const plansGrid = document.createElement("section");
       plansGrid.className = "career-notes-grid";
 
-      futurePlans.forEach((entry) => {
-        const planCard = document.createElement("article");
-        planCard.className = "career-note-card";
-        const items = entry.plans.map((plan) => `<li>${plan}</li>`).join("");
-        planCard.innerHTML = `
-          <h4>${entry.year}</h4>
-          <ul class="career-plan-list">${items}</ul>
-        `;
+        futurePlans.forEach((entry) => {
+          const planCard = document.createElement("article");
+          planCard.className = "career-note-card";
+          const items = entry.plans.map((plan, index) => {
+            const status = entry.statuses[index] || "";
+            const badge = status
+              ? `<span class="goal-status ${statusClassName(status)}">${status}</span>`
+              : `<span class="goal-status goal-status-planned">-</span>`;
+            return `
+              <li class="career-plan-grid-row">
+                <span class="career-plan-goal">${plan}</span>
+                <span class="career-plan-status">${badge}</span>
+              </li>
+            `;
+          }).join("");
+          planCard.innerHTML = `
+            <h4>${entry.year}</h4>
+            <ul class="career-plan-list">${items}</ul>
+          `;
         plansGrid.appendChild(planCard);
       });
 
@@ -3192,7 +3248,7 @@ function renderWorkbookPage() {
 }
 
 async function init() {
-  const response = await fetch("./data/site-data.json");
+  const response = await fetch("./data/site-data.json", { cache: "no-store" });
   state.siteData = await response.json();
 
   if (pageType === "home") {

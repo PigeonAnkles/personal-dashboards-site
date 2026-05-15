@@ -55,12 +55,12 @@
         },
         {
           "id": "J",
-          "label": "Notes",
+          "label": "J",
           "type": "string"
         },
         {
           "id": "K",
-          "label": "Future Plans",
+          "label": "K",
           "type": "string"
         },
         {
@@ -157,16 +157,6 @@
           "id": "AD",
           "label": "AD",
           "type": "string"
-        },
-        {
-          "id": "AE",
-          "label": "AE",
-          "type": "string"
-        },
-        {
-          "id": "AF",
-          "label": "AF",
-          "type": "string"
         }
       ],
       "rows": [
@@ -216,12 +206,8 @@
             "formatted": " $ 12,374.88 ",
             "type": "number"
           },
-          "Notes": {
-            "raw": "First real job making a lot of money, worked it throughout the summer and then kept working during the school year. I made a lot of money in tips as well but those aren't noted here since I did not record them at the time. I picked up a lot of shifts as well and worked into school working 7am-11pm Sat-Sun and sometimes picking up the 3pm-11pm on Friday's as well. If you include the tips I made, I think it was quite good money for a college student. Freshman in terms of degree progress but I'm a year behind. Note that in the following notes. The year's correlate correctly, and have two for the spring->fall. Started college in 2021",
-            "formatted": "First real job making a lot of money, worked it throughout the summer and then kept working during the school year. I made a lot of money in tips as well but those aren't noted here since I did not record them at the time. I picked up a lot of shifts as well and worked into school working 7am-11pm Sat-Sun and sometimes picking up the 3pm-11pm on Friday's as well. If you include the tips I made, I think it was quite good money for a college student. Freshman in terms of degree progress but I'm a year behind. Note that in the following notes. The year's correlate correctly, and have two for the spring->fall. Started college in 2021",
-            "type": "string"
-          },
-          "Future Plans": null,
+          "J": null,
+          "K": null,
           "L": null,
           "M": null,
           "N": null,
@@ -240,9 +226,7 @@
           "AA": null,
           "AB": null,
           "AC": null,
-          "AD": null,
-          "AE": null,
-          "AF": {
+          "AD": {
             "raw": null,
             "formatted": null,
             "type": "null"
@@ -294,12 +278,8 @@
             "formatted": " $ 5,971.81 ",
             "type": "number"
           },
-          "Notes": {
-            "raw": "I was focused on getting an internship in a RE or engineering field and did that (Civitas). I also did not actually work as an SYEP employee this year, but got paid regardless. Nothing too eventuful happened this year and I've been really broke after quitting the Lyle. I also got the small Home Depot / Paragon one stipend from doing their business development program for students. I'll have to make more money in the coming years.",
-            "formatted": "I was focused on getting an internship in a RE or engineering field and did that (Civitas). I also did not actually work as an SYEP employee this year, but got paid regardless. Nothing too eventuful happened this year and I've been really broke after quitting the Lyle. I also got the small Home Depot / Paragon one stipend from doing their business development program for students. I'll have to make more money in the coming years.",
-            "type": "string"
-          },
-          "Future Plans": null,
+          "J": null,
+          "K": null,
           "L": null,
           "M": null,
           "N": null,
@@ -318,9 +298,7 @@
           "AA": null,
           "AB": null,
           "AC": null,
-          "AD": null,
-          "AE": null,
-          "AF": {
+          "AD": {
             "raw": null,
             "formatted": null,
             "type": "null"
@@ -372,12 +350,8 @@
             "formatted": " $ 14,947.93 ",
             "type": "number"
           },
-          "Notes": {
-            "raw": "Continued working for CIVITAS into the spring semester to try to make some money, but it wasn't much honestly. I got a much higher paying job at Consigli, where I worked for the summer, but no overtime could be made. Working again for CIVITAS in the fall semester but only 4hr/week so nothing substantial. For BarBak I get $100 for new accounts that I sign on that do at least $1000 in sales and 3% for any orders they make. BarBak canelled hourly and gave me the option to leave or do commission only; it wasn't worth it so I just left.",
-            "formatted": "Continued working for CIVITAS into the spring semester to try to make some money, but it wasn't much honestly. I got a much higher paying job at Consigli, where I worked for the summer, but no overtime could be made. Working again for CIVITAS in the fall semester but only 4hr/week so nothing substantial. For BarBak I get $100 for new accounts that I sign on that do at least $1000 in sales and 3% for any orders they make. BarBak canelled hourly and gave me the option to leave or do commission only; it wasn't worth it so I just left.",
-            "type": "string"
-          },
-          "Future Plans": null,
+          "J": null,
+          "K": null,
           "L": null,
           "M": null,
           "N": null,
@@ -396,9 +370,7 @@
           "AA": null,
           "AB": null,
           "AC": null,
-          "AD": null,
-          "AE": null,
-          "AF": {
+          "AD": {
             "raw": null,
             "formatted": null,
             "type": "null"
@@ -450,12 +422,8 @@
             "formatted": " $ 24,742.00 ",
             "type": "number"
           },
-          "Notes": {
-            "raw": "Continued working for CIVITAS into the fall semester to make a little bit of money. Also worked weekends (sat-sun) at Tiger Sguar and then I did HU-ILEAD for the spring semester. Secured a summer internship at Ryan late last year. CIVITAS gave me a $500 bonus listed on my last paycheck too which was nice. Quit the boba job when summer started and took about a week off from Ryan to hike with friends. Also had one of my paychecks at tiger sugar sent over through zelle. Also for some reason my last paycheck at tiger sugar was $17.50/hr instead of $14. Randomly got the first week of SYEP pay, so made $200 while doing nothing. Working at Ryan is terrible and I definitely can see myself at CIVITAS; there's just so much time I'm spend doing nothing and I don't really fit in here.I ended up choosing CIVITAS for the full time offer.",
-            "formatted": "Continued working for CIVITAS into the fall semester to make a little bit of money. Also worked weekends (sat-sun) at Tiger Sguar and then I did HU-ILEAD for the spring semester. Secured a summer internship at Ryan late last year. CIVITAS gave me a $500 bonus listed on my last paycheck too which was nice. Quit the boba job when summer started and took about a week off from Ryan to hike with friends. Also had one of my paychecks at tiger sugar sent over through zelle. Also for some reason my last paycheck at tiger sugar was $17.50/hr instead of $14. Randomly got the first week of SYEP pay, so made $200 while doing nothing. Working at Ryan is terrible and I definitely can see myself at CIVITAS; there's just so much time I'm spend doing nothing and I don't really fit in here.I ended up choosing CIVITAS for the full time offer.",
-            "type": "string"
-          },
-          "Future Plans": null,
+          "J": null,
+          "K": null,
           "L": null,
           "M": null,
           "N": null,
@@ -474,9 +442,7 @@
           "AA": null,
           "AB": null,
           "AC": null,
-          "AD": null,
-          "AE": null,
-          "AF": {
+          "AD": {
             "raw": null,
             "formatted": null,
             "type": "null"
@@ -512,16 +478,8 @@
           "Gross Total Pay": null,
           "Net Divided": null,
           "Net Total Pay": null,
-          "Notes": {
-            "raw": "I continued working for CIVITAS part-time, while waiting to start full time. While working part-time, they paid me the same $20/hr over the full-time salaried that we signed. I also continued as a reasearch assistant for Dr. Sharma. He ended up paying me and Sarah more this semester than the last. I started doing tax preparation services for TurboTax, contracted through HighSpring. It was mostly customer support for self-service customers and then the occasional full-service customers. I like doing taxes, not really providing customer support, so I quit. I also didn't really have the timefor it. I bit off much more than I could chew and practically every hour outside of school was being spent at work, whether that was at Civitas or TurboTax, and I could feel how unsustainable that was, so I left. I only ended up working there for a couple of weeks.",
-            "formatted": "I continued working for CIVITAS part-time, while waiting to start full time. While working part-time, they paid me the same $20/hr over the full-time salaried that we signed. I also continued as a reasearch assistant for Dr. Sharma. He ended up paying me and Sarah more this semester than the last. I started doing tax preparation services for TurboTax, contracted through HighSpring. It was mostly customer support for self-service customers and then the occasional full-service customers. I like doing taxes, not really providing customer support, so I quit. I also didn't really have the timefor it. I bit off much more than I could chew and practically every hour outside of school was being spent at work, whether that was at Civitas or TurboTax, and I could feel how unsustainable that was, so I left. I only ended up working there for a couple of weeks.",
-            "type": "string"
-          },
-          "Future Plans": {
-            "raw": "-Engineering in Training -Real Estate Brokerage License (DC, MD, VA, FL, GA, NYC) -JD (Syracuse/Mitchell Hamline) -Attorney (DC, MD, VA) -MBA (Harvard/Stanford/Wharton)",
-            "formatted": "-Engineering in Training -Real Estate Brokerage License (DC, MD, VA, FL, GA, NYC) -JD (Syracuse/Mitchell Hamline) -Attorney (DC, MD, VA) -MBA (Harvard/Stanford/Wharton)",
-            "type": "string"
-          },
+          "J": null,
+          "K": null,
           "L": null,
           "M": null,
           "N": null,
@@ -540,9 +498,7 @@
           "AA": null,
           "AB": null,
           "AC": null,
-          "AD": null,
-          "AE": null,
-          "AF": {
+          "AD": {
             "raw": null,
             "formatted": null,
             "type": "null"
@@ -757,17 +713,17 @@
         },
         {
           "id": "C",
-          "label": "C",
+          "label": "Future Plans",
           "type": "string"
         },
         {
           "id": "D",
-          "label": "D",
+          "label": "Goal Status",
           "type": "string"
         },
         {
           "id": "E",
-          "label": "E",
+          "label": "Future Plans Completion Options",
           "type": "string"
         },
         {
@@ -874,13 +830,17 @@
             "type": "number"
           },
           "Notes": {
-            "raw": "First real job making a lot of money, worked it throughout the summer and then kept working during the school year. I made a lot of money in tips as well but those aren't noted here since I did not record them at the time. I picked up a lot of shifts as well and worked into school working 7am-11pm Sat-Sun and sometimes picking up the 3pm-11pm on Friday's as well. If you include the tips I made, I think it was quite good money for a college student (College Freshman Year (Fall+), 1st-2nd Year) Freshman in terms of degree progress but I'm a year behind. Note that in the following notes. The year's correlate correctly, and have two for the spring->fall. Started college in 2021",
-            "formatted": "First real job making a lot of money, worked it throughout the summer and then kept working during the school year. I made a lot of money in tips as well but those aren't noted here since I did not record them at the time. I picked up a lot of shifts as well and worked into school working 7am-11pm Sat-Sun and sometimes picking up the 3pm-11pm on Friday's as well. If you include the tips I made, I think it was quite good money for a college student (College Freshman Year (Fall+), 1st-2nd Year) Freshman in terms of degree progress but I'm a year behind. Note that in the following notes. The year's correlate correctly, and have two for the spring->fall. Started college in 2021",
+            "raw": "First real job making a lot of money, worked it throughout the summer and then kept working during the school year. I made a lot of money in tips as well but those aren't noted here since I did not record them at the time. I picked up a lot of shifts as well and worked into school working 7am-11pm Sat-Sun and sometimes picking up the 3pm-11pm on Friday's as well. If you include the tips I made, I think it was quite good money for a college student. Freshman in terms of degree progress but I'm a year behind. Note that in the following notes. The year's correlate correctly, and have two for the spring->fall. Started college in 2021",
+            "formatted": "First real job making a lot of money, worked it throughout the summer and then kept working during the school year. I made a lot of money in tips as well but those aren't noted here since I did not record them at the time. I picked up a lot of shifts as well and worked into school working 7am-11pm Sat-Sun and sometimes picking up the 3pm-11pm on Friday's as well. If you include the tips I made, I think it was quite good money for a college student. Freshman in terms of degree progress but I'm a year behind. Note that in the following notes. The year's correlate correctly, and have two for the spring->fall. Started college in 2021",
             "type": "string"
           },
-          "C": null,
-          "D": null,
-          "E": null,
+          "Future Plans": null,
+          "Goal Status": null,
+          "Future Plans Completion Options": {
+            "raw": "Planned\r\nIn Progress\r\nPartially Completed\r\nCompleted\r\nDropped",
+            "formatted": "Planned\r\nIn Progress\r\nPartially Completed\r\nCompleted\r\nDropped",
+            "type": "string"
+          },
           "F": null,
           "G": null,
           "H": null,
@@ -912,13 +872,17 @@
             "type": "number"
           },
           "Notes": {
-            "raw": "I was focused on getting an internship in a RE or engineering field and did that. I also did not actually work as an SYEP employee this year, but got paid regardless. (College Sophmore Year (Fall+), 2nd-3rd Year)",
-            "formatted": "I was focused on getting an internship in a RE or engineering field and did that. I also did not actually work as an SYEP employee this year, but got paid regardless. (College Sophmore Year (Fall+), 2nd-3rd Year)",
+            "raw": "I was focused on getting an internship in a RE or engineering field and did that (Civitas). I also did not actually work as an SYEP employee this year, but got paid regardless. Nothing too eventuful happened this year and I've been really broke after quitting the Lyle. I also got the small Home Depot / Paragon one stipend from doing their business development program for students. I'll have to make more money in the coming years.",
+            "formatted": "I was focused on getting an internship in a RE or engineering field and did that (Civitas). I also did not actually work as an SYEP employee this year, but got paid regardless. Nothing too eventuful happened this year and I've been really broke after quitting the Lyle. I also got the small Home Depot / Paragon one stipend from doing their business development program for students. I'll have to make more money in the coming years.",
             "type": "string"
           },
-          "C": null,
-          "D": null,
-          "E": null,
+          "Future Plans": null,
+          "Goal Status": null,
+          "Future Plans Completion Options": {
+            "raw": "Planned\r\nIn Progress\r\nPartially Completed\r\nCompleted\r\nDropped",
+            "formatted": "Planned\r\nIn Progress\r\nPartially Completed\r\nCompleted\r\nDropped",
+            "type": "string"
+          },
           "F": null,
           "G": null,
           "H": null,
@@ -950,13 +914,17 @@
             "type": "number"
           },
           "Notes": {
-            "raw": "Continued working for CIVITAS into the spring semester to try to make some money, but it wasn't much honestly. I got a much higher paying job at Consigli, where I worked for the summer, but no overtime could be made. Working again for CIVITAS in the fall semester but only 4hr/week so nothing substantial. For BarBak I get $100 for new accounts that I sign on that do at least $1000 in sales and 3% for any orders they make. BarBak canelled hourly and gave me the option to leave or do commission only; it wasn't worth it so I just left. (College Junior Year, 3rd-4th Year)",
-            "formatted": "Continued working for CIVITAS into the spring semester to try to make some money, but it wasn't much honestly. I got a much higher paying job at Consigli, where I worked for the summer, but no overtime could be made. Working again for CIVITAS in the fall semester but only 4hr/week so nothing substantial. For BarBak I get $100 for new accounts that I sign on that do at least $1000 in sales and 3% for any orders they make. BarBak canelled hourly and gave me the option to leave or do commission only; it wasn't worth it so I just left. (College Junior Year, 3rd-4th Year)",
+            "raw": "Continued working for CIVITAS into the spring semester to try to make some money, but it wasn't much honestly. I got a much higher paying job at Consigli, where I worked for the summer, but no overtime could be made. Working again for CIVITAS in the fall semester but only 4hr/week so nothing substantial. For BarBak I get $100 for new accounts that I sign on that do at least $1000 in sales and 3% for any orders they make. BarBak canelled hourly and gave me the option to leave or do commission only; it wasn't worth it so I just left.",
+            "formatted": "Continued working for CIVITAS into the spring semester to try to make some money, but it wasn't much honestly. I got a much higher paying job at Consigli, where I worked for the summer, but no overtime could be made. Working again for CIVITAS in the fall semester but only 4hr/week so nothing substantial. For BarBak I get $100 for new accounts that I sign on that do at least $1000 in sales and 3% for any orders they make. BarBak canelled hourly and gave me the option to leave or do commission only; it wasn't worth it so I just left.",
             "type": "string"
           },
-          "C": null,
-          "D": null,
-          "E": null,
+          "Future Plans": null,
+          "Goal Status": null,
+          "Future Plans Completion Options": {
+            "raw": "Planned\r\nIn Progress\r\nPartially Completed\r\nCompleted\r\nDropped",
+            "formatted": "Planned\r\nIn Progress\r\nPartially Completed\r\nCompleted\r\nDropped",
+            "type": "string"
+          },
           "F": null,
           "G": null,
           "H": null,
@@ -988,13 +956,17 @@
             "type": "number"
           },
           "Notes": {
-            "raw": "Continued working for CIVITAS into the fall semester to make a little bit of money. Also worked weekends (sat-sun) at Tiger Sguar and then I did HU-ILEAD for the spring semester. Secured a summer internship at Ryan late last year. CIVITAS gave me a $500 bonus listed on my last paycheck too which was nice. Quit the boba job when summer started and took about a week off from Ryan to hike with friends. Also had one of my paychecks at tiger sugar sent over through zelle. Also for some reason my last paycheck at tiger sugar was $17.50/hr instead of $14. Randomly got the first week of SYEP pay, so made $200 while doing nothing. Working at Ryan is terrible and I definitely can see myself at CIVITAS; there's just so much time I'm doing nothing here and I don't really fit in here.",
-            "formatted": "Continued working for CIVITAS into the fall semester to make a little bit of money. Also worked weekends (sat-sun) at Tiger Sguar and then I did HU-ILEAD for the spring semester. Secured a summer internship at Ryan late last year. CIVITAS gave me a $500 bonus listed on my last paycheck too which was nice. Quit the boba job when summer started and took about a week off from Ryan to hike with friends. Also had one of my paychecks at tiger sugar sent over through zelle. Also for some reason my last paycheck at tiger sugar was $17.50/hr instead of $14. Randomly got the first week of SYEP pay, so made $200 while doing nothing. Working at Ryan is terrible and I definitely can see myself at CIVITAS; there's just so much time I'm doing nothing here and I don't really fit in here.",
+            "raw": "Continued working for CIVITAS into the fall semester to make a little bit of money. Also worked weekends (sat-sun) at Tiger Sguar and then I did HU-ILEAD for the spring semester. Secured a summer internship at Ryan late last year. CIVITAS gave me a $500 bonus listed on my last paycheck too which was nice. Quit the boba job when summer started and took about a week off from Ryan to hike with friends. Also had one of my paychecks at tiger sugar sent over through zelle. Also for some reason my last paycheck at tiger sugar was $17.50/hr instead of $14. Randomly got the first week of SYEP pay, so made $200 while doing nothing. Working at Ryan is terrible and I definitely can see myself at CIVITAS; there's just so much time I'm spend doing nothing and I don't really fit in here. I ended up choosing CIVITAS for the full time offer.",
+            "formatted": "Continued working for CIVITAS into the fall semester to make a little bit of money. Also worked weekends (sat-sun) at Tiger Sguar and then I did HU-ILEAD for the spring semester. Secured a summer internship at Ryan late last year. CIVITAS gave me a $500 bonus listed on my last paycheck too which was nice. Quit the boba job when summer started and took about a week off from Ryan to hike with friends. Also had one of my paychecks at tiger sugar sent over through zelle. Also for some reason my last paycheck at tiger sugar was $17.50/hr instead of $14. Randomly got the first week of SYEP pay, so made $200 while doing nothing. Working at Ryan is terrible and I definitely can see myself at CIVITAS; there's just so much time I'm spend doing nothing and I don't really fit in here. I ended up choosing CIVITAS for the full time offer.",
             "type": "string"
           },
-          "C": null,
-          "D": null,
-          "E": null,
+          "Future Plans": null,
+          "Goal Status": null,
+          "Future Plans Completion Options": {
+            "raw": "Planned\r\nIn Progress\r\nPartially Completed\r\nCompleted\r\nDropped",
+            "formatted": "Planned\r\nIn Progress\r\nPartially Completed\r\nCompleted\r\nDropped",
+            "type": "string"
+          },
           "F": null,
           "G": null,
           "H": null,
@@ -1025,10 +997,26 @@
             "formatted": "2026",
             "type": "number"
           },
-          "Notes": null,
-          "C": null,
-          "D": null,
-          "E": null,
+          "Notes": {
+            "raw": "I continued working for CIVITAS part-time, while waiting to start full time. While working part-time, they paid me the same $20/hr over the full-time salaried that we signed. I also continued as a reasearch assistant for Dr. Sharma. He ended up paying me and Sarah more this semester than the last. I started doing tax preparation services for TurboTax, contracted through HighSpring. It was mostly customer support for self-service customers and then the occasional full-service customers. I like doing taxes, not really providing customer support, so I quit. I also didn't really have the timefor it. I bit off much more than I could chew and practically every hour outside of school was being spent at work, whether that was at Civitas or TurboTax, and I could feel how unsustainable that was, so I left. I only ended up working there for a couple of weeks.",
+            "formatted": "I continued working for CIVITAS part-time, while waiting to start full time. While working part-time, they paid me the same $20/hr over the full-time salaried that we signed. I also continued as a reasearch assistant for Dr. Sharma. He ended up paying me and Sarah more this semester than the last. I started doing tax preparation services for TurboTax, contracted through HighSpring. It was mostly customer support for self-service customers and then the occasional full-service customers. I like doing taxes, not really providing customer support, so I quit. I also didn't really have the timefor it. I bit off much more than I could chew and practically every hour outside of school was being spent at work, whether that was at Civitas or TurboTax, and I could feel how unsustainable that was, so I left. I only ended up working there for a couple of weeks.",
+            "type": "string"
+          },
+          "Future Plans": {
+            "raw": "-Engineering in Training\n-Real Estate Brokerage License (DC, MD, VA, FL, GA, NYC) \n-JD (Syracuse/Mitchell Hamline) \n-Attorney (DC, MD, VA) \n-MBA (Harvard/Stanford/Wharton)",
+            "formatted": "-Engineering in Training\n-Real Estate Brokerage License (DC, MD, VA, FL, GA, NYC) \n-JD (Syracuse/Mitchell Hamline) \n-Attorney (DC, MD, VA) \n-MBA (Harvard/Stanford/Wharton)",
+            "type": "string"
+          },
+          "Goal Status": {
+            "raw": "-Partially Completed (BSCE Finished; Pass FE Exam)\n-In Progress\n-Planned\n-Planned\n-Planned",
+            "formatted": "-Partially Completed (BSCE Finished; Pass FE Exam)\n-In Progress\n-Planned\n-Planned\n-Planned",
+            "type": "string"
+          },
+          "Future Plans Completion Options": {
+            "raw": "Planned\nIn Progress\nPartially Completed\nCompleted\nDropped",
+            "formatted": "Planned\nIn Progress\nPartially Completed\nCompleted\nDropped",
+            "type": "string"
+          },
           "F": null,
           "G": null,
           "H": null,
