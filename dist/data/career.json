@@ -1008,8 +1008,8 @@
             "type": "string"
           },
           "Goal Status": {
-            "raw": "-Partially Completed (BSCE Finished; Pass FE Exam)\n-In Progress\n-Planned\n-Completed\n-Dropped",
-            "formatted": "-Partially Completed (BSCE Finished; Pass FE Exam)\n-In Progress\n-Planned\n-Completed\n-Dropped",
+            "raw": "-Partially Completed (BSCE Finished; Pass FE Exam)\n-In Progress\n-Planned\n-Planned\n-Planned",
+            "formatted": "-Partially Completed (BSCE Finished; Pass FE Exam)\n-In Progress\n-Planned\n-Planned\n-Planned",
             "type": "string"
           },
           "Future Plans Completion Options": {

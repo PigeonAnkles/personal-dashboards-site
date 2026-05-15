@@ -658,6 +658,15 @@ main {
   gap: 16px;
 }
 
+.career-plans-grid {
+  grid-template-columns: 1fr;
+}
+
+.career-plans-grid .career-note-card {
+  width: min(75%, 980px);
+  justify-self: center;
+}
+
 .career-note-card {
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -694,7 +703,7 @@ main {
 
 .career-plan-grid-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) max-content;
   align-items: start;
   gap: 12px;
 }
@@ -711,6 +720,7 @@ main {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
   border-radius: 999px;
   padding: 3px 9px;
   font-size: 0.72rem;

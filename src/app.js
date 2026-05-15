@@ -3198,8 +3198,8 @@ function renderCareer(sectionGrid) {
         </div>
       `;
 
-      const plansGrid = document.createElement("section");
-      plansGrid.className = "career-notes-grid";
+        const plansGrid = document.createElement("section");
+        plansGrid.className = "career-notes-grid career-plans-grid";
 
         futurePlans.forEach((entry) => {
           const planCard = document.createElement("article");
