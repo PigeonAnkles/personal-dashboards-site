@@ -66,7 +66,7 @@
         {
           "id": "L",
           "label": "L",
-          "type": "number"
+          "type": "string"
         },
         {
           "id": "M",
@@ -87,14 +87,10 @@
           "I": null,
           "J": null,
           "K": null,
-          "L": {
-            "raw": 26.7,
-            "formatted": "26.7",
-            "type": "number"
-          },
+          "L": null,
           "M": {
-            "raw": 3,
-            "formatted": "3",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           }
         },
@@ -122,14 +118,10 @@
           "I": null,
           "J": null,
           "K": null,
-          "L": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "L": null,
           "M": {
-            "raw": 1,
-            "formatted": "1",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           }
         },
@@ -140,11 +132,7 @@
             "formatted": "Handicap Index",
             "type": "string"
           },
-          "C": {
-            "raw": -3.9,
-            "formatted": "-3.9",
-            "type": "number"
-          },
+          "C": null,
           "D": null,
           "E": {
             "raw": "Avg Front 9 +/-",
@@ -169,11 +157,7 @@
           },
           "J": null,
           "K": null,
-          "L": {
-            "raw": -4.1,
-            "formatted": "-4.1",
-            "type": "number"
-          },
+          "L": null,
           "M": {
             "raw": null,
             "formatted": null,
@@ -226,11 +210,7 @@
             "formatted": "Average Differential",
             "type": "string"
           },
-          "C": {
-            "raw": 9.166666666666666,
-            "formatted": "9.2",
-            "type": "number"
-          },
+          "C": null,
           "D": null,
           "E": {
             "raw": "Best Front 9 +/-",
@@ -690,11 +670,7 @@
             "formatted": "Lowest Differential",
             "type": "string"
           },
-          "C": {
-            "raw": -4.1,
-            "formatted": "-4.1",
-            "type": "number"
-          },
+          "C": null,
           "D": null,
           "E": {
             "raw": "Hole 9 Avg +/-",
@@ -1135,7 +1111,7 @@
         {
           "id": "AF",
           "label": "Differential",
-          "type": "number"
+          "type": "string"
         },
         {
           "id": "AG",
@@ -1463,11 +1439,7 @@
             "formatted": "6.22",
             "type": "number"
           },
-          "Differential": {
-            "raw": 26.7,
-            "formatted": "26.7",
-            "type": "number"
-          },
+          "Differential": null,
           "F9+/-": {
             "raw": 29,
             "formatted": "+29",
@@ -1924,11 +1896,7 @@
             "formatted": "8.43",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "Differential": null,
           "F9+/-": {
             "raw": 38,
             "formatted": "+38",
@@ -2213,13 +2181,13 @@
             "type": "string"
           },
           "Slope": {
-            "raw": 107,
-            "formatted": "107",
+            "raw": 111,
+            "formatted": "111",
             "type": "number"
           },
           "Rating": {
-            "raw": 63.9,
-            "formatted": "63.9",
+            "raw": 66.4,
+            "formatted": "66.4",
             "type": "number"
           },
           "Balls Lost": {
@@ -2361,11 +2329,7 @@
             "formatted": "6.67",
             "type": "number"
           },
-          "Differential": {
-            "raw": -4.1,
-            "formatted": "-4.1",
-            "type": "number"
-          },
+          "Differential": null,
           "F9+/-": {
             "raw": 28,
             "formatted": "+28",
@@ -62982,7 +62946,7 @@
         {
           "id": "AH",
           "label": "Differential",
-          "type": "number"
+          "type": "string"
         },
         {
           "id": "AI",
@@ -63131,11 +63095,7 @@
             "formatted": "4",
             "type": "number"
           },
-          "Differential": {
-            "raw": 26.7,
-            "formatted": "26.7",
-            "type": "number"
-          },
+          "Differential": null,
           "Course": {
             "raw": "East Potomac Golf Course",
             "formatted": "East Potomac Golf Course",
@@ -63302,11 +63262,7 @@
             "formatted": "12",
             "type": "number"
           },
-          "Differential": {
-            "raw": 4.9,
-            "formatted": "4.9",
-            "type": "number"
-          },
+          "Differential": null,
           "Course": {
             "raw": "Langston Golf Course",
             "formatted": "Langston Golf Course",
@@ -63453,11 +63409,7 @@
             "formatted": "7",
             "type": "number"
           },
-          "Differential": {
-            "raw": -4.1,
-            "formatted": "-4.1",
-            "type": "number"
-          },
+          "Differential": null,
           "Course": {
             "raw": "Rock Creek Golf Course",
             "formatted": "Rock Creek Golf Course",

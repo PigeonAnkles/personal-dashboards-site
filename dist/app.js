@@ -1193,6 +1193,53 @@ function buildCareerNotes(rows, fallbackYears = []) {
   }));
 }
 
+function parseCareerFuturePlanItems(value) {
+  const text = String(value || "").trim();
+  if (!text) {
+    return [];
+  }
+
+  return text
+    .split(/\s+(?=-)|\n+/)
+    .map((item) => item.trim())
+    .map((item) => item.replace(/^-+\s*/, "").trim())
+    .filter(Boolean);
+}
+
+function buildCareerFuturePlans(rows) {
+  return rows
+    .map((row) => ({
+      year: String(getCell(row, "Year") || "").trim(),
+      plans: parseCareerFuturePlanItems(getCell(row, "Future Plans") || getCell(row, "K"))
+    }))
+    .filter((entry) => entry.year && entry.plans.length);
+}
+
+function mergeCareerNotes(noteEntries, progressionRows) {
+  const progressionNotesByYear = new Map(
+    progressionRows
+      .map((row) => ({
+        year: String(getCell(row, "Year") || "").trim(),
+        note: String(getCell(row, "Notes") || "").trim()
+      }))
+      .filter((entry) => entry.year && entry.note)
+      .map((entry) => [entry.year, entry.note])
+  );
+
+  const merged = noteEntries.map((entry) => ({
+    year: entry.year,
+    note: String(entry.note || "").trim() || progressionNotesByYear.get(entry.year) || "-"
+  }));
+
+  progressionNotesByYear.forEach((note, year) => {
+    if (!merged.some((entry) => entry.year === year)) {
+      merged.push({ year, note });
+    }
+  });
+
+  return merged.sort((left, right) => Number(left.year) - Number(right.year));
+}
+
 function getNumberCell(row, key) {
   return parseHealthNumber(getRaw(row, key) ?? getCell(row, key)) ?? 0;
 }
@@ -2778,7 +2825,8 @@ function renderCareer(sectionGrid) {
   const noteRows = workbook.tabs["Career / Academic Notes"]?.rows || [];
   const noteYears = [...new Set(rows.map((row) => String(getCell(row, "Year")).trim()).filter(Boolean))]
     .sort((left, right) => Number(left) - Number(right));
-  const careerNotes = buildCareerNotes(noteRows, noteYears);
+  const careerNotes = mergeCareerNotes(buildCareerNotes(noteRows, noteYears), rows);
+  const futurePlans = buildCareerFuturePlans(rows);
   const allTimelineItems = [...academicItems, ...timelineItems];
 
       const timelineCard = document.createElement("article");
@@ -2922,6 +2970,63 @@ function renderCareer(sectionGrid) {
           }
         });
       }
+
+      const fiscelleCeoItem = timelineItems.find((item) =>
+        item.title === "CEO" && item.company === "Fiscelle Services LLC"
+      );
+      if (fiscelleCeoItem) {
+        const desiredLane = 1;
+        fiscelleCeoItem.displayLane = desiredLane;
+
+        const conflictingCareerItems = timelineItems
+          .filter((item) => item !== fiscelleCeoItem)
+          .filter((item) => item.displayLane === desiredLane)
+          .filter((item) => laneHasConflict([fiscelleCeoItem], item, desiredLane, 0));
+
+        conflictingCareerItems.forEach((item) => {
+          let lane = Math.max(item.displayLane + 1, desiredLane + 1);
+          while (laneHasConflict(timelineItems, item, lane)) {
+            lane += 1;
+          }
+          item.displayLane = lane;
+        });
+
+        const salespersonItem = timelineItems.find((item) =>
+          item.title === "Salesperson" && item.company === "BarBak Hospitality"
+        );
+        if (salespersonItem && !laneHasConflict([fiscelleCeoItem], salespersonItem, desiredLane, 0)) {
+          salespersonItem.displayLane = desiredLane;
+        }
+
+        const baristaItem = timelineItems.find((item) =>
+          item.title === "Barista" && item.company === "Tiger Sugar"
+        );
+        const huILeadItem = timelineItems.find((item) =>
+          item.title === "HU I-LEAD" && item.company === "Howard University"
+        );
+        if (baristaItem && huILeadItem) {
+          const baristaLane = baristaItem.displayLane;
+          const huILeadLane = huILeadItem.displayLane;
+          baristaItem.displayLane = huILeadLane;
+          huILeadItem.displayLane = baristaLane;
+        }
+
+        const taxPreparerItem = timelineItems.find((item) =>
+          item.title === "Tax Preparer"
+        );
+        const shortResearchAssistantItem = timelineItems.find((item) =>
+          item.title === "Research Assistant" &&
+          item.company === "Howard University" &&
+          String(item.displayRange).includes("1/15/2026")
+        );
+        if (taxPreparerItem && shortResearchAssistantItem) {
+          const taxLane = taxPreparerItem.displayLane;
+          const researchLane = shortResearchAssistantItem.displayLane;
+          taxPreparerItem.displayLane = researchLane;
+          shortResearchAssistantItem.displayLane = taxLane;
+        }
+      }
+
       const adjustedCareerLaneCount = Math.max(...timelineItems.map((item) => item.displayLane), 0) + 1;
       const monthMarkers = [];
     const markerDate = new Date(timelineStart);
@@ -3034,6 +3139,36 @@ function renderCareer(sectionGrid) {
 
       notesCard.appendChild(notesGrid);
       sectionGrid.appendChild(notesCard);
+    }
+
+    if (futurePlans.length) {
+      const plansCard = document.createElement("article");
+      plansCard.className = "table-card";
+      plansCard.innerHTML = `
+        <div class="card-head">
+          <div>
+            <h3>Future Plans</h3>
+          </div>
+          <span class="pill">Plans</span>
+        </div>
+      `;
+
+      const plansGrid = document.createElement("section");
+      plansGrid.className = "career-notes-grid";
+
+      futurePlans.forEach((entry) => {
+        const planCard = document.createElement("article");
+        planCard.className = "career-note-card";
+        const items = entry.plans.map((plan) => `<li>${plan}</li>`).join("");
+        planCard.innerHTML = `
+          <h4>${entry.year}</h4>
+          <ul class="career-plan-list">${items}</ul>
+        `;
+        plansGrid.appendChild(planCard);
+      });
+
+      plansCard.appendChild(plansGrid);
+      sectionGrid.appendChild(plansCard);
     }
   }
 
