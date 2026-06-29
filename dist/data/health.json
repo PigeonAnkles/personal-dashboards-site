@@ -113,8 +113,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 7,
-            "formatted": "7",
+            "raw": 12,
+            "formatted": "12",
             "type": "number"
           },
           "C": null,
@@ -150,8 +150,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 5412.285714285715,
-            "formatted": "5,412",
+            "raw": 3094.1428571428573,
+            "formatted": "3,094",
             "type": "number"
           },
           "C": null,
@@ -191,8 +191,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 6729.166666666667,
-            "formatted": "6,729",
+            "raw": 5257.066666666667,
+            "formatted": "5,257",
             "type": "number"
           },
           "C": null,
@@ -232,8 +232,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 37886,
-            "formatted": "37,886",
+            "raw": 21659,
+            "formatted": "21,659",
             "type": "number"
           },
           "C": null,
@@ -257,8 +257,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 201875,
-            "formatted": "201,875",
+            "raw": 157712,
+            "formatted": "157,712",
             "type": "number"
           },
           "C": null,
@@ -323,8 +323,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 11,
-            "formatted": "11",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "C": null,
@@ -34045,7 +34045,11 @@
             "formatted": "179.2",
             "type": "number"
           },
-          "Steps": null,
+          "Steps": {
+            "raw": 2585,
+            "formatted": "2,585",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34089,16 +34093,24 @@
             "formatted": "5/16/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 179.4,
+            "formatted": "179.4",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 16370,
+            "formatted": "16,370",
+            "type": "number"
+          },
           "Steps (2)": {
-            "raw": false,
-            "formatted": "FALSE",
+            "raw": true,
+            "formatted": "TRUE",
             "type": "boolean"
           },
           "Steps Streak": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "Workout": {
@@ -34134,8 +34146,16 @@
             "formatted": "5/17/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176.8,
+            "formatted": "176.8",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 6755,
+            "formatted": "6,755",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34179,8 +34199,16 @@
             "formatted": "5/18/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 174.6,
+            "formatted": "174.6",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 4689,
+            "formatted": "4,689",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34224,16 +34252,24 @@
             "formatted": "5/19/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176.4,
+            "formatted": "176.4",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 13789,
+            "formatted": "13,789",
+            "type": "number"
+          },
           "Steps (2)": {
-            "raw": false,
-            "formatted": "FALSE",
+            "raw": true,
+            "formatted": "TRUE",
             "type": "boolean"
           },
           "Steps Streak": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "Workout": {
@@ -34269,8 +34305,16 @@
             "formatted": "5/20/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176.2,
+            "formatted": "176.2",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 2781,
+            "formatted": "2,781",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34314,8 +34358,16 @@
             "formatted": "5/21/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176.8,
+            "formatted": "176.8",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 7160,
+            "formatted": "7,160",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34359,8 +34411,16 @@
             "formatted": "5/22/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176.4,
+            "formatted": "176.4",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 7768,
+            "formatted": "7,768",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34404,8 +34464,16 @@
             "formatted": "5/23/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176.8,
+            "formatted": "176.8",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 7819,
+            "formatted": "7,819",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34449,8 +34517,16 @@
             "formatted": "5/24/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 177,
+            "formatted": "177.0",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 2940,
+            "formatted": "2,940",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34494,8 +34570,16 @@
             "formatted": "5/25/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176.8,
+            "formatted": "176.8",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 3170,
+            "formatted": "3,170",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34539,8 +34623,16 @@
             "formatted": "5/26/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176.2,
+            "formatted": "176.2",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 6362,
+            "formatted": "6,362",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34584,8 +34676,16 @@
             "formatted": "5/27/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 175.4,
+            "formatted": "175.4",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 2374,
+            "formatted": "2,374",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34629,16 +34729,24 @@
             "formatted": "5/28/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 175.8,
+            "formatted": "175.8",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 10585,
+            "formatted": "10,585",
+            "type": "number"
+          },
           "Steps (2)": {
-            "raw": false,
-            "formatted": "FALSE",
+            "raw": true,
+            "formatted": "TRUE",
             "type": "boolean"
           },
           "Steps Streak": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "Workout": {
@@ -34674,8 +34782,16 @@
             "formatted": "5/29/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176.2,
+            "formatted": "176.2",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 1386,
+            "formatted": "1,386",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34719,8 +34835,16 @@
             "formatted": "5/30/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 178,
+            "formatted": "178.0",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 8032,
+            "formatted": "8,032",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34764,8 +34888,16 @@
             "formatted": "5/31/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 179,
+            "formatted": "179.0",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 5993,
+            "formatted": "5,993",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34809,8 +34941,16 @@
             "formatted": "6/1/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 177.2,
+            "formatted": "177.2",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 3670,
+            "formatted": "3,670",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34854,8 +34994,16 @@
             "formatted": "6/2/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176.2,
+            "formatted": "176.2",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 2698,
+            "formatted": "2,698",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34899,8 +35047,16 @@
             "formatted": "6/3/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 177.2,
+            "formatted": "177.2",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 3040,
+            "formatted": "3,040",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34944,8 +35100,16 @@
             "formatted": "6/4/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 174.8,
+            "formatted": "174.8",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 4442,
+            "formatted": "4,442",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -34989,8 +35153,16 @@
             "formatted": "6/5/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 174.8,
+            "formatted": "174.8",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 7059,
+            "formatted": "7,059",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35034,8 +35206,16 @@
             "formatted": "6/6/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 175,
+            "formatted": "175.0",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 7647,
+            "formatted": "7,647",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35079,16 +35259,24 @@
             "formatted": "6/7/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 174.8,
+            "formatted": "174.8",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 10540,
+            "formatted": "10,540",
+            "type": "number"
+          },
           "Steps (2)": {
-            "raw": false,
-            "formatted": "FALSE",
+            "raw": true,
+            "formatted": "TRUE",
             "type": "boolean"
           },
           "Steps Streak": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "Workout": {
@@ -35124,8 +35312,16 @@
             "formatted": "6/8/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 173.6,
+            "formatted": "173.6",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 2243,
+            "formatted": "2,243",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35169,8 +35365,16 @@
             "formatted": "6/9/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 176,
+            "formatted": "176.0",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 5450,
+            "formatted": "5,450",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35182,13 +35386,13 @@
             "type": "number"
           },
           "Workout": {
-            "raw": false,
-            "formatted": "FALSE",
+            "raw": true,
+            "formatted": "TRUE",
             "type": "boolean"
           },
           "Workout Streak": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "H": null,
@@ -35214,16 +35418,24 @@
             "formatted": "6/10/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 173.6,
+            "formatted": "173.6",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 13442,
+            "formatted": "13,442",
+            "type": "number"
+          },
           "Steps (2)": {
-            "raw": false,
-            "formatted": "FALSE",
+            "raw": true,
+            "formatted": "TRUE",
             "type": "boolean"
           },
           "Steps Streak": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "Workout": {
@@ -35260,15 +35472,19 @@
             "type": "date"
           },
           "Weight (lbs)": null,
-          "Steps": null,
+          "Steps": {
+            "raw": 11096,
+            "formatted": "11,096",
+            "type": "number"
+          },
           "Steps (2)": {
-            "raw": false,
-            "formatted": "FALSE",
+            "raw": true,
+            "formatted": "TRUE",
             "type": "boolean"
           },
           "Steps Streak": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 2,
+            "formatted": "2",
             "type": "number"
           },
           "Workout": {
@@ -35304,8 +35520,16 @@
             "formatted": "6/12/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 174,
+            "formatted": "174.0",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 8115,
+            "formatted": "8,115",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35349,8 +35573,16 @@
             "formatted": "6/13/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 175.7,
+            "formatted": "175.7",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 9111,
+            "formatted": "9,111",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35395,7 +35627,11 @@
             "type": "date"
           },
           "Weight (lbs)": null,
-          "Steps": null,
+          "Steps": {
+            "raw": 5110,
+            "formatted": "5,110",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35440,7 +35676,11 @@
             "type": "date"
           },
           "Weight (lbs)": null,
-          "Steps": null,
+          "Steps": {
+            "raw": 1286,
+            "formatted": "1,286",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35484,8 +35724,16 @@
             "formatted": "6/16/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 182.6,
+            "formatted": "182.6",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 3202,
+            "formatted": "3,202",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35529,8 +35777,16 @@
             "formatted": "6/17/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 178,
+            "formatted": "178.0",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 1605,
+            "formatted": "1,605",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35574,8 +35830,16 @@
             "formatted": "6/18/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 180.4,
+            "formatted": "180.4",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 4474,
+            "formatted": "4,474",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35619,8 +35883,16 @@
             "formatted": "6/19/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 174,
+            "formatted": "174.0",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 4286,
+            "formatted": "4,286",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35664,8 +35936,16 @@
             "formatted": "6/20/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 179,
+            "formatted": "179.0",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 2753,
+            "formatted": "2,753",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35709,8 +35989,16 @@
             "formatted": "6/21/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 179.8,
+            "formatted": "179.8",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 4751,
+            "formatted": "4,751",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35754,8 +36042,16 @@
             "formatted": "6/22/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 179,
+            "formatted": "179.0",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 2284,
+            "formatted": "2,284",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35767,13 +36063,13 @@
             "type": "number"
           },
           "Workout": {
-            "raw": false,
-            "formatted": "FALSE",
+            "raw": true,
+            "formatted": "TRUE",
             "type": "boolean"
           },
           "Workout Streak": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "H": null,
@@ -35799,8 +36095,16 @@
             "formatted": "6/23/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
-          "Steps": null,
+          "Weight (lbs)": {
+            "raw": 182.3,
+            "formatted": "182.3",
+            "type": "number"
+          },
+          "Steps": {
+            "raw": 1506,
+            "formatted": "1,506",
+            "type": "number"
+          },
           "Steps (2)": {
             "raw": false,
             "formatted": "FALSE",
@@ -35844,7 +36148,11 @@
             "formatted": "6/24/2026",
             "type": "date"
           },
-          "Weight (lbs)": null,
+          "Weight (lbs)": {
+            "raw": 179.2,
+            "formatted": "179.2",
+            "type": "number"
+          },
           "Steps": null,
           "Steps (2)": {
             "raw": false,
@@ -74607,7 +74915,11 @@
             "formatted": "5/3/2026",
             "type": "date"
           },
-          "Split": null,
+          "Split": {
+            "raw": "Survive",
+            "formatted": "Survive",
+            "type": "string"
+          },
           "Exercise": {
             "raw": "Push Ups",
             "formatted": "Push Ups",
@@ -74631,7 +74943,11 @@
             "formatted": "5/3/2026",
             "type": "date"
           },
-          "Split": null,
+          "Split": {
+            "raw": "Survive",
+            "formatted": "Survive",
+            "type": "string"
+          },
           "Exercise": {
             "raw": "Plank",
             "formatted": "Plank",
@@ -74646,6 +74962,454 @@
           "Reps/Secs": {
             "raw": 32,
             "formatted": "32",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-09T00:00:00.000Z",
+            "formatted": "6/9/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Push Ups",
+            "formatted": "Push Ups",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": "BW",
+            "formatted": "BW",
+            "type": "string"
+          },
+          "Reps/Secs": {
+            "raw": 10,
+            "formatted": "10",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-09T00:00:00.000Z",
+            "formatted": "6/9/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Plank",
+            "formatted": "Plank",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": "BW",
+            "formatted": "BW",
+            "type": "string"
+          },
+          "Reps/Secs": {
+            "raw": 26,
+            "formatted": "26",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "BB Bench Press",
+            "formatted": "BB Bench Press",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 95,
+            "formatted": "95",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 12,
+            "formatted": "12",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "BB Bench Press",
+            "formatted": "BB Bench Press",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 95,
+            "formatted": "95",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 12,
+            "formatted": "12",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "BB Bench Press",
+            "formatted": "BB Bench Press",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 95,
+            "formatted": "95",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 11,
+            "formatted": "11",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Close Grip BB Bench Press",
+            "formatted": "Close Grip BB Bench Press",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 85,
+            "formatted": "85",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Close Grip BB Bench Press",
+            "formatted": "Close Grip BB Bench Press",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 85,
+            "formatted": "85",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Close Grip BB Bench Press",
+            "formatted": "Close Grip BB Bench Press",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 85,
+            "formatted": "85",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Kneeling BB Overhead Press",
+            "formatted": "Kneeling BB Overhead Press",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 45,
+            "formatted": "45",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Kneeling BB Overhead Press",
+            "formatted": "Kneeling BB Overhead Press",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 45,
+            "formatted": "45",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Kneeling BB Overhead Press",
+            "formatted": "Kneeling BB Overhead Press",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 45,
+            "formatted": "45",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Single Arm Preacher Curls",
+            "formatted": "Single Arm Preacher Curls",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 15,
+            "formatted": "15",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Single Arm Preacher Curls",
+            "formatted": "Single Arm Preacher Curls",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 15,
+            "formatted": "15",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Single Arm Preacher Curls",
+            "formatted": "Single Arm Preacher Curls",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 15,
+            "formatted": "15",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Incline DB Curls",
+            "formatted": "Incline DB Curls",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 15,
+            "formatted": "15",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-06-22T00:00:00.000Z",
+            "formatted": "6/22/2026",
+            "type": "date"
+          },
+          "Split": {
+            "raw": "Push",
+            "formatted": "Push",
+            "type": "string"
+          },
+          "Exercise": {
+            "raw": "Incline DB Curls",
+            "formatted": "Incline DB Curls",
+            "type": "string"
+          },
+          "Set #": null,
+          "Weight (lbs)": {
+            "raw": 15,
+            "formatted": "15",
+            "type": "number"
+          },
+          "Reps/Secs": {
+            "raw": 7,
+            "formatted": "7",
             "type": "number"
           }
         }

@@ -49,6 +49,11 @@
           "type": "string"
         },
         {
+          "id": "Serving Size",
+          "label": "Serving Size",
+          "type": "string"
+        },
+        {
           "id": "Number of Dishes",
           "label": "Number of Dishes",
           "type": "string"
@@ -106,6 +111,11 @@
             "formatted": "10",
             "type": "number"
           },
+          "Serving Size": {
+            "raw": "1 patty",
+            "formatted": "1 patty",
+            "type": "string"
+          },
           "Number of Dishes": {
             "raw": 2,
             "formatted": "2",
@@ -114,6 +124,64 @@
           "Difficulty": {
             "raw": "Medium",
             "formatted": "Medium",
+            "type": "string"
+          },
+          "Notes": null
+        },
+        {
+          "Category": {
+            "raw": "Drinks",
+            "formatted": "Drinks",
+            "type": "string"
+          },
+          "Recipe Name": {
+            "raw": "Hibiscus Iced Tea",
+            "formatted": "Hibiscus Iced Tea",
+            "type": "string"
+          },
+          "Summary": {
+            "raw": "Zero-calorie, zero-sugar hibiscus tea sweetened with stevia.",
+            "formatted": "Zero-calorie, zero-sugar hibiscus tea sweetened with stevia.",
+            "type": "string"
+          },
+          "Ingredients": {
+            "raw": "1 cup dried hibiscus flowers\n8 quarts (2 gallons) water\n1/16 tsp pure stevia extract",
+            "formatted": "1 cup dried hibiscus flowers\n8 quarts (2 gallons) water\n1/16 tsp pure stevia extract",
+            "type": "string"
+          },
+          "Directions": {
+            "raw": "1. Fill infuser with hibiscus.\n2. Heat 6 quarts water to boiling.\n3. Steep 40 minutes.\n4. Remove infuser.\n5. Add stevia while warm and stir.\n6. Pour into dispenser.\n7. Add cold water to reach 2 gallons.\n8. Chill and adjust sweetness to taste.",
+            "formatted": "1. Fill infuser with hibiscus.\n2. Heat 6 quarts water to boiling.\n3. Steep 40 minutes.\n4. Remove infuser.\n5. Add stevia while warm and stir.\n6. Pour into dispenser.\n7. Add cold water to reach 2 gallons.\n8. Chill and adjust sweetness to taste.",
+            "type": "string"
+          },
+          "Prep Time": {
+            "raw": "5 min",
+            "formatted": "5 min",
+            "type": "string"
+          },
+          "Cook Time": {
+            "raw": "40 min",
+            "formatted": "40 min",
+            "type": "string"
+          },
+          "Servings": {
+            "raw": 16,
+            "formatted": "16",
+            "type": "number"
+          },
+          "Serving Size": {
+            "raw": "16 oz",
+            "formatted": "16 oz",
+            "type": "string"
+          },
+          "Number of Dishes": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "Difficulty": {
+            "raw": "Easy",
+            "formatted": "Easy",
             "type": "string"
           },
           "Notes": null

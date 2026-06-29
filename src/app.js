@@ -481,6 +481,10 @@ function createWorkoutRecordsCard(title, subtitle, streakRow, columns, rows, not
 function createWorkbookFrame(workbook) {
   const wrapper = document.createElement("section");
   const activeNavSlug = workbook.slug === "bowling" ? "me-and-her" : workbook.slug;
+  const isMeAndHerChild = workbook.slug === "bowling";
+  const heroTitle = isMeAndHerChild ? "Me and Her" : workbook.title;
+  const heroSubtitle = isMeAndHerChild ? "Bowling" : workbook.subtitle;
+  const heroKicker = isMeAndHerChild ? "Together" : "Workbook";
   wrapper.className = "workbook-shell";
   wrapper.innerHTML = `
     <div class="page-topbar">
@@ -489,11 +493,11 @@ function createWorkbookFrame(workbook) {
     </div>
     <header class="page-hero">
       <div class="page-hero-head">
-        <span class="section-kicker">Workbook</span>
+        <span class="section-kicker">${heroKicker}</span>
         <a class="sheet-link" href="${workbook.sourceUrl}" target="_blank" rel="noreferrer">Open source sheet</a>
       </div>
-      <h1>${workbook.title}</h1>
-      <p>${workbook.subtitle}</p>
+      <h1>${heroTitle}</h1>
+      <p>${heroSubtitle}</p>
     </header>
     <section class="section-card">
       <div class="section-grid"></div>
@@ -516,6 +520,27 @@ function createMeAndHerFrame() {
       </div>
       <h1>Me and Her</h1>
       <p>Shared games, quizzes, and little dashboards for the two of you.</p>
+    </header>
+  `;
+  return wrapper;
+}
+
+function createPotentialDatesFrame() {
+  const workbook = getWorkbook("bowling");
+  const wrapper = document.createElement("section");
+  wrapper.className = "workbook-shell";
+  wrapper.innerHTML = `
+    <div class="page-topbar">
+      <span class="brand">Personal Dashboards</span>
+      <div class="nav-links">${buildNavLinks("me-and-her")}</div>
+    </div>
+    <header class="page-hero">
+      <div class="page-hero-head">
+        <span class="section-kicker">Together</span>
+        <a class="sheet-link" href="${workbook?.sourceUrl || "#"}" target="_blank" rel="noreferrer">Open source sheet</a>
+      </div>
+      <h1>Me and Her</h1>
+      <p>Potential Dates</p>
     </header>
   `;
   return wrapper;
@@ -607,6 +632,7 @@ function getFoodRecipes() {
       cookTime: getCell(row, "Cook Time"),
       totalTime: formatFoodTotalTime(getCell(row, "Prep Time"), getCell(row, "Cook Time")),
       servings: getCell(row, "Servings"),
+      servingSize: getCell(row, "Serving Size"),
       dishes: getCell(row, "Number of Dishes"),
       difficulty: getCell(row, "Difficulty") || "-",
       notes: getCell(row, "Notes")
@@ -686,6 +712,7 @@ function renderFoodRecipeDetail(shell, recipe) {
           ${recipe.cookTime ? `<span class="pill">Cook time ${recipe.cookTime}</span>` : ""}
           <span class="pill">${recipe.difficulty}</span>
           ${recipe.servings ? `<span class="pill">${recipe.servings} servings</span>` : ""}
+          ${recipe.servingSize ? `<span class="pill">${recipe.servingSize} serving size</span>` : ""}
           ${recipe.dishes ? `<span class="pill">${recipe.dishes} dish${String(recipe.dishes) === "1" ? "" : "es"}</span>` : ""}
         </div>
         <div class="food-recipe-grid">
@@ -1541,11 +1568,46 @@ function renderMeAndHerPage() {
       <strong>Bowling</strong>
       <p>Scores, wins, recent outings, and head-to-head results.</p>
     </a>
+    <a class="misc-link" href="./potential-dates.html">
+      <strong>Potential Dates</strong>
+      <p>Date ideas tracked in the Me and Her sheet.</p>
+    </a>
     <a class="misc-link" href="./love-language-quiz/index.html">
       <strong>Love Language Quiz</strong>
     </a>
   `;
   shell.appendChild(list);
+  dashboardRoot.appendChild(shell);
+}
+
+function renderPotentialDatesPage() {
+  const workbook = getWorkbook("bowling");
+  const shell = createPotentialDatesFrame();
+  const list = document.createElement("section");
+  list.className = "section-card";
+
+  const potentialDates = workbook.tabs["Potential Dates"]?.rows || [];
+  const potentialDateRows = potentialDates
+    .map((row) => {
+      const values = Object.values(row || {})
+        .map((cell) => (cell && typeof cell === "object" ? (cell.formatted ?? cell.raw ?? "") : cell))
+        .map((value) => String(value ?? "").trim())
+        .filter(Boolean);
+      return values;
+    })
+    .filter((values) => values.length > 0);
+
+  list.appendChild(
+    createTableCard(
+      "Potential dates",
+      "Date ideas tracked in the Potential Dates tab.",
+      ["Potential Date"],
+      potentialDateRows.map((values) => [values.join(" ")])
+    )
+  );
+
+  shell.appendChild(list);
+  dashboardRoot.innerHTML = "";
   dashboardRoot.appendChild(shell);
 }
 
@@ -2343,15 +2405,26 @@ function renderRankings(sectionGrid) {
 
 function renderBowling(sectionGrid) {
   const workbook = getWorkbook("bowling");
-  const visualized = workbook.tabs["Visualized"].rows[0];
-  const processed = workbook.tabs["Processed Data"].rows;
+  const processed = workbook.tabs["Processed Bowling Data"]?.rows || [];
+  const potentialDates = workbook.tabs["Potential Dates"]?.rows || [];
   const latestMatch = processed.filter((row) => getCell(row, "Date")).at(-1);
   const recentScores = processed.slice(-8);
+  const kamyiaWinsTotal = processed.reduce((sum, row) => sum + (parseHealthNumber(getRaw(row, "Kamyia Wins") ?? getCell(row, "Kamyia Wins")) ?? 0), 0);
+  const abdulWinsTotal = processed.reduce((sum, row) => sum + (parseHealthNumber(getRaw(row, "Abdul Wins") ?? getCell(row, "Abdul Wins")) ?? 0), 0);
+  const potentialDateRows = potentialDates
+    .map((row) => {
+      const values = Object.values(row || {})
+        .map((cell) => (cell && typeof cell === "object" ? (cell.formatted ?? cell.raw ?? "") : cell))
+        .map((value) => String(value ?? "").trim())
+        .filter(Boolean);
+      return values;
+    })
+    .filter((values) => values.length > 0);
 
   sectionGrid.appendChild(
-    createGlanceCard("Head-to-head", "Totals from the visualized and processed tabs.", [
-      { label: "Kamyia wins", value: getCell(visualized, "Score Kamyia") || "-" },
-      { label: "Abdul wins", value: getCell(visualized, "Abdul") || "-" },
+    createGlanceCard("Head-to-head", "Totals from the processed data tab.", [
+      { label: "Kamyia wins", value: kamyiaWinsTotal || "-" },
+      { label: "Abdul wins", value: abdulWinsTotal || "-" },
       { label: "Last winner", value: getCell(latestMatch, "Daily Winner") || "-" },
       { label: "Best latest score", value: getCell(latestMatch, "Highest Score") || "-" }
     ])
@@ -2398,6 +2471,16 @@ function renderBowling(sectionGrid) {
       ])
     )
   );
+
+  if (potentialDateRows.length) {
+    const potentialDatesCard = createTableCard(
+      "Potential dates",
+      "Candidate date ideas from the Potential Dates tab.",
+      ["Potential Date"],
+      trimRows(potentialDateRows, 24).map((values) => [values.join(" ")])
+    );
+    sectionGrid.appendChild(potentialDatesCard);
+  }
 }
 
 function buildGolfDashboardMap(rows) {
@@ -3264,6 +3347,11 @@ async function init() {
   if (pageType === "food") {
     renderFoodPage();
     window.addEventListener("hashchange", renderFoodPage);
+    return;
+  }
+
+  if (pageType === "potential-dates") {
+    renderPotentialDatesPage();
     return;
   }
 

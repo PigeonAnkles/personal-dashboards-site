@@ -140,8 +140,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 31.666666666666668,
-            "formatted": "+31.7",
+            "raw": 31.5,
+            "formatted": "+31.5",
             "type": "number"
           },
           "G": null,
@@ -179,8 +179,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 8,
-            "formatted": "+8.0",
+            "raw": 6,
+            "formatted": "+6.0",
             "type": "number"
           },
           "G": null,
@@ -229,8 +229,8 @@
             "type": "string"
           },
           "I": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "J": null,
@@ -250,8 +250,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 39.666666666666664,
-            "formatted": "+39.7",
+            "raw": 37.5,
+            "formatted": "+37.5",
             "type": "number"
           },
           "D": null,
@@ -299,8 +299,8 @@
             "type": "string"
           },
           "I": {
-            "raw": 5,
-            "formatted": "5",
+            "raw": 8,
+            "formatted": "8",
             "type": "number"
           },
           "J": null,
@@ -334,8 +334,8 @@
             "type": "string"
           },
           "I": {
-            "raw": 23,
-            "formatted": "23",
+            "raw": 28,
+            "formatted": "28",
             "type": "number"
           },
           "J": null,
@@ -355,8 +355,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 3,
-            "formatted": "3",
+            "raw": 4,
+            "formatted": "4",
             "type": "number"
           },
           "D": null,
@@ -366,8 +366,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 5.333333333333333,
-            "formatted": "+5.33",
+            "raw": 5,
+            "formatted": "+5.00",
             "type": "number"
           },
           "G": null,
@@ -390,8 +390,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 32,
-            "formatted": "32",
+            "raw": 41,
+            "formatted": "41",
             "type": "number"
           },
           "D": null,
@@ -401,8 +401,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 3,
-            "formatted": "+3.00",
+            "raw": 4,
+            "formatted": "+4.00",
             "type": "number"
           },
           "G": null,
@@ -429,8 +429,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 39.666666666666664,
-            "formatted": "+39.7",
+            "raw": 37.5,
+            "formatted": "+37.5",
             "type": "number"
           },
           "D": null,
@@ -440,8 +440,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 2.6666666666666665,
-            "formatted": "+2.67",
+            "raw": 2.5,
+            "formatted": "+2.50",
             "type": "number"
           },
           "G": null,
@@ -451,8 +451,8 @@
             "type": "string"
           },
           "I": {
-            "raw": 3.5873015873015874,
-            "formatted": "+3.59",
+            "raw": 3.551587301587302,
+            "formatted": "+3.55",
             "type": "number"
           },
           "J": null,
@@ -472,8 +472,8 @@
             "type": "string"
           },
           "C": {
-            "raw": 78,
-            "formatted": "78.0",
+            "raw": 74.75,
+            "formatted": "74.8",
             "type": "number"
           },
           "D": null,
@@ -483,8 +483,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 3.6666666666666665,
-            "formatted": "+3.67",
+            "raw": 4,
+            "formatted": "+4.00",
             "type": "number"
           },
           "G": null,
@@ -526,8 +526,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 4,
-            "formatted": "+4.00",
+            "raw": 4.25,
+            "formatted": "+4.25",
             "type": "number"
           },
           "G": null,
@@ -561,8 +561,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 3,
-            "formatted": "+3.00",
+            "raw": 3.25,
+            "formatted": "+3.25",
             "type": "number"
           },
           "G": null,
@@ -600,8 +600,8 @@
             "type": "string"
           },
           "F": {
-            "raw": 4.333333333333333,
-            "formatted": "+4.33",
+            "raw": 3.75,
+            "formatted": "+3.75",
             "type": "number"
           },
           "G": null,
@@ -639,19 +639,19 @@
             "type": "string"
           },
           "F": {
-            "raw": 2.3333333333333335,
-            "formatted": "+2.33",
+            "raw": 2.25,
+            "formatted": "+2.25",
             "type": "number"
           },
           "G": null,
           "H": {
-            "raw": "Rock Creek Golf Course (5/7/26)",
-            "formatted": "Rock Creek Golf Course (5/7/26)",
+            "raw": "East Potomac Golf Course - Whites (5/28/26)",
+            "formatted": "East Potomac Golf Course - Whites (5/28/26)",
             "type": "string"
           },
           "I": {
-            "raw": 28,
-            "formatted": "+28",
+            "raw": 31,
+            "formatted": "+31",
             "type": "number"
           },
           "J": null,
@@ -678,19 +678,19 @@
             "type": "string"
           },
           "F": {
-            "raw": 3.3333333333333335,
-            "formatted": "+3.33",
+            "raw": 2.5,
+            "formatted": "+2.50",
             "type": "number"
           },
           "G": null,
           "H": {
-            "raw": "Langston Golf Course (4/23/26)",
-            "formatted": "Langston Golf Course (4/23/26)",
+            "raw": "Rock Creek Golf Course (5/7/26)",
+            "formatted": "Rock Creek Golf Course (5/7/26)",
             "type": "string"
           },
           "I": {
-            "raw": 62,
-            "formatted": "+62",
+            "raw": 28,
+            "formatted": "+28",
             "type": "number"
           },
           "J": null,
@@ -719,13 +719,13 @@
           },
           "G": null,
           "H": {
-            "raw": "East Potomac Golf Course (8/27/24)",
-            "formatted": "East Potomac Golf Course (8/27/24)",
+            "raw": "Langston Golf Course (4/23/26)",
+            "formatted": "Langston Golf Course (4/23/26)",
             "type": "string"
           },
           "I": {
-            "raw": 29,
-            "formatted": "+29",
+            "raw": 62,
+            "formatted": "+62",
             "type": "number"
           },
           "J": null,
@@ -753,8 +753,16 @@
             "type": "number"
           },
           "G": null,
-          "H": null,
-          "I": null,
+          "H": {
+            "raw": "East Potomac Golf Course - Reds (8/27/24)",
+            "formatted": "East Potomac Golf Course - Reds (8/27/24)",
+            "type": "string"
+          },
+          "I": {
+            "raw": 29,
+            "formatted": "+29",
+            "type": "number"
+          },
           "J": null,
           "K": null,
           "L": null,
@@ -1286,18 +1294,18 @@
             "type": "date"
           },
           "Course": {
-            "raw": "East Potomac Golf Course",
-            "formatted": "East Potomac Golf Course",
+            "raw": "East Potomac Golf Course - Reds",
+            "formatted": "East Potomac Golf Course - Reds",
             "type": "string"
           },
           "Slope": {
-            "raw": 110,
-            "formatted": "110",
+            "raw": 115,
+            "formatted": "115",
             "type": "number"
           },
           "Rating": {
-            "raw": 30,
-            "formatted": "30",
+            "raw": 70.5,
+            "formatted": "70.5",
             "type": "number"
           },
           "Balls Lost": {
@@ -2504,15 +2512,51 @@
           }
         },
         {
-          "1": null,
-          "2": null,
-          "3": null,
-          "4": null,
-          "5": null,
-          "6": null,
-          "7": null,
-          "8": null,
-          "9": null,
+          "1": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "2": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
+          "3": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
+          "4": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
+          "5": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
+          "6": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "7": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
+          "8": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
+          "9": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
           "10": null,
           "11": null,
           "12": null,
@@ -2527,19 +2571,47 @@
             "formatted": "4",
             "type": "number"
           },
-          "Date": null,
-          "Course": null,
-          "Slope": null,
-          "Rating": null,
-          "Balls Lost": null,
+          "Date": {
+            "raw": "2026-05-28T00:00:00.000Z",
+            "formatted": "05/28/26",
+            "type": "date"
+          },
+          "Course": {
+            "raw": "East Potomac Golf Course - Whites",
+            "formatted": "East Potomac Golf Course - Whites",
+            "type": "string"
+          },
+          "Slope": {
+            "raw": 105,
+            "formatted": "105",
+            "type": "number"
+          },
+          "Rating": {
+            "raw": 31.3,
+            "formatted": "31.3",
+            "type": "number"
+          },
+          "Balls Lost": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
           "Gross": {
             "raw": "Par",
             "formatted": "Par",
             "type": "string"
           },
-          "Par": null,
+          "Par": {
+            "raw": 34,
+            "formatted": "34",
+            "type": "number"
+          },
           "+/-": null,
-          "Front 9": null,
+          "Front 9": {
+            "raw": 34,
+            "formatted": "34",
+            "type": "number"
+          },
           "Back 9": null,
           "Holes": null,
           "Avg/Hole": null,
@@ -2571,15 +2643,51 @@
           }
         },
         {
-          "1": null,
-          "2": null,
-          "3": null,
-          "4": null,
-          "5": null,
-          "6": null,
-          "7": null,
-          "8": null,
-          "9": null,
+          "1": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "2": {
+            "raw": 11,
+            "formatted": "11",
+            "type": "number"
+          },
+          "3": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "4": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "5": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "6": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "7": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "8": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "9": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
           "10": null,
           "11": null,
           "12": null,
@@ -2595,30 +2703,94 @@
           "Slope": null,
           "Rating": null,
           "Balls Lost": null,
-          "Gross": null,
+          "Gross": {
+            "raw": "65",
+            "formatted": "65",
+            "type": "string"
+          },
           "Par": null,
-          "+/-": null,
-          "Front 9": null,
+          "+/-": {
+            "raw": 31,
+            "formatted": "+31",
+            "type": "number"
+          },
+          "Front 9": {
+            "raw": 65,
+            "formatted": "65",
+            "type": "number"
+          },
           "Back 9": null,
           "Holes": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "Avg/Hole": {
+            "raw": 7.22,
+            "formatted": "7.22",
+            "type": "number"
+          },
+          "Differential": null,
+          "F9+/-": {
+            "raw": 31,
+            "formatted": "+31",
+            "type": "number"
+          },
+          "B9+/-": {
             "raw": 0,
             "formatted": "0",
             "type": "number"
           },
-          "Avg/Hole": null,
-          "Differential": null,
-          "F9+/-": null,
-          "B9+/-": null,
-          "+/-/Hole": null,
-          "H1+/-": null,
-          "H2+/-": null,
-          "H3+/-": null,
-          "H4+/-": null,
-          "H5+/-": null,
-          "H6+/-": null,
-          "H7+/-": null,
-          "H8+/-": null,
-          "H9+/-": null,
+          "+/-/Hole": {
+            "raw": 3.4444444444444446,
+            "formatted": "3.444444444",
+            "type": "number"
+          },
+          "H1+/-": {
+            "raw": 4,
+            "formatted": "+4",
+            "type": "number"
+          },
+          "H2+/-": {
+            "raw": 7,
+            "formatted": "+7",
+            "type": "number"
+          },
+          "H3+/-": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H4+/-": {
+            "raw": 5,
+            "formatted": "+5",
+            "type": "number"
+          },
+          "H5+/-": {
+            "raw": 5,
+            "formatted": "+5",
+            "type": "number"
+          },
+          "H6+/-": {
+            "raw": 4,
+            "formatted": "+4",
+            "type": "number"
+          },
+          "H7+/-": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H8+/-": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H9+/-": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
           "H10+/-": null,
           "H11+/-": null,
           "H12+/-": null,
@@ -2634,15 +2806,51 @@
           }
         },
         {
-          "1": null,
-          "2": null,
-          "3": null,
-          "4": null,
-          "5": null,
-          "6": null,
-          "7": null,
-          "8": null,
-          "9": null,
+          "1": {
+            "raw": 4,
+            "formatted": "+4",
+            "type": "number"
+          },
+          "2": {
+            "raw": 7,
+            "formatted": "+7",
+            "type": "number"
+          },
+          "3": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "4": {
+            "raw": 5,
+            "formatted": "+5",
+            "type": "number"
+          },
+          "5": {
+            "raw": 5,
+            "formatted": "+5",
+            "type": "number"
+          },
+          "6": {
+            "raw": 4,
+            "formatted": "+4",
+            "type": "number"
+          },
+          "7": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "8": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "9": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
           "10": null,
           "11": null,
           "12": null,
@@ -63097,8 +63305,8 @@
           },
           "Differential": null,
           "Course": {
-            "raw": "East Potomac Golf Course",
-            "formatted": "East Potomac Golf Course",
+            "raw": "East Potomac Golf Course - Reds",
+            "formatted": "East Potomac Golf Course - Reds",
             "type": "string"
           },
           "Date": {
@@ -63433,30 +63641,90 @@
             "type": "number"
           },
           "HasData": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Gross": {
+            "raw": 65,
+            "formatted": "65",
+            "type": "number"
+          },
+          "Par": {
+            "raw": 34,
+            "formatted": "34",
+            "type": "number"
+          },
+          "PlusMinus": {
+            "raw": 31,
+            "formatted": "+31",
+            "type": "number"
+          },
+          "Front9PM": {
+            "raw": 31,
+            "formatted": "+31",
+            "type": "number"
+          },
+          "Back9PM": {
             "raw": 0,
             "formatted": "0",
             "type": "number"
           },
-          "Gross": null,
-          "Par": null,
-          "PlusMinus": null,
-          "Front9PM": null,
-          "Back9PM": null,
-          "PMperHole": null,
+          "PMperHole": {
+            "raw": 3.4444444444444446,
+            "formatted": "3.444444444",
+            "type": "number"
+          },
           "Holes": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "H1": {
+            "raw": 4,
+            "formatted": "+4",
+            "type": "number"
+          },
+          "H2": {
+            "raw": 7,
+            "formatted": "+7",
+            "type": "number"
+          },
+          "H3": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H4": {
+            "raw": 5,
+            "formatted": "+5",
+            "type": "number"
+          },
+          "H5": {
+            "raw": 5,
+            "formatted": "+5",
+            "type": "number"
+          },
+          "H6": {
+            "raw": 4,
+            "formatted": "+4",
+            "type": "number"
+          },
+          "H7": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H8": {
+            "raw": 2,
+            "formatted": "+2",
+            "type": "number"
+          },
+          "H9": {
             "raw": 0,
             "formatted": "0",
             "type": "number"
           },
-          "H1": null,
-          "H2": null,
-          "H3": null,
-          "H4": null,
-          "H5": null,
-          "H6": null,
-          "H7": null,
-          "H8": null,
-          "H9": null,
           "H10": null,
           "H11": null,
           "H12": null,
@@ -63477,8 +63745,8 @@
             "type": "number"
           },
           "Pars": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 1,
+            "formatted": "1",
             "type": "number"
           },
           "Bogeys": {
@@ -63487,22 +63755,30 @@
             "type": "number"
           },
           "Doubles": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 3,
+            "formatted": "3",
             "type": "number"
           },
           "TriplePlus": {
-            "raw": 0,
-            "formatted": "0",
+            "raw": 5,
+            "formatted": "5",
             "type": "number"
           },
           "Differential": null,
-          "Course": null,
-          "Date": null,
+          "Course": {
+            "raw": "East Potomac Golf Course - Whites",
+            "formatted": "East Potomac Golf Course - Whites",
+            "type": "string"
+          },
+          "Date": {
+            "raw": "2026-05-28T00:00:00.000Z",
+            "formatted": "05/28/26",
+            "type": "date"
+          },
           "SeqNum": {
-            "raw": null,
-            "formatted": null,
-            "type": "null"
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
           }
         },
         {
@@ -83212,6 +83488,40 @@
           "Price": {
             "raw": 53.85,
             "formatted": "$53.85",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-05-12T00:00:00.000Z",
+            "formatted": "05/12/26",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Callaway Golve Glove",
+            "formatted": "Callaway Golve Glove",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 15.99,
+            "formatted": "$15.99",
+            "type": "number"
+          }
+        },
+        {
+          "Date": {
+            "raw": "2026-05-28T00:00:00.000Z",
+            "formatted": "05/28/26",
+            "type": "date"
+          },
+          "Item": {
+            "raw": "Driving Range (East Potomac)",
+            "formatted": "Driving Range (East Potomac)",
+            "type": "string"
+          },
+          "Price": {
+            "raw": 12,
+            "formatted": "$12.00",
             "type": "number"
           }
         }

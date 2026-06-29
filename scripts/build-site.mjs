@@ -9,9 +9,9 @@ const distDir = path.join(rootDir, "dist");
 const dataDir = path.join(rootDir, "data");
 
 async function main() {
+  await rm(distDir, { recursive: true, force: true });
   await mkdir(distDir, { recursive: true });
   await cp(srcDir, distDir, { recursive: true, force: true });
-  await rm(path.join(distDir, "data"), { recursive: true, force: true });
   await cp(dataDir, path.join(distDir, "data"), { recursive: true, force: true });
 
   const siteData = JSON.parse(await readFile(path.join(dataDir, "site-data.json"), "utf8"));

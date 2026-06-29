@@ -29,11 +29,11 @@ export const workbooks = [
   },
   {
     slug: "bowling",
-    title: "Bowling",
+    title: "Me and Her",
     subtitle: "Head-to-head results, scores, and bragging rights",
     accent: "#77c7ff",
     sheetId: "1cbtOKJ_XFV8ejqM6FhZfP2GutnyapPZJkZKkuIKVEBw",
-    tabs: ["Visualized", "Processed Data"]
+    tabs: ["Processed Bowling Data", "Raw Bowling Data", "Potential Dates"]
   },
   {
     slug: "career",
