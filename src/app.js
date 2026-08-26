@@ -1322,6 +1322,16 @@ function parseSheetDate(value) {
     return value;
   }
 
+  if (typeof value === "number") {
+    if (value > 30000) {
+      const excelEpoch = new Date(1899, 11, 30);
+      excelEpoch.setDate(excelEpoch.getDate() + value);
+      return excelEpoch;
+    }
+
+    return null;
+  }
+
   if (typeof value === "string") {
     const isoMatch = value.match(/^(\d{4})-(\d{2})-(\d{2})T/);
     if (isoMatch) {
@@ -1332,6 +1342,13 @@ function parseSheetDate(value) {
     if (dateMatch) {
       return new Date(Number(dateMatch[3]), Number(dateMatch[1]) - 1, Number(dateMatch[2]));
     }
+
+    const numericValue = Number(value);
+    if (Number.isFinite(numericValue) && numericValue > 30000) {
+      const excelEpoch = new Date(1899, 11, 30);
+      excelEpoch.setDate(excelEpoch.getDate() + numericValue);
+      return excelEpoch;
+    }
   }
 
   const date = new Date(value);
@@ -1340,15 +1357,15 @@ function parseSheetDate(value) {
 
 function getRankingMediaDate(row, tabName) {
   const dateKeysByTab = {
-    Movies: ["First Date Watched"],
-    Books: ["Day Finished"],
-    "TV Shows": ["Date Started"],
-    Animes: ["Date Started"],
-    Cartoons: ["Date Started"],
-    Mangas: ["Date Started"],
-    Manwhas: ["Date Started"],
-    "Light Novels": ["Date Started"],
-    Comics: ["Date Started"]
+    Movies: ["Date Finished", "Date Started", "First Date Watched"],
+    Books: ["Date Finished", "Date Started", "Day Finished", "Day Started"],
+    "TV Shows": ["Date Finished", "Date Started"],
+    Animes: ["Date Finished", "Date Started"],
+    Cartoons: ["Date Finished", "Date Finshed", "Date Started"],
+    Mangas: ["Date Finished", "Date Started"],
+    Manwhas: ["Date Finished", "Date Started"],
+    "Light Novels": ["Date Finished", "Date Started"],
+    Comics: ["Date Finished", "Date Started"]
   };
 
   const keys = dateKeysByTab[tabName] || ["Date Started", "First Date Watched", "Day Finished", "Day Started"];
@@ -1360,6 +1377,497 @@ function getRankingMediaDate(row, tabName) {
   }
 
   return null;
+}
+
+function getRankingTimelineDate(row, tabName, kind = "start") {
+  const dateKeysByTab = {
+    Diary: kind === "start" ? ["Date Started"] : ["Date Finished"],
+    Movies: kind === "start" ? ["Date Started", "First Date Watched"] : ["Date Finished", "First Date Watched"],
+    "TV Shows": kind === "start" ? ["Date Started"] : ["Date Finished"],
+    Animes: kind === "start" ? ["Date Started"] : ["Date Finished"],
+    Cartoons: kind === "start" ? ["Date Started"] : ["Date Finished", "Date Finshed"],
+    Books: kind === "start" ? ["Date Started", "Day Started"] : ["Date Finished", "Day Finished"],
+    Mangas: kind === "start" ? ["Date Started"] : ["Date Finished"],
+    Manwhas: kind === "start" ? ["Date Started"] : ["Date Finished"],
+    "Light Novels": kind === "start" ? ["Date Started"] : ["Date Finished"],
+    Comics: kind === "start" ? ["Date Started"] : ["Date Finished"]
+  };
+
+  const keys = dateKeysByTab[tabName] || [];
+  for (const key of keys) {
+    const date = parseSheetDate(getRaw(row, key) ?? getCell(row, key));
+    if (date) {
+      return date;
+    }
+  }
+
+  return null;
+}
+
+function getRankingTimelineReconsumeCount(row) {
+  const reconsumeKeys = ["Reconsumed Count", "Times Rewatched", "Amount of Times Reread"];
+
+  for (const key of reconsumeKeys) {
+    const value = getCell(row, key);
+    const count = Number.parseInt(value, 10);
+    if (Number.isFinite(count) && count > 0) {
+      return count;
+    }
+  }
+
+  return null;
+}
+
+function getRankingReleaseYear(row) {
+  const value = getRaw(row, "Release / Release Date") ?? getCell(row, "Release / Release Date") ?? getRaw(row, "Release") ?? getCell(row, "Release");
+  const date = parseSheetDate(value);
+
+  if (date) {
+    return String(date.getFullYear());
+  }
+
+  const yearMatch = String(value ?? "").match(/\b\d{4}\b/);
+  return yearMatch ? yearMatch[0] : "";
+}
+
+function isRankingLifeChanging(row) {
+  const raw = getRaw(row, "Life Changing?");
+  const formatted = getCell(row, "Life Changing?");
+
+  return raw === true || String(formatted).trim().toUpperCase() === "TRUE";
+}
+
+function formatShortDate(date) {
+  if (!date) {
+    return "-";
+  }
+
+  return `${date.getMonth() + 1}/${date.getDate()}/${String(date.getFullYear()).slice(2)}`;
+}
+
+function getShortMonth(date) {
+  return date
+    ? date.toLocaleString(undefined, { month: "short" }).toUpperCase()
+    : "";
+}
+
+function getTwoDigitDay(date) {
+  return date ? String(date.getDate()).padStart(2, "0") : "";
+}
+
+function formatRankingTimelineRange(item) {
+  if (!item.start) {
+    return "Undated";
+  }
+
+  return formatShortDate(item.consumedDate || item.start);
+}
+
+function formatRankingStars(item) {
+  const numericRating = Number.parseFloat(item.rating);
+  if (Number.isFinite(numericRating)) {
+    const fullStars = Math.floor(numericRating);
+    const hasHalfStar = numericRating % 1 >= 0.5;
+    return `${"★".repeat(fullStars)}${hasHalfStar ? "½" : ""}`;
+  }
+
+  const starsByRating = {
+    Fantastic: "★★★★★",
+    Great: "★★★★",
+    Good: "★★★½",
+    Mid: "★★½",
+    Bad: "★½",
+    Trash: "★",
+    Abandoned: "N/A"
+  };
+
+  return starsByRating[item.rating] || "";
+}
+
+function getRankingStatus(row) {
+  const status = getCell(row, "Status");
+  const rating = getCell(row, "Rating");
+  const numericRating = Number.parseFloat(rating);
+
+  if (status) {
+    return status;
+  }
+
+  if (Number.isFinite(numericRating)) {
+    return "Ranked";
+  }
+
+  return rating || "";
+}
+
+function isAnimeOrCartoonMovie(item) {
+  return (item.mediaType === "Animes" || item.mediaType === "Cartoons") &&
+    String(item.amountFinished).trim().toLowerCase() === "movie";
+}
+
+function shouldShowAmountFinishedInTitle(item) {
+  const amountFinished = String(item.amountFinished || "").trim();
+  if (!amountFinished || item.mediaType === "Movies") {
+    return false;
+  }
+
+  if (/^(finished|finshed|complete|completed)$/i.test(amountFinished)) {
+    return false;
+  }
+
+  return /^(season|book|volume|vol\.?|chapter|episode|part|movie)\b/i.test(amountFinished);
+}
+
+function splitRankingAmountFinished(item) {
+  const amountFinished = String(item.amountFinished || "").trim();
+  const seasonEpisodeMatch = amountFinished.match(/^(season\s+\d+)\s+\(?(episode\s+\d+)\)?$/i);
+
+  if (seasonEpisodeMatch) {
+    return {
+      titleSuffix: seasonEpisodeMatch[1].replace(/\b\w/g, (letter) => letter.toUpperCase()),
+      detail: seasonEpisodeMatch[2].replace(/\b\w/g, (letter) => letter.toUpperCase())
+    };
+  }
+
+  return {
+    titleSuffix: amountFinished,
+    detail: ""
+  };
+}
+
+function getRankingTimelineDisplayTitle(item) {
+  if (!shouldShowAmountFinishedInTitle(item)) {
+    return item.title;
+  }
+
+  const { titleSuffix } = splitRankingAmountFinished(item);
+  return item.title.toLowerCase().includes(titleSuffix.toLowerCase())
+    ? item.title
+    : `${item.title} - ${titleSuffix}`;
+}
+
+function appendRankingAmountDetail(description, item) {
+  const { detail } = splitRankingAmountFinished(item);
+  return detail ? `${description} - ${detail}` : description;
+}
+
+function normalizeRankingReconsumeValue(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
+}
+
+function getRankingReconsumeSectionKey(item) {
+  const amountFinished = normalizeRankingReconsumeValue(item.amountFinished);
+  if (amountFinished && !/^(finished|finshed|complete|completed)$/i.test(amountFinished)) {
+    return amountFinished;
+  }
+
+  return item.mediaType === "Movies" ? "movie" : "whole";
+}
+
+function isRankingReconsumeEvent(item) {
+  const event = normalizeRankingReconsumeValue(item.event);
+  return ["watched", "rewatched", "reread", "finished", "started and finished"].includes(event);
+}
+
+function applyRankingTimelineReconsumeCounts(items) {
+  const seen = new Map();
+
+  [...items]
+    .filter((item) => item.consumedDate && isRankingReconsumeEvent(item))
+    .sort((left, right) => {
+      const dateSort = left.consumedDate - right.consumedDate;
+      if (dateSort) {
+        return dateSort;
+      }
+
+      return String(left.entryId).localeCompare(String(right.entryId));
+    })
+    .forEach((item) => {
+      const key = [
+        normalizeRankingReconsumeValue(item.mediaType),
+        normalizeRankingReconsumeValue(item.title),
+        getRankingReconsumeSectionKey(item)
+      ].join("::");
+      const previousCount = seen.get(key) || 0;
+      const inferredReconsumeCount = previousCount > 0 ? previousCount : null;
+
+      item.rewatched = item.rewatched || inferredReconsumeCount;
+      seen.set(key, previousCount + 1);
+    });
+
+  return items;
+}
+
+function createRankingTimelineDescription(item) {
+  const details = [];
+  const event = String(item.event || "").trim();
+
+  if (event === "Watched") {
+    return appendRankingAmountDetail(`Watched ${formatShortDate(item.consumedDate || item.start)}`, item);
+  }
+
+  if (event === "Rewatched" || event === "Reread") {
+    return appendRankingAmountDetail(`${event} ${formatShortDate(item.consumedDate || item.start)}`, item);
+  }
+
+  if (event === "Started") {
+    return appendRankingAmountDetail(`Started ${formatShortDate(item.start || item.consumedDate)}`, item);
+  }
+
+  if (event === "Finished") {
+    return appendRankingAmountDetail(`Finished ${formatShortDate(item.end || item.consumedDate)}`, item);
+  }
+
+  if (event === "Started and Finished") {
+    return appendRankingAmountDetail(`Started and Finished ${formatShortDate(item.end || item.start || item.consumedDate)}`, item);
+  }
+
+  if (event === "Abandoned") {
+    return appendRankingAmountDetail(`Abandoned ${formatShortDate(item.consumedDate || item.start)}`, item);
+  }
+
+  if (event === "Consuming") {
+    return appendRankingAmountDetail(item.start ? `Started ${formatShortDate(item.start)}` : "Consuming", item);
+  }
+
+  if (item.mediaType === "Movies" || isAnimeOrCartoonMovie(item)) {
+    if (item.start) {
+      details.push(`Watched ${formatShortDate(item.consumedDate || item.start)}`);
+    }
+  } else {
+    if (item.start && item.end && item.end.getTime() === item.start.getTime()) {
+      details.push(`Started and Finished ${formatShortDate(item.start)}`);
+    } else if (item.start) {
+      details.push(`Started ${formatShortDate(item.start)}`);
+    }
+
+    if (item.end && (!item.start || item.end.getTime() !== item.start.getTime())) {
+      details.push(`Finished ${formatShortDate(item.end)}`);
+    }
+  }
+
+  return appendRankingAmountDetail(details.join(" - "), item);
+}
+
+function createRankingTimelineItems(mediaTabs) {
+  const items = mediaTabs
+    .flatMap((tab) => tab.rows.map((row) => {
+      const start = getRankingTimelineDate(row, tab.name, "start");
+      const end = getRankingTimelineDate(row, tab.name, "end");
+      const mediaType = getCell(row, "Media Type") || tab.name;
+      const rawTheaters = getRaw(row, "In Theaters");
+      const formattedTheaters = getCell(row, "In Theaters");
+      const actionDate = parseSheetDate(getRaw(row, "Action Date") ?? getCell(row, "Action Date"));
+      const consumedDate = end || start;
+      const status = getRankingStatus(row);
+
+      return {
+        entryId: getCell(row, "Entry ID"),
+        title: getCell(row, "Name"),
+        mediaType,
+        event: getCell(row, "Event"),
+        start: start || end || actionDate,
+        end: end && start && end >= start ? end : null,
+        consumedDate: actionDate || consumedDate,
+        releaseYear: getRankingReleaseYear(row),
+        rating: getCell(row, "Rating") || "-",
+        status,
+        ranking: getCell(row, "Rating (Sorting)") || "-",
+        amountFinished: getCell(row, "Amount Finished"),
+        rewatched: getRankingTimelineReconsumeCount(row),
+        lifeChanging: isRankingLifeChanging(row),
+        notes: getCell(row, "Notes"),
+        theaters: rawTheaters === true || String(formattedTheaters).toUpperCase() === "TRUE" ? "In Theaters" : ""
+      };
+    }))
+    .map((item) => ({
+      ...item,
+      displayTitle: getRankingTimelineDisplayTitle(item)
+    }))
+    .filter((item) => item.title && item.status !== "Want to Consume" && item.rating !== "Want to Consume")
+    .sort((left, right) => {
+      if (left.consumedDate && right.consumedDate) {
+        return right.consumedDate - left.consumedDate || left.title.localeCompare(right.title);
+      }
+
+      if (left.consumedDate) {
+        return -1;
+      }
+
+      if (right.consumedDate) {
+        return 1;
+      }
+
+      return left.mediaType.localeCompare(right.mediaType) || left.title.localeCompare(right.title);
+    });
+
+  return applyRankingTimelineReconsumeCounts(items);
+}
+
+function createRankingsModeSwitcher(dashboardContent, timelineCard) {
+  const switcher = document.createElement("div");
+  switcher.className = "rankings-mode-switcher";
+
+  const dashboardButton = document.createElement("button");
+  dashboardButton.type = "button";
+  dashboardButton.className = "rankings-mode-button active";
+  dashboardButton.textContent = "Dashboard";
+
+  const timelineButton = document.createElement("button");
+  timelineButton.type = "button";
+  timelineButton.className = "rankings-mode-button";
+  timelineButton.textContent = "Timeline";
+
+  const setMode = (mode) => {
+    const isTimeline = mode === "timeline";
+    dashboardContent.hidden = isTimeline;
+    timelineCard.hidden = !isTimeline;
+    dashboardButton.classList.toggle("active", !isTimeline);
+    timelineButton.classList.toggle("active", isTimeline);
+  };
+
+  dashboardButton.addEventListener("click", () => setMode("dashboard"));
+  timelineButton.addEventListener("click", () => setMode("timeline"));
+
+  switcher.appendChild(dashboardButton);
+  switcher.appendChild(timelineButton);
+  return switcher;
+}
+
+function createRankingTimelineCard(items) {
+  const card = document.createElement("article");
+  card.className = "table-card ranking-timeline-card";
+  card.innerHTML = `
+    <div class="card-head">
+      <div>
+        <h3>Consumption timeline</h3>
+        <p>Every dated ranked media entry, newest watched or consumed first.</p>
+      </div>
+      <span class="pill">Timeline</span>
+    </div>
+  `;
+
+  if (!items.length) {
+    const empty = document.createElement("p");
+    empty.className = "empty-state";
+    empty.textContent = "No dated ranking entries are available yet.";
+    card.appendChild(empty);
+    return card;
+  }
+
+  const timeline = document.createElement("div");
+  timeline.className = "ranking-timeline-list";
+  timeline.innerHTML = `
+    <div class="ranking-timeline-header" aria-hidden="true">
+      <span>Month</span>
+      <span>Day</span>
+      <span>Title</span>
+      <span>Released</span>
+      <span>Rating</span>
+      <span>Impact</span>
+      <span>Theater</span>
+      <span>Rewatch</span>
+      <span>Type</span>
+    </div>
+  `;
+  let activeMonth = "";
+
+  items.forEach((item) => {
+    const block = document.createElement("article");
+    block.className = `ranking-timeline-item ranking-timeline-${item.mediaType.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+    const monthKey = item.consumedDate
+      ? `${item.consumedDate.getFullYear()}-${String(item.consumedDate.getMonth() + 1).padStart(2, "0")}`
+      : "Undated";
+
+    const dateLine = document.createElement("div");
+    dateLine.className = "ranking-timeline-date";
+    if (monthKey !== activeMonth) {
+      activeMonth = monthKey;
+      if (item.consumedDate) {
+        dateLine.innerHTML = `
+          <span>${getShortMonth(item.consumedDate)}</span>
+          <small>${item.consumedDate.getFullYear()}</small>
+        `;
+      } else {
+        dateLine.textContent = "Undated";
+      }
+    }
+
+    const day = document.createElement("div");
+    day.className = "ranking-timeline-day";
+    day.textContent = item.consumedDate ? getTwoDigitDay(item.consumedDate) : "-";
+
+    const titleWrap = document.createElement("div");
+    titleWrap.className = "ranking-timeline-title";
+
+    const title = document.createElement("strong");
+    title.textContent = item.displayTitle || item.title;
+
+    const description = document.createElement("p");
+    description.className = "ranking-timeline-description";
+    description.textContent = createRankingTimelineDescription(item);
+
+    titleWrap.appendChild(title);
+    if (description.textContent) {
+      titleWrap.appendChild(description);
+    }
+
+    if (item.notes) {
+      const notes = document.createElement("p");
+      notes.className = "ranking-timeline-notes";
+      notes.textContent = item.notes;
+      titleWrap.appendChild(notes);
+    }
+
+    const release = document.createElement("div");
+    release.className = "ranking-timeline-release";
+    release.textContent = item.releaseYear || "-";
+
+    const rating = document.createElement("div");
+    rating.className = "ranking-timeline-rating";
+    rating.title = item.rating === "-" ? "" : `${item.rating} / ${item.ranking}`;
+    rating.textContent = formatRankingStars(item) || item.rating;
+
+    const lifeCell = document.createElement("div");
+    lifeCell.className = "ranking-timeline-life";
+
+    if (item.lifeChanging) {
+      const lifeChanging = document.createElement("span");
+      lifeChanging.className = "ranking-timeline-life-changing";
+      lifeChanging.title = "Life changing";
+      lifeChanging.textContent = "✓";
+      lifeCell.appendChild(lifeChanging);
+    }
+
+    const theater = document.createElement("div");
+    theater.className = "ranking-timeline-theater";
+    theater.textContent = item.theaters || "";
+
+    const reconsume = document.createElement("div");
+    reconsume.className = "ranking-timeline-reconsume";
+    reconsume.textContent = item.rewatched ? String(item.rewatched) : "";
+
+    const type = document.createElement("div");
+    type.className = "ranking-timeline-type";
+    type.textContent = item.mediaType;
+
+    block.appendChild(dateLine);
+    block.appendChild(day);
+    block.appendChild(titleWrap);
+    block.appendChild(release);
+    block.appendChild(rating);
+    block.appendChild(lifeCell);
+    block.appendChild(theater);
+    block.appendChild(reconsume);
+    block.appendChild(type);
+    timeline.appendChild(block);
+  });
+
+  card.appendChild(timeline);
+  return card;
 }
 
 function createRankingCountOptions(label, values, displayLegend = false) {
@@ -2112,6 +2620,7 @@ function renderRankings(sectionGrid) {
     rows: workbook.tabs[name].rows.filter((row) => getCell(row, "Name"))
   }));
   const allMediaRows = mediaTabs.flatMap((tab) => tab.rows.map((row) => ({ ...row, __tabName: tab.name })));
+  const diaryRows = workbook.tabs.Diary?.rows?.filter((row) => getCell(row, "Name")) || [];
   const totalData = workbook.tabs["Total Data"].rows;
   const currentYear = new Date().getFullYear();
   const mediaTypeMetrics = totalData
@@ -2139,31 +2648,32 @@ function renderRankings(sectionGrid) {
       return date?.getFullYear() === currentYear;
     }).length
   }));
-  const ratingOrder = ["Fantastic", "Great", "Good", "Mid", "Bad", "Trash"];
+  const ratingOrder = ["0.5", "1", "1.5", "2", "2.5", "3", "3.5", "4", "4.5", "5"];
+  const ratingDistributionRows = diaryRows.length ? diaryRows : allMediaRows;
   const ratingCounts = ratingOrder.map((rating) => ({
     label: rating,
-    value: allMediaRows.filter((row) => getCell(row, "Rating") === rating).length
+    value: ratingDistributionRows.filter((row) => String(getRaw(row, "Rating") ?? getCell(row, "Rating")) === rating).length
   }));
-  const displayedRatingCounts = [...ratingCounts].reverse();
+  const displayedRatingCounts = ratingCounts;
   const mediaStatusCounts = [
     {
       label: "Abandoned",
-      value: allMediaRows.filter((row) => getCell(row, "Rating") === "Abandoned").length
+      value: allMediaRows.filter((row) => getRankingStatus(row) === "Abandoned").length
     },
     {
       label: "Consuming",
-      value: allMediaRows.filter((row) => getCell(row, "Rating") === "Consuming").length
+      value: allMediaRows.filter((row) => getRankingStatus(row) === "Consuming").length
     },
     {
       label: "Want to Consume",
-      value: allMediaRows.filter((row) => getCell(row, "Rating") === "Want to Consume").length
+      value: allMediaRows.filter((row) => getRankingStatus(row) === "Want to Consume").length
     },
     {
       label: "Ranked",
-      value: ratingCounts.reduce((sum, item) => sum + item.value, 0)
+      value: allMediaRows.filter((row) => getRankingStatus(row) === "Ranked").length
     }
   ];
-  const totalRankedMedia = ratingCounts.reduce((sum, item) => sum + item.value, 0);
+  const totalRankedMedia = mediaStatusCounts.find((item) => item.label === "Ranked").value;
   const totalCurrentYear = currentYearCounts.reduce((sum, item) => sum + item.value, 0);
   const totalLifeChanging = mediaTypeMetrics.reduce((sum, item) => sum + item.lifeChanging, 0);
   const bestScoredGenre = [...genreMetrics].sort((left, right) => right.score - left.score)[0];
@@ -2172,21 +2682,30 @@ function renderRankings(sectionGrid) {
   const mostLifeChangingGenre = [...genreMetrics].sort((left, right) => right.lifeChanging - left.lifeChanging)[0];
   const backlogCounts = mediaTabs.map((tab) => ({
     label: tab.name,
-    value: tab.rows.filter((row) => getCell(row, "Rating") === "Want to Consume").length
+    value: tab.rows.filter((row) => getRankingStatus(row) === "Want to Consume").length
   }));
   const biggestBacklog = [...backlogCounts].sort((left, right) => right.value - left.value)[0];
   const backlogTotal = backlogCounts.reduce((sum, item) => sum + item.value, 0);
   const formatPercent = (value, total) => total ? `${Math.round((value / total) * 100)}%` : "0%";
   const greatOrBetterCount = ratingCounts
-    .filter((item) => item.label === "Fantastic" || item.label === "Great")
+    .filter((item) => Number(item.label) >= 4)
     .reduce((sum, item) => sum + item.value, 0);
   const midOrBelowCount = ratingCounts
-    .filter((item) => item.label === "Mid" || item.label === "Bad" || item.label === "Trash")
+    .filter((item) => Number(item.label) <= 2.5)
     .reduce((sum, item) => sum + item.value, 0);
   const mostCommonRating = [...ratingCounts].sort((left, right) => right.value - left.value)[0];
   const chartBlue = "#4f8cf0";
+  const dashboardContent = document.createElement("div");
+  dashboardContent.className = "rankings-dashboard-content";
+  const timelineSourceTabs = diaryRows.length ? [{ name: "Diary", rows: diaryRows }] : mediaTabs;
+  const timelineCard = createRankingTimelineCard(createRankingTimelineItems(timelineSourceTabs));
+  timelineCard.hidden = true;
 
-  sectionGrid.appendChild(
+  sectionGrid.appendChild(createRankingsModeSwitcher(dashboardContent, timelineCard));
+  sectionGrid.appendChild(timelineCard);
+  sectionGrid.appendChild(dashboardContent);
+
+  dashboardContent.appendChild(
     createGlanceCard("Taste profile", "A live snapshot of your media universe.", [
       { label: "Ranked media", value: totalRankedMedia.toLocaleString() },
       { label: `Consumed in ${currentYear}`, value: totalCurrentYear.toLocaleString() },
@@ -2203,9 +2722,9 @@ function renderRankings(sectionGrid) {
     currentYearCounts
   );
   currentYearCard.classList.add("glance-wide");
-  sectionGrid.appendChild(currentYearCard);
+  dashboardContent.appendChild(currentYearCard);
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createChartCard("Media Rating Levels", "How many titles sit at each actual rating label.", {
       type: "bar",
       data: {
@@ -2222,7 +2741,7 @@ function renderRankings(sectionGrid) {
     }, "chart-half")
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createChartCard("Media Status", "Ranked titles, backlog, current reads/watches, and abandoned media.", {
       type: "bar",
       data: {
@@ -2239,7 +2758,7 @@ function renderRankings(sectionGrid) {
     }, "chart-half")
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createGlanceCard("Genre standouts", "Where your taste is strongest and most concentrated.", [
       { label: "Highest score", value: `${bestScoredGenre.label} (${bestScoredGenre.score.toFixed(1)})` },
       { label: "Most consumed", value: `${mostConsumedGenre.label} (${mostConsumedGenre.frequency.toLocaleString()})` },
@@ -2248,7 +2767,7 @@ function renderRankings(sectionGrid) {
     ])
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createGlanceCard("Backlog pressure", "A quick read on what is waiting next.", [
       { label: "Backlog", value: backlogTotal.toLocaleString() },
       { label: "Biggest backlog", value: `${biggestBacklog.label} (${biggestBacklog.value.toLocaleString()})` },
@@ -2257,16 +2776,16 @@ function renderRankings(sectionGrid) {
     ])
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createGlanceCard("Rating personality", "How generous or selective the rankings are.", [
       { label: "Great or better", value: formatPercent(greatOrBetterCount, totalRankedMedia) },
-      { label: "Good", value: formatPercent(ratingCounts.find((item) => item.label === "Good").value, totalRankedMedia) },
+      { label: "Good", value: formatPercent(ratingCounts.find((item) => item.label === "3.5").value, totalRankedMedia) },
       { label: "Mid or below", value: formatPercent(midOrBelowCount, totalRankedMedia) },
       { label: "Most common", value: `${mostCommonRating.label} (${mostCommonRating.value.toLocaleString()})` }
     ])
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createChartCard("Media Ranking", "Weighted score by media type.", {
       type: "bar",
       data: {
@@ -2283,7 +2802,7 @@ function renderRankings(sectionGrid) {
     }, "chart-half")
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createChartCard("Media Frequency", "Number of ranked appearances by media type.", {
       type: "bar",
       data: {
@@ -2300,7 +2819,7 @@ function renderRankings(sectionGrid) {
     }, "chart-half")
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createChartCard("Life Changing Media in each Media Type", "Life-changing picks by media type.", {
       type: "bar",
       data: {
@@ -2317,7 +2836,7 @@ function renderRankings(sectionGrid) {
     }, "chart-half")
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createChartCard("Reconsumed Media in each Media Type", "Rewatches and rereads by media type.", {
       type: "bar",
       data: {
@@ -2334,7 +2853,7 @@ function renderRankings(sectionGrid) {
     }, "chart-half")
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createChartCard("Genre Ranking (Overall)", "Weighted score by genre across media types.", {
       type: "bar",
       data: {
@@ -2351,7 +2870,7 @@ function renderRankings(sectionGrid) {
     }, "chart-wide")
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createChartCard("Genre Frequency (Overall)", "Number of appearances by genre.", {
       type: "bar",
       data: {
@@ -2368,7 +2887,7 @@ function renderRankings(sectionGrid) {
     }, "chart-wide")
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createChartCard("Life Changing Media per Genre (Overall)", "Life-changing picks grouped by genre.", {
       type: "bar",
       data: {
@@ -2385,7 +2904,7 @@ function renderRankings(sectionGrid) {
     }, "chart-wide")
   );
 
-  sectionGrid.appendChild(
+  dashboardContent.appendChild(
     createChartCard("Reconsumed Media per Genre (Overall)", "Rewatches and rereads grouped by genre.", {
       type: "bar",
       data: {

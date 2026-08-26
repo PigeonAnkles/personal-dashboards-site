@@ -97,13 +97,13 @@
             "type": "string"
           },
           "Prep Time": {
-            "raw": "5-20",
-            "formatted": "5-20",
+            "raw": "5-20 min",
+            "formatted": "5-20 min",
             "type": "string"
           },
           "Cook Time": {
-            "raw": "30-40",
-            "formatted": "30-40",
+            "raw": "30-40 min",
+            "formatted": "30-40 min",
             "type": "string"
           },
           "Servings": {
@@ -145,8 +145,8 @@
             "type": "string"
           },
           "Ingredients": {
-            "raw": "1 cup dried hibiscus flowers\n8 quarts (2 gallons) water\n1/16 tsp pure stevia extract",
-            "formatted": "1 cup dried hibiscus flowers\n8 quarts (2 gallons) water\n1/16 tsp pure stevia extract",
+            "raw": "1 cup dried hibiscus flowers\n8 quarts (2 gallons) water\n1/4 tsp pure stevia extract",
+            "formatted": "1 cup dried hibiscus flowers\n8 quarts (2 gallons) water\n1/4 tsp pure stevia extract",
             "type": "string"
           },
           "Directions": {
@@ -160,8 +160,8 @@
             "type": "string"
           },
           "Cook Time": {
-            "raw": "40 min",
-            "formatted": "40 min",
+            "raw": "60 min",
+            "formatted": "60 min",
             "type": "string"
           },
           "Servings": {

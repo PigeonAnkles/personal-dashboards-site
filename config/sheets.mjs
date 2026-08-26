@@ -12,7 +12,7 @@ export const workbooks = [
     title: "Rankings",
     subtitle: "Movies, shows, anime, books, and taste profiles",
     accent: "#ffb770",
-    sheetId: "14U01VjCX2_f7UOCzuzcaZVvhZWiWGZDMM_U4BwAbb4s",
+    sheetId: "1K50J7L5dZUFnX77glyjtxE8Wr-SRqtUppx9n5yGsH5g",
     tabs: [
       "Movies",
       "TV Shows",
@@ -23,7 +23,7 @@ export const workbooks = [
       "Manwhas",
       "Light Novels",
       "Comics",
-      "Food",
+      "Diary",
       "Total Data"
     ]
   },

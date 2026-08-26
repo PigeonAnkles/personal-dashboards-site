@@ -643,6 +643,90 @@
             "formatted": null,
             "type": "null"
           }
+        },
+        {
+          "Date": {
+            "raw": "2026-07-09T00:00:00.000Z",
+            "formatted": "7/9/2026",
+            "type": "date"
+          },
+          "Kamyia Wins": {
+            "raw": 0,
+            "formatted": "0",
+            "type": "number"
+          },
+          "Abdul Wins": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "Kamyia Total Points": {
+            "raw": 475,
+            "formatted": "475",
+            "type": "number"
+          },
+          "Abdul Total Points": {
+            "raw": 597,
+            "formatted": "597",
+            "type": "number"
+          },
+          "Kamyia Avg Points": {
+            "raw": 79.16666666666667,
+            "formatted": "79",
+            "type": "number"
+          },
+          "Abdul Avg Points": {
+            "raw": 99.5,
+            "formatted": "100",
+            "type": "number"
+          },
+          "Daily Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Highest Score": {
+            "raw": 109,
+            "formatted": "109",
+            "type": "number"
+          },
+          "Highest Score Holder": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          },
+          "Best Kamyia Game": {
+            "raw": 89,
+            "formatted": "89",
+            "type": "number"
+          },
+          "Best Abdul Game": {
+            "raw": 109,
+            "formatted": "109",
+            "type": "number"
+          },
+          "Total Games": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "N": null,
+          "O": null,
+          "P": null,
+          "Q": null,
+          "R": null,
+          "S": null,
+          "T": null,
+          "U": null,
+          "V": null,
+          "W": null,
+          "X": null,
+          "Y": null,
+          "Z": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
         }
       ]
     },
@@ -696,7 +780,7 @@
         {
           "id": "J",
           "label": "J",
-          "type": "string"
+          "type": "number"
         },
         {
           "id": "K",
@@ -706,7 +790,7 @@
         {
           "id": "L",
           "label": "L",
-          "type": "string"
+          "type": "number"
         },
         {
           "id": "M",
@@ -771,7 +855,7 @@
         {
           "id": "Y",
           "label": "Y",
-          "type": "string"
+          "type": "number"
         },
         {
           "id": "Z",
@@ -932,9 +1016,9 @@
             "type": "number"
           },
           "J": {
-            "raw": "7",
+            "raw": 7,
             "formatted": "7",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 4,
@@ -942,9 +1026,9 @@
             "type": "number"
           },
           "L": {
-            "raw": "3",
+            "raw": 3,
             "formatted": "3",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": {
             "raw": 1,
@@ -994,11 +1078,7 @@
           },
           "W": null,
           "Frame 1 (Abdul)": null,
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 5,
             "formatted": "5",
@@ -1261,21 +1341,13 @@
             "formatted": "6",
             "type": "number"
           },
-          "J": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": {
             "raw": 7,
             "formatted": "7",
             "type": "number"
           },
-          "L": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 9,
             "formatted": "9",
@@ -1328,11 +1400,7 @@
             "formatted": "7",
             "type": "number"
           },
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 7,
             "formatted": "7",
@@ -1595,20 +1663,16 @@
             "formatted": "3",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": {
             "raw": 3,
             "formatted": "3",
             "type": "number"
           },
           "L": {
-            "raw": "3",
+            "raw": 3,
             "formatted": "3",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": {
             "raw": 4,
@@ -1663,9 +1727,9 @@
           "W": null,
           "Frame 1 (Abdul)": null,
           "Y": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 9,
@@ -1930,20 +1994,16 @@
             "type": "number"
           },
           "J": {
-            "raw": "5",
+            "raw": 5,
             "formatted": "5",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 7,
             "formatted": "7",
             "type": "number"
           },
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 7,
             "formatted": "7",
@@ -1997,9 +2057,9 @@
             "type": "number"
           },
           "Y": {
-            "raw": "2",
+            "raw": 2,
             "formatted": "2",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 7,
@@ -2268,9 +2328,9 @@
             "type": "number"
           },
           "J": {
-            "raw": "4",
+            "raw": 4,
             "formatted": "4",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 3,
@@ -2278,9 +2338,9 @@
             "type": "number"
           },
           "L": {
-            "raw": "5",
+            "raw": 5,
             "formatted": "5",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": {
             "raw": 3,
@@ -2339,9 +2399,9 @@
             "type": "number"
           },
           "Y": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 3,
@@ -2598,20 +2658,16 @@
           },
           "Frame 4 (Kamyia)": null,
           "J": {
-            "raw": "3",
+            "raw": 3,
             "formatted": "3",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 7,
             "formatted": "7",
             "type": "number"
           },
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": null,
           "N": {
             "raw": 3,
@@ -2661,9 +2717,9 @@
           "W": null,
           "Frame 1 (Abdul)": null,
           "Y": {
-            "raw": "6",
+            "raw": 6,
             "formatted": "6",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 9,
@@ -2936,20 +2992,16 @@
             "type": "number"
           },
           "J": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 8,
             "formatted": "8",
             "type": "number"
           },
-          "L": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 7,
             "formatted": "7",
@@ -3007,9 +3059,9 @@
             "type": "number"
           },
           "Y": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": null,
           "AA": null,
@@ -3278,9 +3330,9 @@
           },
           "Frame 4 (Kamyia)": null,
           "J": {
-            "raw": "4",
+            "raw": 4,
             "formatted": "4",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 5,
@@ -3288,9 +3340,9 @@
             "type": "number"
           },
           "L": {
-            "raw": "3",
+            "raw": 3,
             "formatted": "3",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": null,
           "N": {
@@ -3345,9 +3397,9 @@
             "type": "number"
           },
           "Y": {
-            "raw": "5",
+            "raw": 5,
             "formatted": "5",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 3,
@@ -3608,20 +3660,16 @@
             "type": "number"
           },
           "J": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 5,
             "formatted": "5",
             "type": "number"
           },
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 6,
             "formatted": "6",
@@ -3674,11 +3722,7 @@
             "formatted": "7",
             "type": "number"
           },
-          "Y": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 7,
             "formatted": "7",
@@ -3950,20 +3994,16 @@
             "type": "number"
           },
           "J": {
-            "raw": "2",
+            "raw": 2,
             "formatted": "2",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 8,
             "formatted": "8",
             "type": "number"
           },
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 1,
             "formatted": "1",
@@ -4017,9 +4057,9 @@
           "W": null,
           "Frame 1 (Abdul)": null,
           "Y": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 1,
@@ -4291,16 +4331,12 @@
             "formatted": "3",
             "type": "number"
           },
-          "J": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": null,
           "L": {
-            "raw": "6",
+            "raw": 6,
             "formatted": "6",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": null,
           "N": {
@@ -4354,11 +4390,7 @@
             "formatted": "9",
             "type": "number"
           },
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 1,
             "formatted": "1",
@@ -4629,17 +4661,9 @@
             "formatted": "3",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": null,
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 8,
             "formatted": "8",
@@ -4684,11 +4708,7 @@
             "type": "number"
           },
           "Frame 1 (Abdul)": null,
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": null,
           "AA": {
             "raw": "-",
@@ -4936,15 +4956,15 @@
             "type": "number"
           },
           "J": {
-            "raw": "7",
+            "raw": 7,
             "formatted": "7",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": null,
           "L": {
-            "raw": "8",
+            "raw": 8,
             "formatted": "8",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": null,
           "N": {
@@ -4990,11 +5010,7 @@
             "formatted": "9",
             "type": "number"
           },
-          "Y": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 1,
             "formatted": "1",
@@ -5261,17 +5277,9 @@
             "formatted": "9",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": null,
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 1,
             "formatted": "1",
@@ -5309,9 +5317,9 @@
             "type": "number"
           },
           "Y": {
-            "raw": "3",
+            "raw": 3,
             "formatted": "3",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 1,
@@ -5571,17 +5579,9 @@
             "type": "string"
           },
           "Frame 4 (Kamyia)": null,
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": null,
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": null,
           "N": null,
           "Frame 7 (Kamyia)": {
@@ -5614,11 +5614,7 @@
           },
           "W": null,
           "Frame 1 (Abdul)": null,
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 4,
             "formatted": "4",
@@ -5873,16 +5869,12 @@
             "formatted": "5",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": null,
           "L": {
-            "raw": "4",
+            "raw": 4,
             "formatted": "4",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": {
             "raw": 3,
@@ -5936,11 +5928,7 @@
             "formatted": "8",
             "type": "number"
           },
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 3,
             "formatted": "3",
@@ -6200,9 +6188,9 @@
           },
           "Frame 4 (Kamyia)": null,
           "J": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 6,
@@ -6210,9 +6198,9 @@
             "type": "number"
           },
           "L": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": {
             "raw": 1,
@@ -6258,11 +6246,7 @@
             "formatted": "7",
             "type": "number"
           },
-          "Y": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 7,
             "formatted": "7",
@@ -6525,21 +6509,13 @@
             "formatted": "6",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": {
             "raw": 4,
             "formatted": "4",
             "type": "number"
           },
-          "L": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": null,
           "N": {
             "raw": 7,
@@ -6577,9 +6553,9 @@
           "W": null,
           "Frame 1 (Abdul)": null,
           "Y": {
-            "raw": "9",
+            "raw": 9,
             "formatted": "9",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 5,
@@ -6847,20 +6823,16 @@
             "formatted": "5",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": {
             "raw": 7,
             "formatted": "7",
             "type": "number"
           },
           "L": {
-            "raw": "2",
+            "raw": 2,
             "formatted": "2",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": {
             "raw": 8,
@@ -6903,9 +6875,9 @@
             "type": "number"
           },
           "Y": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 8,
@@ -7165,16 +7137,12 @@
             "formatted": "4",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": null,
           "L": {
-            "raw": "9",
+            "raw": 9,
             "formatted": "9",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": null,
           "N": null,
@@ -7487,21 +7455,13 @@
             "formatted": "8",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": {
             "raw": 8,
             "formatted": "8",
             "type": "number"
           },
-          "L": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": null,
           "N": {
             "raw": 9,
@@ -7542,11 +7502,7 @@
             "formatted": "8",
             "type": "number"
           },
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 8,
             "formatted": "8",
@@ -7789,11 +7745,7 @@
             "formatted": "9",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": null,
           "L": null,
           "Frame 6 (Kamyia)": null,
@@ -7836,11 +7788,7 @@
           "V": null,
           "W": null,
           "Frame 1 (Abdul)": null,
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": null,
           "AA": {
             "raw": "-",
@@ -8107,20 +8055,16 @@
             "formatted": "7",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": {
             "raw": 6,
             "formatted": "6",
             "type": "number"
           },
           "L": {
-            "raw": "2",
+            "raw": 2,
             "formatted": "2",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": {
             "raw": 8,
@@ -8163,9 +8107,9 @@
           "W": null,
           "Frame 1 (Abdul)": null,
           "Y": {
-            "raw": "9",
+            "raw": 9,
             "formatted": "9",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 3,
@@ -8413,20 +8357,16 @@
             "formatted": "3",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": {
             "raw": 8,
             "formatted": "8",
             "type": "number"
           },
           "L": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": {
             "raw": 4,
@@ -8480,11 +8420,7 @@
             "formatted": "9",
             "type": "number"
           },
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 7,
             "formatted": "7",
@@ -8732,20 +8668,16 @@
           },
           "Frame 4 (Kamyia)": null,
           "J": {
-            "raw": "6",
+            "raw": 6,
             "formatted": "6",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 7,
             "formatted": "7",
             "type": "number"
           },
-          "L": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 6,
             "formatted": "6",
@@ -8798,11 +8730,7 @@
             "formatted": "8",
             "type": "number"
           },
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 9,
             "formatted": "9",
@@ -9074,20 +9002,16 @@
             "type": "number"
           },
           "J": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": {
             "raw": 8,
             "formatted": "8",
             "type": "number"
           },
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 1,
             "formatted": "1",
@@ -9141,9 +9065,9 @@
           "W": null,
           "Frame 1 (Abdul)": null,
           "Y": {
-            "raw": "7",
+            "raw": 7,
             "formatted": "7",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 7,
@@ -9414,9 +9338,9 @@
             "type": "number"
           },
           "L": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": {
             "raw": 6,
@@ -9463,9 +9387,9 @@
             "type": "number"
           },
           "Y": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": null,
           "AA": null,
@@ -9726,16 +9650,12 @@
             "type": "number"
           },
           "J": {
-            "raw": "4",
+            "raw": 4,
             "formatted": "4",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": null,
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": null,
           "N": {
             "raw": 1,
@@ -9781,9 +9701,9 @@
             "type": "number"
           },
           "Y": {
-            "raw": "6",
+            "raw": 6,
             "formatted": "6",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": null,
           "AA": null,
@@ -10048,15 +9968,15 @@
           },
           "Frame 4 (Kamyia)": null,
           "J": {
-            "raw": "7",
+            "raw": 7,
             "formatted": "7",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": null,
           "L": {
-            "raw": "7",
+            "raw": 7,
             "formatted": "7",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": null,
           "N": null,
@@ -10094,11 +10014,7 @@
             "formatted": "9",
             "type": "number"
           },
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 9,
             "formatted": "9",
@@ -10361,21 +10277,13 @@
             "type": "string"
           },
           "Frame 4 (Kamyia)": null,
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": {
             "raw": 5,
             "formatted": "5",
             "type": "number"
           },
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 5,
             "formatted": "5",
@@ -10416,11 +10324,7 @@
             "formatted": "1",
             "type": "number"
           },
-          "Y": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": {
             "raw": 8,
             "formatted": "8",
@@ -10699,21 +10603,13 @@
             "formatted": "3",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": {
             "raw": 6,
             "formatted": "6",
             "type": "number"
           },
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 3,
             "formatted": "3",
@@ -10754,11 +10650,7 @@
           },
           "W": null,
           "Frame 1 (Abdul)": null,
-          "Y": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": null,
           "AA": {
             "raw": "1",
@@ -11031,11 +10923,7 @@
             "formatted": "6",
             "type": "number"
           },
-          "L": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "L": null,
           "Frame 6 (Kamyia)": {
             "raw": 7,
             "formatted": "7",
@@ -11089,9 +10977,9 @@
             "type": "number"
           },
           "Y": {
-            "raw": "2",
+            "raw": 2,
             "formatted": "2",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": {
             "raw": 5,
@@ -11352,15 +11240,15 @@
           },
           "Frame 4 (Kamyia)": null,
           "J": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 5 (Kamyia)": null,
           "L": {
-            "raw": "1",
+            "raw": 1,
             "formatted": "1",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": null,
           "N": {
@@ -11407,9 +11295,9 @@
             "type": "number"
           },
           "Y": {
-            "raw": "8",
+            "raw": 8,
             "formatted": "8",
-            "type": "string"
+            "type": "number"
           },
           "Frame 2 (Abdul)": null,
           "AA": null,
@@ -11657,16 +11545,12 @@
             "formatted": "9",
             "type": "number"
           },
-          "J": {
-            "raw": "-",
-            "formatted": "-",
-            "type": "string"
-          },
+          "J": null,
           "Frame 5 (Kamyia)": null,
           "L": {
-            "raw": "7",
+            "raw": 7,
             "formatted": "7",
-            "type": "string"
+            "type": "number"
           },
           "Frame 6 (Kamyia)": {
             "raw": 5,
@@ -11720,11 +11604,7 @@
             "formatted": "1",
             "type": "number"
           },
-          "Y": {
-            "raw": "/",
-            "formatted": "/",
-            "type": "string"
-          },
+          "Y": null,
           "Frame 2 (Abdul)": null,
           "AA": {
             "raw": "-",
@@ -11960,18 +11840,2037 @@
             "formatted": null,
             "type": "null"
           }
+        },
+        {
+          "Date": {
+            "raw": "2026-07-09T00:00:00.000Z",
+            "formatted": "7/9/2026",
+            "type": "date"
+          },
+          "Game #": {
+            "raw": "Game 1",
+            "formatted": "Game 1",
+            "type": "string"
+          },
+          "Frame 1 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "D": null,
+          "Frame 2 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "F": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 3 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "H": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 4 (Kamyia)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "J": null,
+          "Frame 5 (Kamyia)": null,
+          "L": null,
+          "Frame 6 (Kamyia)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "N": null,
+          "Frame 7 (Kamyia)": null,
+          "P": {
+            "raw": "3",
+            "formatted": "3",
+            "type": "string"
+          },
+          "Frame 8 (Kamyia)": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "R": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 9 (Kamyia)": null,
+          "T": null,
+          "Frame 10 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "V": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "W": null,
+          "Frame 1 (Abdul)": null,
+          "Y": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Frame 2 (Abdul)": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "AA": {
+            "raw": "4",
+            "formatted": "4",
+            "type": "string"
+          },
+          "Frame 3 (Abdul)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "AC": {
+            "raw": "5",
+            "formatted": "5",
+            "type": "string"
+          },
+          "Frame 4 (Abdul)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "AE": {
+            "raw": "/",
+            "formatted": "/",
+            "type": "string"
+          },
+          "Frame 5 (Abdul)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "AG": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 6 (Abdul)": null,
+          "AI": {
+            "raw": "/",
+            "formatted": "/",
+            "type": "string"
+          },
+          "Frame 7 (Abdul)": null,
+          "AK": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 8 (Abdul)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "AM": {
+            "raw": "/",
+            "formatted": "/",
+            "type": "string"
+          },
+          "Frame 9 (Abdul)": null,
+          "AO": null,
+          "Frame 10 (Abdul)": null,
+          "AQ": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "AR": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "Total Score Kamyia": {
+            "raw": 89,
+            "formatted": "89",
+            "type": "number"
+          },
+          "Total Score Abdul": {
+            "raw": 109,
+            "formatted": "109",
+            "type": "number"
+          },
+          "Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": null,
+          "Frame 1 (Kamyia)": {
+            "raw": 19,
+            "formatted": "19",
+            "type": "number"
+          },
+          "D": null,
+          "Frame 2 (Kamyia)": {
+            "raw": 28,
+            "formatted": "28",
+            "type": "number"
+          },
+          "F": null,
+          "Frame 3 (Kamyia)": {
+            "raw": 37,
+            "formatted": "37",
+            "type": "number"
+          },
+          "H": null,
+          "Frame 4 (Kamyia)": {
+            "raw": 44,
+            "formatted": "44",
+            "type": "number"
+          },
+          "J": null,
+          "Frame 5 (Kamyia)": {
+            "raw": 64,
+            "formatted": "64",
+            "type": "number"
+          },
+          "L": null,
+          "Frame 6 (Kamyia)": {
+            "raw": 74,
+            "formatted": "74",
+            "type": "number"
+          },
+          "N": null,
+          "Frame 7 (Kamyia)": {
+            "raw": 77,
+            "formatted": "77",
+            "type": "number"
+          },
+          "P": null,
+          "Frame 8 (Kamyia)": {
+            "raw": 80,
+            "formatted": "80",
+            "type": "number"
+          },
+          "R": null,
+          "Frame 9 (Kamyia)": {
+            "raw": 80,
+            "formatted": "80",
+            "type": "number"
+          },
+          "T": null,
+          "Frame 10 (Kamyia)": {
+            "raw": 89,
+            "formatted": "89",
+            "type": "number"
+          },
+          "V": null,
+          "W": null,
+          "Frame 1 (Abdul)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Y": null,
+          "Frame 2 (Abdul)": {
+            "raw": 10,
+            "formatted": "10",
+            "type": "number"
+          },
+          "AA": null,
+          "Frame 3 (Abdul)": {
+            "raw": 16,
+            "formatted": "16",
+            "type": "number"
+          },
+          "AC": null,
+          "Frame 4 (Abdul)": {
+            "raw": 34,
+            "formatted": "34",
+            "type": "number"
+          },
+          "AE": null,
+          "Frame 5 (Abdul)": {
+            "raw": 42,
+            "formatted": "42",
+            "type": "number"
+          },
+          "AG": null,
+          "Frame 6 (Abdul)": {
+            "raw": 52,
+            "formatted": "52",
+            "type": "number"
+          },
+          "AI": null,
+          "Frame 7 (Abdul)": {
+            "raw": 52,
+            "formatted": "52",
+            "type": "number"
+          },
+          "AK": null,
+          "Frame 8 (Abdul)": {
+            "raw": 72,
+            "formatted": "72",
+            "type": "number"
+          },
+          "AM": null,
+          "Frame 9 (Abdul)": {
+            "raw": 92,
+            "formatted": "92",
+            "type": "number"
+          },
+          "AO": null,
+          "Frame 10 (Abdul)": {
+            "raw": 109,
+            "formatted": "109",
+            "type": "number"
+          },
+          "AQ": null,
+          "AR": null,
+          "Total Score Kamyia": null,
+          "Total Score Abdul": null,
+          "Winner": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": {
+            "raw": "Game 2",
+            "formatted": "Game 2",
+            "type": "string"
+          },
+          "Frame 1 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "D": null,
+          "Frame 2 (Kamyia)": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "F": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 3 (Kamyia)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "H": {
+            "raw": "2",
+            "formatted": "2",
+            "type": "string"
+          },
+          "Frame 4 (Kamyia)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "J": {
+            "raw": 2,
+            "formatted": "2",
+            "type": "number"
+          },
+          "Frame 5 (Kamyia)": null,
+          "L": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
+          "Frame 6 (Kamyia)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "N": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Frame 7 (Kamyia)": null,
+          "P": {
+            "raw": "5",
+            "formatted": "5",
+            "type": "string"
+          },
+          "Frame 8 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "R": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 9 (Kamyia)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "T": null,
+          "Frame 10 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "V": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "W": null,
+          "Frame 1 (Abdul)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "Y": {
+            "raw": 2,
+            "formatted": "2",
+            "type": "number"
+          },
+          "Frame 2 (Abdul)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "AA": {
+            "raw": "1",
+            "formatted": "1",
+            "type": "string"
+          },
+          "Frame 3 (Abdul)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "AC": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 4 (Abdul)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "AE": {
+            "raw": "1",
+            "formatted": "1",
+            "type": "string"
+          },
+          "Frame 5 (Abdul)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "AG": {
+            "raw": "5",
+            "formatted": "5",
+            "type": "string"
+          },
+          "Frame 6 (Abdul)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "AI": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 7 (Abdul)": null,
+          "AK": null,
+          "Frame 8 (Abdul)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "AM": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 9 (Abdul)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "AO": {
+            "raw": "8",
+            "formatted": "8",
+            "type": "string"
+          },
+          "Frame 10 (Abdul)": null,
+          "AQ": {
+            "raw": "1",
+            "formatted": "1",
+            "type": "string"
+          },
+          "AR": null,
+          "Total Score Kamyia": {
+            "raw": 72,
+            "formatted": "72",
+            "type": "number"
+          },
+          "Total Score Abdul": {
+            "raw": 85,
+            "formatted": "85",
+            "type": "number"
+          },
+          "Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": null,
+          "Frame 1 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "D": null,
+          "Frame 2 (Kamyia)": {
+            "raw": 14,
+            "formatted": "14",
+            "type": "number"
+          },
+          "F": null,
+          "Frame 3 (Kamyia)": {
+            "raw": 23,
+            "formatted": "23",
+            "type": "number"
+          },
+          "H": null,
+          "Frame 4 (Kamyia)": {
+            "raw": 32,
+            "formatted": "32",
+            "type": "number"
+          },
+          "J": null,
+          "Frame 5 (Kamyia)": {
+            "raw": 36,
+            "formatted": "36",
+            "type": "number"
+          },
+          "L": null,
+          "Frame 6 (Kamyia)": {
+            "raw": 44,
+            "formatted": "44",
+            "type": "number"
+          },
+          "N": null,
+          "Frame 7 (Kamyia)": {
+            "raw": 49,
+            "formatted": "49",
+            "type": "number"
+          },
+          "P": null,
+          "Frame 8 (Kamyia)": {
+            "raw": 55,
+            "formatted": "55",
+            "type": "number"
+          },
+          "R": null,
+          "Frame 9 (Kamyia)": {
+            "raw": 63,
+            "formatted": "63",
+            "type": "number"
+          },
+          "T": null,
+          "Frame 10 (Kamyia)": {
+            "raw": 72,
+            "formatted": "72",
+            "type": "number"
+          },
+          "V": null,
+          "W": null,
+          "Frame 1 (Abdul)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "Y": null,
+          "Frame 2 (Abdul)": {
+            "raw": 16,
+            "formatted": "16",
+            "type": "number"
+          },
+          "AA": null,
+          "Frame 3 (Abdul)": {
+            "raw": 25,
+            "formatted": "25",
+            "type": "number"
+          },
+          "AC": null,
+          "Frame 4 (Abdul)": {
+            "raw": 34,
+            "formatted": "34",
+            "type": "number"
+          },
+          "AE": null,
+          "Frame 5 (Abdul)": {
+            "raw": 40,
+            "formatted": "40",
+            "type": "number"
+          },
+          "AG": null,
+          "Frame 6 (Abdul)": {
+            "raw": 47,
+            "formatted": "47",
+            "type": "number"
+          },
+          "AI": null,
+          "Frame 7 (Abdul)": {
+            "raw": 66,
+            "formatted": "66",
+            "type": "number"
+          },
+          "AK": null,
+          "Frame 8 (Abdul)": {
+            "raw": 75,
+            "formatted": "75",
+            "type": "number"
+          },
+          "AM": null,
+          "Frame 9 (Abdul)": {
+            "raw": 84,
+            "formatted": "84",
+            "type": "number"
+          },
+          "AO": null,
+          "Frame 10 (Abdul)": {
+            "raw": 85,
+            "formatted": "85",
+            "type": "number"
+          },
+          "AQ": null,
+          "AR": null,
+          "Total Score Kamyia": null,
+          "Total Score Abdul": null,
+          "Winner": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": {
+            "raw": "Game 3",
+            "formatted": "Game 3",
+            "type": "string"
+          },
+          "Frame 1 (Kamyia)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "D": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Frame 2 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "F": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 3 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "H": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 4 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "J": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "Frame 5 (Kamyia)": null,
+          "L": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "Frame 6 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "N": null,
+          "Frame 7 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "P": {
+            "raw": "2",
+            "formatted": "2",
+            "type": "string"
+          },
+          "Frame 8 (Kamyia)": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "R": {
+            "raw": "3",
+            "formatted": "3",
+            "type": "string"
+          },
+          "Frame 9 (Kamyia)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "T": null,
+          "Frame 10 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "V": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "W": null,
+          "Frame 1 (Abdul)": null,
+          "Y": null,
+          "Frame 2 (Abdul)": null,
+          "AA": null,
+          "Frame 3 (Abdul)": null,
+          "AC": {
+            "raw": "5",
+            "formatted": "5",
+            "type": "string"
+          },
+          "Frame 4 (Abdul)": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "AE": {
+            "raw": "/",
+            "formatted": "/",
+            "type": "string"
+          },
+          "Frame 5 (Abdul)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "AG": {
+            "raw": "2",
+            "formatted": "2",
+            "type": "string"
+          },
+          "Frame 6 (Abdul)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "AI": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 7 (Abdul)": null,
+          "AK": {
+            "raw": "7",
+            "formatted": "7",
+            "type": "string"
+          },
+          "Frame 8 (Abdul)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "AM": {
+            "raw": "1",
+            "formatted": "1",
+            "type": "string"
+          },
+          "Frame 9 (Abdul)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "AO": {
+            "raw": "8",
+            "formatted": "8",
+            "type": "string"
+          },
+          "Frame 10 (Abdul)": null,
+          "AQ": null,
+          "AR": null,
+          "Total Score Kamyia": {
+            "raw": 86,
+            "formatted": "86",
+            "type": "number"
+          },
+          "Total Score Abdul": {
+            "raw": 107,
+            "formatted": "107",
+            "type": "number"
+          },
+          "Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": null,
+          "Frame 1 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "D": null,
+          "Frame 2 (Kamyia)": {
+            "raw": 18,
+            "formatted": "18",
+            "type": "number"
+          },
+          "F": null,
+          "Frame 3 (Kamyia)": {
+            "raw": 24,
+            "formatted": "24",
+            "type": "number"
+          },
+          "H": null,
+          "Frame 4 (Kamyia)": {
+            "raw": 33,
+            "formatted": "33",
+            "type": "number"
+          },
+          "J": null,
+          "Frame 5 (Kamyia)": {
+            "raw": 41,
+            "formatted": "41",
+            "type": "number"
+          },
+          "L": null,
+          "Frame 6 (Kamyia)": {
+            "raw": 57,
+            "formatted": "57",
+            "type": "number"
+          },
+          "N": null,
+          "Frame 7 (Kamyia)": {
+            "raw": 65,
+            "formatted": "65",
+            "type": "number"
+          },
+          "P": null,
+          "Frame 8 (Kamyia)": {
+            "raw": 73,
+            "formatted": "73",
+            "type": "number"
+          },
+          "R": null,
+          "Frame 9 (Kamyia)": {
+            "raw": 80,
+            "formatted": "80",
+            "type": "number"
+          },
+          "T": null,
+          "Frame 10 (Kamyia)": {
+            "raw": 86,
+            "formatted": "86",
+            "type": "number"
+          },
+          "V": null,
+          "W": null,
+          "Frame 1 (Abdul)": {
+            "raw": 20,
+            "formatted": "20",
+            "type": "number"
+          },
+          "Y": null,
+          "Frame 2 (Abdul)": {
+            "raw": 35,
+            "formatted": "35",
+            "type": "number"
+          },
+          "AA": null,
+          "Frame 3 (Abdul)": {
+            "raw": 40,
+            "formatted": "40",
+            "type": "number"
+          },
+          "AC": null,
+          "Frame 4 (Abdul)": {
+            "raw": 56,
+            "formatted": "56",
+            "type": "number"
+          },
+          "AE": null,
+          "Frame 5 (Abdul)": {
+            "raw": 64,
+            "formatted": "64",
+            "type": "number"
+          },
+          "AG": null,
+          "Frame 6 (Abdul)": {
+            "raw": 71,
+            "formatted": "71",
+            "type": "number"
+          },
+          "AI": null,
+          "Frame 7 (Abdul)": {
+            "raw": 89,
+            "formatted": "89",
+            "type": "number"
+          },
+          "AK": null,
+          "Frame 8 (Abdul)": {
+            "raw": 97,
+            "formatted": "97",
+            "type": "number"
+          },
+          "AM": null,
+          "Frame 9 (Abdul)": {
+            "raw": 99,
+            "formatted": "99",
+            "type": "number"
+          },
+          "AO": null,
+          "Frame 10 (Abdul)": {
+            "raw": 107,
+            "formatted": "107",
+            "type": "number"
+          },
+          "AQ": null,
+          "AR": null,
+          "Total Score Kamyia": null,
+          "Total Score Abdul": null,
+          "Winner": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": {
+            "raw": "Game 4",
+            "formatted": "Game 4",
+            "type": "string"
+          },
+          "Frame 1 (Kamyia)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "D": {
+            "raw": 2,
+            "formatted": "2",
+            "type": "number"
+          },
+          "Frame 2 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "F": {
+            "raw": "3",
+            "formatted": "3",
+            "type": "string"
+          },
+          "Frame 3 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "H": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 4 (Kamyia)": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "J": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "Frame 5 (Kamyia)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "L": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Frame 6 (Kamyia)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "N": null,
+          "Frame 7 (Kamyia)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "P": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 8 (Kamyia)": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "R": {
+            "raw": "3",
+            "formatted": "3",
+            "type": "string"
+          },
+          "Frame 9 (Kamyia)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "T": null,
+          "Frame 10 (Kamyia)": null,
+          "V": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "W": null,
+          "Frame 1 (Abdul)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "Y": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Frame 2 (Abdul)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "AA": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 3 (Abdul)": null,
+          "AC": null,
+          "Frame 4 (Abdul)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "AE": {
+            "raw": "/",
+            "formatted": "/",
+            "type": "string"
+          },
+          "Frame 5 (Abdul)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "AG": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 6 (Abdul)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "AI": {
+            "raw": "6",
+            "formatted": "6",
+            "type": "string"
+          },
+          "Frame 7 (Abdul)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "AK": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 8 (Abdul)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "AM": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 9 (Abdul)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "AO": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 10 (Abdul)": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "AQ": {
+            "raw": "4",
+            "formatted": "4",
+            "type": "string"
+          },
+          "AR": null,
+          "Total Score Kamyia": {
+            "raw": 73,
+            "formatted": "73",
+            "type": "number"
+          },
+          "Total Score Abdul": {
+            "raw": 102,
+            "formatted": "102",
+            "type": "number"
+          },
+          "Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": null,
+          "Frame 1 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "D": null,
+          "Frame 2 (Kamyia)": {
+            "raw": 18,
+            "formatted": "18",
+            "type": "number"
+          },
+          "F": null,
+          "Frame 3 (Kamyia)": {
+            "raw": 27,
+            "formatted": "27",
+            "type": "number"
+          },
+          "H": null,
+          "Frame 4 (Kamyia)": {
+            "raw": 36,
+            "formatted": "36",
+            "type": "number"
+          },
+          "J": null,
+          "Frame 5 (Kamyia)": {
+            "raw": 45,
+            "formatted": "45",
+            "type": "number"
+          },
+          "L": null,
+          "Frame 6 (Kamyia)": {
+            "raw": 52,
+            "formatted": "52",
+            "type": "number"
+          },
+          "N": null,
+          "Frame 7 (Kamyia)": {
+            "raw": 60,
+            "formatted": "60",
+            "type": "number"
+          },
+          "P": null,
+          "Frame 8 (Kamyia)": {
+            "raw": 66,
+            "formatted": "66",
+            "type": "number"
+          },
+          "R": null,
+          "Frame 9 (Kamyia)": {
+            "raw": 73,
+            "formatted": "73",
+            "type": "number"
+          },
+          "T": null,
+          "Frame 10 (Kamyia)": {
+            "raw": 73,
+            "formatted": "73",
+            "type": "number"
+          },
+          "V": null,
+          "W": null,
+          "Frame 1 (Abdul)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "Y": null,
+          "Frame 2 (Abdul)": {
+            "raw": 15,
+            "formatted": "15",
+            "type": "number"
+          },
+          "AA": null,
+          "Frame 3 (Abdul)": {
+            "raw": 35,
+            "formatted": "35",
+            "type": "number"
+          },
+          "AC": null,
+          "Frame 4 (Abdul)": {
+            "raw": 54,
+            "formatted": "54",
+            "type": "number"
+          },
+          "AE": null,
+          "Frame 5 (Abdul)": {
+            "raw": 63,
+            "formatted": "63",
+            "type": "number"
+          },
+          "AG": null,
+          "Frame 6 (Abdul)": {
+            "raw": 70,
+            "formatted": "70",
+            "type": "number"
+          },
+          "AI": null,
+          "Frame 7 (Abdul)": {
+            "raw": 78,
+            "formatted": "78",
+            "type": "number"
+          },
+          "AK": null,
+          "Frame 8 (Abdul)": {
+            "raw": 86,
+            "formatted": "86",
+            "type": "number"
+          },
+          "AM": null,
+          "Frame 9 (Abdul)": {
+            "raw": 95,
+            "formatted": "95",
+            "type": "number"
+          },
+          "AO": null,
+          "Frame 10 (Abdul)": {
+            "raw": 102,
+            "formatted": "102",
+            "type": "number"
+          },
+          "AQ": null,
+          "AR": null,
+          "Total Score Kamyia": null,
+          "Total Score Abdul": null,
+          "Winner": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": {
+            "raw": "Game 5",
+            "formatted": "Game 5",
+            "type": "string"
+          },
+          "Frame 1 (Kamyia)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "D": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "Frame 2 (Kamyia)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "F": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 3 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "H": {
+            "raw": "1",
+            "formatted": "1",
+            "type": "string"
+          },
+          "Frame 4 (Kamyia)": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "J": {
+            "raw": 2,
+            "formatted": "2",
+            "type": "number"
+          },
+          "Frame 5 (Kamyia)": {
+            "raw": 4,
+            "formatted": "4",
+            "type": "number"
+          },
+          "L": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Frame 6 (Kamyia)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "N": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "Frame 7 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "P": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 8 (Kamyia)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "R": {
+            "raw": "/",
+            "formatted": "/",
+            "type": "string"
+          },
+          "Frame 9 (Kamyia)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "T": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "Frame 10 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "V": {
+            "raw": "3",
+            "formatted": "3",
+            "type": "string"
+          },
+          "W": null,
+          "Frame 1 (Abdul)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "Y": null,
+          "Frame 2 (Abdul)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "AA": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 3 (Abdul)": {
+            "raw": 5,
+            "formatted": "5",
+            "type": "number"
+          },
+          "AC": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 4 (Abdul)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "AE": {
+            "raw": "8",
+            "formatted": "8",
+            "type": "string"
+          },
+          "Frame 5 (Abdul)": {
+            "raw": 9,
+            "formatted": "9",
+            "type": "number"
+          },
+          "AG": {
+            "raw": "/",
+            "formatted": "/",
+            "type": "string"
+          },
+          "Frame 6 (Abdul)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "AI": {
+            "raw": "2",
+            "formatted": "2",
+            "type": "string"
+          },
+          "Frame 7 (Abdul)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "AK": {
+            "raw": "3",
+            "formatted": "3",
+            "type": "string"
+          },
+          "Frame 8 (Abdul)": null,
+          "AM": null,
+          "Frame 9 (Abdul)": null,
+          "AO": null,
+          "Frame 10 (Abdul)": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "AQ": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "AR": null,
+          "Total Score Kamyia": {
+            "raw": 74,
+            "formatted": "74",
+            "type": "number"
+          },
+          "Total Score Abdul": {
+            "raw": 104,
+            "formatted": "104",
+            "type": "number"
+          },
+          "Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": null,
+          "Frame 1 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "D": null,
+          "Frame 2 (Kamyia)": {
+            "raw": 15,
+            "formatted": "15",
+            "type": "number"
+          },
+          "F": null,
+          "Frame 3 (Kamyia)": {
+            "raw": 22,
+            "formatted": "22",
+            "type": "number"
+          },
+          "H": null,
+          "Frame 4 (Kamyia)": {
+            "raw": 29,
+            "formatted": "29",
+            "type": "number"
+          },
+          "J": null,
+          "Frame 5 (Kamyia)": {
+            "raw": 34,
+            "formatted": "34",
+            "type": "number"
+          },
+          "L": null,
+          "Frame 6 (Kamyia)": {
+            "raw": 42,
+            "formatted": "42",
+            "type": "number"
+          },
+          "N": null,
+          "Frame 7 (Kamyia)": {
+            "raw": 48,
+            "formatted": "48",
+            "type": "number"
+          },
+          "P": null,
+          "Frame 8 (Kamyia)": {
+            "raw": 59,
+            "formatted": "59",
+            "type": "number"
+          },
+          "R": null,
+          "Frame 9 (Kamyia)": {
+            "raw": 65,
+            "formatted": "65",
+            "type": "number"
+          },
+          "T": null,
+          "Frame 10 (Kamyia)": {
+            "raw": 74,
+            "formatted": "74",
+            "type": "number"
+          },
+          "V": null,
+          "W": null,
+          "Frame 1 (Abdul)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "Y": null,
+          "Frame 2 (Abdul)": {
+            "raw": 16,
+            "formatted": "16",
+            "type": "number"
+          },
+          "AA": null,
+          "Frame 3 (Abdul)": {
+            "raw": 21,
+            "formatted": "21",
+            "type": "number"
+          },
+          "AC": null,
+          "Frame 4 (Abdul)": {
+            "raw": 30,
+            "formatted": "30",
+            "type": "number"
+          },
+          "AE": null,
+          "Frame 5 (Abdul)": {
+            "raw": 47,
+            "formatted": "47",
+            "type": "number"
+          },
+          "AG": null,
+          "Frame 6 (Abdul)": {
+            "raw": 56,
+            "formatted": "56",
+            "type": "number"
+          },
+          "AI": null,
+          "Frame 7 (Abdul)": {
+            "raw": 65,
+            "formatted": "65",
+            "type": "number"
+          },
+          "AK": null,
+          "Frame 8 (Abdul)": {
+            "raw": 88,
+            "formatted": "88",
+            "type": "number"
+          },
+          "AM": null,
+          "Frame 9 (Abdul)": {
+            "raw": 101,
+            "formatted": "101",
+            "type": "number"
+          },
+          "AO": null,
+          "Frame 10 (Abdul)": {
+            "raw": 104,
+            "formatted": "104",
+            "type": "number"
+          },
+          "AQ": null,
+          "AR": null,
+          "Total Score Kamyia": null,
+          "Total Score Abdul": null,
+          "Winner": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": {
+            "raw": "Game 6",
+            "formatted": "Game 6",
+            "type": "string"
+          },
+          "Frame 1 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "D": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Frame 2 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "F": {
+            "raw": "1",
+            "formatted": "1",
+            "type": "string"
+          },
+          "Frame 3 (Kamyia)": null,
+          "H": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 4 (Kamyia)": null,
+          "J": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "Frame 5 (Kamyia)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "L": null,
+          "Frame 6 (Kamyia)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "N": null,
+          "Frame 7 (Kamyia)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "P": {
+            "raw": "3",
+            "formatted": "3",
+            "type": "string"
+          },
+          "Frame 8 (Kamyia)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "R": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 9 (Kamyia)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "T": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "Frame 10 (Kamyia)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "V": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "W": null,
+          "Frame 1 (Abdul)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "Y": null,
+          "Frame 2 (Abdul)": null,
+          "AA": null,
+          "Frame 3 (Abdul)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "AC": {
+            "raw": "3",
+            "formatted": "3",
+            "type": "string"
+          },
+          "Frame 4 (Abdul)": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "AE": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 5 (Abdul)": {
+            "raw": 3,
+            "formatted": "3",
+            "type": "number"
+          },
+          "AG": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 6 (Abdul)": null,
+          "AI": null,
+          "Frame 7 (Abdul)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "AK": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 8 (Abdul)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "AM": {
+            "raw": "-",
+            "formatted": "-",
+            "type": "string"
+          },
+          "Frame 9 (Abdul)": {
+            "raw": 6,
+            "formatted": "6",
+            "type": "number"
+          },
+          "AO": {
+            "raw": "1",
+            "formatted": "1",
+            "type": "string"
+          },
+          "Frame 10 (Abdul)": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
+          "AQ": {
+            "raw": "6",
+            "formatted": "6",
+            "type": "string"
+          },
+          "AR": null,
+          "Total Score Kamyia": {
+            "raw": 81,
+            "formatted": "81",
+            "type": "number"
+          },
+          "Total Score Abdul": {
+            "raw": 90,
+            "formatted": "90",
+            "type": "number"
+          },
+          "Winner": {
+            "raw": "Abdul",
+            "formatted": "Abdul",
+            "type": "string"
+          }
+        },
+        {
+          "Date": null,
+          "Game #": null,
+          "Frame 1 (Kamyia)": {
+            "raw": 7,
+            "formatted": "7",
+            "type": "number"
+          },
+          "D": null,
+          "Frame 2 (Kamyia)": {
+            "raw": 14,
+            "formatted": "14",
+            "type": "number"
+          },
+          "F": null,
+          "Frame 3 (Kamyia)": {
+            "raw": 14,
+            "formatted": "14",
+            "type": "number"
+          },
+          "H": null,
+          "Frame 4 (Kamyia)": {
+            "raw": 21,
+            "formatted": "21",
+            "type": "number"
+          },
+          "J": null,
+          "Frame 5 (Kamyia)": {
+            "raw": 39,
+            "formatted": "39",
+            "type": "number"
+          },
+          "L": null,
+          "Frame 6 (Kamyia)": {
+            "raw": 47,
+            "formatted": "47",
+            "type": "number"
+          },
+          "N": null,
+          "Frame 7 (Kamyia)": {
+            "raw": 56,
+            "formatted": "56",
+            "type": "number"
+          },
+          "P": null,
+          "Frame 8 (Kamyia)": {
+            "raw": 64,
+            "formatted": "64",
+            "type": "number"
+          },
+          "R": null,
+          "Frame 9 (Kamyia)": {
+            "raw": 73,
+            "formatted": "73",
+            "type": "number"
+          },
+          "T": null,
+          "Frame 10 (Kamyia)": {
+            "raw": 81,
+            "formatted": "81",
+            "type": "number"
+          },
+          "V": null,
+          "W": null,
+          "Frame 1 (Abdul)": {
+            "raw": 8,
+            "formatted": "8",
+            "type": "number"
+          },
+          "Y": null,
+          "Frame 2 (Abdul)": {
+            "raw": 27,
+            "formatted": "27",
+            "type": "number"
+          },
+          "AA": null,
+          "Frame 3 (Abdul)": {
+            "raw": 36,
+            "formatted": "36",
+            "type": "number"
+          },
+          "AC": null,
+          "Frame 4 (Abdul)": {
+            "raw": 39,
+            "formatted": "39",
+            "type": "number"
+          },
+          "AE": null,
+          "Frame 5 (Abdul)": {
+            "raw": 42,
+            "formatted": "42",
+            "type": "number"
+          },
+          "AG": null,
+          "Frame 6 (Abdul)": {
+            "raw": 60,
+            "formatted": "60",
+            "type": "number"
+          },
+          "AI": null,
+          "Frame 7 (Abdul)": {
+            "raw": 68,
+            "formatted": "68",
+            "type": "number"
+          },
+          "AK": null,
+          "Frame 8 (Abdul)": {
+            "raw": 76,
+            "formatted": "76",
+            "type": "number"
+          },
+          "AM": null,
+          "Frame 9 (Abdul)": {
+            "raw": 83,
+            "formatted": "83",
+            "type": "number"
+          },
+          "AO": null,
+          "Frame 10 (Abdul)": {
+            "raw": 90,
+            "formatted": "90",
+            "type": "number"
+          },
+          "AQ": null,
+          "AR": null,
+          "Total Score Kamyia": null,
+          "Total Score Abdul": null,
+          "Winner": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
         }
       ]
     },
     "Potential Dates": {
       "columns": [
         {
-          "id": "Col0",
-          "label": "Col0",
+          "id": "A",
+          "label": "A",
+          "type": "string"
+        },
+        {
+          "id": "B",
+          "label": "B",
+          "type": "string"
+        },
+        {
+          "id": "C",
+          "label": "C",
           "type": "string"
         }
       ],
-      "rows": []
+      "rows": [
+        {
+          "A": {
+            "raw": "Date",
+            "formatted": "Date",
+            "type": "string"
+          },
+          "B": {
+            "raw": "Address",
+            "formatted": "Address",
+            "type": "string"
+          },
+          "C": {
+            "raw": "Price",
+            "formatted": "Price",
+            "type": "string"
+          }
+        },
+        {
+          "A": {
+            "raw": "Glenstone Museum",
+            "formatted": "Glenstone Museum",
+            "type": "string"
+          },
+          "B": null,
+          "C": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "A": {
+            "raw": "Bishop's Garden",
+            "formatted": "Bishop's Garden",
+            "type": "string"
+          },
+          "B": null,
+          "C": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        },
+        {
+          "A": {
+            "raw": "Artisan Pizza + Craft Cocktail Class at The Commentary Arlington",
+            "formatted": "Artisan Pizza + Craft Cocktail Class at The Commentary Arlington",
+            "type": "string"
+          },
+          "B": null,
+          "C": {
+            "raw": null,
+            "formatted": null,
+            "type": "null"
+          }
+        }
+      ]
     }
   }
 }
