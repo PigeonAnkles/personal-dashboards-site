@@ -1,5 +1,6 @@
 const state = {
-  siteData: null
+  siteData: null,
+  mediaImages: {}
 };
 
 const dashboardRoot = document.querySelector("#dashboard-root");
@@ -25,6 +26,25 @@ function getCell(row, key) {
 
 function getRaw(row, key) {
   return row?.[key]?.raw ?? null;
+}
+
+function normalizeMediaImageKeyPart(value) {
+  return String(value || "").trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+function getMediaImageKey(mediaType, name) {
+  return `${normalizeMediaImageKeyPart(mediaType)}|${normalizeMediaImageKeyPart(name)}`;
+}
+
+function getMediaImagePath(mediaType, name) {
+  const entry = state.mediaImages?.[getMediaImageKey(mediaType, name)];
+  const localPath = typeof entry?.localPath === "string" ? entry.localPath.trim() : "";
+
+  if (!localPath) {
+    return "";
+  }
+
+  return localPath.replace(/^\/+/, "");
 }
 
 function trimRows(rows, count = 6) {
@@ -1668,6 +1688,7 @@ function createRankingTimelineItems(mediaTabs) {
         entryId: getCell(row, "Entry ID"),
         title: getCell(row, "Name"),
         mediaType,
+        imagePath: getMediaImagePath(mediaType, getCell(row, "Name")),
         event: getCell(row, "Event"),
         start: start || end || actionDate,
         end: end && start && end >= start ? end : null,
@@ -1764,6 +1785,7 @@ function createRankingTimelineCard(items) {
     <div class="ranking-timeline-header" aria-hidden="true">
       <span>Month</span>
       <span>Day</span>
+      <span>Cover</span>
       <span>Title</span>
       <span>Released</span>
       <span>Rating</span>
@@ -1799,6 +1821,23 @@ function createRankingTimelineCard(items) {
     const day = document.createElement("div");
     day.className = "ranking-timeline-day";
     day.textContent = item.consumedDate ? getTwoDigitDay(item.consumedDate) : "-";
+
+    const artwork = document.createElement("div");
+    artwork.className = "ranking-timeline-artwork";
+    if (item.imagePath) {
+      const image = document.createElement("img");
+      image.src = item.imagePath;
+      image.alt = "";
+      image.loading = "lazy";
+      image.decoding = "async";
+      image.addEventListener("error", () => {
+        image.remove();
+        artwork.classList.add("is-empty");
+      }, { once: true });
+      artwork.appendChild(image);
+    } else {
+      artwork.classList.add("is-empty");
+    }
 
     const titleWrap = document.createElement("div");
     titleWrap.className = "ranking-timeline-title";
@@ -1856,6 +1895,7 @@ function createRankingTimelineCard(items) {
 
     block.appendChild(dateLine);
     block.appendChild(day);
+    block.appendChild(artwork);
     block.appendChild(titleWrap);
     block.appendChild(release);
     block.appendChild(rating);
@@ -3850,8 +3890,12 @@ function renderWorkbookPage() {
 }
 
 async function init() {
-  const response = await fetch("./data/site-data.json", { cache: "no-store" });
-  state.siteData = await response.json();
+  const [siteDataResponse, mediaImagesResponse] = await Promise.all([
+    fetch("./data/site-data.json", { cache: "no-store" }),
+    fetch("./data/media-images.json", { cache: "no-store" }).catch(() => null)
+  ]);
+  state.siteData = await siteDataResponse.json();
+  state.mediaImages = mediaImagesResponse?.ok ? await mediaImagesResponse.json() : {};
 
   if (pageType === "home") {
     renderHome();

@@ -72,8 +72,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 15,
-            "formatted": "15",
+            "raw": 0,
+            "formatted": "0",
             "type": "number"
           },
           "C": null,
@@ -112,7 +112,11 @@
             "formatted": "Days Since Step Goal",
             "type": "string"
           },
-          "B": null,
+          "B": {
+            "raw": 1,
+            "formatted": "1",
+            "type": "number"
+          },
           "C": null,
           "D": null,
           "E": null,
@@ -146,8 +150,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 10965.42857142857,
-            "formatted": "10,965",
+            "raw": 10988.833333333334,
+            "formatted": "10,989",
             "type": "number"
           },
           "C": null,
@@ -187,8 +191,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 8885.033333333333,
-            "formatted": "8,885",
+            "raw": 9120.137931034482,
+            "formatted": "9,120",
             "type": "number"
           },
           "C": null,
@@ -228,8 +232,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 76758,
-            "formatted": "76,758",
+            "raw": 65933,
+            "formatted": "65,933",
             "type": "number"
           },
           "C": null,
@@ -253,8 +257,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 266551,
-            "formatted": "266,551",
+            "raw": 264484,
+            "formatted": "264,484",
             "type": "number"
           },
           "C": null,
@@ -319,8 +323,8 @@
             "type": "string"
           },
           "B": {
-            "raw": 13,
-            "formatted": "13",
+            "raw": 14,
+            "formatted": "14",
             "type": "number"
           },
           "C": null,

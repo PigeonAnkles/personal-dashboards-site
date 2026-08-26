@@ -4,9 +4,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "sync-data": "node scripts/fetch-sheets.mjs",
+    "sync-data": "node scripts/fetch-sheets.mjs && npm run sync-images",
+    "sync-images": "node scripts/download-media-images-google-sheet.mjs \"https://docs.google.com/spreadsheets/d/1K50J7L5dZUFnX77glyjtxE8Wr-SRqtUppx9n5yGsH5g/edit?usp=sharing\"",
     "build": "node scripts/build-site.mjs",
-    "refresh": "npm run sync-data && npm run build",
+    "sync": "npm run sync-data && npm run build",
+    "refresh": "npm run sync",
     "start": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "xlsx": "^0.18.5",
+    "xlx": "^1.0.0"
   }
 }

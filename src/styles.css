@@ -575,7 +575,7 @@ main {
 .ranking-timeline-header,
 .ranking-timeline-item {
   display: grid;
-  grid-template-columns: 78px 58px minmax(240px, 1fr) 84px 92px 66px 74px 88px 116px;
+  grid-template-columns: 78px 58px 82px minmax(240px, 1fr) 84px 92px 66px 74px 88px 116px;
   align-items: center;
   column-gap: 12px;
 }
@@ -584,7 +584,7 @@ main {
   position: sticky;
   top: 0;
   z-index: 2;
-  min-width: 1040px;
+  min-width: 1130px;
   padding: 8px 14px;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
@@ -595,16 +595,42 @@ main {
   text-transform: uppercase;
 }
 
+.ranking-timeline-header span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ranking-timeline-header span:nth-child(1),
+.ranking-timeline-header span:nth-child(3),
+.ranking-timeline-header span:nth-child(5),
+.ranking-timeline-header span:nth-child(6),
+.ranking-timeline-header span:nth-child(7),
+.ranking-timeline-header span:nth-child(8),
+.ranking-timeline-header span:nth-child(9),
+.ranking-timeline-header span:nth-child(10) {
+  text-align: center;
+}
+
+.ranking-timeline-header span:nth-child(2) {
+  text-align: right;
+}
+
+.ranking-timeline-header span:nth-child(4) {
+  text-align: left;
+}
+
 .ranking-timeline-item {
-  min-width: 1040px;
-  min-height: 72px;
+  min-width: 1130px;
+  min-height: 122px;
   padding: 12px 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.11);
   background: transparent;
 }
 
 .ranking-timeline-date {
-  justify-self: start;
+  justify-self: center;
   display: grid;
   place-items: center;
   min-width: 54px;
@@ -640,6 +666,28 @@ main {
   font-weight: 400;
   line-height: 1;
   text-align: right;
+}
+
+.ranking-timeline-artwork {
+  justify-self: center;
+  width: 72px;
+  aspect-ratio: 2 / 3;
+  border-radius: 5px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.ranking-timeline-artwork.is-empty {
+  background: transparent;
+  box-shadow: none;
+}
+
+.ranking-timeline-artwork img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .ranking-timeline-title {
@@ -1436,10 +1484,18 @@ tbody tr:hover {
 
   .ranking-timeline-header,
   .ranking-timeline-item {
-    grid-template-columns: 58px 42px minmax(180px, 1fr) 60px 76px 52px 62px 70px 92px;
-    min-width: 820px;
+    grid-template-columns: 58px 42px 54px minmax(180px, 1fr) 60px 76px 52px 62px 70px 92px;
+    min-width: 890px;
     column-gap: 10px;
     padding-inline: 10px;
+  }
+
+  .ranking-timeline-item {
+    min-height: 94px;
+  }
+
+  .ranking-timeline-artwork {
+    width: 48px;
   }
 
   .ranking-timeline-date {

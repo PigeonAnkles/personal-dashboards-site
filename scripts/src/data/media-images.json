@@ -1,0 +1,1037 @@
+{
+  "movies|3 idiots": {
+    "mediaType": "Movies",
+    "name": "3 Idiots",
+    "releaseYear": 2009,
+    "directorAuthor": "Rajkumar Hirani",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|9": {
+    "mediaType": "Movies",
+    "name": "9",
+    "releaseYear": 2009,
+    "directorAuthor": "Shane Acker",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|99 homes": {
+    "mediaType": "Movies",
+    "name": "99 Homes",
+    "releaseYear": 2014,
+    "directorAuthor": "Ramin Bahrani",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|a beautiful day in the neighborhood": {
+    "mediaType": "Movies",
+    "name": "A Beautiful Day in the Neighborhood",
+    "releaseYear": 2019,
+    "directorAuthor": "Marielle Heller",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|a bronx tale": {
+    "mediaType": "Movies",
+    "name": "A Bronx Tale",
+    "releaseYear": 1993,
+    "directorAuthor": "Robert De Niro",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|a clockwork orange": {
+    "mediaType": "Movies",
+    "name": "A Clockwork Orange",
+    "releaseYear": 1971,
+    "directorAuthor": "Stanley Kubrick",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|a quiet place: day one": {
+    "mediaType": "Movies",
+    "name": "A Quiet Place: Day One",
+    "releaseYear": 2024,
+    "directorAuthor": "Michael Sarnoski",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|about time": {
+    "mediaType": "Movies",
+    "name": "About Time",
+    "releaseYear": 2013,
+    "directorAuthor": "Richard Curtis",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|air": {
+    "mediaType": "Movies",
+    "name": "Air",
+    "releaseYear": 2023,
+    "directorAuthor": "Ben Affleck",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|alien: romulus": {
+    "mediaType": "Movies",
+    "name": "Alien: Romulus",
+    "releaseYear": 2024,
+    "directorAuthor": "Fede Álvarez",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|american assassin": {
+    "mediaType": "Movies",
+    "name": "American Assassin",
+    "releaseYear": 2017,
+    "directorAuthor": "Michael Cuesta",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|american gangster": {
+    "mediaType": "Movies",
+    "name": "American Gangster",
+    "releaseYear": 2007,
+    "directorAuthor": "Ridley Scott",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|ant-man": {
+    "mediaType": "Movies",
+    "name": "Ant-Man",
+    "releaseYear": 2015,
+    "directorAuthor": "Peyton Reed",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|apocalypto": {
+    "mediaType": "Movies",
+    "name": "Apocalypto",
+    "releaseYear": 2006,
+    "directorAuthor": "Mel Gibson",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|avengers: age of ultron": {
+    "mediaType": "Movies",
+    "name": "Avengers: Age of Ultron",
+    "releaseYear": 2015,
+    "directorAuthor": "Joss Whedon",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|avengers: endgame": {
+    "mediaType": "Movies",
+    "name": "Avengers: Endgame",
+    "releaseYear": 2019,
+    "directorAuthor": "Russo Brothers",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|avengers: infinity war": {
+    "mediaType": "Movies",
+    "name": "Avengers: Infinity War",
+    "releaseYear": 2018,
+    "directorAuthor": "Russo Brothers",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|backrooms": {
+    "mediaType": "Movies",
+    "name": "Backrooms",
+    "releaseYear": 2026,
+    "directorAuthor": "Kane Parsons",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|bad boys: ride or die": {
+    "mediaType": "Movies",
+    "name": "Bad Boys: Ride or Die",
+    "releaseYear": 2024,
+    "directorAuthor": "Adil El Arbi",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|barbie": {
+    "mediaType": "Movies",
+    "name": "Barbie",
+    "releaseYear": 2023,
+    "directorAuthor": "Greta Gerwig",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|batman trilogy": {
+    "mediaType": "Movies",
+    "name": "Batman Trilogy",
+    "releaseYear": null,
+    "directorAuthor": "",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|beautiful boy": {
+    "mediaType": "Movies",
+    "name": "Beautiful Boy",
+    "releaseYear": 2018,
+    "directorAuthor": "Felix van Groeningen",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|black panther": {
+    "mediaType": "Movies",
+    "name": "Black Panther",
+    "releaseYear": 2018,
+    "directorAuthor": "Ryan Coogler",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|black panther: wakanda forever": {
+    "mediaType": "Movies",
+    "name": "Black Panther: Wakanda Forever",
+    "releaseYear": 2022,
+    "directorAuthor": "Ryan Coogler",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|black swan": {
+    "mediaType": "Movies",
+    "name": "Black Swan",
+    "releaseYear": 2010,
+    "directorAuthor": "Darren Aronofsky",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|bleed for this": {
+    "mediaType": "Movies",
+    "name": "Bleed For This",
+    "releaseYear": 2016,
+    "directorAuthor": "Ben Younger",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|blue beetle": {
+    "mediaType": "Movies",
+    "name": "Blue Beetle",
+    "releaseYear": 2023,
+    "directorAuthor": "Ángel Manuel Soto",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|blue velvet": {
+    "mediaType": "Movies",
+    "name": "Blue Velvet",
+    "releaseYear": 1986,
+    "directorAuthor": "David Lynch",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|boyhood": {
+    "mediaType": "Movies",
+    "name": "Boyhood",
+    "releaseYear": 2014,
+    "directorAuthor": "Richard Linklater",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|bullet train": {
+    "mediaType": "Movies",
+    "name": "Bullet Train",
+    "releaseYear": 2022,
+    "directorAuthor": "David Leitch",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|c'mon c'mon": {
+    "mediaType": "Movies",
+    "name": "C'mon C'mon",
+    "releaseYear": 2021,
+    "directorAuthor": "Mike Mills",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|captain america: civil war": {
+    "mediaType": "Movies",
+    "name": "Captain America: Civil War",
+    "releaseYear": 2016,
+    "directorAuthor": "Russo Brothers",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|captain america: the first avenger": {
+    "mediaType": "Movies",
+    "name": "Captain America: The First Avenger",
+    "releaseYear": 2011,
+    "directorAuthor": "Joe Johnston",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|captain america: the winter soldier": {
+    "mediaType": "Movies",
+    "name": "Captain America: The Winter Soldier",
+    "releaseYear": 2014,
+    "directorAuthor": "Russo Brothers",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|catch me if you can": {
+    "mediaType": "Movies",
+    "name": "Catch Me If You Can",
+    "releaseYear": 2002,
+    "directorAuthor": "Steven Spielberg",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|chappie": {
+    "mediaType": "Movies",
+    "name": "Chappie",
+    "releaseYear": 2015,
+    "directorAuthor": "Neill Blomkamp",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|cinderella man": {
+    "mediaType": "Movies",
+    "name": "Cinderella Man",
+    "releaseYear": 2005,
+    "directorAuthor": "Ron Howard",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|city of gold": {
+    "mediaType": "Movies",
+    "name": "City of Gold",
+    "releaseYear": 2015,
+    "directorAuthor": "Laura Gabbert",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|collateral": {
+    "mediaType": "Movies",
+    "name": "Collateral",
+    "releaseYear": 2004,
+    "directorAuthor": "Michael Mann",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|companion": {
+    "mediaType": "Movies",
+    "name": "Companion",
+    "releaseYear": 2025,
+    "directorAuthor": "Drew Hancock",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|creed": {
+    "mediaType": "Movies",
+    "name": "Creed",
+    "releaseYear": 2015,
+    "directorAuthor": "Ryan Coogler",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|creed 2": {
+    "mediaType": "Movies",
+    "name": "Creed 2",
+    "releaseYear": 2018,
+    "directorAuthor": "Steven Caple Jr.",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|creed 3": {
+    "mediaType": "Movies",
+    "name": "Creed 3",
+    "releaseYear": 2023,
+    "directorAuthor": "Michael B. Jordan",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|dead poets society": {
+    "mediaType": "Movies",
+    "name": "Dead Poets Society",
+    "releaseYear": 1989,
+    "directorAuthor": "Peter Weir",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|deadpool": {
+    "mediaType": "Movies",
+    "name": "Deadpool",
+    "releaseYear": 2016,
+    "directorAuthor": "Tim Miller",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|deadpool & wolverine": {
+    "mediaType": "Movies",
+    "name": "Deadpool & Wolverine",
+    "releaseYear": 2024,
+    "directorAuthor": "Shawn Levy",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|deadpool 2": {
+    "mediaType": "Movies",
+    "name": "Deadpool 2",
+    "releaseYear": 2018,
+    "directorAuthor": "David Leitch",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|departure": {
+    "mediaType": "Movies",
+    "name": "Departure",
+    "releaseYear": 2019,
+    "directorAuthor": "Andrew Steggall",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|django unchained": {
+    "mediaType": "Movies",
+    "name": "Django Unchained",
+    "releaseYear": 2012,
+    "directorAuthor": "Quentin Tarantino",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|doctor strange": {
+    "mediaType": "Movies",
+    "name": "Doctor Strange",
+    "releaseYear": 2016,
+    "directorAuthor": "Scott Derrickson",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|doctor strange in the multiverse of madeness": {
+    "mediaType": "Movies",
+    "name": "Doctor Strange in the Multiverse of Madeness",
+    "releaseYear": 2022,
+    "directorAuthor": "Sam Raimi",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|donnie darko": {
+    "mediaType": "Movies",
+    "name": "Donnie Darko",
+    "releaseYear": 2001,
+    "directorAuthor": "Richard Kelly",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|dune part one": {
+    "mediaType": "Movies",
+    "name": "Dune Part One",
+    "releaseYear": 2021,
+    "directorAuthor": "Denis Villeneuve",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|dune part two": {
+    "mediaType": "Movies",
+    "name": "Dune Part Two",
+    "releaseYear": 2024,
+    "directorAuthor": "Denis Villeneuve",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|edge of tomorrow": {
+    "mediaType": "Movies",
+    "name": "Edge of Tomorrow",
+    "releaseYear": 2014,
+    "directorAuthor": "Doug Liman",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|end of watch": {
+    "mediaType": "Movies",
+    "name": "End of Watch",
+    "releaseYear": 2012,
+    "directorAuthor": "David Ayer",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|ender's game": {
+    "mediaType": "Movies",
+    "name": "Ender's Game",
+    "releaseYear": 2013,
+    "directorAuthor": "Gavin Hood",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|enemy": {
+    "mediaType": "Movies",
+    "name": "Enemy",
+    "releaseYear": 2013,
+    "directorAuthor": "Denis Villeneuve",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|equalizer series": {
+    "mediaType": "Movies",
+    "name": "Equalizer Series",
+    "releaseYear": null,
+    "directorAuthor": "",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|equilibrium": {
+    "mediaType": "Movies",
+    "name": "Equilibrium",
+    "releaseYear": 2002,
+    "directorAuthor": "Kurt Wimmer",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|eternals": {
+    "mediaType": "Movies",
+    "name": "Eternals",
+    "releaseYear": 2021,
+    "directorAuthor": "Chloé Zhao",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|everything everywhere all at once": {
+    "mediaType": "Movies",
+    "name": "Everything Everywhere All at Once",
+    "releaseYear": 2022,
+    "directorAuthor": "Daniel Scheinert",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|f1": {
+    "mediaType": "Movies",
+    "name": "F1",
+    "releaseYear": 2025,
+    "directorAuthor": "Joseph Kosinski",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|fast and furious franchise": {
+    "mediaType": "Movies",
+    "name": "Fast and Furious Franchise",
+    "releaseYear": null,
+    "directorAuthor": "",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|fear": {
+    "mediaType": "Movies",
+    "name": "Fear",
+    "releaseYear": 1996,
+    "directorAuthor": "Deon Taylor",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|ferrari": {
+    "mediaType": "Movies",
+    "name": "Ferrari",
+    "releaseYear": 2023,
+    "directorAuthor": "Michael Mann",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|fight club": {
+    "mediaType": "Movies",
+    "name": "Fight Club",
+    "releaseYear": 1999,
+    "directorAuthor": "David Fincher",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|final desination": {
+    "mediaType": "Movies",
+    "name": "Final Desination",
+    "releaseYear": 2000,
+    "directorAuthor": "James Wong",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|flow": {
+    "mediaType": "Movies",
+    "name": "Flow",
+    "releaseYear": 2024,
+    "directorAuthor": "Gints Zilbalodis",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|ford v ferrari": {
+    "mediaType": "Movies",
+    "name": "Ford v Ferrari",
+    "releaseYear": 2019,
+    "directorAuthor": "James Mangold",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|frankenstein": {
+    "mediaType": "Movies",
+    "name": "Frankenstein",
+    "releaseYear": 2025,
+    "directorAuthor": "Guillermo del Toro",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|fruitvale station": {
+    "mediaType": "Movies",
+    "name": "Fruitvale Station",
+    "releaseYear": 2013,
+    "directorAuthor": "Ryan Coogler",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|gladiator": {
+    "mediaType": "Movies",
+    "name": "Gladiator",
+    "releaseYear": 2000,
+    "directorAuthor": "Ridley Scott",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|gladiator ii": {
+    "mediaType": "Movies",
+    "name": "Gladiator II",
+    "releaseYear": 2024,
+    "directorAuthor": "Ridley Scott",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|godzilla minus one": {
+    "mediaType": "Movies",
+    "name": "Godzilla Minus One",
+    "releaseYear": 2023,
+    "directorAuthor": "Takashi Yamazaki",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|good will hunting": {
+    "mediaType": "Movies",
+    "name": "Good Will Hunting",
+    "releaseYear": 1997,
+    "directorAuthor": "Gus Van Sant",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|gran turismo": {
+    "mediaType": "Movies",
+    "name": "Gran Turismo",
+    "releaseYear": 2023,
+    "directorAuthor": "Neill Blomkamp",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|green book": {
+    "mediaType": "Movies",
+    "name": "Green Book",
+    "releaseYear": 2018,
+    "directorAuthor": "Peter Farrelly",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|guardians of the galaxy": {
+    "mediaType": "Movies",
+    "name": "Guardians of the Galaxy",
+    "releaseYear": 2014,
+    "directorAuthor": "James Gunn",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|guardians of the galaxy vol. 2": {
+    "mediaType": "Movies",
+    "name": "Guardians of the Galaxy Vol. 2",
+    "releaseYear": 2017,
+    "directorAuthor": "James Gunn",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|guardians of the galaxy vol. 3": {
+    "mediaType": "Movies",
+    "name": "Guardians of the Galaxy Vol. 3",
+    "releaseYear": 2023,
+    "directorAuthor": "James Gunn",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|hacksaw ridge": {
+    "mediaType": "Movies",
+    "name": "Hacksaw Ridge",
+    "releaseYear": 2016,
+    "directorAuthor": "Mel Gibson",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|heat": {
+    "mediaType": "Movies",
+    "name": "Heat",
+    "releaseYear": 1995,
+    "directorAuthor": "Michael Mann",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|hocus pocus": {
+    "mediaType": "Movies",
+    "name": "Hocus Pocus",
+    "releaseYear": 1993,
+    "directorAuthor": "Kenny Ortega",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|hoppers": {
+    "mediaType": "Movies",
+    "name": "Hoppers",
+    "releaseYear": 2026,
+    "directorAuthor": "Daniel Chong",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|inception": {
+    "mediaType": "Movies",
+    "name": "Inception",
+    "releaseYear": 2010,
+    "directorAuthor": "Christopher Nolan",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|infinite": {
+    "mediaType": "Movies",
+    "name": "Infinite",
+    "releaseYear": 2021,
+    "directorAuthor": "Antoine Fuqua",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|interstellar": {
+    "mediaType": "Movies",
+    "name": "Interstellar",
+    "releaseYear": 2014,
+    "directorAuthor": "Christopher Nolan",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|intouchables": {
+    "mediaType": "Movies",
+    "name": "Intouchables",
+    "releaseYear": 2011,
+    "directorAuthor": "Olivier Nakache",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|iron lung": {
+    "mediaType": "Movies",
+    "name": "Iron Lung",
+    "releaseYear": 2026,
+    "directorAuthor": "Mark Fischbach",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|iron man": {
+    "mediaType": "Movies",
+    "name": "Iron Man",
+    "releaseYear": 2008,
+    "directorAuthor": "Jon Favreau",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|iron man 2": {
+    "mediaType": "Movies",
+    "name": "Iron Man 2",
+    "releaseYear": 2010,
+    "directorAuthor": "Jon Favreau",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|iron man 3": {
+    "mediaType": "Movies",
+    "name": "Iron Man 3",
+    "releaseYear": 2013,
+    "directorAuthor": "Shane Black",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|it comes at night": {
+    "mediaType": "Movies",
+    "name": "It Comes at Night",
+    "releaseYear": 2017,
+    "directorAuthor": "Trey Edward Shults",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|jarhead": {
+    "mediaType": "Movies",
+    "name": "Jarhead",
+    "releaseYear": 2005,
+    "directorAuthor": "Sam Mendes",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|john wick": {
+    "mediaType": "Movies",
+    "name": "John Wick",
+    "releaseYear": 2014,
+    "directorAuthor": "Chad Stahelski",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|john wick: chapter 2": {
+    "mediaType": "Movies",
+    "name": "John Wick: Chapter 2",
+    "releaseYear": 2017,
+    "directorAuthor": "Chad Stahelski",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|john wick: chapter 3": {
+    "mediaType": "Movies",
+    "name": "John Wick: Chapter 3",
+    "releaseYear": 2019,
+    "directorAuthor": "Chad Stahelski",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|john wick: chapter 4": {
+    "mediaType": "Movies",
+    "name": "John Wick: Chapter 4",
+    "releaseYear": 2023,
+    "directorAuthor": "Chad Stahelski",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|joker": {
+    "mediaType": "Movies",
+    "name": "Joker",
+    "releaseYear": 2019,
+    "directorAuthor": "Todd Phillips",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|judas and the black messiah": {
+    "mediaType": "Movies",
+    "name": "Judas and the Black Messiah",
+    "releaseYear": 2021,
+    "directorAuthor": "Shaka King",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|jurassic world rebirth": {
+    "mediaType": "Movies",
+    "name": "Jurassic World Rebirth",
+    "releaseYear": 2025,
+    "directorAuthor": "Gareth Edwards",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|kingdom of the planet of the apes": {
+    "mediaType": "Movies",
+    "name": "Kingdom of the Planet of the Apes",
+    "releaseYear": 2024,
+    "directorAuthor": "Wes Ball",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|kung fu hustle": {
+    "mediaType": "Movies",
+    "name": "Kung Fu Hustle",
+    "releaseYear": 2004,
+    "directorAuthor": "Stephen Chow",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|lawrence of arabia": {
+    "mediaType": "Movies",
+    "name": "Lawrence of Arabia",
+    "releaseYear": 1962,
+    "directorAuthor": "David Lean",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|logan": {
+    "mediaType": "Movies",
+    "name": "Logan",
+    "releaseYear": 2017,
+    "directorAuthor": "James Mangold",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|look into culturally significant black movies": {
+    "mediaType": "Movies",
+    "name": "Look into Culturally Significant Black Movies",
+    "releaseYear": null,
+    "directorAuthor": "",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|lurker": {
+    "mediaType": "Movies",
+    "name": "Lurker",
+    "releaseYear": 2025,
+    "directorAuthor": "Alex Russell",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|magazine dreams": {
+    "mediaType": "Movies",
+    "name": "Magazine Dreams",
+    "releaseYear": 2025,
+    "directorAuthor": "Elijah Bynum",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|manic": {
+    "mediaType": "Movies",
+    "name": "Manic",
+    "releaseYear": 2001,
+    "directorAuthor": "Jordan Melamed",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|marty supreme": {
+    "mediaType": "Movies",
+    "name": "Marty Supreme",
+    "releaseYear": 2025,
+    "directorAuthor": "Josh Safdie",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|maze runner: the death cure": {
+    "mediaType": "Movies",
+    "name": "Maze Runner: The Death Cure",
+    "releaseYear": 2018,
+    "directorAuthor": "Wes Ball",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|maze runner: the scorch trials": {
+    "mediaType": "Movies",
+    "name": "Maze Runner: The Scorch Trials",
+    "releaseYear": 2015,
+    "directorAuthor": "Wes Ball",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|memento": {
+    "mediaType": "Movies",
+    "name": "Memento",
+    "releaseYear": 2000,
+    "directorAuthor": "Christopher Nolan",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  },
+  "movies|michael": {
+    "mediaType": "Movies",
+    "name": "Michael",
+    "releaseYear": 2026,
+    "directorAuthor": "Antoine Fuqua",
+    "isbn13": "",
+    "localPath": null,
+    "error": "TMDB_BEARER_TOKEN is missing. Add it to a .env file in the project root."
+  }
+}
