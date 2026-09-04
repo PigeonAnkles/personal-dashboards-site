@@ -11088,6 +11088,13 @@
     "imageSource": "Manual",
     "matchedTitle": "Sky High"
   },
+  "movies|obsession": {
+    "mediaType": "Movies",
+    "name": "Obsession",
+    "localPath": "assets/media/movies/obsession.jpg",
+    "imageSource": "Manual",
+    "matchedTitle": "Obsession"
+  },
   "tv shows|adults": {
     "mediaType": "TV Shows",
     "name": "Adults",
