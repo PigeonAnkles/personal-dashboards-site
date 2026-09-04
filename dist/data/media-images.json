@@ -11033,5 +11033,85 @@
     "sourceId": 269149,
     "matchedTitle": "Zootopia",
     "matchedYear": 2016
+  },
+  "movies|21 jump street": {
+    "mediaType": "Movies",
+    "name": "21 Jump Street",
+    "releaseYear": 2012,
+    "directorAuthor": "Phil Lord, Christopher Miller",
+    "isbn13": "",
+    "localPath": "assets/media/movies/21-jump-street.jpg",
+    "remoteUrl": "https://image.tmdb.org/t/p/w780/8v3Sqv9UcIUC4ebmpKWROqPBINZ.jpg",
+    "imageSource": "Manual",
+    "sourceId": 64688,
+    "matchedTitle": "21 Jump Street",
+    "matchedYear": 2012
+  },
+  "movies|bohemian rhapsody": {
+    "mediaType": "Movies",
+    "name": "Bohemian Rhapsody",
+    "releaseYear": 2018,
+    "directorAuthor": "Bryan Singer",
+    "isbn13": "",
+    "localPath": "assets/media/movies/bohemian-rhapsody.png",
+    "remoteUrl": "https://image.tmdb.org/t/p/w780/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
+    "imageSource": "Manual",
+    "sourceId": 424694,
+    "matchedTitle": "Bohemian Rhapsody",
+    "matchedYear": 2018
+  },
+  "movies|police story": {
+    "mediaType": "Movies",
+    "name": "Police Story",
+    "localPath": "assets/media/movies/police-story.jpg",
+    "imageSource": "Manual",
+    "matchedTitle": "Police Story"
+  },
+  "movies|g-force": {
+    "mediaType": "Movies",
+    "name": "G-Force",
+    "localPath": "assets/media/movies/g-force.jpg",
+    "imageSource": "Manual",
+    "matchedTitle": "G-Force"
+  },
+  "movies|jumper": {
+    "mediaType": "Movies",
+    "name": "Jumper",
+    "localPath": "assets/media/movies/jumper.jpg",
+    "imageSource": "Manual",
+    "matchedTitle": "Jumper"
+  },
+  "movies|sky high": {
+    "mediaType": "Movies",
+    "name": "Sky High",
+    "localPath": "assets/media/movies/sky-high.webp",
+    "imageSource": "Manual",
+    "matchedTitle": "Sky High"
+  },
+  "tv shows|adults": {
+    "mediaType": "TV Shows",
+    "name": "Adults",
+    "releaseYear": 2025,
+    "directorAuthor": "Ben Kronengold, Rebecca Shaw",
+    "isbn13": "",
+    "localPath": "assets/media/tv-shows/adults.webp",
+    "remoteUrl": "https://image.tmdb.org/t/p/w780/oJUoRlVXGl3MJb62Ugi1G08GPbx.jpg",
+    "imageSource": "TMDB",
+    "sourceId": 260458,
+    "matchedTitle": "Adults",
+    "matchedYear": 2025
+  },
+  "tv shows|lanterns": {
+    "mediaType": "TV Shows",
+    "name": "Lanterns",
+    "releaseYear": 2026,
+    "directorAuthor": "Chris Mundy",
+    "isbn13": "",
+    "localPath": "assets/media/tv-shows/lanterns.webp",
+    "remoteUrl": "https://image.tmdb.org/t/p/w780/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
+    "imageSource": "TMDB",
+    "sourceId": 95350,
+    "matchedTitle": "Lanterns",
+    "matchedYear": 2026
   }
 }

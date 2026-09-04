@@ -210,6 +210,23 @@ async function fetchTab(workbook, tab) {
   return normalizeTable(payload.table);
 }
 
+async function writeJsonWithRetry(filePath, value) {
+  const data = JSON.stringify(value, null, 2);
+
+  for (let attempt = 0; attempt < 5; attempt++) {
+    try {
+      await writeFile(filePath, data, "utf8");
+      return;
+    } catch (error) {
+      if (attempt === 4) {
+        throw error;
+      }
+
+      await new Promise((resolve) => setTimeout(resolve, 100 * (attempt + 1)));
+    }
+  }
+}
+
 async function main() {
   await mkdir(dataDir, { recursive: true });
   const generatedJsonFiles = new Set(["site-data.json", ...workbooks.map((workbook) => `${workbook.slug}.json`)]);
@@ -246,14 +263,13 @@ async function main() {
     };
 
     siteData.workbooks.push(workbookData);
-    await writeFile(
+    await writeJsonWithRetry(
       path.join(dataDir, `${workbook.slug}.json`),
-      JSON.stringify(workbookData, null, 2),
-      "utf8"
+      workbookData
     );
   }
 
-  await writeFile(path.join(dataDir, "site-data.json"), JSON.stringify(siteData, null, 2), "utf8");
+  await writeJsonWithRetry(path.join(dataDir, "site-data.json"), siteData);
   console.log(`Synced ${siteData.workbooks.length} workbooks to ${dataDir}`);
 }
 

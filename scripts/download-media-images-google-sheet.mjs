@@ -418,7 +418,20 @@ function loadJSON(filePath, fallback) {
 }
 
 function saveJSON(filePath, value) {
-  fs.writeFileSync(filePath, JSON.stringify(value, null, 2) + "\n", "utf8");
+  const data = JSON.stringify(value, null, 2) + "\n";
+
+  for (let attempt = 0; attempt < 5; attempt++) {
+    try {
+      fs.writeFileSync(filePath, data, "utf8");
+      return;
+    } catch (err) {
+      if (attempt === 4) {
+        throw err;
+      }
+
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100 * (attempt + 1));
+    }
+  }
 }
 
 async function fetchJSON(
