@@ -3014,12 +3014,9 @@
     "releaseYear": 2023,
     "directorAuthor": "Lee Sung Jin",
     "isbn13": "",
-    "localPath": "assets/media/tv-shows/beef.webp",
-    "remoteUrl": "https://image.tmdb.org/t/p/w780/25ih0Xq2zWbxhhKxwhvswKYQyEr.jpg",
-    "imageSource": "TMDB",
-    "sourceId": 154385,
-    "matchedTitle": "BEEF",
-    "matchedYear": 2023
+    "localPath": "assets/media/tv-shows/beef.jpg",
+    "imageSource": "Manual",
+    "matchedTitle": "Beef"
   },
   "tv shows|better call saul": {
     "mediaType": "TV Shows",
