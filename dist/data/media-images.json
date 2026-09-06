@@ -1581,12 +1581,9 @@
     "releaseYear": 2026,
     "directorAuthor": "Curry Barker",
     "isbn13": "",
-    "localPath": "assets/media/movies/obssession.webp",
-    "remoteUrl": "https://image.tmdb.org/t/p/w780/19S6nijSPa9zFMMSlQAd33VFzgx.jpg",
-    "imageSource": "TMDB",
-    "sourceId": 1437758,
-    "matchedTitle": "OBJECT OF OBSSESSION",
-    "matchedYear": 2025
+    "localPath": "assets/media/movies/obsession.jpg",
+    "imageSource": "Manual",
+    "matchedTitle": "Obssession"
   },
   "movies|ocean's eleven": {
     "mediaType": "Movies",
@@ -11094,6 +11091,13 @@
     "localPath": "assets/media/movies/obsession.jpg",
     "imageSource": "Manual",
     "matchedTitle": "Obsession"
+  },
+  "movies|coyote vs. acme": {
+    "mediaType": "Movies",
+    "name": "Coyote vs. Acme",
+    "localPath": "assets/media/movies/coyote-vs-acme.avif",
+    "imageSource": "Manual",
+    "matchedTitle": "Coyote vs. Acme"
   },
   "tv shows|adults": {
     "mediaType": "TV Shows",
